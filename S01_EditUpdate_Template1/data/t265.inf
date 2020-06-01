@@ -1,0 +1,11 @@
+[t265]
+FileName1=t265_info.json
+URL1=https://pvr-perf.rxlogix.com/reports/stomp/info
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_265.xml
+RequestHeaderFile=t265_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t265_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,11 @@
+[t188]
+FileName1=t188_templateQueries-b30e257e7bf112701696b0edaac3908d.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/configuration/templateQueries-b30e257e7bf112701696b0edaac3908d.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_188.xml
+RequestHeaderFile=t188_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t188_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

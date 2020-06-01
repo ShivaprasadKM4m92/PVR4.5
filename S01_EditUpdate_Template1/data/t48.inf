@@ -1,0 +1,9 @@
+[t48]
+SnapshotXmlFile=snapshot_48.xml
+FileName1=t48.png
+URL1=https://pvr-perf.rxlogix.com/reports/assets/pvr_logo-4233ea6efeb2ddb09d89415071b55478.png
+Total=1
+RequestHeaderFile=t48_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t48_ResponseHeader.txt
+ContentType=image/png

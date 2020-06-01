@@ -1,0 +1,11 @@
+[t126]
+FileName1=t126_ec.render.min-f6d1f2204b8afac135ad5f0e158f00e8.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/easychart/ec.render.min-f6d1f2204b8afac135ad5f0e158f00e8.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_126.xml
+RequestHeaderFile=t126_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t126_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

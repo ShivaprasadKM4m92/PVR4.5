@@ -1,0 +1,11 @@
+[t64]
+FileName1=t64_dataTablesActionButtons-dbaa4f19bed1b0ac11118699876720cb.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/dataTablesActionButtons-dbaa4f19bed1b0ac11118699876720cb.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_64.xml
+RequestHeaderFile=t64_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t64_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

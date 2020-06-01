@@ -1,0 +1,11 @@
+[t247]
+FileName1=t247_executionStatus-0291e27b037d335048c8c802b3bd133c.css
+URL1=https://pvr-perf.rxlogix.com/reports/assets/executionStatus-0291e27b037d335048c8c802b3bd133c.css
+Total=1
+ContentType=text/css
+SnapshotXmlFile=snapshot_247.xml
+RequestHeaderFile=t247_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t247_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

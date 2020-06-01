@@ -1,0 +1,11 @@
+[t196]
+FileName1=t196_blankParameters-cef91892ccdf31d55934699882b389d5.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/configuration/blankParameters-cef91892ccdf31d55934699882b389d5.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_196.xml
+RequestHeaderFile=t196_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t196_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

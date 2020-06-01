@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Wed, 20 May 2020 09:09:12 GMT
+Content-Type: application/javascript;charset=UTF-8
+Content-Length: 2195
+Connection: keep-alive
+X-Frame-Options: DENY
+Last-Modified: Mon, 23 Mar 2020 05:55:22 GMT
+ETag: "app/template/template-4449dd937496140ccf5c770e8e904088.js"
+Vary: Accept-Encoding
+Cache-Control: public, max-age=31536000
+Content-Encoding: gzip
+

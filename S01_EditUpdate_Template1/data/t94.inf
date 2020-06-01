@@ -1,0 +1,11 @@
+[t94]
+FileName1=t94_editMeasures-bdb9a7a04f8123cadc0579982d0417ab.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/template/editMeasures-bdb9a7a04f8123cadc0579982d0417ab.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_94.xml
+RequestHeaderFile=t94_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t94_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

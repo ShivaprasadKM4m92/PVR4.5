@@ -1,0 +1,11 @@
+[t212]
+FileName1=t212_allEmails.json
+URL1=https://pvr-perf.rxlogix.com/reports/email/allEmails
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_212.xml
+RequestHeaderFile=t212_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t212_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

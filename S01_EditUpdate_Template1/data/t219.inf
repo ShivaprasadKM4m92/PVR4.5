@@ -1,0 +1,11 @@
+[t219]
+FileName1=t219_getStringOperators.json
+URL1=https://pvr-perf.rxlogix.com/reports/query/getStringOperators
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_219.xml
+RequestHeaderFile=t219_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t219_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

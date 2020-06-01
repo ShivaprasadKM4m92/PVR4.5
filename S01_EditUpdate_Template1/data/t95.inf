@@ -1,0 +1,11 @@
+[t95]
+FileName1=t95_editColumnMeasure-9e39378fc671a73c6529cb92dd722996.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/template/editColumnMeasure-9e39378fc671a73c6529cb92dd722996.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_95.xml
+RequestHeaderFile=t95_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t95_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

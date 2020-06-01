@@ -1,0 +1,11 @@
+[t237]
+FileName1=t237_websocket.html
+URL1=https://pvr-perf.rxlogix.com/reports/stomp/592/lkf0fa7f/websocket
+Total=1
+ContentType=
+SnapshotXmlFile=snapshot_237.xml
+RequestHeaderFile=t237_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t237_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

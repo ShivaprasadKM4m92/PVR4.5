@@ -1,0 +1,11 @@
+[t42]
+FileName1=t42_a836e3c46d095e5a9cae3283b22afa7edcf58c574c1f738542dfb9a38dc1538f.html
+URL1=http://storage.googleapis.com/update-delta/hfnkpimlhhgieaddgfemjhofmfblmnib/5883/5882/a836e3c46d095e5a9cae3283b22afa7edcf58c574c1f738542dfb9a38dc1538f.crxd
+Total=1
+ContentType=application/octet-stream
+SnapshotXmlFile=snapshot_42.xml
+RequestHeaderFile=t42_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t42_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

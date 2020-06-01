@@ -1,0 +1,18 @@
+POST /reports/productDictionary/getPreLevelProductParents HTTP/1.1
+Host: pvr-perf.rxlogix.com
+Connection: keep-alive
+Content-Length: 65
+Accept: application/json, text/javascript, */*; q=0.01
+X-CSRF-TOKEN: ba39333f-d902-4776-97b4-c0c2f5287426
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Origin: https://pvr-perf.rxlogix.com
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://pvr-perf.rxlogix.com/reports/configuration/create?selectedTemplate=30908
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: SESSION=61dbb474-351c-46c0-97df-5b51fe1da01d; cc_cookie_decline=null; cc_cookie_accept=cc_cookie_accept
+

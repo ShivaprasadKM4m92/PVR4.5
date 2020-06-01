@@ -1,0 +1,13 @@
+HTTP/2.0 200
+Status: 200
+date: Mon, 01 Jun 2020 15:45:40 GMT
+content-type: text/html;charset=UTF-8
+x-frame-options: DENY
+x-application-context: application:production:9090
+cache-control: no-cache, no-store
+pragma: no-cache
+x-xss-protection: 1
+x-content-type-options: nosniff
+set-cookie: SESSION=7139707f-a25c-4940-a897-70c5283f2365; Path=/reports/; Secure; HttpOnly
+content-language: en-US
+

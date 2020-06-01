@@ -1,0 +1,11 @@
+[t10]
+FileName1=t10_cookiecuttr-a7a609074d7bc97460b6aab9935c3468.css
+URL1=https://pvr-perf.rxlogix.com/reports/assets/cookiecuttr-a7a609074d7bc97460b6aab9935c3468.css
+Total=1
+ContentType=text/css
+SnapshotXmlFile=snapshot_10.xml
+RequestHeaderFile=t10_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t10_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

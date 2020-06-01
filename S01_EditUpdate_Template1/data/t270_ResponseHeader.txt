@@ -1,0 +1,14 @@
+HTTP/1.1 200 
+Date: Wed, 20 May 2020 09:16:49 GMT
+Content-Type: text/html;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Frame-Options: DENY
+X-Application-Context: application:production:9090
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+X-XSS-Protection: 1
+X-Content-Type-Options: nosniff
+Set-Cookie: SESSION=38bc6355-a1e4-4585-a06a-462abc13925b; Path=/reports/; Secure; HttpOnly
+Content-Language: en-US
+

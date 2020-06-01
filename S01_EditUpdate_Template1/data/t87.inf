@@ -1,0 +1,11 @@
+[t87]
+FileName1=t87_ec.min-159a716b40399743119ee2fb91783197.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/easychart/ec.min-159a716b40399743119ee2fb91783197.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_87.xml
+RequestHeaderFile=t87_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t87_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

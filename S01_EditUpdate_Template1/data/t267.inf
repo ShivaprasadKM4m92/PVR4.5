@@ -1,0 +1,11 @@
+[t267]
+FileName1=t267_websocket.html
+URL1=https://pvr-perf.rxlogix.com/reports/stomp/192/17i2genx/websocket
+Total=1
+ContentType=
+SnapshotXmlFile=snapshot_267.xml
+RequestHeaderFile=t267_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t267_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

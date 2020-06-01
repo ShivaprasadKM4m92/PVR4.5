@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Project\PVR\Scripts\S01_EditUpdate_Template1
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\project\pvr\scripts\s01_editupdate_template1\\logfile.log
+c:\project\pvr\scripts\s01_editupdate_template1\\combined_S01_EditUpdate_Template1.c
+c:\project\pvr\scripts\s01_editupdate_template1\\pre_cci.c
