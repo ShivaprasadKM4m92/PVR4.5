@@ -1,0 +1,11 @@
+[t136]
+FileName1=t136_column-view-lib-bd7bc6ac60142802df527fb4fdd3a579.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/column-view-lib-bd7bc6ac60142802df527fb4fdd3a579.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_136.xml
+RequestHeaderFile=t136_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t136_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

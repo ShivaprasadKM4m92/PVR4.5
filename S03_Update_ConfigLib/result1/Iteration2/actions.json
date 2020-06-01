@@ -1,0 +1,174 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP18",
+                "stepName": "Url: auth",
+                "infFile": "t2.inf",
+                "time": 1591002486420
+            },
+            {
+                "stepId": "STEP19",
+                "stepName": "Submit Data: authenticate",
+                "infFile": "t4.inf",
+                "time": 1591002491382
+            },
+            {
+                "stepId": "STEP20",
+                "stepName": "Url: index_2",
+                "infFile": "t9.inf",
+                "time": 1591002494072
+            },
+            {
+                "stepId": "STEP21",
+                "stepName": "Url: tag",
+                "infFile": "t10.inf",
+                "time": 1591002495266
+            },
+            {
+                "stepId": "STEP22",
+                "stepName": "Url: {User_Id}_2",
+                "infFile": "t11.inf",
+                "time": 1591002496279
+            },
+            {
+                "stepId": "STEP23",
+                "stepName": "Url: configurations",
+                "infFile": "t12.inf",
+                "time": 1591002496981
+            },
+            {
+                "stepId": "STEP24",
+                "stepName": "Url: configurations_2",
+                "infFile": "t13.inf",
+                "time": 1591002497931
+            },
+            {
+                "stepId": "STEP25",
+                "stepName": "Url: {ReportId}",
+                "infFile": "t14.inf",
+                "time": 1591002501379
+            },
+            {
+                "stepId": "STEP26",
+                "stepName": "Submit Data: run",
+                "infFile": "t33.inf",
+                "time": 1591002508400
+            },
+            {
+                "stepId": "STEP27",
+                "stepName": "Url: {User_Id}_4",
+                "infFile": "t34.inf",
+                "time": 1591002510221
+            },
+            {
+                "stepId": "STEP28",
+                "stepName": "Url: executionStatus",
+                "infFile": "t35.inf",
+                "time": 1591002510749
+            },
+            {
+                "stepId": "STEP29",
+                "stepName": "Url: index_3",
+                "infFile": "t36.inf",
+                "time": 1591002511682
+            },
+            {
+                "stepId": "STEP30",
+                "stepName": "Url: tag_2",
+                "infFile": "t37.inf",
+                "time": 1591002512395
+            },
+            {
+                "stepId": "STEP31",
+                "stepName": "Url: {User_Id}_5",
+                "infFile": "t38.inf",
+                "time": 1591002513405
+            },
+            {
+                "stepId": "STEP32",
+                "stepName": "Url: configurations_3",
+                "infFile": "t39.inf",
+                "time": 1591002514048
+            },
+            {
+                "stepId": "STEP33",
+                "stepName": "Url: configurations_4",
+                "infFile": "t40.inf",
+                "time": 1591002514873
+            },
+            {
+                "stepId": "STEP34",
+                "stepName": "Url: logout",
+                "infFile": "t41.inf",
+                "time": 1591002516290
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "S03_T01_OpenApplication",
+                "rawStartTime": 1591002485742,
+                "rawEndTime": 1591002486809,
+                "thinkTime": 0.0,
+                "wastedTime": 0.01279139518737793
+            },
+            {
+                "transactionName": "S03_T02_Login",
+                "rawStartTime": 1591002486814,
+                "rawEndTime": 1591002493178,
+                "thinkTime": 0.0,
+                "wastedTime": 0.037195444107055667
+            },
+            {
+                "transactionName": "S03_T03_NavigateAdhocReport_ConfigurationLibrary",
+                "rawStartTime": 1591002493217,
+                "rawEndTime": 1591002497099,
+                "thinkTime": 0.0,
+                "wastedTime": 0.07663846015930176
+            },
+            {
+                "transactionName": "S03_T04_Search",
+                "rawStartTime": 1591002497138,
+                "rawEndTime": 1591002497940,
+                "thinkTime": 0.0,
+                "wastedTime": 0.011853694915771485
+            },
+            {
+                "transactionName": "S03_T05_EditReportName",
+                "rawStartTime": 1591002497972,
+                "rawEndTime": 1591002507139,
+                "thinkTime": 0.0,
+                "wastedTime": 0.1081399917602539
+            },
+            {
+                "transactionName": "S03_T06_UpdateChanges_Run",
+                "rawStartTime": 1591002507171,
+                "rawEndTime": 1591002510841,
+                "thinkTime": 0.0,
+                "wastedTime": 0.06233096122741699
+            },
+            {
+                "transactionName": "S03_T07_NavigateAdhocReport_ConfigurationLibrary",
+                "rawStartTime": 1591002510887,
+                "rawEndTime": 1591002514053,
+                "thinkTime": 0.0,
+                "wastedTime": 0.08070182800292969
+            },
+            {
+                "transactionName": "S03_T08_ClearFilter",
+                "rawStartTime": 1591002514185,
+                "rawEndTime": 1591002514888,
+                "thinkTime": 0.0,
+                "wastedTime": 0.014669418334960938
+            },
+            {
+                "transactionName": "S03_T09_Logout",
+                "rawStartTime": 1591002514942,
+                "rawEndTime": 1591002516305,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0194399356842041
+            }
+        ]
+    }
+]

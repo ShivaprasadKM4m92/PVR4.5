@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Project\PVR\Scripts\S03_Update_ConfigLib
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\project\pvr\scripts\s03_update_configlib\\logfile.log
+c:\project\pvr\scripts\s03_update_configlib\\combined_S03_Update_ConfigLib.c
+c:\project\pvr\scripts\s03_update_configlib\\pre_cci.c

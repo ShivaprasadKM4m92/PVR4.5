@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VugenScriptMetadata>
+  <ScriptName>S03_Update_ConfigLib</ScriptName>
+  <Protocol>Web - HTTP/HTML</Protocol>
+  <ActionFiles>
+    <FileEntry Name="vuser_init.c" Filter="2" />
+    <FileEntry Name="Action.c" Filter="2" />
+    <FileEntry Name="vuser_end.c" Filter="2" />
+  </ActionFiles>
+  <GeneralFiles>
+    <FileEntry Name="S03_Update_ConfigLib.usr" Filter="4" />
+    <FileEntry Name="default.cfg" Filter="4" />
+    <FileEntry Name="default.usp" Filter="4" />
+    <FileEntry Name="S03_Update_ConfigLib.prm" Filter="2" />
+    <FileEntry Name="globals.h" Filter="2" />
+    <FileEntry Name="ConfigLibrary.dat" Filter="2" />
+    <FileEntry Name="LoginDetails.dat" Filter="2" />
+    <FileEntry Name="ProductName.dat" Filter="2" />
+    <FileEntry Name="URL.dat" Filter="2" />
+    <FileEntry Name="combined_S03_Update_ConfigLib.c" Filter="2" />
+    <FileEntry Name="pre_cci.c" Filter="2" />
+    <FileEntry Name="101995799441.idx" Filter="1" />
+    <FileEntry Name="10199579944_57N.849.idx" Filter="1" />
+    <FileEntry Name="10199579944_6ks.129.idx" Filter="1" />
+    <FileEntry Name="10199579944_dmh.41.idx" Filter="1" />
+    <FileEntry Name="10199579944_Lnx.481.idx" Filter="1" />
+    <FileEntry Name="10199579944_MfS.447.idx" Filter="1" />
+    <FileEntry Name="10199579944_n70.619.idx" Filter="1" />
+    <FileEntry Name="10199579944_pvV.863.idx" Filter="1" />
+    <FileEntry Name="10199579944_TL8.677.idx" Filter="1" />
+    <FileEntry Name="10199579944_u1K.313.idx" Filter="1" />
+    <FileEntry Name="149162652441.idx" Filter="1" />
+    <FileEntry Name="236547724441.idx" Filter="1" />
+    <FileEntry Name="237555238441.idx" Filter="1" />
+    <FileEntry Name="Bookmarks.xml" Filter="1" />
+    <FileEntry Name="Breakpoints.xml" Filter="1" />
+    <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
+    <FileEntry Name="custom_body_variables.txt" Filter="1" />
+    <FileEntry Name="Description.dat" Filter="1" />
+    <FileEntry Name="logfile.log" Filter="1" />
+    <FileEntry Name="lrw_custom_body.h" Filter="1" />
+    <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrv_cmd.txt" Filter="1" />
+    <FileEntry Name="options.txt" Filter="1" />
+    <FileEntry Name="output.bak" Filter="1" />
+    <FileEntry Name="output.txt" Filter="1" />
+    <FileEntry Name="OutputColoringDatabase.json" Filter="1" />
+    <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
+    <FileEntry Name="ReporterId.dat" Filter="1" />
+    <FileEntry Name="S03_Update_ConfigLib.c.pickle" Filter="1" />
+    <FileEntry Name="S03_Update_ConfigLib.ci" Filter="1" />
+    <FileEntry Name="S03_Update_ConfigLib.prm.bak" Filter="1" />
+    <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
+    <FileEntry Name="ThumbnailsCache.tmp" Filter="1" />
+    <FileEntry Name="TransactionsData.db" Filter="1" />
+    <FileEntry Name="UserTasks.xml" Filter="1" />
+    <FileEntry Name="data\" Filter="1" />
+    <FileEntry Name="result1\" Filter="1" />
+  </GeneralFiles>
+</VugenScriptMetadata>

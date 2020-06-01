@@ -1,0 +1,11 @@
+[t55]
+FileName1=t55_index.json
+URL1=https://pvr-perf.rxlogix.com/reports/actionItemRest/index?length=5&start=0&sort=dueDate&direction=asc
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_55.xml
+RequestHeaderFile=t55_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t55_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

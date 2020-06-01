@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HTTPSnapshot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="47">
+  <HTTPTask id="49" url="https://pvr-perf.rxlogix.com/reports/assets/i18n/dataTables_en.json" origin="Primary" startDateTime="2020-06-01T14:37:20.318+05:30" startTime="15076">
+    <HTTPRequest method="GET" />
+  </HTTPTask>
+</HTTPSnapshot>

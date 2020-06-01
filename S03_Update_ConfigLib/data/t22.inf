@@ -1,0 +1,11 @@
+[t22]
+FileName1=t22_theme_gradient_blue-8a7bc35778c66c2a34b346cddd101ad7.css
+URL1=https://pvr-perf.rxlogix.com/reports/assets/theme_gradient_blue-8a7bc35778c66c2a34b346cddd101ad7.css
+Total=1
+ContentType=text/css
+SnapshotXmlFile=snapshot_22.xml
+RequestHeaderFile=t22_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t22_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
