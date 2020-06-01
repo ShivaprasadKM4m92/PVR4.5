@@ -1,0 +1,4 @@
+//# sourceMappingURL=pvr-common-util.js.map
+var pvr=pvr||{};
+pvr.common_util=function(){var f=function(){return"/reports"},e=function(){return f()+"/assets/app"},b=function(a,c){b.tmpl_cache||(b.tmpl_cache={});if(!b.tmpl_cache[a]){var d=e()+"/hbs-templates",g="";$.ajax({url:d+"/"+a+".hbs",method:"GET",async:!1,success:function(a){g=a}});b.tmpl_cache[a]=Handlebars.compile(g)}return b.tmpl_cache[a](c)},c=function(a){c.tmpl_cache||(c.tmpl_cache={});if(!c.tmpl_cache[a]){var b=e()+"/hbs-templates",d="";$.ajax({url:b+"/"+a+".hbs",method:"GET",async:!1,success:function(a){d=
+a}});c.tmpl_cache[a]=d}return c.tmpl_cache[a]};return{base_url:f,base_assets_url:e,render_tmpl:b,hbs_partial:c,preserve_line_break:function(a){return a.replace(/\n/g,"<br>").replace(/  /g,"&nbsp; ")}}}();

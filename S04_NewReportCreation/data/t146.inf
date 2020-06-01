@@ -1,0 +1,11 @@
+[t146]
+FileName1=t146_reportFieldsForQueryValue.json
+URL1=https://pvr-perf.rxlogix.com/reports/queryRest/reportFieldsForQueryValue?name=doseRegimensPackageId&_=1591009327430
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_146.xml
+RequestHeaderFile=t146_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t146_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

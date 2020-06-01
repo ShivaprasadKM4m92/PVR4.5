@@ -1,0 +1,9 @@
+[t104]
+SnapshotXmlFile=snapshot_104.xml
+FileName1=t104.png
+URL1=https://pvr-perf.rxlogix.com/reports/assets/icons/email.png
+Total=1
+RequestHeaderFile=t104_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t104_ResponseHeader.txt
+ContentType=image/png

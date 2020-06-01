@@ -1,0 +1,11 @@
+[t22]
+FileName1=t22_addWidgetModal-bc44f3ca86f2d9d04cffae53d3e60ffe.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/dashboard/addWidgetModal-bc44f3ca86f2d9d04cffae53d3e60ffe.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_22.xml
+RequestHeaderFile=t22_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t22_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

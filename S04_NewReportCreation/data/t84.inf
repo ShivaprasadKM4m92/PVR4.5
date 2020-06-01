@@ -1,0 +1,11 @@
+[t84]
+FileName1=t84_dictionaryMultiSearch-6eb3fdf8ab4860190935c80f93a691c7.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/dictionaryMultiSearch-6eb3fdf8ab4860190935c80f93a691c7.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_84.xml
+RequestHeaderFile=t84_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t84_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
