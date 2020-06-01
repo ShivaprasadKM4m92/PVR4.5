@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Mon, 01 Jun 2020 13:28:18 GMT
+Content-Type: application/javascript;charset=UTF-8
+Content-Length: 2239
+Connection: keep-alive
+X-Frame-Options: DENY
+Last-Modified: Mon, 23 Mar 2020 05:55:20 GMT
+ETag: "app/addSection-9123c19b5cc5be0ec58f58d57e123c1f.js"
+Vary: Accept-Encoding
+Cache-Control: public, max-age=31536000
+Content-Encoding: gzip
+

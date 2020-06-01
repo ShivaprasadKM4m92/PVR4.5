@@ -1,0 +1,11 @@
+[t179]
+FileName1=t179_websocket.html
+URL1=https://pvr-perf.rxlogix.com/reports/stomp/978/pu7q2ep5/websocket
+Total=1
+ContentType=
+SnapshotXmlFile=snapshot_179.xml
+RequestHeaderFile=t179_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t179_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

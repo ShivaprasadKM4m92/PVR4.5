@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Mon, 01 Jun 2020 13:28:19 GMT
+Content-Type: text/html;charset=UTF-8
+Content-Length: 1985
+Connection: keep-alive
+X-Frame-Options: DENY
+Last-Modified: Mon, 23 Mar 2020 05:56:10 GMT
+ETag: "plugin/dictionary/column-view-64c0085c608464f4a6f66e33d985ae27.html"
+Vary: Accept-Encoding
+Cache-Control: no-cache
+Content-Encoding: gzip
+

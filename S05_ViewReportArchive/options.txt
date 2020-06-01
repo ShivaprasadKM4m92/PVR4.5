@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Project\PVR\Scripts\S05_ViewReportArchive
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\project\pvr\scripts\s05_viewreportarchive\\logfile.log
+c:\project\pvr\scripts\s05_viewreportarchive\\combined_S05_ViewReportArchive.c
+c:\project\pvr\scripts\s05_viewreportarchive\\pre_cci.c

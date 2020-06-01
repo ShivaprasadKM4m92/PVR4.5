@@ -1,0 +1,11 @@
+[t81]
+FileName1=t81_list.json
+URL1=https://pvr-perf.rxlogix.com/reports/workflowState/list
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_81.xml
+RequestHeaderFile=t81_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t81_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

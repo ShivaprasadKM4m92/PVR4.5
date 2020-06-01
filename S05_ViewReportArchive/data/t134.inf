@@ -1,0 +1,11 @@
+[t134]
+FileName1=t134_34594.pdf
+URL1=https://pvr-perf.rxlogix.com/reports/report/show/34594?outputFormat=PDF&isInDraftMode=false&paperReport=false
+Total=1
+ContentType=application/pdf
+SnapshotXmlFile=snapshot_134.xml
+RequestHeaderFile=t134_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t134_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

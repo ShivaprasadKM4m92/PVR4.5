@@ -1,0 +1,9 @@
+[t117]
+SnapshotXmlFile=snapshot_117.xml
+FileName1=t117.png
+URL1=https://pvr-perf.rxlogix.com/reports/assets/powerpoint-icon-a8fb8a56a2d6cff05e3e101d025fd3eb.png
+Total=1
+RequestHeaderFile=t117_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t117_ResponseHeader.txt
+ContentType=image/png

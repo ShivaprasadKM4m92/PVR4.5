@@ -1,0 +1,12 @@
+[hosts]
+accounts.google.com=
+clientservices.googleapis.com=
+pvr-perf.rxlogix.com=
+www.googleapis.com=
+ssl.gstatic.com=
+oauthaccountmanager.googleapis.com=
+content-autofill.googleapis.com=
+clients4.google.com=
+update.googleapis.com=
+safebrowsing.googleapis.com=
+sb-ssl.google.com=
