@@ -1,0 +1,11 @@
+[t41]
+FileName1=t41_jquery.app-782d8f87ac279a019b37b18a315654b2.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/jquery.app-782d8f87ac279a019b37b18a315654b2.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_41.xml
+RequestHeaderFile=t41_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t41_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

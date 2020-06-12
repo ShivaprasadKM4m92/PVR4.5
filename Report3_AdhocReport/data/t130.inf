@@ -1,0 +1,11 @@
+[t130]
+FileName1=t130_reportFieldsForQueryValue.json
+URL1=https://pvr-perf.rxlogix.com/reports/queryRest/reportFieldsForQueryValue?name=patInfoPatientAgeYears&_=1591788800762
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_130.xml
+RequestHeaderFile=t130_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t130_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,11 @@
+[t19]
+FileName1=t19_rxapplication-eebebbeb632a82e8608209da3ab42ef2.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/rxapplication-eebebbeb632a82e8608209da3ab42ef2.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_19.xml
+RequestHeaderFile=t19_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t19_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

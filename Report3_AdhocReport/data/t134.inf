@@ -1,0 +1,11 @@
+[t134]
+FileName1=t134_keep-alive.json
+URL1=https://pvr-perf.rxlogix.com/reports/keep-alive?_=1591788800766
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_134.xml
+RequestHeaderFile=t134_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t134_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

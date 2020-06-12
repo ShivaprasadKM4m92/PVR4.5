@@ -1,0 +1,11 @@
+[t146]
+FileName1=t146_filter_panel.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/hbs-templates/filter_panel.hbs
+Total=1
+ContentType=
+SnapshotXmlFile=snapshot_146.xml
+RequestHeaderFile=t146_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t146_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,1 @@
+[{"value":null,"operator":"GREATER_THAN_OR_EQUAL","field":"patInfoPatientAgeYears","key":"1","specialKeyValue":null},{"value":null,"operator":"LESS_THAN_OR_EQUAL","field":"patInfoPatientAgeYears","key":"2","specialKeyValue":null}]

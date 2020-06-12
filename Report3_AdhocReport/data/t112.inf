@@ -1,0 +1,11 @@
+[t112]
+FileName1=t112_skin.min.css
+URL1=https://pvr-perf.rxlogix.com/reports/assets/tinymce/skins/lightgray/skin.min.css
+Total=1
+ContentType=text/css
+SnapshotXmlFile=snapshot_112.xml
+RequestHeaderFile=t112_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t112_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

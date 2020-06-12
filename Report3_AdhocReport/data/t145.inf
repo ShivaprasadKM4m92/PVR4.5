@@ -1,0 +1,11 @@
+[t145]
+FileName1=t145_datepicker.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/hbs-templates/datepicker.hbs
+Total=1
+ContentType=
+SnapshotXmlFile=snapshot_145.xml
+RequestHeaderFile=t145_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t145_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

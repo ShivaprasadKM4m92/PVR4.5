@@ -1,0 +1,11 @@
+[t153]
+FileName1=t153_websocket.html
+URL1=https://pvr-perf.rxlogix.com/reports/stomp/311/xbt72t_w/websocket
+Total=1
+ContentType=
+SnapshotXmlFile=snapshot_153.xml
+RequestHeaderFile=t153_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t153_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,11 @@
+[t119]
+FileName1=t119_getTemplateList.json
+URL1=https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateList?term=&page=1&max=30&oldSelectedValue=&_=1591788800752
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_119.xml
+RequestHeaderFile=t119_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t119_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

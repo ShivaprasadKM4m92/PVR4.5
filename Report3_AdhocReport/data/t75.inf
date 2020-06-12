@@ -1,0 +1,11 @@
+[t75]
+FileName1=t75_studyDrugs-9650caca7b2eaad47de57af7bbefe066.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/studyDrugs-9650caca7b2eaad47de57af7bbefe066.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_75.xml
+RequestHeaderFile=t75_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t75_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

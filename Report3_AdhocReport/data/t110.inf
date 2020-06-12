@@ -1,0 +1,11 @@
+[t110]
+FileName1=t110_column-view-lib-bd7bc6ac60142802df527fb4fdd3a579.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/column-view-lib-bd7bc6ac60142802df527fb4fdd3a579.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_110.xml
+RequestHeaderFile=t110_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t110_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
