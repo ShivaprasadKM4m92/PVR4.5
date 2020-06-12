@@ -1,0 +1,11 @@
+[t133]
+FileName1=t133_pvr-filter-util-f694134bedd0ac0ffc46cd24998d5f54.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/utils/pvr-filter-util-f694134bedd0ac0ffc46cd24998d5f54.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_133.xml
+RequestHeaderFile=t133_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t133_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

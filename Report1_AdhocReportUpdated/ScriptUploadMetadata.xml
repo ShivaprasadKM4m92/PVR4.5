@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VugenScriptMetadata>
+  <ScriptName>Report1_AdhocReportUpdated</ScriptName>
+  <Protocol>Web - HTTP/HTML</Protocol>
+  <ActionFiles>
+    <FileEntry Name="vuser_init.c" Filter="2" />
+    <FileEntry Name="Action.c" Filter="2" />
+    <FileEntry Name="vuser_end.c" Filter="2" />
+  </ActionFiles>
+  <GeneralFiles>
+    <FileEntry Name="Report1_AdhocReportUpdated.usr" Filter="4" />
+    <FileEntry Name="default.cfg" Filter="4" />
+    <FileEntry Name="default.usp" Filter="4" />
+    <FileEntry Name="Report1_AdhocReportUpdated.prm" Filter="2" />
+    <FileEntry Name="globals.h" Filter="2" />
+    <FileEntry Name="DateRange.dat" Filter="2" />
+    <FileEntry Name="CaseLineListStudy_Temp.dat" Filter="2" />
+    <FileEntry Name="LoginDetails.dat" Filter="2" />
+    <FileEntry Name="ReportName.dat" Filter="2" />
+    <FileEntry Name="ProductDetails.dat" Filter="2" />
+    <FileEntry Name="URL.dat" Filter="2" />
+    <FileEntry Name="combined_Report1_AdhocReportUpdated.c" Filter="2" />
+    <FileEntry Name="pre_cci.c" Filter="2" />
+    <FileEntry Name="106999684441.idx" Filter="1" />
+    <FileEntry Name="10699968444_9sS.897.idx" Filter="1" />
+    <FileEntry Name="10699968444_r6Q.799.idx" Filter="1" />
+    <FileEntry Name="170697060441.idx" Filter="1" />
+    <FileEntry Name="202990286441.idx" Filter="1" />
+    <FileEntry Name="209359329441.idx" Filter="1" />
+    <FileEntry Name="20935932944_dCr.800.idx" Filter="1" />
+    <FileEntry Name="20935932944_YOO.898.idx" Filter="1" />
+    <FileEntry Name="256106198441.idx" Filter="1" />
+    <FileEntry Name="65930439441.idx" Filter="1" />
+    <FileEntry Name="Bookmarks.xml" Filter="1" />
+    <FileEntry Name="Breakpoints.xml" Filter="1" />
+    <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
+    <FileEntry Name="custom_body_variables.txt" Filter="1" />
+    <FileEntry Name="logfile.log" Filter="1" />
+    <FileEntry Name="lrw_custom_body.h" Filter="1" />
+    <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrv_cmd.txt" Filter="1" />
+    <FileEntry Name="options.txt" Filter="1" />
+    <FileEntry Name="output.bak" Filter="1" />
+    <FileEntry Name="output.txt" Filter="1" />
+    <FileEntry Name="OutputColoringDatabase.json" Filter="1" />
+    <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
+    <FileEntry Name="Report1_AdhocReport.prm.bak" Filter="1" />
+    <FileEntry Name="Report1_AdhocReportUpdated.c.pickle" Filter="1" />
+    <FileEntry Name="Report1_AdhocReportUpdated.ci" Filter="1" />
+    <FileEntry Name="Report1_AdhocReportUpdated.prm.bak" Filter="1" />
+    <FileEntry Name="S01a_AdhocReport.prm.bak" Filter="1" />
+    <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
+    <FileEntry Name="ThumbnailsCache.tmp" Filter="1" />
+    <FileEntry Name="TransactionsData.db" Filter="1" />
+    <FileEntry Name="UserTasks.xml" Filter="1" />
+    <FileEntry Name="data\" Filter="1" />
+    <FileEntry Name="result1\" Filter="1" />
+  </GeneralFiles>
+</VugenScriptMetadata>

@@ -1,0 +1,11 @@
+[t145]
+FileName1=t145_websocket.html
+URL1=https://pvr-perf.rxlogix.com/reports/stomp/026/z8e_se8a/websocket
+Total=1
+ContentType=
+SnapshotXmlFile=snapshot_145.xml
+RequestHeaderFile=t145_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t145_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

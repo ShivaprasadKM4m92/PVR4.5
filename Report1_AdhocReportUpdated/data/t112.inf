@@ -1,0 +1,11 @@
+[t112]
+FileName1=t112_editor-687e49e2901f89d1e65cc77026ec0a3e.css
+URL1=https://pvr-perf.rxlogix.com/reports/assets/editor-687e49e2901f89d1e65cc77026ec0a3e.css
+Total=1
+ContentType=text/css
+SnapshotXmlFile=snapshot_112.xml
+RequestHeaderFile=t112_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t112_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

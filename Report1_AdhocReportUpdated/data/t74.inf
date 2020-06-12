@@ -1,0 +1,11 @@
+[t74]
+FileName1=t74_disableAutocomplete-4b64c67585270722b33b13c06f9e5327.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/disableAutocomplete-4b64c67585270722b33b13c06f9e5327.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_74.xml
+RequestHeaderFile=t74_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t74_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

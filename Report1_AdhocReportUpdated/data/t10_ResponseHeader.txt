@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Wed, 10 Jun 2020 08:54:52 GMT
+Content-Type: font/woff2;charset=UTF-8
+Content-Length: 47049
+Connection: keep-alive
+X-Frame-Options: DENY
+Last-Modified: Mon, 23 Mar 2020 05:56:12 GMT
+ETag: "OpenSans-Regular-55835483c304eaa8477fea2c36abba17.woff2"
+Vary: Accept-Encoding
+Cache-Control: public, max-age=31536000
+Content-Encoding: gzip
+

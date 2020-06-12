@@ -1,0 +1,14 @@
+GET /reports/template/customSQLValuesForTemplate?templateId=23823&_=1591779480716 HTTP/1.1
+Host: pvr-perf.rxlogix.com
+Connection: keep-alive
+Accept: application/json, text/javascript, */*; q=0.01
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36
+X-Requested-With: XMLHttpRequest
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://pvr-perf.rxlogix.com/reports/configuration/create
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: SESSION=d484856e-d613-4b99-a84b-32078eb7cae4
+

@@ -1,0 +1,11 @@
+[t63]
+FileName1=t63_configurationCommon-1c4332f2cce7a50d32a9bb863277106f.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/configuration/configurationCommon-1c4332f2cce7a50d32a9bb863277106f.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_63.xml
+RequestHeaderFile=t63_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t63_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

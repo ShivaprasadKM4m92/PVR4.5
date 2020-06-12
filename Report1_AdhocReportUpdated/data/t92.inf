@@ -1,0 +1,11 @@
+[t92]
+FileName1=t92_fetchEvaluateCaseDatesForDatasource.json
+URL1=https://pvr-perf.rxlogix.com/reports/configurationRest/fetchEvaluateCaseDatesForDatasource?showAllversions=true&dataSourceId=6594
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_92.xml
+RequestHeaderFile=t92_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t92_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
