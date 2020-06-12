@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Project\PVR\Scripts\NewScenarios\Report2_AdhocReport
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\project\pvr\scripts\newscenarios\report2_adhocreport\\logfile.log
+c:\project\pvr\scripts\newscenarios\report2_adhocreport\\combined_Report2_AdhocReport.c
+c:\project\pvr\scripts\newscenarios\report2_adhocreport\\pre_cci.c

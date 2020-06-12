@@ -1,0 +1,11 @@
+[t60]
+FileName1=t60_dateRange-114c7d1894185a1583d21cb5f436038a.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/configuration/dateRange-114c7d1894185a1583d21cb5f436038a.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_60.xml
+RequestHeaderFile=t60_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t60_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

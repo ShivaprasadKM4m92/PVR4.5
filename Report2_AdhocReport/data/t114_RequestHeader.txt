@@ -1,0 +1,17 @@
+POST /reports/productDictionary/getSelectedItem?productId=101947&dataSource=pva&dictionaryLevel=3&currentLang=en HTTP/1.1
+Host: pvr-perf.rxlogix.com
+Connection: keep-alive
+Content-Length: 0
+Accept: application/json, text/javascript, */*; q=0.01
+X-CSRF-TOKEN: cb42387b-a022-435f-bdf7-1dd8b1d9bc31
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36
+X-Requested-With: XMLHttpRequest
+Origin: https://pvr-perf.rxlogix.com
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://pvr-perf.rxlogix.com/reports/configuration/create
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: SESSION=432cfc3e-0dcc-449b-ae82-b2bb94ae646e
+

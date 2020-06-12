@@ -1,0 +1,11 @@
+[t56]
+FileName1=t56_websocket.html
+URL1=https://pvr-perf.rxlogix.com/reports/stomp/922/qexs3mpk/websocket
+Total=1
+ContentType=
+SnapshotXmlFile=snapshot_56.xml
+RequestHeaderFile=t56_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t56_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,11 @@
+[t42]
+FileName1=t42_customise-jquery-idleTimeout-6286fe026bdf78a6c38a29cfd8d979c8.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/jquery/customise-jquery-idleTimeout-6286fe026bdf78a6c38a29cfd8d979c8.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_42.xml
+RequestHeaderFile=t42_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t42_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

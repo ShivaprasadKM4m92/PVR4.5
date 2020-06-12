@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Wed, 10 Jun 2020 10:37:57 GMT
+Content-Type: application/javascript;charset=UTF-8
+Content-Length: 600
+Connection: keep-alive
+X-Frame-Options: DENY
+Last-Modified: Mon, 23 Mar 2020 05:55:50 GMT
+ETag: "app/deleteModal-68b8e74283c8070801d2afbaf40831a1.js"
+Vary: Accept-Encoding
+Cache-Control: public, max-age=31536000
+Content-Encoding: gzip
+

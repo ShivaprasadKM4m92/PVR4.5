@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Wed, 10 Jun 2020 10:36:43 GMT
+Content-Type: text/css;charset=UTF-8
+Content-Length: 81412
+Connection: keep-alive
+X-Frame-Options: DENY
+Last-Modified: Mon, 23 Mar 2020 05:54:10 GMT
+ETag: "application-3d100486bb60d4ee3003d4ee9f8d893e.css"
+Vary: Accept-Encoding
+Cache-Control: public, max-age=31536000
+Content-Encoding: gzip
+
