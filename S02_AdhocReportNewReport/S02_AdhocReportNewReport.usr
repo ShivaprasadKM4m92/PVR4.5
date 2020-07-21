@@ -1,0 +1,72 @@
+[General]
+Type=Multi
+DefaultCfg=default.cfg
+ParameterFile=S02_AdhocReportNewReport.prm
+GlobalParameterFile=
+NewFunctionHeader=1
+RunType=cci
+ActionLogicExt=action_logic
+LastActiveAction=Action
+MajorVersion=2020
+MinorVersion=0
+ActiveTypes=QTWeb
+GenerateTypes=QTWeb
+AdditionalTypes=QTWeb
+DevelopTool=Vugen
+LastModifyVer=2020.0.0.0
+DFERebrandFlag=Done
+ParamLeftBrace={
+ParamRightBrace=}
+ScriptLanguage=C
+LastCodeGenerationVer=2020.0.0.0
+DisableRegenerate=0
+Encoding=UTF8
+Description=
+ScriptLocale=en-IN
+[Actions]
+vuser_init=vuser_init.c
+Action=Action.c
+vuser_end=vuser_end.c
+[RunLogicFiles]
+Default Profile=default.usp
+[VuserProfiles]
+Profiles=Default Profile
+[CfgFiles]
+Default Profile=default.cfg
+[ExtraFiles]
+globals.h=
+[Modified Actions]
+vuser_init=0
+Action=1
+vuser_end=0
+[Recorded Actions]
+vuser_init=0
+Action=1
+vuser_end=0
+[Replayed Actions]
+vuser_init=1
+Action=1
+vuser_end=1
+[Interpreters]
+vuser_init=cci
+Action=cci
+vuser_end=cci
+[TransactionsOrder]
+Order="S02_T01_OpenApplication__*delimiter*__S02_T02_Login__*delimiter*__S02_T03_NavigateAdhocReport_NewReport__*delimiter*__S02_T04_ClickProductLookUp__*delimiter*__S02_T05_SearchProduct__*delimiter*__S02_T06_SelectProduct__*delimiter*__S02_T07_AddSections_1__*delimiter*__S02_T08_AddSections_2__*delimiter*__S02_T09_AddSections_3__*delimiter*__S02_T10_SaveAndRun__*delimiter*__S02_T11_Logout"
+[StateManagement]
+LastReplayStatus=1
+[ActiveReplay]
+LastReplayedRunName=result1
+ActiveRunName=result1
+[Transactions]
+S02_T01_OpenApplication=
+S02_T02_Login=
+S02_T03_NavigateAdhocReport_NewReport=
+S02_T04_ClickProductLookUp=
+S02_T05_SearchProduct=
+S02_T06_SelectProduct=
+S02_T07_AddSections_1=
+S02_T08_AddSections_2=
+S02_T09_AddSections_3=
+S02_T10_SaveAndRun=
+S02_T11_Logout=

@@ -1,0 +1,11 @@
+[t35]
+FileName1=t35_fuelux-58910ec6bd502e7c4aabf85922131616.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/fuelux/fuelux-58910ec6bd502e7c4aabf85922131616.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_35.xml
+RequestHeaderFile=t35_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t35_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

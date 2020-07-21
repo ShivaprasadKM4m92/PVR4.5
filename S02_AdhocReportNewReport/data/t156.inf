@@ -1,0 +1,11 @@
+[t156]
+FileName1=t156_poiInputsForTemplate.json
+URL1=https://pvr-perf.rxlogix.com/reports/template/poiInputsForTemplate?templateId=24902&_=1591009327439
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_156.xml
+RequestHeaderFile=t156_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t156_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

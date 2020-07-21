@@ -1,0 +1,43 @@
+Start auto log messages stack - Iteration 11.
+Action.c(1740): web_url("reportFieldsForQueryValue") was successful, 155 body bytes, 234 header bytes  	[MsgId: MMSG-26386]
+Action.c(1749): web_url("reportFieldsForQueryValue_2") started  	[MsgId: MMSG-26355]
+Action.c(1749): web_url("reportFieldsForQueryValue_2") was successful, 155 body bytes, 234 header bytes  	[MsgId: MMSG-26386]
+Action.c(1770): Notify: Transaction "S02_T07_AddSections_1" ended with a "Pass" status (Duration: 3.6315 Wasted Time: 0.0000).
+Action.c(1772): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1774): Notify: Transaction "S02_T08_AddSections_2" started.
+Action.c(1780): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(1780): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(1783): web_url("getTemplateList_2") started  	[MsgId: MMSG-26355]
+Action.c(1783): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateList?term=&page=1&max=30&oldSelectedValue=&_=1591009327423"  	[MsgId: MERR-26610]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 18.
+Action.c(652): web_url("latestAdhocReport") was successful, 1393 body bytes, 234 header bytes  	[MsgId: MMSG-26386]
+Action.c(664): web_url("{User_Id}") started  	[MsgId: MMSG-26355]
+Action.c(664): web_url("{User_Id}") was successful, 705 body bytes, 234 header bytes  	[MsgId: MMSG-26386]
+Action.c(690): web_url("index") started  	[MsgId: MMSG-26355]
+Action.c(690): web_url("index") was successful, 68 body bytes, 234 header bytes  	[MsgId: MMSG-26386]
+Action.c(702): web_url("dataTables_en.json") started  	[MsgId: MMSG-26355]
+Action.c(702): web_url("dataTables_en.json") was successful, 382 body bytes, 340 header bytes  	[MsgId: MMSG-26386]
+Action.c(714): web_url("latestPeriodicReport") started  	[MsgId: MMSG-26355]
+Action.c(714): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/periodicReportConfigurationRest/latestPeriodicReport?length=4&start=0"  	[MsgId: MERR-26610]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 16.
+Action.c(1556): Notify: Transaction "S02_T03_NavigateAdhocReport_NewReport" ended with a "Pass" status (Duration: 15.8294 Wasted Time: 0.0073).
+Action.c(1558): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1561): Notify: Transaction "S02_T04_ClickProductLookUp" started.
+Action.c(1563): Notify: Transaction "S02_T04_ClickProductLookUp" ended with a "Pass" status (Duration: 0.0000).
+Action.c(1565): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1567): Notify: Transaction "S02_T05_SearchProduct" started.
+Action.c(1569): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(1569): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(1572): web_add_auto_header("X-CSRF-TOKEN") started  	[MsgId: MMSG-26355]
+Action.c(1572): web_add_auto_header("X-CSRF-TOKEN") was successful  	[MsgId: MMSG-26392]
+Action.c(1575): web_submit_data("searchViews") started  	[MsgId: MMSG-26355]
+Action.c(1575): Error -26609: HTTP Status-Code=503 (Service Unavailable) for "https://pvr-perf.rxlogix.com/reports/productDictionary/searchViews"  	[MsgId: MERR-26609]
+End auto log messages stack.
+
+

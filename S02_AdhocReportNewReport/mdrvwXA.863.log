@@ -1,0 +1,444 @@
+Start auto log messages stack - Iteration 1.
+Action.c(469): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fullcalendar/fullcalendar-lang-all-e4e9be403fd4dc092b72c368c27e5d47.js" failed   [issued at Action.c(814)]  	[MsgId: MWAR-27760]
+Action.c(574): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/gridstack/gridstack.jQueryUI.min-5bd5204d23705e69adeb23742f04ff8c.js" failed   [issued at Action.c(814)]  	[MsgId: MWAR-27760]
+Action.c(583): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/pushNotification-3d08817200dceb0a405d9f7aefa3192f.js" failed   [issued at Action.c(814)]  	[MsgId: MWAR-27760]
+Action.c(601): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/jquery.core-2c7cdf128b42d849235dea8cadd879b8.js" failed   [issued at Action.c(814)]  	[MsgId: MWAR-27760]
+Action.c(736): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/actionItemRest/index?length=5&start=0&sort=dueDate&direction=asc" failed   [issued at Action.c(814)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(661): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fontawesome-webfont-af7ae505a9eed503f8b8e6982036873e.woff2?v=4.7.0" failed   [issued at Action.c(814)]  	[MsgId: MWAR-27760]
+Action.c(628): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/jquery/customise-jquery-idleTimeout-6286fe026bdf78a6c38a29cfd8d979c8.js" failed   [issued at Action.c(814)]  	[MsgId: MWAR-27760]
+Action.c(696): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportResultRest/latestAdhocReport?length=4&start=0" failed   [issued at Action.c(814)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(673): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/Material-Design-Iconic-Font-a2a1ba89e7f9d29f7d5aee76e8b9f7ab.woff?v=1.0.1" failed   [issued at Action.c(814)]  	[MsgId: MWAR-27760]
+Action.c(619): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/jquery.app-782d8f87ac279a019b37b18a315654b2.js" failed   [issued at Action.c(814)]  	[MsgId: MWAR-27760]
+Action.c(643): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fullcalendar.print-5e9985f0185898b586ec4820f63bb446.css" failed   [issued at Action.c(814)]  	[MsgId: MWAR-27760]
+Action.c(592): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/deleteModal-68b8e74283c8070801d2afbaf40831a1.js" failed   [issued at Action.c(814)]  	[MsgId: MWAR-27760]
+Action.c(709): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/88086?_=1591009293777" failed   [issued at Action.c(814)]  	[MsgId: MERR-27760]
+Action.c(749): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/i18n/dataTables_en.json" failed   [issued at Action.c(814)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(229): web_add_auto_header("User-Agent") was successful  	[MsgId: MMSG-26392]
+Action.c(233): Notify: Transaction "S02_T02_Login" started.
+Action.c(264): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(264): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(273): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(273): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(278): web_submit_data("authenticate") started  	[MsgId: MMSG-26355]
+Action.c(278): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/authenticate" failed  	[MsgId: MERR-27760]
+Action.c(278): Error -26377: No match found for the requested parameter "User_Id". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(278): Error -26366: "Text=Welcome" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(278): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(777): Registering web_url("dataTables_en.json_2") was successful  	[MsgId: MMSG-26390]
+Action.c(814): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(496): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/highcharts/highcharts-01ce2a5c16b4e040b95b02d8cf3ea23e.js" failed   [issued at Action.c(814)]  	[MsgId: MWAR-27760]
+Action.c(469): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fullcalendar/fullcalendar-lang-all-e4e9be403fd4dc092b72c368c27e5d47.js" failed   [issued at Action.c(814)]  	[MsgId: MWAR-27760]
+Action.c(532): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/highcharts/highcharts-more-31bca387194b423710d019dfa069474a.js" failed   [issued at Action.c(814)]  	[MsgId: MWAR-27760]
+Action.c(762): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/periodicReportConfigurationRest/latestPeriodicReport?length=4&start=0" failed   [issued at Action.c(814)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(574): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/gridstack/gridstack.jQueryUI.min-5bd5204d23705e69adeb23742f04ff8c.js" failed   [issued at Action.c(814)]  	[MsgId: MWAR-27760]
+Action.c(696): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportResultRest/latestAdhocReport?length=4&start=0" failed   [issued at Action.c(814)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(565): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/gridstack/gridstack.min-157675a5f94f1a18234a494030c5d8f0.js" failed   [issued at Action.c(814)]  	[MsgId: MWAR-27760]
+Action.c(736): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/actionItemRest/index?length=5&start=0&sort=dueDate&direction=asc" failed   [issued at Action.c(814)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(661): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fontawesome-webfont-af7ae505a9eed503f8b8e6982036873e.woff2?v=4.7.0" failed   [issued at Action.c(814)]  	[MsgId: MWAR-27760]
+Action.c(709): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/88141?_=1591009293777" failed   [issued at Action.c(814)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 3.
+Action.c(10): web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+Action.c(12): Notify: Transaction "S02_T01_OpenApplication" started.
+Action.c(63): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(63): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(73): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(73): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(78): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(78): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/auth" failed  	[MsgId: MERR-27760]
+Action.c(78): Error -26377: No match found for the requested parameter "csrf_tokenId". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(78): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(78): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(1670): lr_think_time: 18.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1672): Notify: Transaction "S02_T05_SearchProduct" started.
+Action.c(1674): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(1674): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(1677): web_add_auto_header("X-CSRF-TOKEN") started  	[MsgId: MMSG-26355]
+Action.c(1677): web_add_auto_header("X-CSRF-TOKEN") was successful  	[MsgId: MMSG-26392]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(1681): web_submit_data("searchViews") started  	[MsgId: MMSG-26355]
+Action.c(1681): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/productDictionary/searchViews" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(10): web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+Action.c(12): Notify: Transaction "S02_T01_OpenApplication" started.
+Action.c(63): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(63): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(73): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(73): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(78): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(78): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/auth" failed  	[MsgId: MERR-27760]
+Action.c(78): Error -26377: No match found for the requested parameter "csrf_tokenId". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(78): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(78): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+Action.c(229): web_add_auto_header("User-Agent") was successful  	[MsgId: MMSG-26392]
+Action.c(233): Notify: Transaction "S02_T02_Login" started.
+Action.c(264): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(264): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(273): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(273): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(278): web_submit_data("authenticate") started  	[MsgId: MMSG-26355]
+Action.c(278): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/authenticate" failed  	[MsgId: MERR-27760]
+Action.c(278): Error -26377: No match found for the requested parameter "User_Id". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(278): Error -26366: "Text=Welcome" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(278): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 3.
+Action.c(1808): web_url("poiInputsForTemplate") was successful, 37 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(1818): web_url("getQueryList") started  	[MsgId: MMSG-26355]
+Action.c(1818): web_url("getQueryList") was successful, 1126 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(1828): web_url("queryExpressionValuesForQuery") started  	[MsgId: MMSG-26355]
+Action.c(1828): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/queryExpressionValuesForQuery?queryId=29556&_=1591009327417" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(816): Notify: Transaction "S02_T02_Login" ended with a "Pass" status (Duration: 110.2936 Wasted Time: 0.0017).
+Action.c(818): lr_think_time: 18.00 seconds (recorded think time was 3.00 seconds).
+Action.c(820): Notify: Transaction "S02_T03_NavigateAdhocReport_NewReport" started.
+Action.c(841): web_reg_save_param_regexp started  	[MsgId: MMSG-26355]
+Action.c(841): Registering web_reg_save_param_regexp was successful  	[MsgId: MMSG-26390]
+Action.c(849): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(849): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(854): web_url("create") started  	[MsgId: MMSG-26355]
+Action.c(854): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/configuration/create" failed  	[MsgId: MERR-27760]
+Action.c(854): Error -35049: No match found for the requested parameter "Csrf_TokenId". Check whether the requested regular expression exists in the response data  	[MsgId: MERR-35049]
+Action.c(854): Error -26366: "Text=PV Reports - Adhoc Reports" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(854): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(816): Notify: Transaction "S02_T02_Login" ended with a "Pass" status (Duration: 93.6000 Wasted Time: 0.0014).
+Action.c(818): lr_think_time: 18.00 seconds (recorded think time was 3.00 seconds).
+Action.c(820): Notify: Transaction "S02_T03_NavigateAdhocReport_NewReport" started.
+Action.c(841): web_reg_save_param_regexp started  	[MsgId: MMSG-26355]
+Action.c(841): Registering web_reg_save_param_regexp was successful  	[MsgId: MMSG-26390]
+Action.c(849): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(849): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(854): web_url("create") started  	[MsgId: MMSG-26355]
+Action.c(854): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/configuration/create" failed  	[MsgId: MERR-27760]
+Action.c(854): Error -35049: No match found for the requested parameter "Csrf_TokenId". Check whether the requested regular expression exists in the response data  	[MsgId: MERR-35049]
+Action.c(854): Error -26366: "Text=PV Reports - Adhoc Reports" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(854): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(1861): web_url("reportFieldsForQueryValue") started  	[MsgId: MMSG-26355]
+Action.c(1861): Registering web_url("reportFieldsForQueryValue") was successful  	[MsgId: MMSG-26390]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(1871): web_url("reportFieldsForQueryValue_2") started  	[MsgId: MMSG-26355]
+Action.c(1871): Registering web_url("reportFieldsForQueryValue_2") was successful  	[MsgId: MMSG-26390]
+Action.c(1880): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(1861): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/queryRest/reportFieldsForQueryValue?name=masterCloseDate&_=1591009327420" failed   [issued at Action.c(1880)]  	[MsgId: MERR-27760]
+Action.c(1871): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/queryRest/reportFieldsForQueryValue?name=masterCloseDate&_=1591009327421" failed   [issued at Action.c(1880)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 3.
+Action.c(1630): Registering web_url("content.min.css") was successful  	[MsgId: MMSG-26390]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(1651): web_url("editor-687e49e2901f89d1e65cc77026ec0a3e.css") started  	[MsgId: MMSG-26355]
+Action.c(1651): Registering web_url("editor-687e49e2901f89d1e65cc77026ec0a3e.css") was successful  	[MsgId: MMSG-26390]
+Action.c(1659): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(1465): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/tinymce/themes/modern/theme.min.js" failed   [issued at Action.c(1659)]  	[MsgId: MWAR-27760]
+Action.c(1427): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/polymer.html" failed   [issued at Action.c(1659)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 6.
+Action.c(816): Notify: Transaction "S02_T02_Login" ended with a "Pass" status (Duration: 3.6792 Wasted Time: 0.0017).
+Action.c(818): lr_think_time: 18.00 seconds (recorded think time was 3.00 seconds).
+Action.c(820): Notify: Transaction "S02_T03_NavigateAdhocReport_NewReport" started.
+Action.c(841): web_reg_save_param_regexp started  	[MsgId: MMSG-26355]
+Action.c(841): Registering web_reg_save_param_regexp was successful  	[MsgId: MMSG-26390]
+Action.c(849): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(849): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(854): web_url("create") started  	[MsgId: MMSG-26355]
+Action.c(854): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/configuration/create" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(1670): lr_think_time: 18.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1672): Notify: Transaction "S02_T05_SearchProduct" started.
+Action.c(1674): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(1674): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(1677): web_add_auto_header("X-CSRF-TOKEN") started  	[MsgId: MMSG-26355]
+Action.c(1677): web_add_auto_header("X-CSRF-TOKEN") was successful  	[MsgId: MMSG-26392]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(1681): web_submit_data("searchViews") started  	[MsgId: MMSG-26355]
+Action.c(1681): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/productDictionary/searchViews" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 7.
+Action.c(816): Notify: Transaction "S02_T02_Login" ended with a "Pass" status (Duration: 12.8033 Wasted Time: 0.0017).
+Action.c(818): lr_think_time: 18.00 seconds (recorded think time was 3.00 seconds).
+Action.c(820): Notify: Transaction "S02_T03_NavigateAdhocReport_NewReport" started.
+Action.c(841): web_reg_save_param_regexp started  	[MsgId: MMSG-26355]
+Action.c(841): Registering web_reg_save_param_regexp was successful  	[MsgId: MMSG-26390]
+Action.c(849): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(849): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(854): web_url("create") started  	[MsgId: MMSG-26355]
+Action.c(854): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/configuration/create" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(1733): web_submit_data("getPreLevelProductParents_2") started  	[MsgId: MMSG-26355]
+Action.c(1733): web_submit_data("getPreLevelProductParents_2") was successful, 78 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(1748): web_submit_data("getPreLevelProductParents_3") started  	[MsgId: MMSG-26355]
+Action.c(1748): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/productDictionary/getPreLevelProductParents" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 6.
+Action.c(816): Notify: Transaction "S02_T02_Login" ended with a "Pass" status (Duration: 23.2878 Wasted Time: 0.0015).
+Action.c(818): lr_think_time: 18.00 seconds (recorded think time was 3.00 seconds).
+Action.c(820): Notify: Transaction "S02_T03_NavigateAdhocReport_NewReport" started.
+Action.c(841): web_reg_save_param_regexp started  	[MsgId: MMSG-26355]
+Action.c(841): Registering web_reg_save_param_regexp was successful  	[MsgId: MMSG-26390]
+Action.c(849): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(849): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(854): web_url("create") started  	[MsgId: MMSG-26355]
+Action.c(854): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/configuration/create" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(816): Notify: Transaction "S02_T02_Login" ended with a "Pass" status (Duration: 8.8905 Wasted Time: 0.0016).
+Action.c(818): lr_think_time: 18.00 seconds (recorded think time was 3.00 seconds).
+Action.c(820): Notify: Transaction "S02_T03_NavigateAdhocReport_NewReport" started.
+Action.c(841): web_reg_save_param_regexp started  	[MsgId: MMSG-26355]
+Action.c(841): Registering web_reg_save_param_regexp was successful  	[MsgId: MMSG-26390]
+Action.c(849): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(849): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(854): web_url("create") started  	[MsgId: MMSG-26355]
+Action.c(854): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/configuration/create" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 8.
+Action.c(1928): web_url("poiInputsForTemplate_2") was successful, 37 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(1940): web_url("getQueryList_2") started  	[MsgId: MMSG-26355]
+Action.c(1940): web_url("getQueryList_2") was successful, 1126 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(1950): web_url("queryExpressionValuesForQuery_2") started  	[MsgId: MMSG-26355]
+Action.c(1950): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/queryExpressionValuesForQuery?queryId=29531&_=1591009327427" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 7.
+Action.c(816): Notify: Transaction "S02_T02_Login" ended with a "Pass" status (Duration: 5.4182 Wasted Time: 0.0016).
+Action.c(818): lr_think_time: 18.00 seconds (recorded think time was 3.00 seconds).
+Action.c(820): Notify: Transaction "S02_T03_NavigateAdhocReport_NewReport" started.
+Action.c(841): web_reg_save_param_regexp started  	[MsgId: MMSG-26355]
+Action.c(841): Registering web_reg_save_param_regexp was successful  	[MsgId: MMSG-26390]
+Action.c(849): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(849): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(854): web_url("create") started  	[MsgId: MMSG-26355]
+Action.c(854): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/configuration/create" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 9.
+Action.c(816): Notify: Transaction "S02_T02_Login" ended with a "Pass" status (Duration: 3.5433 Wasted Time: 0.0016).
+Action.c(818): lr_think_time: 18.00 seconds (recorded think time was 3.00 seconds).
+Action.c(820): Notify: Transaction "S02_T03_NavigateAdhocReport_NewReport" started.
+Action.c(841): web_reg_save_param_regexp started  	[MsgId: MMSG-26355]
+Action.c(841): Registering web_reg_save_param_regexp was successful  	[MsgId: MMSG-26390]
+Action.c(849): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(849): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(854): web_url("create") started  	[MsgId: MMSG-26355]
+Action.c(854): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/configuration/create" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 8.
+Action.c(816): Notify: Transaction "S02_T02_Login" ended with a "Pass" status (Duration: 6.6119 Wasted Time: 0.0017).
+Action.c(818): lr_think_time: 18.00 seconds (recorded think time was 3.00 seconds).
+Action.c(820): Notify: Transaction "S02_T03_NavigateAdhocReport_NewReport" started.
+Action.c(841): web_reg_save_param_regexp started  	[MsgId: MMSG-26355]
+Action.c(841): Registering web_reg_save_param_regexp was successful  	[MsgId: MMSG-26390]
+Action.c(849): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(849): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(854): web_url("create") started  	[MsgId: MMSG-26355]
+Action.c(854): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/configuration/create" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 9.
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(2109): web_url("queryExpressionValuesForQuery_3") started  	[MsgId: MMSG-26355]
+Action.c(2109): web_url("queryExpressionValuesForQuery_3") was successful, 109 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(2119): web_url("customSQLValuesForQuery_3") started  	[MsgId: MMSG-26355]
+Action.c(2119): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/customSQLValuesForQuery?queryId=29507&_=1591009327442" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 11.
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(1681): web_submit_data("searchViews") started  	[MsgId: MMSG-26355]
+Action.c(1681): web_submit_data("searchViews") was successful, 324 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(1698): Notify: Transaction "S02_T05_SearchProduct" ended with a "Pass" status (Duration: 0.7903 Wasted Time: 0.0000).
+Action.c(1700): lr_think_time: 18.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1702): Notify: Transaction "S02_T06_SelectProduct" started.
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(1705): web_custom_request("getSelectedItem") started  	[MsgId: MMSG-26355]
+Action.c(1705): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/productDictionary/getSelectedItem?productId=114822&dataSource=pva&dictionaryLevel=3&currentLang=en" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 12.
+Action.c(10): web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+Action.c(12): Notify: Transaction "S02_T01_OpenApplication" started.
+Action.c(63): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(63): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(73): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(73): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(78): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(78): Error -27794: Could not resolve address of host pvr-perf.rxlogix.com  	[MsgId: MERR-27794]
+Action.c(78): Error -26377: No match found for the requested parameter "csrf_tokenId". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(78): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(78): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 10.
+Action.c(10): web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+Action.c(12): Notify: Transaction "S02_T01_OpenApplication" started.
+Action.c(63): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(63): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(73): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(73): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(78): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(78): Error -27794: Could not resolve address of host pvr-perf.rxlogix.com  	[MsgId: MERR-27794]
+Action.c(78): Error -26377: No match found for the requested parameter "csrf_tokenId". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(78): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(78): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 8.
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(1918): web_url("customSQLValuesForTemplate_2") started  	[MsgId: MMSG-26355]
+Action.c(1918): web_url("customSQLValuesForTemplate_2") was successful, 28 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(1928): web_url("poiInputsForTemplate_2") started  	[MsgId: MMSG-26355]
+Action.c(1928): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/template/poiInputsForTemplate?templateId=24615&_=1591009327425" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 9.
+Action.c(10): web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+Action.c(12): Notify: Transaction "S02_T01_OpenApplication" started.
+Action.c(63): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(63): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(73): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(73): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+globals.h(35): web_add_header("X-dynaTrace-Test") started  	[MsgId: MMSG-26355]
+globals.h(35): web_add_header("X-dynaTrace-Test") was successful  	[MsgId: MMSG-26392]
+Action.c(78): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(78): Error -27794: Could not resolve address of host pvr-perf.rxlogix.com  	[MsgId: MERR-27794]
+Action.c(78): Error -26377: No match found for the requested parameter "csrf_tokenId". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(78): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(78): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+

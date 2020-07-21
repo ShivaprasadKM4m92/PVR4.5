@@ -1,0 +1,11 @@
+[t127]
+FileName1=t127_customSQLValuesForTemplate.json
+URL1=https://pvr-perf.rxlogix.com/reports/template/customSQLValuesForTemplate?templateId=24615&_=1591009327414
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_127.xml
+RequestHeaderFile=t127_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t127_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
