@@ -1,0 +1,11 @@
+[t95]
+FileName1=t95_getValuelessOperators.json
+URL1=https://pvr-perf.rxlogix.com/reports/query/getValuelessOperators?_=1590064583065
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_95.xml
+RequestHeaderFile=t95_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t95_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

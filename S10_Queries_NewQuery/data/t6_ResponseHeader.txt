@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Thu, 21 May 2020 12:34:28 GMT
+Content-Type: text/css;charset=UTF-8
+Content-Length: 643
+Connection: keep-alive
+X-Frame-Options: DENY
+Last-Modified: Mon, 23 Mar 2020 05:54:06 GMT
+ETag: "cookiecuttr-a7a609074d7bc97460b6aab9935c3468.css"
+Vary: Accept-Encoding
+Cache-Control: public, max-age=31536000
+Content-Encoding: gzip
+

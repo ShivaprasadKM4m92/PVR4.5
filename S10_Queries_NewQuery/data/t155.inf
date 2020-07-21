@@ -1,0 +1,9 @@
+[t155]
+FileName1=t155.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/polymer.html
+Total=1
+RequestHeaderFile=t155_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t155_ResponseHeader.txt
+ContentType=
+SnapshotXmlFile=snapshot_155.xml

@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Thu, 21 May 2020 12:35:44 GMT
+Content-Type: application/javascript;charset=UTF-8
+Content-Length: 67740
+Connection: keep-alive
+X-Frame-Options: DENY
+Last-Modified: Mon, 23 Mar 2020 05:56:04 GMT
+ETag: "fullcalendar/fullcalendar-ab21481ecaaf856ac398df2626c214f0.js"
+Vary: Accept-Encoding
+Cache-Control: public, max-age=31536000
+Content-Encoding: gzip
+

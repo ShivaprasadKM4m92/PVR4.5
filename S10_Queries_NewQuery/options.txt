@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Project\PVR\Scripts\Updated\S10_Queries_NewQuery
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\project\pvr\scripts\updated\s10_queries_newquery\\logfile.log
+c:\project\pvr\scripts\updated\s10_queries_newquery\\combined_S10_Queries_NewQuery.c
+c:\project\pvr\scripts\updated\s10_queries_newquery\\pre_cci.c

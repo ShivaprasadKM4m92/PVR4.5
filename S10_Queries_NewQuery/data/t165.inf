@@ -1,0 +1,9 @@
+[t165]
+FileName1=t165.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/polymer-micro.html
+Total=1
+RequestHeaderFile=t165_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t165_ResponseHeader.txt
+ContentType=
+SnapshotXmlFile=snapshot_165.xml

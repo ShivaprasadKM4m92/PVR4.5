@@ -1,0 +1,14 @@
+GET /reports/query/queryExpressionValuesForQuerySet?queryId=32764 HTTP/1.1
+Host: pvr-perf.rxlogix.com
+Connection: keep-alive
+Accept: application/json, text/javascript, */*; q=0.01
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+X-Requested-With: XMLHttpRequest
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://pvr-perf.rxlogix.com/reports/configuration/create?selectedQuery=32764
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: SESSION=c1314618-5541-4e9a-91e1-dcbed423004e
+

@@ -1,0 +1,11 @@
+[t31]
+FileName1=t31_fullcalendar-lang-all-e4e9be403fd4dc092b72c368c27e5d47.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/fullcalendar/fullcalendar-lang-all-e4e9be403fd4dc092b72c368c27e5d47.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_31.xml
+RequestHeaderFile=t31_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t31_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

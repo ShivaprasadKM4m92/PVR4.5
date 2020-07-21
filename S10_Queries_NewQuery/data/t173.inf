@@ -1,0 +1,11 @@
+[t173]
+FileName1=t173_plugin.min.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/tinymce/plugins/imagetools/plugin.min.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_173.xml
+RequestHeaderFile=t173_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t173_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

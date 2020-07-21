@@ -1,0 +1,11 @@
+[t139]
+FileName1=t139_emailTemplateEditor-340a1a96d629c756ba1192ca0bec7179.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/emailTemplateEditor-340a1a96d629c756ba1192ca0bec7179.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_139.xml
+RequestHeaderFile=t139_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t139_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

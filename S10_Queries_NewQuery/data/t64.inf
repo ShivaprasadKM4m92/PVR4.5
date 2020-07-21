@@ -1,0 +1,11 @@
+[t64]
+FileName1=t64_backbone-83afc07e6e9896174666287b5b17e98d.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/backbone/backbone-83afc07e6e9896174666287b5b17e98d.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_64.xml
+RequestHeaderFile=t64_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t64_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

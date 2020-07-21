@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Thu, 21 May 2020 12:35:46 GMT
+Content-Type: application/javascript;charset=UTF-8
+Content-Length: 7062
+Connection: keep-alive
+X-Frame-Options: DENY
+Last-Modified: Mon, 23 Mar 2020 05:54:26 GMT
+ETag: "highcharts/highcharts-3d-b0c0c823b44f85cb61361491f4353576.js"
+Vary: Accept-Encoding
+Cache-Control: public, max-age=31536000
+Content-Encoding: gzip
+

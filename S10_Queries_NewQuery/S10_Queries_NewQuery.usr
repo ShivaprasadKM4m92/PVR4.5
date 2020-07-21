@@ -1,0 +1,76 @@
+[General]
+Type=Multi
+DefaultCfg=default.cfg
+ParameterFile=S10_Queries_NewQuery.prm
+GlobalParameterFile=
+NewFunctionHeader=1
+RunType=cci
+ActionLogicExt=action_logic
+LastActiveAction=Action
+MajorVersion=2020
+MinorVersion=0
+ActiveTypes=QTWeb
+GenerateTypes=QTWeb
+AdditionalTypes=QTWeb
+DevelopTool=Vugen
+LastModifyVer=2020.0.0.0
+DFERebrandFlag=Done
+ParamLeftBrace={
+ParamRightBrace=}
+ScriptLanguage=C
+LastCodeGenerationVer=2020.0.0.0
+DisableRegenerate=0
+Encoding=ANSI
+Description=
+ScriptLocale=en-IN
+[Actions]
+vuser_init=vuser_init.c
+Action=Action.c
+vuser_end=vuser_end.c
+[RunLogicFiles]
+Default Profile=default.usp
+[VuserProfiles]
+Profiles=Default Profile
+[CfgFiles]
+Default Profile=default.cfg
+[ExtraFiles]
+globals.h=
+[Modified Actions]
+vuser_init=0
+Action=1
+vuser_end=0
+[Recorded Actions]
+vuser_init=0
+Action=1
+vuser_end=0
+[Replayed Actions]
+vuser_init=1
+Action=1
+vuser_end=1
+[Interpreters]
+vuser_init=cci
+Action=cci
+vuser_end=cci
+[TransactionsOrder]
+Order="S10_T01_OpenApplication__*delimiter*__S10_T02_Login__*delimiter*__S10_T03_NavigateQueries__*delimiter*__S10_T04_AddTag__*delimiter*__S10_T05_Add_Criteria_1__*delimiter*__S10_T06_Add_Criteria_2__*delimiter*__S10_T07_Add_Criteria_3__*delimiter*__S10_T08_Click_Save__*delimiter*__S10_T09_Click_Run__*delimiter*__S10_T10_Click_PrdlookUp__*delimiter*__S10_T11_Search_Product__*delimiter*__S10_T12_Select_Product__*delimiter*__S10_T13_SelectTemplate__*delimiter*__S10_T14_Enter_ReportName_Tag_SaveAndRun__*delimiter*__S10_T14_Logout"
+[StateManagement]
+LastReplayStatus=2
+[ActiveReplay]
+LastReplayedRunName=result1
+ActiveRunName=result1
+[Transactions]
+S10_T01_OpenApplication=
+S10_T02_Login=
+S10_T03_NavigateQueries=
+S10_T04_AddTag=
+S10_T05_Add_Criteria_1=
+S10_T06_Add_Criteria_2=
+S10_T07_Add_Criteria_3=
+S10_T08_Click_Save=
+S10_T09_Click_Run=
+S10_T10_Click_PrdlookUp=
+S10_T11_Search_Product=
+S10_T12_Select_Product=
+S10_T13_SelectTemplate=
+S10_T14_Enter_ReportName_Tag_SaveAndRun=
+S10_T14_Logout=

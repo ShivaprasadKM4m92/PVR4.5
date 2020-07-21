@@ -1,0 +1,4 @@
+Start auto log messages stack.
+Ending iteration 4.
+Starting iteration 5.
+Error: Exception was raised when calling event-notify Vuser function in extension lrwreplaymain.dll: System Exceptions: EXCEPTION_ACCESS_VIOLATION

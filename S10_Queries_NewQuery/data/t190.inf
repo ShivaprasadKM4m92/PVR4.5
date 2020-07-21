@@ -1,0 +1,11 @@
+[t190]
+FileName1=t190_customSQLValuesForTemplate.json
+URL1=https://pvr-perf.rxlogix.com/reports/template/customSQLValuesForTemplate?templateId=30908&_=1590064767395
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_190.xml
+RequestHeaderFile=t190_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t190_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

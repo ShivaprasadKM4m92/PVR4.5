@@ -1,0 +1,11 @@
+[t62]
+FileName1=t62_underscore-268f41aa82f0dc5a22db29498cf82e98.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/backbone/underscore-268f41aa82f0dc5a22db29498cf82e98.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_62.xml
+RequestHeaderFile=t62_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t62_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

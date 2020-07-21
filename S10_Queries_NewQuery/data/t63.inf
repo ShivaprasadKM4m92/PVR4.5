@@ -1,0 +1,11 @@
+[t63]
+FileName1=t63_tags-0a636c4c7bc5e4dd91c0e4e6d1889215.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/tags-0a636c4c7bc5e4dd91c0e4e6d1889215.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_63.xml
+RequestHeaderFile=t63_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t63_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

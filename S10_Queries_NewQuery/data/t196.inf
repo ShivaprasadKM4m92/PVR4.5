@@ -1,0 +1,9 @@
+[t196]
+FileName1=t196.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/column-view-64c0085c608464f4a6f66e33d985ae27.html
+Total=1
+RequestHeaderFile=t196_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t196_ResponseHeader.txt
+ContentType=
+SnapshotXmlFile=snapshot_196.xml

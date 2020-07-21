@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Thu, 21 May 2020 12:36:22 GMT
+Content-Type: application/javascript;charset=UTF-8
+Content-Length: 46920
+Connection: keep-alive
+X-Frame-Options: DENY
+Last-Modified: Mon, 23 Mar 2020 05:56:02 GMT
+ETag: "backbone/backbone-83afc07e6e9896174666287b5b17e98d.js"
+Vary: Accept-Encoding
+Cache-Control: public, max-age=31536000
+Content-Encoding: gzip
+
