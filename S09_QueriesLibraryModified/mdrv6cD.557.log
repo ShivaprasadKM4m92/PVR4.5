@@ -1,0 +1,57 @@
+Start auto log messages stack - Iteration 10.
+Action.c(45): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(45): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(52): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(52): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(61): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(61): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(65): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(65): Error -27792: Failed to connect to server "pvr-perf.rxlogix.com:443": [10060] Connection timed out  	[MsgId: MERR-27792]
+Action.c(65): Error -26377: No match found for the requested parameter "CsrfTokenId_1". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(65): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(65): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 15.
+Action.c(4304): web_remove_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(4304): Previous automatically added web header for "Accept" removed  	[MsgId: MMSG-26587]
+Action.c(4304): web_remove/revert_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(4306): web_add_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(4306): web_add_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(4309): web_add_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(4309): web_add_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(4312): web_url("queries_4") started  	[MsgId: MMSG-26355]
+Action.c(4312): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/api/queries?draw=1&columns%5B0%5D%5Bdata%5D=isFavorite&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=true&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=type&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=false&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=name&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=description&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=qualityChecked&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=checkUsage&columns%5B5%5D%5Bname%5D=&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=false&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=owner.fullName&columns%5B6%5D%5Bname%5D=&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=true&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=dateCreated&columns%5B7%5D%5Bname%5D=&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=lastUpdated&columns%5B8%5D%5Bname%5D=&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=lastExecuted&columns%5B9%5D%5Bname%5D=&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B10%5D%5Bdata%5D=tags&columns%5B10%5D%5Bname%5D=&columns%5B10%5D%5Bsearchable%5D=true&columns%5B10%5D%5Borderable%5D=false&columns%5B10%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B10%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B11%5D%5Bdata%5D=&columns%5B11%5D%5Bname%5D=&columns%5B11%5D%5Bsearchable%5D=true&columns%5B11%5D%5Borderable%5D=false&columns%5B11%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B11%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=desc&start=0&length=50&search%5Bvalue%5D=S9Q2_PT09&search%5Bregex%5D=false&searchString=S9Q2_PT09&advancedFilter=false&tableFilter=%7B%7D&direction=desc&sharedwith=&sort=isFavorite&_=1591180880550"  	[MsgId: MERR-26610]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 19.
+Action.c(2052): web_add_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(2055): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(2055): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(2058): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(2058): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(2061): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(2061): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(2069): web_url("{Query_Id}") started  	[MsgId: MMSG-26355]
+Action.c(2069): Error -26609: HTTP Status-Code=503 (Service Unavailable) for "https://pvr-perf.rxlogix.com/reports/query/edit/93230"  	[MsgId: MERR-26609]
+Action.c(2069): Error -26377: No match found for the requested parameter "VersionId". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 580 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 20.
+Action.c(4164): web_add_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(4167): web_add_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(4167): web_add_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(4170): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(4170): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(4173): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(4173): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(4176): web_url("index_3") started  	[MsgId: MMSG-26355]
+Action.c(4176): Error -26609: HTTP Status-Code=503 (Service Unavailable) for "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MERR-26609]
+End auto log messages stack.
+
+

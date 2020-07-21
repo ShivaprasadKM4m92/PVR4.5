@@ -1,0 +1,11 @@
+[t166]
+FileName1=t166_getDateOperators.json
+URL1=https://pvr-perf.rxlogix.com/reports/query/getDateOperators?_=1591180665600
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_166.xml
+RequestHeaderFile=t166_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t166_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

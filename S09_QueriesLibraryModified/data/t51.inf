@@ -1,0 +1,9 @@
+[t51]
+SnapshotXmlFile=snapshot_51.xml
+FileName1=t51.png
+URL1=https://pvr-perf.rxlogix.com/reports/assets/left_bg-b4ea12efc891fcaf7bd4c4b3ba9828cf.png
+Total=1
+RequestHeaderFile=t51_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t51_ResponseHeader.txt
+ContentType=image/png

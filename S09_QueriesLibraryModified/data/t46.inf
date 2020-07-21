@@ -1,0 +1,9 @@
+[t46]
+SnapshotXmlFile=snapshot_46.xml
+FileName1=t46.png
+URL1=https://pvr-perf.rxlogix.com/reports/assets/bg2-a39cb4fbdd9436c08ad118995fc95c46.png
+Total=1
+RequestHeaderFile=t46_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t46_ResponseHeader.txt
+ContentType=image/png

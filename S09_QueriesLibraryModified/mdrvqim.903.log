@@ -1,0 +1,66 @@
+Start auto log messages stack - Iteration 2.
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(52): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(52): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(61): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(61): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(65): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(65): ssl_handle_status encounter error : SSL_ERROR_SYSCALL, error id : 0  	[MsgId: MMSG-26000]
+Action.c(65): Error -27776: [GENERAL_MSG_CAT_SSL_ERROR]connect to host "pvr-perf.rxlogix.com" failed  	[MsgId: MERR-27776]
+Action.c(65): Error -26377: No match found for the requested parameter "CsrfTokenId_1". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(65): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(65): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 3.
+Action.c(223): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(227): web_reg_save_param_regexp started  	[MsgId: MMSG-26355]
+Action.c(227): Registering web_reg_save_param_regexp was successful  	[MsgId: MMSG-26390]
+Action.c(237): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(237): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(246): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(246): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(250): web_submit_data("authenticate") started  	[MsgId: MMSG-26355]
+Action.c(250): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/authenticate" failed  	[MsgId: MERR-27760]
+Action.c(250): Error -35049: No match found for the requested parameter "CsfrTokenId_2". Check whether the requested regular expression exists in the response data  	[MsgId: MERR-35049]
+Action.c(250): Error -26377: No match found for the requested parameter "User_Id". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(250): Error -26366: "Text=Dashboard" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(250): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 9.
+Action.c(2769): Registering web_url("possibleValues_11") was successful  	[MsgId: MMSG-26390]
+Action.c(2778): web_url("possibleValues_12") started  	[MsgId: MMSG-26355]
+Action.c(2778): Registering web_url("possibleValues_12") was successful  	[MsgId: MMSG-26390]
+Action.c(2829): web_url("polymer-mini.html_3") started  	[MsgId: MMSG-26355]
+Action.c(2829): Registering web_url("polymer-mini.html_3") was successful  	[MsgId: MMSG-26390]
+Action.c(2840): web_url("polymer-micro.html_3") started  	[MsgId: MMSG-26355]
+Action.c(2840): Registering web_url("polymer-micro.html_3") was successful  	[MsgId: MMSG-26390]
+Action.c(2847): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(2840): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/polymer-micro.html"   [issued at Action.c(2847)]  	[MsgId: MERR-26610]
+Action.c(2751): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/query/extraValues?lang=en"   [issued at Action.c(2847)]  	[MsgId: MERR-26610]
+Action.c(2769): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/query/possibleValues?lang=en&field=patInfoPostalCode&_=1591180698287"   [issued at Action.c(2847)]  	[MsgId: MERR-26610]
+Action.c(2645): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/87239?_=1591180698285"   [issued at Action.c(2847)]  	[MsgId: MERR-26610]
+Action.c(2669): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/column-view-64c0085c608464f4a6f66e33d985ae27.html"   [issued at Action.c(2847)]  	[MsgId: MERR-26610]
+Action.c(2778): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/query/possibleValues?lang=en&field=prodDrugsAbuse&_=1591180698288"   [issued at Action.c(2847)]  	[MsgId: MERR-26610]
+Action.c(2737): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/polymer.html"   [issued at Action.c(2847)]  	[MsgId: MERR-26610]
+Action.c(2719): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/query/getAllKeywords"   [issued at Action.c(2847)]  	[MsgId: MERR-26610]
+Action.c(2760): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/query/possibleValues?lang=en&field=caseRoutingPvrFollowupNum&_=1591180698286"   [issued at Action.c(2847)]  	[MsgId: MERR-26610]
+Action.c(2829): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/polymer-mini.html"   [issued at Action.c(2847)]  	[MsgId: MERR-26610]
+End auto log messages stack.
+
+
+Start auto log messages stack.
+Ending iteration 9.
+Waiting 262.0670 seconds for iteration pacing.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
+Error: Exception was raised when calling per-thread-terminate function in extension lrwreplaymain.dll: System Exceptions: EXCEPTION_ACCESS_VIOLATION
+End auto log messages stack.
+
+

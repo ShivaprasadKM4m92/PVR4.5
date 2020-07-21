@@ -1,0 +1,11 @@
+[t165]
+FileName1=t165_getAllKeywords.json
+URL1=https://pvr-perf.rxlogix.com/reports/query/getAllKeywords?_=1591180665604
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_165.xml
+RequestHeaderFile=t165_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t165_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

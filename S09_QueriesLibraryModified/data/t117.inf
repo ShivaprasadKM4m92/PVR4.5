@@ -1,0 +1,11 @@
+[t117]
+FileName1=t117_reportFieldsForQueryValue.json
+URL1=https://pvr-perf.rxlogix.com/reports/queryRest/reportFieldsForQueryValue?name=prodDrugsAbuse&_=1591180618077
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_117.xml
+RequestHeaderFile=t117_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t117_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

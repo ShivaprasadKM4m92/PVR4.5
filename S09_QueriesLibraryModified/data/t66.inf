@@ -1,0 +1,11 @@
+[t66]
+FileName1=t66_query-37508e1ff5b1a1900d3443bf34160bfa.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/query/query-37508e1ff5b1a1900d3443bf34160bfa.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_66.xml
+RequestHeaderFile=t66_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t66_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

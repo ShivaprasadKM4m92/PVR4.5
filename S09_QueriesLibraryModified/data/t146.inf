@@ -1,0 +1,11 @@
+[t146]
+FileName1=t146_queryBuilder-4017c4701c53826b2919e00b908a338e.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/query/queryBuilder-4017c4701c53826b2919e00b908a338e.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_146.xml
+RequestHeaderFile=t146_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t146_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,11 @@
+[t121]
+FileName1=t121_possibleValues.json
+URL1=https://pvr-perf.rxlogix.com/reports/query/possibleValues?lang=en&field=caseRoutingPvrFollowupNum&_=1591180618078
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_121.xml
+RequestHeaderFile=t121_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t121_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

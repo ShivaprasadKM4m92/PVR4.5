@@ -1,0 +1,1233 @@
+Start auto log messages stack - Iteration 1.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 83.0998 Wasted Time: 0.0001).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(45): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(45): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(52): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(52): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(61): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(61): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(65): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(65): Error -27792: Failed to connect to server "pvr-perf.rxlogix.com:443": [10060] Connection timed out  	[MsgId: MERR-27792]
+Action.c(65): Error -26377: No match found for the requested parameter "CsrfTokenId_1". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(65): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(65): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(2116): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/query/queryBuilder-4017c4701c53826b2919e00b908a338e.js" failed   [issued at Action.c(2195)]  	[MsgId: MWAR-27760]
+Action.c(2133): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/select2-treeview-a19d774562c3ce40252e5c9866e9029b.css" failed   [issued at Action.c(2195)]  	[MsgId: MWAR-27760]
+Action.c(2150): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/query-32b32fe1008b70e0042a67dec4a7793b.css" failed   [issued at Action.c(2195)]  	[MsgId: MWAR-27760]
+Action.c(2167): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/select2/select2-treeview-a36da271e6071724e73d966828e9bc72.js" failed   [issued at Action.c(2195)]  	[MsgId: MWAR-27760]
+Action.c(2187): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/column-view-64c0085c608464f4a6f66e33d985ae27.html" failed   [issued at Action.c(2195)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 3.
+Action.c(1653): web_remove_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(1653): Previous automatically added web header for "Accept" removed  	[MsgId: MMSG-26587]
+Action.c(1653): web_remove/revert_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(1655): web_add_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(1655): web_add_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(1658): web_add_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(1658): web_add_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(1661): web_url("possibleValues") started  	[MsgId: MMSG-26355]
+Action.c(1661): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/possibleValues?lang=en&field=caseRoutingPvrFollowupNum&_=1591180618078" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(1653): web_remove_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(1653): Previous automatically added web header for "Accept" removed  	[MsgId: MMSG-26587]
+Action.c(1653): web_remove/revert_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(1655): web_add_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(1655): web_add_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(1658): web_add_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(1658): web_add_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(1661): web_url("possibleValues") started  	[MsgId: MMSG-26355]
+Action.c(1661): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/possibleValues?lang=en&field=caseRoutingPvrFollowupNum&_=1591180618078" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(52): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(52): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(61): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(61): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(65): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(65): ssl_handle_status encounter error : SSL_ERROR_SYSCALL, error id : 0  	[MsgId: MMSG-26000]
+Action.c(65): Error -27776: [GENERAL_MSG_CAT_SSL_ERROR]connect to host "pvr-perf.rxlogix.com" failed  	[MsgId: MERR-27776]
+Action.c(65): Error -26377: No match found for the requested parameter "CsrfTokenId_1". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(65): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(65): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 3.
+Action.c(45): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(45): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(52): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(52): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(61): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(61): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(65): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(65): Error -27792: Failed to connect to server "pvr-perf.rxlogix.com:443": [10060] Connection timed out  	[MsgId: MERR-27792]
+Action.c(65): Error -26377: No match found for the requested parameter "CsrfTokenId_1". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(65): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(65): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 86.1572 Wasted Time: 0.0001).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(3029): Warning -26549: Contents unexpectedly not in cache. Check previous messages for URL="https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/polymer-mini.html"  	[MsgId: MWAR-26549]
+Action.c(3029): web_url("polymer-mini.html_4") highest severity level was "warning", 0 body bytes, 135 header bytes  	[MsgId: MMSG-26388]
+Action.c(3037): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(3037): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(3040): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(3040): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(3043): web_url("extraValues_3") started  	[MsgId: MMSG-26355]
+Action.c(3043): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/extraValues?lang=en" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 24.1799 Wasted Time: 0.0001).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 6.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 13.6473 Wasted Time: 0.0000).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(1759): web_url("polymer-micro.html") highest severity level was "warning", 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26388]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 28.5447 Wasted Time: 0.0001).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 27.0936 Wasted Time: 0.0001).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(1759): web_url("polymer-micro.html") highest severity level was "warning", 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26388]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 13.4661 Wasted Time: 0.0001).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 7.
+Action.c(651): web_url("dataTables_en.json") started  	[MsgId: MMSG-26355]
+Action.c(651): Resource "https://pvr-perf.rxlogix.com/reports/assets/i18n/dataTables_en.json" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(660): web_remove_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(660): Previous automatically added web header for "Accept" removed  	[MsgId: MMSG-26587]
+Action.c(660): web_remove/revert_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(662): web_add_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(662): web_add_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(665): web_url("latestPeriodicReport") started  	[MsgId: MMSG-26355]
+Action.c(665): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/periodicReportConfigurationRest/latestPeriodicReport?length=4&start=0" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 3.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 51.5760 Wasted Time: 0.0001).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 6.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 13.0385 Wasted Time: 0.0001).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 8.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 16.2289 Wasted Time: 0.0001).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 3.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 62.6281 Wasted Time: 0.0001).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+Action.c(1702): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(1705): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(1705): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(1708): web_url("possibleValues_2") started  	[MsgId: MMSG-26355]
+Action.c(1708): web_url("possibleValues_2") was successful, 28 body bytes, 234 header bytes  	[MsgId: MMSG-26386]
+Action.c(1717): web_url("possibleValues_3") started  	[MsgId: MMSG-26355]
+Action.c(1717): web_url("possibleValues_3") was successful, 38 body bytes, 234 header bytes  	[MsgId: MMSG-26386]
+Action.c(1726): web_url("possibleValues_4") started  	[MsgId: MMSG-26355]
+Action.c(1726): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/possibleValues?lang=en&field=prodDrugsAbuse&_=1591180618081" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 7.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 40.1466 Wasted Time: 0.0000).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 9.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 56.2657 Wasted Time: 0.0000).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(569): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(569): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(572): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(572): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(575): web_add_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(575): web_add_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(578): web_url("latestAdhocReport") started  	[MsgId: MMSG-26355]
+Action.c(578): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportResultRest/latestAdhocReport?length=4&start=0" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(1744): web_url("possibleValues_6") started  	[MsgId: MMSG-26355]
+Action.c(1744): web_url("possibleValues_6") was successful, 28 body bytes, 234 header bytes  	[MsgId: MMSG-26386]
+Action.c(1754): web_remove_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(1754): Previous automatically added web header for "X-Requested-With" removed  	[MsgId: MMSG-26587]
+Action.c(1754): web_remove/revert_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(1756): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(1756): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(1759): web_url("polymer-micro.html") started  	[MsgId: MMSG-26355]
+Action.c(1759): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/polymer-micro.html" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+Action.c(1756): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(1759): web_url("polymer-micro.html") started  	[MsgId: MMSG-26355]
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 70.7456 Wasted Time: 0.0001).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" failed  	[MsgId: MERR-27760]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(1815): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 8.
+Action.c(572): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(575): web_add_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(575): web_add_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(578): web_url("latestAdhocReport") started  	[MsgId: MMSG-26355]
+Action.c(578): web_url("latestAdhocReport") was successful, 1237 body bytes, 234 header bytes  	[MsgId: MMSG-26386]
+Action.c(596): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(596): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(599): web_url("index") started  	[MsgId: MMSG-26355]
+Action.c(599): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/actionItemRest/index?length=5&start=0&sort=dueDate&direction=asc" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(578): web_url("latestAdhocReport") was successful, 1237 body bytes, 234 header bytes  	[MsgId: MMSG-26386]
+Action.c(596): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(596): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(599): web_url("index") started  	[MsgId: MMSG-26355]
+Action.c(599): web_url("index") was successful, 68 body bytes, 234 header bytes  	[MsgId: MMSG-26386]
+Action.c(608): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(608): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(611): web_url("{User_Id}") started  	[MsgId: MMSG-26355]
+Action.c(611): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/87361?_=1591180540692" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 6.
+Action.c(569): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(569): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(572): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(572): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(575): web_add_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(575): web_add_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(578): web_url("latestAdhocReport") started  	[MsgId: MMSG-26355]
+Action.c(578): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportResultRest/latestAdhocReport?length=4&start=0" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 3.
+Action.c(578): web_url("latestAdhocReport") was successful, 1237 body bytes, 234 header bytes  	[MsgId: MMSG-26386]
+Action.c(596): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(596): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(599): web_url("index") started  	[MsgId: MMSG-26355]
+Action.c(599): web_url("index") was successful, 68 body bytes, 234 header bytes  	[MsgId: MMSG-26386]
+Action.c(608): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(608): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(611): web_url("{User_Id}") started  	[MsgId: MMSG-26355]
+Action.c(611): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/87416?_=1591180540692" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 10.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 73.3748 Wasted Time: 0.0000).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 9.
+Action.c(223): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(227): web_reg_save_param_regexp started  	[MsgId: MMSG-26355]
+Action.c(227): Registering web_reg_save_param_regexp was successful  	[MsgId: MMSG-26390]
+Action.c(237): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(237): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(246): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(246): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(250): web_submit_data("authenticate") started  	[MsgId: MMSG-26355]
+Action.c(250): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/authenticate" failed  	[MsgId: MERR-27760]
+Action.c(250): Error -35049: No match found for the requested parameter "CsfrTokenId_2". Check whether the requested regular expression exists in the response data  	[MsgId: MERR-35049]
+Action.c(250): Error -26377: No match found for the requested parameter "User_Id". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(250): Error -26366: "Text=Dashboard" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(250): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 11.
+Action.c(572): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(575): web_add_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(575): web_add_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(578): web_url("latestAdhocReport") started  	[MsgId: MMSG-26355]
+Action.c(578): web_url("latestAdhocReport") was successful, 1237 body bytes, 234 header bytes  	[MsgId: MMSG-26386]
+Action.c(596): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(596): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(599): web_url("index") started  	[MsgId: MMSG-26355]
+Action.c(599): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/actionItemRest/index?length=5&start=0&sort=dueDate&direction=asc" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 6.
+Action.c(763): web_add_header("Sec-Fetch-Dest") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(766): web_add_auto_header("Accept-Language") started  	[MsgId: MMSG-26355]
+Action.c(766): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(769): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(769): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(772): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(772): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(775): web_url("index_2") started  	[MsgId: MMSG-26355]
+Action.c(775): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/index" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+Action.c(45): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(45): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(52): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(52): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(61): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(61): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(65): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(65): Error -27792: Failed to connect to server "pvr-perf.rxlogix.com:443": [10060] Connection timed out  	[MsgId: MERR-27792]
+Action.c(65): Error -26377: No match found for the requested parameter "CsrfTokenId_1". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(65): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(65): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 7.
+Action.c(763): web_add_header("Sec-Fetch-Dest") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(766): web_add_auto_header("Accept-Language") started  	[MsgId: MMSG-26355]
+Action.c(766): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(769): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(769): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(772): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(772): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(775): web_url("index_2") started  	[MsgId: MMSG-26355]
+Action.c(775): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/index" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 7.
+Action.c(934): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(937): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(937): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(940): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(940): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(943): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(943): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(946): web_url("tag") started  	[MsgId: MMSG-26355]
+Action.c(946): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/tag" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 8.
+Action.c(572): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(575): web_add_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(575): web_add_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(578): web_url("latestAdhocReport") started  	[MsgId: MMSG-26355]
+Action.c(578): web_url("latestAdhocReport") was successful, 1237 body bytes, 234 header bytes  	[MsgId: MMSG-26386]
+Action.c(596): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(596): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(599): web_url("index") started  	[MsgId: MMSG-26355]
+Action.c(599): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/actionItemRest/index?length=5&start=0&sort=dueDate&direction=asc" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 12.
+Action.c(639): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(642): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(642): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(645): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(645): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(648): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(648): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(651): web_url("dataTables_en.json") started  	[MsgId: MMSG-26355]
+Action.c(651): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/i18n/dataTables_en.json" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(45): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(45): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(52): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(52): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(61): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(61): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(65): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(65): Error -27792: Failed to connect to server "pvr-perf.rxlogix.com:443": [10060] Connection timed out  	[MsgId: MERR-27792]
+Action.c(65): Error -26377: No match found for the requested parameter "CsrfTokenId_1". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(65): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(65): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 10.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 18.4938 Wasted Time: 0.0001).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 11.
+Action.c(1442): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(1445): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(1445): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(1448): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(1448): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(1451): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(1451): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(1454): web_url("getNumOperators") started  	[MsgId: MMSG-26355]
+Action.c(1454): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/getNumOperators" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 8.
+Action.c(1074): web_add_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(1077): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(1077): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(1080): web_add_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(1080): web_add_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(1092): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(1092): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(1101): web_url("queries_2") started  	[MsgId: MMSG-26355]
+Action.c(1101): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/api/queries?draw=2&columns%5B0%5D%5Bdata%5D=isFavorite&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=true&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=type&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=false&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=name&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=description&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=qualityChecked&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=checkUsage&columns%5B5%5D%5Bname%5D=&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=false&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=owner.fullName&columns%5B6%5D%5Bname%5D=&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=true&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=dateCreated&columns%5B7%5D%5Bname%5D=&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=lastUpdated&columns%5B8%5D%5Bname%5D=&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=lastExecuted&columns%5B9%5D%5Bname%5D=&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B10%5D%5Bdata%5D=tags&columns%5B10%5D%5Bname%5D=&columns%5B10%5D%5Bsearchable%5D=true&columns%5B10%5D%5Borderable%5D=false&columns%5B10%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B10%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B11%5D%5Bdata%5D=&columns%5B11%5D%5Bname%5D=&columns%5B11%5D%5Bsearchable%5D=true&columns%5B11%5D%5Borderable%5D=false&columns%5B11%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B11%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=desc&start=0&length=50&search%5Bvalue%5D=S9Q2_PT04&search%5Bregex%5D=false&searchString=S9Q2_PT04&advancedFilter=false&tableFilter=%7B%7D&direction=desc&sharedwith=&sort=isFavorite&_=1591180574450" failed  	[MsgId: MERR-27760]
+Action.c(1101): Error -26377: No match found for the requested parameter "Query_Id". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1101): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 13.
+Action.c(651): web_url("dataTables_en.json") started  	[MsgId: MMSG-26355]
+Action.c(651): web_url("dataTables_en.json") was successful, 382 body bytes, 340 header bytes  	[MsgId: MMSG-26386]
+Action.c(660): web_remove_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(660): Previous automatically added web header for "Accept" removed  	[MsgId: MMSG-26587]
+Action.c(660): web_remove/revert_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(662): web_add_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(662): web_add_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(665): web_url("latestPeriodicReport") started  	[MsgId: MMSG-26355]
+Action.c(665): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/periodicReportConfigurationRest/latestPeriodicReport?length=4&start=0" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 9.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 29.5347 Wasted Time: 0.0001).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 6.
+Action.c(433): web_add_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(436): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(436): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(439): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(439): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(442): web_add_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(442): web_add_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(445): web_url("en.json") started  	[MsgId: MMSG-26355]
+Action.c(445): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/i18n/en.json" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 12.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 30.1577 Wasted Time: 0.0001).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 9.
+Action.c(1744): web_url("possibleValues_6") started  	[MsgId: MMSG-26355]
+Action.c(1744): web_url("possibleValues_6") was successful, 28 body bytes, 234 header bytes  	[MsgId: MMSG-26386]
+Action.c(1754): web_remove_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(1754): Previous automatically added web header for "X-Requested-With" removed  	[MsgId: MMSG-26587]
+Action.c(1754): web_remove/revert_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(1756): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(1756): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(1759): web_url("polymer-micro.html") started  	[MsgId: MMSG-26355]
+Action.c(1759): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/polymer-micro.html" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 14.
+Action.c(1630): web_url("reportFieldsForQueryValue_3") was successful, 161 body bytes, 234 header bytes  	[MsgId: MMSG-26386]
+Action.c(1639): web_remove_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(1639): Previous automatically added web header for "X-Requested-With" removed  	[MsgId: MMSG-26587]
+Action.c(1639): web_remove/revert_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(1641): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(1641): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(1644): web_url("polymer-mini.html") started  	[MsgId: MMSG-26355]
+Action.c(1644): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/polymer-mini.html" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 10.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 106.7303 Wasted Time: 0.0000).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 13.
+Action.c(237): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(246): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(246): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(250): web_submit_data("authenticate") started  	[MsgId: MMSG-26355]
+Action.c(250): Redirecting "https://pvr-perf.rxlogix.com/reports/login/authenticate" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(250): To location "https://pvr-perf.rxlogix.com/reports/"  	[MsgId: MMSG-26693]
+Action.c(250): Redirecting "https://pvr-perf.rxlogix.com/reports/" (redirection depth is 1)  	[MsgId: MMSG-26694]
+Action.c(250): To location "https://pvr-perf.rxlogix.com/reports/dashboard/index"  	[MsgId: MMSG-26693]
+Action.c(250): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/dashboard/index" failed  	[MsgId: MERR-27760]
+Action.c(250): Error -35049: No match found for the requested parameter "CsfrTokenId_2". Check whether the requested regular expression exists in the response data  	[MsgId: MERR-35049]
+Action.c(250): Error -26377: No match found for the requested parameter "User_Id". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(250): Error -26366: "Text=Dashboard" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(250): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 510 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 7.
+Action.c(1653): web_remove_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(1653): Previous automatically added web header for "Accept" removed  	[MsgId: MMSG-26587]
+Action.c(1653): web_remove/revert_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(1655): web_add_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(1655): web_add_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(1658): web_add_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(1658): web_add_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(1661): web_url("possibleValues") started  	[MsgId: MMSG-26355]
+Action.c(1661): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/possibleValues?lang=en&field=caseRoutingPvrFollowupNum&_=1591180618078" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 11.
+Action.c(45): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(45): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(52): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(52): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(61): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(61): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(65): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(65): Error -27792: Failed to connect to server "pvr-perf.rxlogix.com:443": [10060] Connection timed out  	[MsgId: MERR-27792]
+Action.c(65): Error -26377: No match found for the requested parameter "CsrfTokenId_1". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(65): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(65): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 10.
+Action.c(227): Registering web_reg_save_param_regexp was successful  	[MsgId: MMSG-26390]
+Action.c(237): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(237): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(246): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(246): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(250): web_submit_data("authenticate") started  	[MsgId: MMSG-26355]
+Action.c(250): Redirecting "https://pvr-perf.rxlogix.com/reports/login/authenticate" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(250): To location "https://pvr-perf.rxlogix.com/reports/"  	[MsgId: MMSG-26693]
+Action.c(250): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/" failed  	[MsgId: MERR-27760]
+Action.c(250): Error -35049: No match found for the requested parameter "CsfrTokenId_2". Check whether the requested regular expression exists in the response data  	[MsgId: MERR-35049]
+Action.c(250): Error -26377: No match found for the requested parameter "User_Id". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(250): Error -26366: "Text=Dashboard" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(250): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 198 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 15.
+Action.c(1630): web_url("reportFieldsForQueryValue_3") was successful, 161 body bytes, 234 header bytes  	[MsgId: MMSG-26386]
+Action.c(1639): web_remove_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(1639): Previous automatically added web header for "X-Requested-With" removed  	[MsgId: MMSG-26587]
+Action.c(1639): web_remove/revert_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(1641): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(1641): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(1644): web_url("polymer-mini.html") started  	[MsgId: MMSG-26355]
+Action.c(1644): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/polymer-mini.html" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 14.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 25.8772 Wasted Time: 0.0001).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 16.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 14.0447 Wasted Time: 0.0000).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 11.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 19.1620 Wasted Time: 0.0001).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 12.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 17.6941 Wasted Time: 0.0001).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 15.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 18.8380 Wasted Time: 0.0001).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 17.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 25.1121 Wasted Time: 0.0001).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 12.
+Action.c(1536): web_remove_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(1536): Previous automatically added web header for "X-Requested-With" removed  	[MsgId: MMSG-26587]
+Action.c(1536): web_remove/revert_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(1538): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(1538): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(1550): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(1550): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(1553): web_url("getQueryNameDescription_2") started  	[MsgId: MMSG-26355]
+Action.c(1553): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/queryRest/getQueryNameDescription?id=93262&_=1591180618071" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 13.
+Action.c(1445): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(1448): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(1448): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(1451): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(1451): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(1454): web_url("getNumOperators") started  	[MsgId: MMSG-26355]
+Action.c(1454): web_url("getNumOperators") was successful, 174 body bytes, 234 header bytes  	[MsgId: MMSG-26386]
+Action.c(1463): web_url("getDateOperators") started  	[MsgId: MMSG-26355]
+Action.c(1463): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/getDateOperators" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 13.
+Action.c(45): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(45): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(52): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(52): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(61): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(61): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(65): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(65): Error -27792: Failed to connect to server "pvr-perf.rxlogix.com:443": [10060] Connection timed out  	[MsgId: MERR-27792]
+Action.c(65): Error -26377: No match found for the requested parameter "CsrfTokenId_1". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(65): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(65): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 16.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 15.0422 Wasted Time: 0.0000).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 10.
+Action.c(1594): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(1597): web_url("polymer.html") started  	[MsgId: MMSG-26355]
+Action.c(1597): web_url("polymer.html") was successful, 25982 body bytes, 342 header bytes  	[MsgId: MMSG-26386]
+Action.c(1606): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(1606): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(1609): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(1609): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(1612): web_url("reportFieldsForQueryValue") started  	[MsgId: MMSG-26355]
+Action.c(1612): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/queryRest/reportFieldsForQueryValue?name=caseRoutingPvrFollowupNum&_=1591180618075" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 18.
+Action.c(1702): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(1705): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(1705): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(1708): web_url("possibleValues_2") started  	[MsgId: MMSG-26355]
+Action.c(1708): web_url("possibleValues_2") was successful, 28 body bytes, 234 header bytes  	[MsgId: MMSG-26386]
+Action.c(1717): web_url("possibleValues_3") started  	[MsgId: MMSG-26355]
+Action.c(1717): web_url("possibleValues_3") was successful, 38 body bytes, 234 header bytes  	[MsgId: MMSG-26386]
+Action.c(1726): web_url("possibleValues_4") started  	[MsgId: MMSG-26355]
+Action.c(1726): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/possibleValues?lang=en&field=prodDrugsAbuse&_=1591180618081" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 17.
+Action.c(45): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(45): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(52): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(52): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(61): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(61): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(65): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(65): Error -27792: Failed to connect to server "pvr-perf.rxlogix.com:443": [10060] Connection timed out  	[MsgId: MERR-27792]
+Action.c(65): Error -26377: No match found for the requested parameter "CsrfTokenId_1". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(65): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(65): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 14.
+Action.c(1536): web_remove_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(1536): Previous automatically added web header for "X-Requested-With" removed  	[MsgId: MMSG-26587]
+Action.c(1536): web_remove/revert_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(1538): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(1538): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(1550): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(1550): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(1553): web_url("getQueryNameDescription_2") started  	[MsgId: MMSG-26355]
+Action.c(1553): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/queryRest/getQueryNameDescription?id=93230&_=1591180618071" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 11.
+Action.c(1609): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(1609): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(1612): web_url("reportFieldsForQueryValue") started  	[MsgId: MMSG-26355]
+Action.c(1612): web_url("reportFieldsForQueryValue") was successful, 172 body bytes, 234 header bytes  	[MsgId: MMSG-26386]
+Action.c(1621): web_url("reportFieldsForQueryValue_2") started  	[MsgId: MMSG-26355]
+Action.c(1621): web_url("reportFieldsForQueryValue_2") was successful, 177 body bytes, 234 header bytes  	[MsgId: MMSG-26386]
+Action.c(1630): web_url("reportFieldsForQueryValue_3") started  	[MsgId: MMSG-26355]
+Action.c(1630): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/queryRest/reportFieldsForQueryValue?name=patInfoPostalCode&_=1591180618076" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 19.
+Action.c(223): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(227): web_reg_save_param_regexp started  	[MsgId: MMSG-26355]
+Action.c(227): Registering web_reg_save_param_regexp was successful  	[MsgId: MMSG-26390]
+Action.c(237): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(237): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(246): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(246): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(250): web_submit_data("authenticate") started  	[MsgId: MMSG-26355]
+Action.c(250): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/authenticate" failed  	[MsgId: MERR-27760]
+Action.c(250): Error -35049: No match found for the requested parameter "CsfrTokenId_2". Check whether the requested regular expression exists in the response data  	[MsgId: MERR-35049]
+Action.c(250): Error -26377: No match found for the requested parameter "User_Id". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(250): Error -26366: "Text=Dashboard" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(250): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 14.
+Action.c(45): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(45): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(52): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(52): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(61): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(61): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(65): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(65): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/auth" failed  	[MsgId: MERR-27760]
+Action.c(65): Error -26377: No match found for the requested parameter "CsrfTokenId_1". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(65): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(65): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 15.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 40.9707 Wasted Time: 0.0000).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 12.
+Action.c(2307): web_url("userDefaultReportFieldsOpts") started  	[MsgId: MMSG-26355]
+Action.c(2307): web_url("userDefaultReportFieldsOpts") was successful, 42806 body bytes, 289 header bytes  	[MsgId: MMSG-26386]
+Action.c(2316): web_add_header("If-None-Match") started  	[MsgId: MMSG-26355]
+Action.c(2316): Warning -26594: The header being added may cause unpredictable results if applied to ALL the URLs generated on behalf of the next script function. It will apply to the primary URL only.  	[MsgId: MWAR-26594]
+Action.c(2316): web_add_header("If-None-Match") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(2319): web_url("polymer-mini.html_2") started  	[MsgId: MMSG-26355]
+Action.c(2319): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/polymer-mini.html" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 18.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 23.7247 Wasted Time: 0.0001).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 16.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 23.2769 Wasted Time: 0.0001).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 15.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 21.3186 Wasted Time: 0.0001).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 20.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 128.4325 Wasted Time: 0.0000).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 19.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 33.9224 Wasted Time: 0.0000).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 17.
+Action.c(45): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(45): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(52): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(52): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(61): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(61): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(65): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(65): Error -27792: Failed to connect to server "pvr-perf.rxlogix.com:443": [10060] Connection timed out  	[MsgId: MERR-27792]
+Action.c(65): Error -26377: No match found for the requested parameter "CsrfTokenId_1". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(65): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(65): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 16.
+Action.c(1759): web_url("polymer-micro.html") was successful, 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26386]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 16.8991 Wasted Time: 0.0000).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 21.
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Connection to pvr-perf.rxlogix.com:443 closed after being inactive for 609 seconds, exceeding the "HTTP Keep-Alive timeout" Runtime Setting (600 seconds). URL="[None]"  	[MsgId: MMSG-27647]
+Action.c(1815): Redirecting "https://pvr-perf.rxlogix.com/reports/caseSeries/updatePreview" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1815): To location "https://pvr-perf.rxlogix.com/reports/query/index"  	[MsgId: MMSG-26693]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 14.
+Action.c(1759): web_url("polymer-micro.html") highest severity level was "warning", 4251 body bytes, 347 header bytes  	[MsgId: MMSG-26388]
+Action.c(1787): Notify: Transaction "S09_T05_Click_Preview1" ended with a "Pass" status (Duration: 15.9871 Wasted Time: 0.0001).
+Action.c(1789): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1791): Notify: Transaction "S09_T06_Click_Preview2" started.
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("updatePreview") started  	[MsgId: MMSG-26355]
+Action.c(1815): Connection to pvr-perf.rxlogix.com:443 closed after being inactive for 683 seconds, exceeding the "HTTP Keep-Alive timeout" Runtime Setting (600 seconds). URL="[None]"  	[MsgId: MMSG-27647]
+Action.c(1815): Error -27792: Failed to connect to server "pvr-perf.rxlogix.com:443": [10060] Connection timed out  	[MsgId: MERR-27792]
+Action.c(1815): Error -26366: "Text=Preview of Query" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(1815): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 17.
+Action.c(45): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(45): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(52): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(52): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(61): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(61): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(65): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(65): Error -27792: Failed to connect to server "pvr-perf.rxlogix.com:443": [10060] Connection timed out  	[MsgId: MERR-27792]
+Action.c(65): Error -26377: No match found for the requested parameter "CsrfTokenId_1". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(65): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(65): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 22.
+Action.c(45): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(45): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(52): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(52): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(61): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(61): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(65): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(65): Error -27792: Failed to connect to server "pvr-perf.rxlogix.com:443": [10060] Connection timed out  	[MsgId: MERR-27792]
+Action.c(65): Error -26377: No match found for the requested parameter "CsrfTokenId_1". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(65): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(65): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 15.
+Action.c(45): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(45): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(52): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(52): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(61): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(61): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(65): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(65): Error -27792: Failed to connect to server "pvr-perf.rxlogix.com:443": [10060] Connection timed out  	[MsgId: MERR-27792]
+Action.c(65): Error -26377: No match found for the requested parameter "CsrfTokenId_1". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(65): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(65): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 18.
+Action.c(45): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(45): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(52): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(52): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(61): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(61): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(65): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(65): Error -27792: Failed to connect to server "pvr-perf.rxlogix.com:443": [10060] Connection timed out  	[MsgId: MERR-27792]
+Action.c(65): Error -26377: No match found for the requested parameter "CsrfTokenId_1". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(65): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(65): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 20.
+Action.c(223): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(227): web_reg_save_param_regexp started  	[MsgId: MMSG-26355]
+Action.c(227): Registering web_reg_save_param_regexp was successful  	[MsgId: MMSG-26390]
+Action.c(237): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(237): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(246): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(246): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(250): web_submit_data("authenticate") started  	[MsgId: MMSG-26355]
+Action.c(250): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/authenticate" failed  	[MsgId: MERR-27760]
+Action.c(250): Error -35049: No match found for the requested parameter "CsfrTokenId_2". Check whether the requested regular expression exists in the response data  	[MsgId: MERR-35049]
+Action.c(250): Error -26377: No match found for the requested parameter "User_Id". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(250): Error -26366: "Text=Dashboard" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(250): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+

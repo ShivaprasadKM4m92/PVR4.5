@@ -1,0 +1,11 @@
+[t173]
+FileName1=t173.html
+URL1=https://pvr-perf.rxlogix.com/reports/dashboard/index
+Total=1
+RequestHeaderFile=t173_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t173_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_173.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

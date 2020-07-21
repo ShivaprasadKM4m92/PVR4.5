@@ -1,0 +1,11 @@
+[t245]
+FileName1=t245_queryExpressionValuesForQuery.json
+URL1=https://pvr-perf.rxlogix.com/reports/query/queryExpressionValuesForQuery?queryId=37402
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_245.xml
+RequestHeaderFile=t245_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t245_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

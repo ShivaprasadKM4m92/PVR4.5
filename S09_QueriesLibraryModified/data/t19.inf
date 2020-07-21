@@ -1,0 +1,11 @@
+[t19]
+FileName1=t19_fuelux-b7cf5c5c681fcdbd63156284516c90e9.css
+URL1=https://pvr-perf.rxlogix.com/reports/assets/fuelux-b7cf5c5c681fcdbd63156284516c90e9.css
+Total=1
+ContentType=text/css
+SnapshotXmlFile=snapshot_19.xml
+RequestHeaderFile=t19_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t19_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,11 @@
+[t212]
+FileName1=t212_possibleValues.json
+URL1=https://pvr-perf.rxlogix.com/reports/query/possibleValues?lang=en&field=patInfoPostalCode&_=1591180724934
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_212.xml
+RequestHeaderFile=t212_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t212_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

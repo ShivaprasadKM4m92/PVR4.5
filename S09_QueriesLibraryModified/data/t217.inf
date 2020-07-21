@@ -1,0 +1,11 @@
+[t217]
+FileName1=t217_scheduler-293bc77ad497c01ec53bcb2f97095e6b.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/scheduler-293bc77ad497c01ec53bcb2f97095e6b.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_217.xml
+RequestHeaderFile=t217_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t217_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

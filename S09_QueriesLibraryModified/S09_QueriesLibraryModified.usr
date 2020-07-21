@@ -1,0 +1,71 @@
+[General]
+Type=Multi
+DefaultCfg=default.cfg
+ParameterFile=S09_QueriesLibraryModified.prm
+GlobalParameterFile=
+NewFunctionHeader=1
+RunType=cci
+ActionLogicExt=action_logic
+LastActiveAction=Action
+MajorVersion=2020
+MinorVersion=0
+ActiveTypes=QTWeb
+GenerateTypes=QTWeb
+AdditionalTypes=QTWeb
+DevelopTool=Vugen
+LastModifyVer=2020.0.0.0
+DFERebrandFlag=Done
+ParamLeftBrace={
+ParamRightBrace=}
+ScriptLanguage=C
+LastCodeGenerationVer=2020.0.0.0
+DisableRegenerate=0
+Encoding=UTF8
+Description=
+ScriptLocale=en-IN
+[Actions]
+vuser_init=vuser_init.c
+Action=Action.c
+vuser_end=vuser_end.c
+[RunLogicFiles]
+Default Profile=default.usp
+[VuserProfiles]
+Profiles=Default Profile
+[CfgFiles]
+Default Profile=default.cfg
+[ExtraFiles]
+globals.h=
+[Modified Actions]
+vuser_init=0
+Action=1
+vuser_end=0
+[Recorded Actions]
+vuser_init=0
+Action=1
+vuser_end=0
+[Replayed Actions]
+vuser_init=1
+Action=1
+vuser_end=1
+[Interpreters]
+vuser_init=cci
+Action=cci
+vuser_end=cci
+[TransactionsOrder]
+Order="S09_T01_OpenApplication__*delimiter*__S09_T02_Login__*delimiter*__S09_T03_NavigateQueries_QueryLibrary__*delimiter*__S09_T04_Search_Query__*delimiter*__S09_T07_Edit__*delimiter*__S09_T08_Update__*delimiter*__S09_T09_Copy__*delimiter*__S09_T11_NavigateQueries_QueryLibrary__*delimiter*__S09_T13_ClearFilter__*delimiter*__S09_T14_Logout"
+[StateManagement]
+LastReplayStatus=1
+[ActiveReplay]
+LastReplayedRunName=result1
+ActiveRunName=result1
+[Transactions]
+S09_T01_OpenApplication=
+S09_T02_Login=
+S09_T03_NavigateQueries_QueryLibrary=
+S09_T04_Search_Query=
+S09_T07_Edit=
+S09_T08_Update=
+S09_T09_Copy=
+S09_T11_NavigateQueries_QueryLibrary=
+S09_T13_ClearFilter=
+S09_T14_Logout=

@@ -1,0 +1,11 @@
+[t249]
+FileName1=t249_reportFieldsForQueryValue.json
+URL1=https://pvr-perf.rxlogix.com/reports/queryRest/reportFieldsForQueryValue?name=patInfoPostalCode
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_249.xml
+RequestHeaderFile=t249_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t249_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,11 @@
+[t172]
+FileName1=t172_possibleValues.json
+URL1=https://pvr-perf.rxlogix.com/reports/query/possibleValues?lang=en&field=prodDrugsAbuse&_=1591180665608
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_172.xml
+RequestHeaderFile=t172_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t172_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

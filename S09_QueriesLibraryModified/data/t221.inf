@@ -1,0 +1,11 @@
+[t221]
+FileName1=t221_deliveryOption-15dc8d9c9cd9dc9e6c9c50d8091bed20.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/configuration/deliveryOption-15dc8d9c9cd9dc9e6c9c50d8091bed20.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_221.xml
+RequestHeaderFile=t221_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t221_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

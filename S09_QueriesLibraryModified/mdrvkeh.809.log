@@ -1,0 +1,524 @@
+Start auto log messages stack - Iteration 1.
+Action.c(223): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(227): web_reg_save_param_regexp started  	[MsgId: MMSG-26355]
+Action.c(227): Registering web_reg_save_param_regexp was successful  	[MsgId: MMSG-26390]
+Action.c(237): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(237): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(246): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(246): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(250): web_submit_data("authenticate") started  	[MsgId: MMSG-26355]
+Action.c(250): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/authenticate" failed  	[MsgId: MERR-27760]
+Action.c(250): Error -35049: No match found for the requested parameter "CsfrTokenId_2". Check whether the requested regular expression exists in the response data  	[MsgId: MERR-35049]
+Action.c(250): Error -26377: No match found for the requested parameter "User_Id". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(250): Error -26366: "Text=Dashboard" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(250): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 3.
+Action.c(2393): Registering web_url("extraValues") was successful  	[MsgId: MMSG-26390]
+Action.c(2445): web_url("possibleValues_7") started  	[MsgId: MMSG-26355]
+Action.c(2445): Registering web_url("possibleValues_7") was successful  	[MsgId: MMSG-26390]
+Action.c(2454): web_url("possibleValues_8") started  	[MsgId: MMSG-26355]
+Action.c(2454): Registering web_url("possibleValues_8") was successful  	[MsgId: MMSG-26390]
+Action.c(2463): web_url("possibleValues_9") started  	[MsgId: MMSG-26355]
+Action.c(2463): Registering web_url("possibleValues_9") was successful  	[MsgId: MMSG-26390]
+Action.c(2499): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(2499): Error: C interpreter run time error: Action.c (2499):  Error -- memory violation : Exception ACCESS_VIOLATION received.
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 3.
+Notify: Transaction "S09_T07_Edit" ended with a "Stop" status (Duration: 5.6400 Wasted Time: 0.0016).
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
+Error: Exception was raised when calling per-thread-terminate function in extension lrwreplaymain.dll: System Exceptions: EXCEPTION_ACCESS_VIOLATION
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(401): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fullcalendar/fullcalendar-lang-all-e4e9be403fd4dc092b72c368c27e5d47.js" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(629): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fullcalendar.print-5e9985f0185898b586ec4820f63bb446.css" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(541): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/jquery.core-2c7cdf128b42d849235dea8cadd879b8.js" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(698): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fontawesome-webfont-af7ae505a9eed503f8b8e6982036873e.woff2?v=4.7.0" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(597): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/actionItemRest/index?length=5&start=0&sort=dueDate&direction=asc" failed   [issued at Action.c(706)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(557): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/jquery/customise-jquery-idleTimeout-6286fe026bdf78a6c38a29cfd8d979c8.js" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(525): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/deleteModal-68b8e74283c8070801d2afbaf40831a1.js" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(509): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/gridstack/gridstack.jQueryUI.min-5bd5204d23705e69adeb23742f04ff8c.js" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(280): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fuelux-b7cf5c5c681fcdbd63156284516c90e9.css" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(663): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/periodicReportConfigurationRest/latestPeriodicReport?length=4&start=0" failed   [issued at Action.c(706)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(687): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/Material-Design-Iconic-Font-a2a1ba89e7f9d29f7d5aee76e8b9f7ab.woff?v=1.0.1" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(269): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/theme_gradient_blue-8a7bc35778c66c2a34b346cddd101ad7.css" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(517): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/pushNotification-3d08817200dceb0a405d9f7aefa3192f.js" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(576): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportResultRest/latestAdhocReport?length=4&start=0" failed   [issued at Action.c(706)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(549): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/store.modern.min-ee86dbde67356086e53dffdd31c6867d.js" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(649): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/i18n/dataTables_en.json" failed   [issued at Action.c(706)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(533): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/jquery.app-782d8f87ac279a019b37b18a315654b2.js" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(609): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/87239?_=1591180540692" failed   [issued at Action.c(706)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(761): web_add_header("Sec-Fetch-Dest") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(764): web_add_auto_header("Accept-Language") started  	[MsgId: MMSG-26355]
+Action.c(764): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(767): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(767): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(770): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(770): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(773): web_url("index_2") started  	[MsgId: MMSG-26355]
+Action.c(773): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/index" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(698): web_url("fontawesome-webfont-af7ae505a9eed503f8b8e6982036873e.woff2") started  	[MsgId: MMSG-26355]
+Action.c(698): Registering web_url("fontawesome-webfont-af7ae505a9eed503f8b8e6982036873e.woff2") was successful  	[MsgId: MMSG-26390]
+Action.c(706): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(335): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/rxapplication-eebebbeb632a82e8608209da3ab42ef2.js" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(469): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/highcharts/modules/no-data-to-display-93457bf691aefc406c1da97a1f8d7e2d.js" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(649): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/i18n/dataTables_en.json" failed   [issued at Action.c(706)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(698): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fontawesome-webfont-af7ae505a9eed503f8b8e6982036873e.woff2?v=4.7.0" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(379): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fullcalendar/fullcalendar-ab21481ecaaf856ac398df2626c214f0.js" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(485): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/highcharts/plugins/grouped-categories-8ddf90b557e5da14225afefcaa8bf9f6.js" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(501): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/gridstack/gridstack.min-157675a5f94f1a18234a494030c5d8f0.js" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(443): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/i18n/en.json" failed   [issued at Action.c(706)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(533): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/jquery.app-782d8f87ac279a019b37b18a315654b2.js" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(517): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/pushNotification-3d08817200dceb0a405d9f7aefa3192f.js" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(609): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/87361?_=1591180540692" failed   [issued at Action.c(706)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(549): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/store.modern.min-ee86dbde67356086e53dffdd31c6867d.js" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(576): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportResultRest/latestAdhocReport?length=4&start=0" failed   [issued at Action.c(706)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(401): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fullcalendar/fullcalendar-lang-all-e4e9be403fd4dc092b72c368c27e5d47.js" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(557): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/jquery/customise-jquery-idleTimeout-6286fe026bdf78a6c38a29cfd8d979c8.js" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(477): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/highcharts/highcharts-3d-b0c0c823b44f85cb61361491f4353576.js" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(493): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/highcharts/highcharts-more-31bca387194b423710d019dfa069474a.js" failed   [issued at Action.c(706)]  	[MsgId: MWAR-27760]
+Action.c(663): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/periodicReportConfigurationRest/latestPeriodicReport?length=4&start=0" failed   [issued at Action.c(706)]  	[MsgId: MERR-27760]
+Action.c(597): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/actionItemRest/index?length=5&start=0&sort=dueDate&direction=asc" failed   [issued at Action.c(706)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+Action.c(687): web_url("Material-Design-Iconic-Font-a2a1ba89e7f9d29f7d5aee76e8b9f7ab.woff") started  	[MsgId: MMSG-26355]
+Action.c(687): Resource "https://pvr-perf.rxlogix.com/reports/assets/Material-Design-Iconic-Font-a2a1ba89e7f9d29f7d5aee76e8b9f7ab.woff?v=1.0.1" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(698): web_url("fontawesome-webfont-af7ae505a9eed503f8b8e6982036873e.woff2") started  	[MsgId: MMSG-26355]
+Action.c(698): Resource "https://pvr-perf.rxlogix.com/reports/assets/fontawesome-webfont-af7ae505a9eed503f8b8e6982036873e.woff2?v=4.7.0" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(706): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(663): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/periodicReportConfigurationRest/latestPeriodicReport?length=4&start=0"   [issued at Action.c(706)]  	[MsgId: MERR-26610]
+Action.c(576): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/reportResultRest/latestAdhocReport?length=4&start=0"   [issued at Action.c(706)]  	[MsgId: MERR-26610]
+Action.c(443): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/assets/i18n/en.json"   [issued at Action.c(706)]  	[MsgId: MERR-26610]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(2864): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(2867): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(2867): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(2871): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(2871): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(2881): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(2881): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(2885): web_url("{Query_Id}_2") started  	[MsgId: MMSG-26355]
+Action.c(2885): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/copy/93230" failed  	[MsgId: MERR-27760]
+Action.c(2885): Error -26377: No match found for the requested parameter "Query_Id_2". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(2885): Error -26366: "Text=Copy of" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(2885): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(761): web_add_header("Sec-Fetch-Dest") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(764): web_add_auto_header("Accept-Language") started  	[MsgId: MMSG-26355]
+Action.c(764): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(767): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(767): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(770): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(770): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(773): web_url("index_2") started  	[MsgId: MMSG-26355]
+Action.c(773): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/index" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 3.
+Action.c(4235): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(4238): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(4238): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(4241): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(4241): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(4244): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(4244): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(4247): web_url("tag_3") started  	[MsgId: MMSG-26355]
+Action.c(4247): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/tag" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 6.
+Action.c(962): web_url("filter_panel.hbs") started  	[MsgId: MMSG-26355]
+Action.c(962): Registering web_url("filter_panel.hbs") was successful  	[MsgId: MMSG-26390]
+Action.c(976): web_url("{User_Id}_2") started  	[MsgId: MMSG-26355]
+Action.c(976): Registering web_url("{User_Id}_2") was successful  	[MsgId: MMSG-26390]
+Action.c(985): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(925): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/i18n/dataTables_en.json" failed   [issued at Action.c(985)]  	[MsgId: MWAR-27760]
+Action.c(903): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/i18n/en.json" failed   [issued at Action.c(985)]  	[MsgId: MWAR-27760]
+Action.c(976): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/87239?_=1591180574448" failed   [issued at Action.c(985)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 6.
+Action.c(962): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/hbs-templates/filter_panel.hbs" failed   [issued at Action.c(985)]  	[MsgId: MWAR-27760]
+Action.c(955): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/hbs-templates/datepicker.hbs" failed   [issued at Action.c(985)]  	[MsgId: MWAR-27760]
+Action.c(944): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/tag" failed   [issued at Action.c(985)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+Action.c(2393): Registering web_url("extraValues") was successful  	[MsgId: MMSG-26390]
+Action.c(2445): web_url("possibleValues_7") started  	[MsgId: MMSG-26355]
+Action.c(2445): Registering web_url("possibleValues_7") was successful  	[MsgId: MMSG-26390]
+Action.c(2454): web_url("possibleValues_8") started  	[MsgId: MMSG-26355]
+Action.c(2454): Registering web_url("possibleValues_8") was successful  	[MsgId: MMSG-26390]
+Action.c(2463): web_url("possibleValues_9") started  	[MsgId: MMSG-26355]
+Action.c(2463): Registering web_url("possibleValues_9") was successful  	[MsgId: MMSG-26390]
+Action.c(2499): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(2194): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/column-view-64c0085c608464f4a6f66e33d985ae27.html" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+Action.c(2454): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/possibleValues?lang=en&field=patInfoPostalCode&_=1591180665607" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+Action.c(2445): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/possibleValues?lang=en&field=caseRoutingPvrFollowupNum&_=1591180665606" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+Action.c(2157): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/query-32b32fe1008b70e0042a67dec4a7793b.css" failed   [issued at Action.c(2499)]  	[MsgId: MWAR-27760]
+Action.c(2463): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/possibleValues?lang=en&field=prodDrugsAbuse&_=1591180665608" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+Action.c(2384): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/getDateOperators?_=1591180665600" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+Action.c(2393): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/extraValues?lang=en&_=1591180665605" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+Action.c(2366): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/getStringOperators?_=1591180665602" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+Action.c(2375): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/getAllKeywords?_=1591180665604" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+Action.c(2348): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/getNumOperators?_=1591180665601" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+Action.c(2357): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/getValuelessOperators?_=1591180665603" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+Action.c(2323): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/polymer-mini.html" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+Action.c(2334): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/polymer-micro.html" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+Action.c(2277): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/userRest/sharedWithValues?ids=User_87361" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+Action.c(2300): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/polymer.html" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+Action.c(2219): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/i18n/en.json" failed   [issued at Action.c(2499)]  	[MsgId: MWAR-27760]
+Action.c(2266): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/87361?_=1591180665599" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(4268): web_add_header("If-None-Match") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(4271): web_url("filter_panel.hbs_4") started  	[MsgId: MMSG-26355]
+Action.c(4271): Registering web_url("filter_panel.hbs_4") was successful  	[MsgId: MMSG-26390]
+Action.c(4278): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(4278): web_concurrent_end was successful, 1106 body bytes, 686 header bytes  	[MsgId: MMSG-26386]
+Action.c(4280): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(4280): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(4283): web_url("{User_Id}_10") started  	[MsgId: MMSG-26355]
+Action.c(4283): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/87294?_=1591180880549" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack.
+Ending iteration 5.
+Waiting 177.7860 seconds for iteration pacing.
+Starting iteration 6.
+Error: Exception was raised when calling event-notify Vuser function in extension lrwreplaymain.dll: System Exceptions: EXCEPTION_ACCESS_VIOLATION
+Start auto log messages stack - Iteration 6.
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(52): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(52): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(61): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(61): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(65): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(65): ssl_handle_status encounter error : SSL_ERROR_SYSCALL, error id : 0  	[MsgId: MMSG-26000]
+Action.c(65): Error -27776: [GENERAL_MSG_CAT_SSL_ERROR]connect to host "pvr-perf.rxlogix.com" failed  	[MsgId: MERR-27776]
+Action.c(65): Error -26377: No match found for the requested parameter "CsrfTokenId_1". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(65): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(65): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+Action.c(45): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(45): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(48): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(52): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(52): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(61): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(61): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(65): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(65): Error -27792: Failed to connect to server "pvr-perf.rxlogix.com:443": [10060] Connection timed out  	[MsgId: MERR-27792]
+Action.c(65): Error -26377: No match found for the requested parameter "CsrfTokenId_1". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(65): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(65): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(2393): Registering web_url("extraValues") was successful  	[MsgId: MMSG-26390]
+Action.c(2445): web_url("possibleValues_7") started  	[MsgId: MMSG-26355]
+Action.c(2445): Registering web_url("possibleValues_7") was successful  	[MsgId: MMSG-26390]
+Action.c(2454): web_url("possibleValues_8") started  	[MsgId: MMSG-26355]
+Action.c(2454): Registering web_url("possibleValues_8") was successful  	[MsgId: MMSG-26390]
+Action.c(2463): web_url("possibleValues_9") started  	[MsgId: MMSG-26355]
+Action.c(2463): Registering web_url("possibleValues_9") was successful  	[MsgId: MMSG-26390]
+Action.c(2499): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(2266): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/87361?_=1591180665599" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+Action.c(2357): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/getValuelessOperators?_=1591180665603" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+Action.c(2300): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/polymer.html" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+Action.c(2375): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/getAllKeywords?_=1591180665604" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+Action.c(2384): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/getDateOperators?_=1591180665600" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+Action.c(2393): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/extraValues?lang=en&_=1591180665605" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+Action.c(2445): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/possibleValues?lang=en&field=caseRoutingPvrFollowupNum&_=1591180665606" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+Action.c(2454): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/possibleValues?lang=en&field=patInfoPostalCode&_=1591180665607" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+Action.c(2463): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/possibleValues?lang=en&field=prodDrugsAbuse&_=1591180665608" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(2157): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/query-32b32fe1008b70e0042a67dec4a7793b.css" failed   [issued at Action.c(2499)]  	[MsgId: MWAR-27760]
+Action.c(2194): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/column-view-64c0085c608464f4a6f66e33d985ae27.html" failed   [issued at Action.c(2499)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 7.
+Action.c(4268): web_add_header("If-None-Match") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(4271): web_url("filter_panel.hbs_4") started  	[MsgId: MMSG-26355]
+Action.c(4271): Registering web_url("filter_panel.hbs_4") was successful  	[MsgId: MMSG-26390]
+Action.c(4278): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(4278): web_concurrent_end was successful, 1106 body bytes, 686 header bytes  	[MsgId: MMSG-26386]
+Action.c(4280): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(4280): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(4283): web_url("{User_Id}_10") started  	[MsgId: MMSG-26355]
+Action.c(4283): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/87239?_=1591180880549" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack.
+Ending iteration 7.
+Waiting 140.9580 seconds for iteration pacing.
+Starting iteration 8.
+Error: Exception was raised when calling event-notify Vuser function in extension lrwreplaymain.dll: System Exceptions: EXCEPTION_ACCESS_VIOLATION
+Start auto log messages stack.
+Ending iteration 5.
+Waiting 274.6260 seconds for iteration pacing.
+Starting iteration 6.
+Error: Exception was raised when calling event-notify Vuser function in extension lrwreplaymain.dll: System Exceptions: EXCEPTION_ACCESS_VIOLATION
+Start auto log messages stack.
+Ending iteration 6.
+Waiting 438.9880 seconds for iteration pacing.
+Starting iteration 7.
+Error: Exception was raised when calling event-notify Vuser function in extension lrwreplaymain.dll: System Exceptions: EXCEPTION_ACCESS_VIOLATION
+Start auto log messages stack - Iteration 8.
+Action.c(2393): Registering web_url("extraValues") was successful  	[MsgId: MMSG-26390]
+Action.c(2445): web_url("possibleValues_7") started  	[MsgId: MMSG-26355]
+Action.c(2445): Registering web_url("possibleValues_7") was successful  	[MsgId: MMSG-26390]
+Action.c(2454): web_url("possibleValues_8") started  	[MsgId: MMSG-26355]
+Action.c(2454): Registering web_url("possibleValues_8") was successful  	[MsgId: MMSG-26390]
+Action.c(2463): web_url("possibleValues_9") started  	[MsgId: MMSG-26355]
+Action.c(2463): Registering web_url("possibleValues_9") was successful  	[MsgId: MMSG-26390]
+Action.c(2499): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(2499): Error: C interpreter run time error: Action.c (2499):  Error -- memory violation : Exception ACCESS_VIOLATION received.
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 8.
+Notify: Transaction "S09_T07_Edit" ended with a "Stop" status (Duration: 3.6747 Wasted Time: 0.0015).
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
+Error: Exception was raised when calling per-thread-terminate function in extension lrwreplaymain.dll: System Exceptions: EXCEPTION_ACCESS_VIOLATION
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(227): Registering web_reg_save_param_regexp was successful  	[MsgId: MMSG-26390]
+Action.c(237): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(237): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(246): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(246): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(250): web_submit_data("authenticate") started  	[MsgId: MMSG-26355]
+Action.c(250): Redirecting "https://pvr-perf.rxlogix.com/reports/login/authenticate" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(250): To location "https://pvr-perf.rxlogix.com/reports/"  	[MsgId: MMSG-26693]
+Action.c(250): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/" failed  	[MsgId: MERR-27760]
+Action.c(250): Error -35049: No match found for the requested parameter "CsfrTokenId_2". Check whether the requested regular expression exists in the response data  	[MsgId: MERR-35049]
+Action.c(250): Error -26377: No match found for the requested parameter "User_Id". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(250): Error -26366: "Text=Dashboard" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(250): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 229 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack.
+Ending iteration 6.
+Waiting 218.6440 seconds for iteration pacing.
+Starting iteration 7.
+Error: Exception was raised when calling event-notify Vuser function in extension lrwreplaymain.dll: System Exceptions: EXCEPTION_ACCESS_VIOLATION
+Start auto log messages stack.
+Ending iteration 7.
+Waiting 116.3590 seconds for iteration pacing.
+Starting iteration 8.
+Error: Exception was raised when calling event-notify Vuser function in extension lrwreplaymain.dll: System Exceptions: EXCEPTION_ACCESS_VIOLATION
+Start auto log messages stack - Iteration 7.
+Action.c(687): web_url("Material-Design-Iconic-Font-a2a1ba89e7f9d29f7d5aee76e8b9f7ab.woff") started  	[MsgId: MMSG-26355]
+Action.c(687): Resource "https://pvr-perf.rxlogix.com/reports/assets/Material-Design-Iconic-Font-a2a1ba89e7f9d29f7d5aee76e8b9f7ab.woff?v=1.0.1" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(698): web_url("fontawesome-webfont-af7ae505a9eed503f8b8e6982036873e.woff2") started  	[MsgId: MMSG-26355]
+Action.c(698): Resource "https://pvr-perf.rxlogix.com/reports/assets/fontawesome-webfont-af7ae505a9eed503f8b8e6982036873e.woff2?v=4.7.0" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(706): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(663): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/periodicReportConfigurationRest/latestPeriodicReport?length=4&start=0"   [issued at Action.c(706)]  	[MsgId: MERR-26610]
+Action.c(443): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/assets/i18n/en.json"   [issued at Action.c(706)]  	[MsgId: MERR-26610]
+Action.c(576): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/reportResultRest/latestAdhocReport?length=4&start=0"   [issued at Action.c(706)]  	[MsgId: MERR-26610]
+End auto log messages stack.
+
+
+Start auto log messages stack.
+Ending iteration 7.
+Waiting 468.0540 seconds for iteration pacing.
+Starting iteration 8.
+Error: Exception was raised when calling event-notify Vuser function in extension lrwreplaymain.dll: System Exceptions: EXCEPTION_ACCESS_VIOLATION
+Start auto log messages stack.
+Ending iteration 8.
+Waiting 247.6550 seconds for iteration pacing.
+Starting iteration 9.
+Error: Exception was raised when calling event-notify Vuser function in extension lrwreplaymain.dll: System Exceptions: EXCEPTION_ACCESS_VIOLATION
+Start auto log messages stack.
+Ending iteration 6.
+Waiting 244.6850 seconds for iteration pacing.
+Starting iteration 7.
+Error: Exception was raised when calling event-notify Vuser function in extension lrwreplaymain.dll: System Exceptions: EXCEPTION_ACCESS_VIOLATION
+Start auto log messages stack - Iteration 8.
+Action.c(3059): Registering web_url("possibleValues_13") was successful  	[MsgId: MMSG-26390]
+Action.c(3068): web_url("possibleValues_14") started  	[MsgId: MMSG-26355]
+Action.c(3068): Registering web_url("possibleValues_14") was successful  	[MsgId: MMSG-26390]
+Action.c(3077): web_url("possibleValues_15") started  	[MsgId: MMSG-26355]
+Action.c(3077): Registering web_url("possibleValues_15") was successful  	[MsgId: MMSG-26390]
+Action.c(3128): web_url("polymer-micro.html_4") started  	[MsgId: MMSG-26355]
+Action.c(3128): Registering web_url("polymer-micro.html_4") was successful  	[MsgId: MMSG-26390]
+Action.c(3136): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(3068): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/query/possibleValues?lang=en&field=patInfoPostalCode&_=1591180724934"   [issued at Action.c(3136)]  	[MsgId: MERR-26610]
+Action.c(3025): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/polymer.html"   [issued at Action.c(3136)]  	[MsgId: MERR-26610]
+Action.c(3059): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/query/possibleValues?lang=en&field=caseRoutingPvrFollowupNum&_=1591180724933"   [issued at Action.c(3136)]  	[MsgId: MERR-26610]
+Action.c(3036): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/polymer-mini.html"   [issued at Action.c(3136)]  	[MsgId: MERR-26610]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 7.
+Action.c(2393): Registering web_url("extraValues") was successful  	[MsgId: MMSG-26390]
+Action.c(2445): web_url("possibleValues_7") started  	[MsgId: MMSG-26355]
+Action.c(2445): Registering web_url("possibleValues_7") was successful  	[MsgId: MMSG-26390]
+Action.c(2454): web_url("possibleValues_8") started  	[MsgId: MMSG-26355]
+Action.c(2454): Registering web_url("possibleValues_8") was successful  	[MsgId: MMSG-26390]
+Action.c(2463): web_url("possibleValues_9") started  	[MsgId: MMSG-26355]
+Action.c(2463): Registering web_url("possibleValues_9") was successful  	[MsgId: MMSG-26390]
+Action.c(2499): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(2499): Error: C interpreter run time error: Action.c (2499):  Error -- memory violation : Exception ACCESS_VIOLATION received.
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 7.
+Notify: Transaction "S09_T07_Edit" ended with a "Stop" status (Duration: 2.9565 Wasted Time: 0.0016).
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
+Error: Exception was raised when calling per-thread-terminate function in extension lrwreplaymain.dll: System Exceptions: EXCEPTION_ACCESS_VIOLATION
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 9.
+Action.c(4235): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(4238): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(4238): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(4241): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(4241): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(4244): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(4244): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(4247): web_url("tag_3") started  	[MsgId: MMSG-26355]
+Action.c(4247): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/tag" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack.
+Ending iteration 9.
+Waiting 214.7360 seconds for iteration pacing.
+Starting iteration 10.
+Error: Exception was raised when calling event-notify Vuser function in extension lrwreplaymain.dll: System Exceptions: EXCEPTION_ACCESS_VIOLATION
+Start auto log messages stack - Iteration 9.
+Action.c(761): web_add_header("Sec-Fetch-Dest") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(764): web_add_auto_header("Accept-Language") started  	[MsgId: MMSG-26355]
+Action.c(764): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(767): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(767): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(770): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(770): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(773): web_url("index_2") started  	[MsgId: MMSG-26355]
+Action.c(773): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/query/index" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 10.
+Action.c(223): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(227): web_reg_save_param_regexp started  	[MsgId: MMSG-26355]
+Action.c(227): Registering web_reg_save_param_regexp was successful  	[MsgId: MMSG-26390]
+Action.c(237): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(237): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(246): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(246): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(250): web_submit_data("authenticate") started  	[MsgId: MMSG-26355]
+Action.c(250): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/authenticate" failed  	[MsgId: MERR-27760]
+Action.c(250): Error -35049: No match found for the requested parameter "CsfrTokenId_2". Check whether the requested regular expression exists in the response data  	[MsgId: MERR-35049]
+Action.c(250): Error -26377: No match found for the requested parameter "User_Id". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(250): Error -26366: "Text=Dashboard" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(250): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack.
+Ending iteration 10.
+Waiting 453.0380 seconds for iteration pacing.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
+Error: Exception was raised when calling per-thread-terminate function in extension lrwreplaymain.dll: System Exceptions: EXCEPTION_ACCESS_VIOLATION
+End auto log messages stack.
+
+

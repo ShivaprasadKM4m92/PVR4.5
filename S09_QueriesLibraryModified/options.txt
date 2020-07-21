@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Project\PVR\Scripts\Updated\S09_QueriesLibraryModified
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\project\pvr\scripts\updated\s09_querieslibrarymodified\\logfile.log
+c:\project\pvr\scripts\updated\s09_querieslibrarymodified\\combined_S09_QueriesLibraryModified.c
+c:\project\pvr\scripts\updated\s09_querieslibrarymodified\\pre_cci.c

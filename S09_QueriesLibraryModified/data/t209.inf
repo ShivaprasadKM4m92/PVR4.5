@@ -1,0 +1,9 @@
+[t209]
+FileName1=t209.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/polymer-mini.html
+Total=1
+RequestHeaderFile=t209_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t209_ResponseHeader.txt
+ContentType=
+SnapshotXmlFile=snapshot_209.xml

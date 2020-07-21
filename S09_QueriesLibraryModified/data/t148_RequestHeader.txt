@@ -1,0 +1,13 @@
+GET /reports/assets/query-32b32fe1008b70e0042a67dec4a7793b.css HTTP/1.1
+Host: pvr-perf.rxlogix.com
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: https://pvr-perf.rxlogix.com/reports/query/edit/32662
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: SESSION=ce758b85-d89a-471c-b576-0a77162af2a6
+

@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Wed, 03 Jun 2020 10:35:42 GMT
+Content-Type: application/javascript;charset=UTF-8
+Content-Length: 1547
+Connection: keep-alive
+X-Frame-Options: DENY
+Last-Modified: Mon, 23 Mar 2020 05:55:56 GMT
+ETag: "app/pushNotification-3d08817200dceb0a405d9f7aefa3192f.js"
+Vary: Accept-Encoding
+Cache-Control: public, max-age=31536000
+Content-Encoding: gzip
+

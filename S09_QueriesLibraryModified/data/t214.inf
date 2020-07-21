@@ -1,0 +1,11 @@
+[t214]
+FileName1=t214_websocket.html
+URL1=https://pvr-perf.rxlogix.com/reports/stomp/206/no984m2v/websocket
+Total=1
+ContentType=
+SnapshotXmlFile=snapshot_214.xml
+RequestHeaderFile=t214_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t214_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

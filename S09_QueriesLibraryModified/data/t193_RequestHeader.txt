@@ -1,0 +1,14 @@
+GET /reports/query/possibleValues?lang=en&field=prodDrugsAbuse&_=1591180698288 HTTP/1.1
+Host: pvr-perf.rxlogix.com
+Connection: keep-alive
+Accept: application/json, text/javascript, */*; q=0.01
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36
+X-Requested-With: XMLHttpRequest
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://pvr-perf.rxlogix.com/reports/query/view/32662
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: SESSION=ce758b85-d89a-471c-b576-0a77162af2a6
+

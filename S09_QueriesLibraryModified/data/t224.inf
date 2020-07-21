@@ -1,0 +1,11 @@
+[t224]
+FileName1=t224_emailTemplateEditor-340a1a96d629c756ba1192ca0bec7179.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/emailTemplateEditor-340a1a96d629c756ba1192ca0bec7179.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_224.xml
+RequestHeaderFile=t224_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t224_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

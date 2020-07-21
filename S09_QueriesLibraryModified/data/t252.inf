@@ -1,0 +1,9 @@
+[t252]
+FileName1=t252.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/polymer-micro.html
+Total=1
+RequestHeaderFile=t252_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t252_ResponseHeader.txt
+ContentType=
+SnapshotXmlFile=snapshot_252.xml

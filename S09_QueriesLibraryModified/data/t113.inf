@@ -1,0 +1,11 @@
+[t113]
+FileName1=t113_queryExpressionValuesForQuery.json
+URL1=https://pvr-perf.rxlogix.com/reports/query/queryExpressionValuesForQuery?queryId=32662&_=1591180618072
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_113.xml
+RequestHeaderFile=t113_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t113_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

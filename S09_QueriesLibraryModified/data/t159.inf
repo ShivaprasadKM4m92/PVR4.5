@@ -1,0 +1,11 @@
+[t159]
+FileName1=t159_userDefaultReportFieldsOpts.json
+URL1=https://pvr-perf.rxlogix.com/reports/query/userDefaultReportFieldsOpts?username=Shiva.Prasad&amp;lastModified=1591180531111en&sourceId=
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_159.xml
+RequestHeaderFile=t159_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t159_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,11 @@
+[t243]
+FileName1=t243_getQueryNameDescription.json
+URL1=https://pvr-perf.rxlogix.com/reports/queryRest/getQueryNameDescription?id=37402
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_243.xml
+RequestHeaderFile=t243_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t243_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

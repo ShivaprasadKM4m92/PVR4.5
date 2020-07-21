@@ -1,0 +1,11 @@
+[t256]
+FileName1=t256_websocket.html
+URL1=https://pvr-perf.rxlogix.com/reports/stomp/130/ju6milf5/websocket
+Total=1
+ContentType=
+SnapshotXmlFile=snapshot_256.xml
+RequestHeaderFile=t256_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t256_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

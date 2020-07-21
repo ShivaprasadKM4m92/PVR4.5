@@ -1,0 +1,11 @@
+[t111]
+FileName1=t111_getQueryNameDescription.json
+URL1=https://pvr-perf.rxlogix.com/reports/queryRest/getQueryNameDescription?id=32662&_=1591180618071
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_111.xml
+RequestHeaderFile=t111_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t111_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

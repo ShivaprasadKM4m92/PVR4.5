@@ -1,0 +1,11 @@
+[t147]
+FileName1=t147_select2-treeview-a19d774562c3ce40252e5c9866e9029b.css
+URL1=https://pvr-perf.rxlogix.com/reports/assets/select2-treeview-a19d774562c3ce40252e5c9866e9029b.css
+Total=1
+ContentType=text/css
+SnapshotXmlFile=snapshot_147.xml
+RequestHeaderFile=t147_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t147_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,11 @@
+[t149]
+FileName1=t149_select2-treeview-a36da271e6071724e73d966828e9bc72.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/select2/select2-treeview-a36da271e6071724e73d966828e9bc72.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_149.xml
+RequestHeaderFile=t149_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t149_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
