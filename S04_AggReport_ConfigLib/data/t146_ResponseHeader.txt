@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Tue, 02 Jun 2020 05:09:21 GMT
+Content-Type: application/javascript;charset=UTF-8
+Content-Length: 249
+Connection: keep-alive
+X-Frame-Options: DENY
+Last-Modified: Mon, 23 Mar 2020 05:55:50 GMT
+ETag: "app/configuration/viewScheduler-221e178123a64cdd79df6ccdf5072ff3.js"
+Vary: Accept-Encoding
+Cache-Control: public, max-age=31536000
+Content-Encoding: gzip
+

@@ -1,0 +1,9 @@
+[t117]
+FileName1=t117.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/column-view-64c0085c608464f4a6f66e33d985ae27.html
+Total=1
+RequestHeaderFile=t117_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t117_ResponseHeader.txt
+ContentType=
+SnapshotXmlFile=snapshot_117.xml

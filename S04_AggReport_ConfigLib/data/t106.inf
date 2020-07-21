@@ -1,0 +1,11 @@
+[t106]
+FileName1=t106_dictionaries-a56723bc475dc0f60ed4e82cb965de2a.css
+URL1=https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/dictionaries-a56723bc475dc0f60ed4e82cb965de2a.css
+Total=1
+ContentType=text/css
+SnapshotXmlFile=snapshot_106.xml
+RequestHeaderFile=t106_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t106_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

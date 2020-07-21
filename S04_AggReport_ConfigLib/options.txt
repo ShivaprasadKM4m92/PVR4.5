@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Project\PVR\Scripts\Updated\S04_AggReport_ConfigLib
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\project\pvr\scripts\updated\s04_aggreport_configlib\\logfile.log
+c:\project\pvr\scripts\updated\s04_aggreport_configlib\\combined_S04_AggReport_ConfigLib.c
+c:\project\pvr\scripts\updated\s04_aggreport_configlib\\pre_cci.c

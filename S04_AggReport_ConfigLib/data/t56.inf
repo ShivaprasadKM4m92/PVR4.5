@@ -1,0 +1,11 @@
+[t56]
+FileName1=t56_32180.json
+URL1=https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/32180?_=1591074395394
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_56.xml
+RequestHeaderFile=t56_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t56_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

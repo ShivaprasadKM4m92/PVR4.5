@@ -1,0 +1,42 @@
+Start auto log messages stack - Iteration 3.
+Action.c(1751): web_add_header("Cache-Control") was successful  	[MsgId: MMSG-26392]
+Action.c(1754): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(1754): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(1757): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(1757): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(1760): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1760): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1764): web_submit_data("update") started  	[MsgId: MMSG-26355]
+Action.c(1764): Error -26612: HTTP Status-Code=500 (Internal Server Error) for "https://pvr-perf.rxlogix.com/reports/periodicReport/update"  	[MsgId: MERR-26612]
+Action.c(1764): Error -26366: "Text=Report Configuration MRX0518_Capsule_PT7 updated" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+Action.c(1751): web_add_header("Cache-Control") was successful  	[MsgId: MMSG-26392]
+Action.c(1754): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(1754): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(1757): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(1757): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(1760): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1760): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1764): web_submit_data("update") started  	[MsgId: MMSG-26355]
+Action.c(1764): Error -26612: HTTP Status-Code=500 (Internal Server Error) for "https://pvr-perf.rxlogix.com/reports/periodicReport/update"  	[MsgId: MERR-26612]
+Action.c(1764): Error -26366: "Text=Report Configuration MRX0518_Capsule_PT5 updated" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(1751): web_add_header("Cache-Control") was successful  	[MsgId: MMSG-26392]
+Action.c(1754): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(1754): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(1757): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(1757): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(1760): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1760): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1764): web_submit_data("update") started  	[MsgId: MMSG-26355]
+Action.c(1764): Error -26612: HTTP Status-Code=500 (Internal Server Error) for "https://pvr-perf.rxlogix.com/reports/periodicReport/update"  	[MsgId: MERR-26612]
+Action.c(1764): Error -26366: "Text=Report Configuration MRX0518_Capsule_PT6 updated" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+

@@ -1,0 +1,10 @@
+HTTP/2.0 200
+Status: 200
+date: Tue, 14 Jul 2020 07:02:05 GMT
+content-type: application/json;charset=UTF-8
+x-oneagent-js-injection: true
+x-frame-options: DENY
+x-application-context: application:production:9090
+content-encoding: gzip
+vary: Accept-Encoding
+

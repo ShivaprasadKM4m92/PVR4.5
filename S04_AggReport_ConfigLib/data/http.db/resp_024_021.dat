@@ -1,0 +1,1159 @@
+7e9d
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>
+    
+        PV Reports - View Report Configuration
+    
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="/reports/assets/favicon-2ba00fd40faca3ac3c2e810a7412bceb.ico" type="image/x-icon">
+<link rel="stylesheet" href="/reports/assets/application-3d100486bb60d4ee3003d4ee9f8d893e.css"/>
+
+<link rel="stylesheet" href="/reports/assets/theme_gradient_blue-8a7bc35778c66c2a34b346cddd101ad7.css"/>
+
+<script type="text/javascript" src="/reports/assets/app/rxapplication-eebebbeb632a82e8608209da3ab42ef2.js" ></script>
+
+<script>
+    userLocale = "en";
+    moment.locale(userLocale);
+    userTimeZone = "UTC";
+    if (userLocale == JAPANESE_LOCALE) {
+        DEFAULT_DATE_DISPLAY_FORMAT = "YYYY/MM/DD";
+        DEFAULT_DATE_TIME_DISPLAY_FORMAT = "YYYY/MM/DD hh:mm A";
+    }
+</script>
+
+    <script>
+    var APP_PATH='/reports';
+    var APP_ASSETS_PATH='/reports/assets/';
+    $.ajax({
+        url: APP_ASSETS_PATH+'i18n/' + userLocale + '.json',
+        dataType: 'json',
+        async: false,
+        success: function(data) {
+            $.i18n.load(data);
+        }
+    });
+
+        var resizefunc = [];
+
+    </script>
+    
+    <meta name="layout" content="main"/>
+    
+    <script type="text/javascript" src="/reports/assets/fuelux/fuelux-58910ec6bd502e7c4aabf85922131616.js" ></script>
+    <link rel="stylesheet" href="/reports/assets/fuelux-b7cf5c5c681fcdbd63156284516c90e9.css"/>
+    <script type="text/javascript" src="/reports/assets/app/scheduler-293bc77ad497c01ec53bcb2f97095e6b.js" ></script>
+    <script type="text/javascript" src="/reports/assets/app/configuration/viewScheduler-221e178123a64cdd79df6ccdf5072ff3.js" ></script>
+    <script type="text/javascript" src="/reports/assets/app/reportTask-49c4760386c1065c2578b863f8c61900.js" ></script>
+    <script>
+        var aggregateReportViewTaskMode=true;
+    </script>
+
+    
+    
+    
+
+    
+        <meta name="_csrf" content="2a931ffb-4342-4fcd-8cac-4e3e027c36b4"/>
+        <meta name="_csrf_header" content="X-CSRF-TOKEN"/>
+        <meta name="_csrf_parameter" content="_csrf"/>
+    
+
+</head>
+
+<body class="fixed-left">
+
+<!-- Begin page -->
+<div id="wrapper" class="enlarged forced">
+
+    
+    
+    <!-- Top Bar Start -->
+            
+
+
+
+
+<script type="text/javascript" src="/reports/assets/app/pushNotification-3d08817200dceb0a405d9f7aefa3192f.js" ></script>
+<script type="text/javascript">
+
+    function logoutRxSession() {
+      clearFormInputsChangeFlag($(document));
+      $.fn.idleTimeout().logout();
+    }
+    var notificationURL = "\u002freports\u002fnotificationRest\u002fforUser\u002f32180";
+    var notificationChannel ="\u002fnotifications\u002f18f7cf0d3e680317039ac89dac51d12d";
+    var notificationWSURL = "\u002freports\u002fstomp";
+    var viewNotificationErrorURL = "\u002freports\u002fexecutionStatus\u002fviewNotificationError";
+    var notificationDeleteURL = "\u002freports\u002fnotificationRest\u002fdeleteNotificationById";
+    var notificationDeleteByUserURL = "\u002freports\u002fnotificationRest\u002fdeleteNotificationsForUserId";
+    var reportRedirectURL = "\u002freports\u002freport\u002fshowFirstSection";
+    
+    var hasAccessOnActionItem = true;
+    
+    
+
+</script>
+
+
+<div class="topbar">
+    <!-- LOGO -->
+    <div class="pull-left">
+        <button class="button-menu-mobile open-left waves-effect">
+            <i class="md md-menu"></i>
+        </button>
+        <span class="clearfix"></span>
+    </div>
+
+    <div class="topbar-left">
+        <div class="pull-left">
+            
+                <a href="/reports/dashboard/index"><img src="/reports/assets/pvr_logo-4233ea6efeb2ddb09d89415071b55478.png" class="pvLogo"/></a>
+            
+        </div>
+    </div>
+    <!-- Navbar -->
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="">
+                <ul class="nav navbar-nav hidden-xs pull-left">
+                    
+                    
+                    
+                    
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right pull-right">
+                    
+                        <li class="hidden-xs m-t-10">
+                            <h5 class="text-white login-user-fullname">Welcome Shiva.Prasad!</h5>
+                                <small class="text-white last-login-date-time-box"><b>Last Login</b> :  02-Jun-2020 04:38 AM (GMT +00:00)</small>
+                        </li>
+                        <li id="menuNotification" class="dropdown hidden-xs">
+                                <a href="#" data-target="#" class="dropdown-toggle waves-effect waves-light"
+                                   data-toggle="dropdown" aria-expanded="true">
+                                    <i class="md md-notifications"></i> <span
+                                        id="notificationBadge"  class="badge badge-xs badge-pink"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-lg">
+                                    <li id="notificationHeader" class="text-center notifi-title"></li>
+                                    <li id="notificationRows" class="list-group nicescroll notification-list">
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" id="clearNotifications" class=" text-right" userId="32180">
+                                            <small><b>Clear all</b></small>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="#" data-target="#" class="dropdown-toggle waves-effect waves-light"
+                               data-toggle="dropdown" aria-expanded="true">
+                                <i class="md md-settings"></i></a>
+                            <ul class="dropdown-menu topNavMenu">
+                                    
+                                <li id="help"><a href="/reports/dashboard/index" target="_blank"><i class="md md-help"></i> Help</a></li>
+
+                                
+                                    <li id="executionStatus"><a href="/reports/executionStatus/list"><i class="md md-alarm"></i> Execution Status</a></li>
+                                
+
+                                
+                                    <li class="divider"></li>
+                                    
+                                    <li id="userManagement"><a href="/reports/user/index">User Management</a></li>
+                                    <li id="userManagement"><a href="/reports/userGroup/index">Group Management</a></li>
+                                    <li id="roleManagement"><a href="/reports/role/index">Role Management</a></li>
+                                    
+                                    
+                                        <li id="fieldManagement"><a href="/reports/reportField/index">Field Management</a></li>
+                                        <li id="jsonDownloaded"><a href="/reports/queryTemplateJSON/index">Download JSONs</a> </li>
+                                    
+                                    
+                                        <li id="customField"><a href="/reports/customField/index">Custom Fields</a></li>
+                                    
+                                    
+                                    <li id="userManagement"><a href="/reports/dashboardDictionary/index">Dashboards</a></li>
+                                    
+                                    
+                                    <li id="userManagement"><a href="/reports/fieldProfile/index">Field Profile</a></li>
+                                    <li id="sourceProfileManagement"><a href="/reports/sourceProfile/index">Source Profile</a></li>
+                                    <li id="workflowState"><a href="/reports/workflowState/index">Workflow State</a></li>
+                                    <li id="workflowRule"><a href="/reports/workflowRule/index">Workflow Rule</a></li>
+                                    <li id="reportRequestType"><a href="/reports/reportRequestType/index">Report Request Settings</a></li>
+                                    <li id="taskTemplate"><a href="/reports/taskTemplate/index">Task Template</a></li>
+                                
+                                    <li id="etlScheduler"><a href="/reports/etlSchedule/index">ETL Scheduler</a></li>
+                                    <li id="auditLog"><a href="/reports/auditLog/index">Audit Log</a></li>
+                                    <li id="controlPanel"><a href="/reports/controlPanel/index">Control Panel</a></li>
+                                    <li id="reportFooter"><a href="/reports/reportFooter/index">Footer Configuration</a></li>
+                                    <li id="reportFooter"><a href="/reports/email/index">Email Configuration</a></li>
+                                    <li id="reportFooter"><a href="/reports/emailTemplate/index">Email Template</a></li>
+                                    
+                                    
+                                    <li class="divider"></li>
+                                
+
+                                <li id="menuPreference"><a href="/reports/preference/index"><i class="md md-settings"></i> Preferences</a></li>
+
+                                
+                                    <li class="divider"></li>
+
+                                    
+                                    <li><a href="/reports/monitoring">Monitoring</a></li>
+                                    <li><a href="/reports/quartz">Jobs Monitoring</a></li>
+                                
+
+                                <li class="divider"></li>
+
+                                <li>
+                                    <a href="javascript:void(0);" onclick="logoutRxSession();" type="button"><i class="md md-exit-to-app"></i> Logout</a>
+                            </ul>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Top Bar End -->
+
+    <!-- Left Sidebar Start -->
+    
+    
+
+
+<div class="left side-menu">
+    <div class="sidebar-inner slimscrollleft">
+        <div id="sidebar-menu">
+            <ul>
+                <li class="has_sub"><a href="/reports/dashboard/index" class="waves-effect waves-primary"><i
+                        class="md md-dashboard"></i><span>Dashboard</span><span class="menu-arrow"></span></a>
+                    <ul class="list-unstyled">
+                        
+                        <li><a href="/reports/dashboard/newDashboard"><i class="fa fa-plus"></i>New Dashboard</a></li>
+                    </ul>
+                </li>
+                
+                    <li class="has_sub">
+                        <!-- Adhoc Reports -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-grid-on"></i> <span>Adhoc Reports</span>
+                            <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            
+                                <!-- Load Configurations -->
+                                <li><a href="/reports/configuration/load">Load Configurations</a></li>
+                            
+                            
+                                <!-- New Report -->
+                                <li><a href="/reports/configuration/create">New Report</a></li>
+                            
+                            
+                                <!-- New Report -->
+                                <li><a href="javascript:void(0);"  class="createAdhocFromTemplate">Create From Template</a></li>
+                            
+                            
+                                <!-- Library -->
+                                <li><a href="/reports/configuration/index">Configuration Library</a></li>
+                            
+                            
+                                <!-- Generated Reports -->
+                                <li><a href="/reports/report/index">Generated Reports</a></li>
+                            
+                            
+                                
+                            
+                        </ul>
+                    </li>
+                
+                
+                    <li class="has_sub">
+                        <!-- Periodic Reports -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-call-merge"></i><span>Aggregate Reports</span>
+                            <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            
+                                <!-- New Report -->
+                                <li><a href="/reports/periodicReport/create">New Report</a></li>
+                            
+                            
+                                <!-- New Report -->
+                                <li><a href="javascript:void(0);"  class="createAggregateFromTemplate">Create From Template</a></li>
+                            
+                        <!-- Library -->
+                            <li><a href="/reports/periodicReport/index">Configuration Library</a></li>
+                            <!-- Generated Reports -->
+                            <li><a href="/reports/periodicReport/reports">Generated Reports</a></li>
+                            <!-- View Submission History -->
+                            <li><a href="/reports/reportSubmission/index">View Submission History</a></li>
+                            
+                                <!-- Bulk Scheduling -->
+                                <li><a href="/reports/periodicReport/bulkUpdate">Bulk Update</a></li>
+                            
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="has_sub">
+                        <!-- Case Series -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i class="md md-view-column"></i>
+                            <span>Case Series</span> <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            
+                                <!-- New Case Series -->
+                                <li><a href="/reports/caseSeries/create">New Case Series</a></li>
+                            
+                        <!-- Generated Case Series -->
+                            <li><a href="/reports/caseSeries/index">Configuration Library</a></li>
+                            <!-- Generated Case Series -->
+                            <li><a href="/reports/executedCaseSeries/index">Generated Case Series</a></li>
+                        </ul>
+                    </li>
+                
+                
+                    <!-- Templates -->
+                    <li class="has_sub">
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-now-widgets"></i><span>Templates</span> <span
+                                class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                        <li>
+                            
+                                <!-- Load Templates -->
+                                <li><a href="/reports/template/load">Load Templates</a></li>
+                            
+                        <!-- Template Library -->
+                            <li><a href="/reports/template/index">Template Library</a></li>
+                            
+                                <!-- New Case Line Listing Template -->
+                                <li><a href="/reports/template/create?templateType=CASE_LINE">
+                                    New Case Line Listing Template</a></li>
+                                <!-- New Data Tabulation Template -->
+                                <li><a href="/reports/template/create?templateType=DATA_TAB">
+                                    New Data Tabulation Template</a></li>
+                            
+                            
+                                <!-- New Custom SQL Template -->
+                                <li><a href="/reports/template/create?templateType=CUSTOM_SQL">
+                                    New Custom SQL Template</a></li>
+                                <!-- New Non Case Template -->
+                                <li><a href="/reports/template/create?templateType=NON_CASE">
+                                    New Non Case Template</a></li>
+
+                                
+                            
+                            
+                                <!-- New Template Set -->
+                                <li><a href="/reports/template/create?templateType=TEMPLATE_SET">
+                                    New Template Set</a></li>
+                            
+                        </li>
+                        </ul>
+                    </li>
+                
+                
+                    <!-- Queries -->
+                    <li class="has_sub">
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-filter-list"></i><span>Queries</span> <span
+                                class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                        <li>
+                            
+                                <!-- Load Queries -->
+                                <li><a href="/reports/query/load">Load Queries</a></li>
+                            
+                        <!-- Query Library -->
+                            <li><a href="/reports/query/index">Query Library</a></li>
+                            
+                                <!-- New Query -->
+                                <li><a href="/reports/query/create">New Query</a></li>
+                            
+                        </li>
+                        </ul>
+                    </li>
+                
+                
+                    <li class="has_sub">
+                        <!-- Data Analysis -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i class="md md-trending-up"></i>
+                            <span> Data Analysis </span> <span
+                                class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            <!-- Analysis File Library -->
+                            <li><a href="/reports/dataAnalysis/index">Analysis File Library</a></li>
+                            <!-- New Analysis File -->
+                            <li><a href="/reports/dataAnalysis/create">New Analysis File</a></li>
+                        </ul>
+                    </li>
+                
+                
+                    <li class="has_sub">
+                        <!-- Tasks -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-assignment"></i><span> Tasks </span> <span
+                                class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                        <!-- Report Requests -->
+                            
+                                <li><a href="/reports/reportRequest/index">Report Requests</a></li>
+                            
+                        <!-- Action Items -->
+                            
+                                <li><a href="/reports/actionItem/index">Action Items</a></li>
+                            
+                        </ul>
+                    </li>
+                
+                
+                    
+                        
+                        
+                                
+                                
+                        
+                            
+                            
+                            
+                            
+                            
+                            
+                        
+                    
+                
+                
+                    <!-- PR Calendar -->
+                    <li><a href="/reports/calendar/index" class="waves-effect waves-primary"><i
+                            class="md md-event"></i><span>Calendar</span></a></li>
+
+                
+            </ul>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+    
+</div>
+<div class="modal fade" id="createFromTemplateModal"  data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby=""  aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="rxmain-container"><div class="rxmain-container-inner"><div class="rxmain-container-row rxmain-container-header"><div class="dropdown"><label class="rxmain-container-header-label">Create From Template</label><i class="pull-right md md-close md-lg rxmain-dropdown-settings" data-dismiss="modal"></i></div></div><div class="row rxmain-container-content">
+                <table id="rxTableTemplateConfiguration" class="row-border hover" width="100%">
+                    <thead>
+                    <tr>
+                        <th class="reportNameColumn">Report Name</th>
+                        <th class="reportDescriptionColumn">Description</th>
+                        <th>Date Created</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div></div></div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+    <!-- Left Sidebar End -->
+    
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="content-page">
+        <!-- Start content -->
+        <div id="mainContent" class="content" style="">
+            
+
+
+
+
+
+
+
+    
+
+<div class="rxmain-container"><div class="rxmain-container-inner"><div class="rxmain-container-row rxmain-container-header"><div class="dropdown"><label class="rxmain-container-header-label">View Configuration</label></div></div><div class="row rxmain-container-content">
+
+    
+
+
+    <div class="alert alert-success alert-dismissible forceLineWrap" role="alert">
+        <button type="button" class="close" data-dismiss="alert">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Close</span>
+        </button>
+        <i class="fa fa-check"></i>
+        
+            Report Configuration PBRER MRx0518_test_aggr_2 updated<br/>
+        
+    </div>
+
+
+
+
+
+
+
+
+    <div class="container-fluid">
+        <div class="row rxDetailsBorder">
+            <div class="col-xs-12">
+                <label>Report</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label>Report Name</label>
+
+                                <div class="word-wrapper">PBRER MRx0518_test_aggr_2</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label>Description</label>
+
+                                
+                                    <div class="word-wrapper">Perftest</div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label>Limit to Suspect Product</label>
+
+                                <div>No</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                
+                                    <label>Product Dictionary</label>
+
+                                    <div id="showProductSelection"></div>
+                                    MRx0518 (Ingredient)
+                                
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-3">
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label>Aggregate Report Type</label>
+
+                                <div>PBRER</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label>Quality Checked</label>
+                                <div>
+                                    No
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label>Template</label>
+                                <div>
+                                    No
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label>Tags</label>
+                                
+                                    <div>None</div>
+                                
+                            </div>
+                        </div>
+
+                        
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label>Global Query Name</label>
+                                
+                                    
+                                        <div>None</div>
+                                    
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-3">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label>Data Source</label>
+
+                                <div>Argus</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label>Date Range Type</label>
+                                <div>Case Receipt Date</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label>Evaluate Case Data as of</label>
+
+                                <div id="evaluateCaseDate">
+                                    Latest Version
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label>Date Range</label>
+                                
+                                    
+                                        <div>
+                                            Cumulative
+                                            <input type="hidden" id="dateRangeValueRelative"
+                                                   value="CUMULATIVE"/>
+                                            
+                                        </div>
+
+                                        
+                                    
+                                
+                            </div>
+                        </div>
+
+                        
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label>Parameters</label>
+                                <div>
+                                    -- Query --
+                                </div>
+                                
+                                    
+                                        <div>None</div>
+                                    
+                                
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label>POI Parameters</label>
+                                
+                                    <div>
+                                        None
+                                    </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-3">
+
+                        <div class="row"><label>Include Cases missed in the previous reporting period</label>
+
+                            <div>
+                                No
+                            </div>
+                        </div>
+
+                        <div class="row"><label>Include open cases in draft</label>
+
+                            <div>
+                                No
+                            </div>
+                        </div>
+
+                        <div class="row"><label>Exclude Follow-Up</label>
+
+                            <div>
+                                No
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <label>Include All Study Drugs Cases</label>
+
+                            <div>No</div>
+                        </div>
+
+                        <div class="row">
+                            <label>Exclude Non-Valid Cases</label>
+
+                            <div>Yes</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row rxDetailsBorder">
+            <div class="col-xs-12">
+                <label>Report Criteria & Sections</label>
+            </div>
+        </div>
+        
+            <div class="row">
+                <div class="col-xs-3">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label>Template Name</label>
+
+                            <div>
+                                
+                                    <div>
+                                        <a href="/reports/template/view/24902">Active user logins in last month</a>
+                                    </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+
+                <div class="col-xs-3">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label>Query Name</label>
+                            
+                                
+                                    <div>
+                                        None
+                                    </div>
+                                
+                           
+39ac
+ 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-3">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label>Date Range</label>
+                            
+                                
+                                    <div>
+                                        Interval
+                                        <input type="hidden" id="dateRangeValueRelative"
+                                               value="PR_DATE_RANGE"/>
+                                        
+                                    </div>
+
+                                    
+                                
+                            
+
+                            <label>Query Level</label>
+
+                            <div id="queryLevel">
+                                <div>Case</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-3">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label>Parameters</label>
+                            
+                                <div>
+                                    -- Template --
+                                </div>
+                                
+                                    <div>None</div>
+                                
+
+                                <div>
+                                    -- Query --
+                                </div>
+                                
+                                    <div>None</div>
+                                
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+
+        <div class="row rxDetailsBorder">
+            <div class="col-xs-12">
+                <label>Report Delivery Option & Scheduler</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-2">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>Days Due</label>
+
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-3">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>Primary Report Destination</label>
+
+                        <div>ARIES MANUAL</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-3">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>Report Destinations</label>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-4">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label>Generate Case Series</label>
+                        
+                            <div>No</div>
+                            <label>Generate Draft</label>
+                            <div>No</div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3">
+                
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label>Shared With Users</label>
+                            
+                                
+                                    
+                                        <div>Admin User</div>
+                                    
+                                
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+
+            </div>
+
+            <div class="col-xs-6 fuelux" id="schedulerDiv">
+                <input type="hidden" name="isEnabled" id="isEnabled" value="false" />
+                
+                    <label>
+                        This report is currently not scheduled.
+                    </label>
+                
+            </div>
+
+            <div class="col-xs-3">
+                
+                
+            </div>
+
+        </div>
+        
+            <div class="row " style="margin-top: 30px">
+                <div class="col-xs-12">
+                    <label>Action Items To Be Created On Report Execution</label>
+                </div>
+            </div>
+            <div class="row">
+                
+<table class="table" id="taskTable">
+    <tr>
+        <th width="30"></th>
+        <th  width="150">Action Category</th>
+        <th width="*">Description</th>
+        <th width="100">Priority</th>
+        <th width="200">Assigned To</th>
+        <th width="100">Due Date</th>
+        <th width="100">Create Date</th>
+        <th width="100"></th>
+        <th width="150"></th>
+    </tr>
+
+    <tr  class="hide">
+        <td style="vertical-align: middle"><span class="table-remove glyphicon glyphicon-remove removeTaskTable"></span></td>
+        <td style="vertical-align: middle"> <select id="aiActionCategory" name="aiActionCategory" class="form-control taskTemplateField select2-box" disabled="disabled" >
+<option value="">-Select Category-</option>
+<option value="REPORT_REQUEST" >Report Request</option>
+<option value="REQUEST_MISSING_INFORMATION" >Request Missing Information</option>
+<option value="PROCESS_CASE" >Process Case</option>
+<option value="PERIODIC_REPORT" selected="selected" >Aggregate Report</option>
+<option value="CONFIGURE_REPORT" >Configure Report</option>
+<option value="ADHOC_REPORT" >Adhoc Report</option>
+<option value="REVIEW_REPORT" >Review Report</option>
+</select></td>
+        <td style="vertical-align: middle"><textarea style="height: 60px;" name="aiDescription" maxlength="4000" class="form-control taskTemplateField"></textarea></td>
+        <td style="vertical-align: middle"><select name="aiPriority" class="form-control select2-box taskTemplateField" id="aiPriority" >
+<option value="HIGH" >High</option>
+<option value="MEDIUM" >Medium</option>
+<option value="LOW" >Low</option>
+</select></td>
+        <td style="vertical-align: middle"> 
+        
+            <select name="aiAssignedTo" class="form-control select2-box taskTemplateField" >
+                <option value=""  data-blinded="false">Assign To Owner</option>
+                
+                    <optgroup label="User Group"  data-blinded="false">
+                        
+                            <option value="UserGroup_6567" data-blinded="false">All Users </option>
+                        
+                    </optgroup>
+                
+                <optgroup label="User"  data-blinded="false">
+                    
+                        <option value="User_32180" data-blinded="false">Shiva.Prasad </option>
+                    
+                        <option value="User_6542" data-blinded="false">Admin User </option>
+                    
+                        <option value="User_33830" data-blinded="false">bhagya </option>
+                    
+                        <option value="User_6540" data-blinded="false">Dev User </option>
+                    
+                        <option value="User_32257" data-blinded="false">Signal Dev </option>
+                    
+                </optgroup>
+            </select></td>
+        <td style="vertical-align: middle"><input class="form-control taskTemplateField" min="1" type="number" name="aiDueDateShift" value="1" ></td>
+        <td style="vertical-align: middle"><input class="form-control taskTemplateField" min="0" readonly="readonly" type="number" name="aiCreateDateShift" value="" ></td>
+        <td style="vertical-align: middle"><select name="aiBeforeAfter" class="form-control select2-box taskTemplateField">
+            <option value="AFTER">after</option>
+            <option value="BEFORE">before</option>
+        </select></td>
+        <td style="vertical-align: middle">
+            execution date
+        </td>
+    </tr>
+</table>
+                <input type="hidden" id="tasks" name="tasks" value="[]" />
+            </div>
+        
+        
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="pull-right">
+                        <button class="btn btn-primary" onclick="goToUrl('periodicReport', 'edit', {'id': 30612})" id="editBtn">
+                            Edit
+                        </button>
+                        <button type="button" class="btn btn-default" onclick="goToUrl('periodicReport', 'copy', {'id': 30612})" id="copyBtn">
+                            Copy
+                        </button>
+                        <button url="#" data-toggle="modal" data-target="#deleteModal"
+                                data-instancetype="periodicReportConfiguration"
+                                data-instanceid="30612" data-instancename="PBRER MRx0518_test_aggr_2"
+                                class="btn btn-default">Delete</button>
+                    </div>
+                </div> 
+            </div>
+
+        
+    </div>
+    
+    
+    
+    <div class="horizontalRuleFull"></div>
+<div class="greyText">
+  <div>
+    <small class="text-muted">
+      <span id="dateCreated-label" class="property-label">
+        Date Created:
+      </span>
+      <span class="property-value" aria-labelledby="dateCreated-label">
+          
+19-May-2020 02:39:31 PM
+      </span>
+
+      <span id="createdBy-label" class="property-label" style="margin-left: 20px;">
+       Created By:
+      </span>
+      <span class="property-value" aria-labelledby="dateCreated-label">
+        admin
+      </span>
+
+      <span id="lastUpdated-label" class="property-label" style="margin-left: 50px;">
+       Modified Date:
+      </span>
+      <span class="property-value" aria-labelledby="lastUpdated-label">
+          
+02-Jun-2020 05:09:19 AM
+      </span>
+
+      <span id="modifiedBy-label" class="property-label" style="margin-left: 20px;">
+        Modified By:
+      </span>
+      <span class="property-value" aria-labelledby="dateCreated-label">
+          Shiva.Prasad
+      </span>
+    </small>
+  </div>
+</div>
+</div></div></div>
+<form action="/reports/periodicReport/index" method="post" ><input type="hidden" name="_method" value="DELETE" id="_method" />
+    <!-- Modal -->
+
+
+
+
+<div class="modal fade" id="deleteModal"  data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel"
+     aria-hidden="true" style="z-index: 9999;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="deleteModalLabel"></h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="alert alert-danger alert-dismissible forceLineWrap" role="alert" id="deleteDlgErrorDiv" style="display: none">
+                    <button type="button" class="close" data-dismiss="alert">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <i class="fa fa-check"></i> Justification can''t be blank.
+                </div>
+                <div id="nameToDelete"></div>
+                <p></p>
+                <div class="description" style="font-weight:bold;"></div>
+                <div class="extramessage"></div>
+
+                <div id="deleteForAllAllowed" class="checkbox checkbox-primary"  style="display: none">
+                    <input type="hidden" name="_deleteForAll" /><input type="checkbox" name="deleteForAll" id="deleteForAll"  />
+                    <label for="deleteForAll" class="add-margin-bottom" style="margin-bottom: 5px;">
+                        Delete For All Users
+                    </label>
+                </div>
+
+                <label style="margin-top: 25px">Justification:</label>
+                <textarea placeholder="Enter the justification" class="form-control" name="deleteJustification" id="deleteJustification" ></textarea>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button id="deleteButton" class="btn btn-danger">
+                    <span class="glyphicon glyphicon-trash icon-white"></span>
+                    Delete Record
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script type="text/javascript" src="/reports/assets/app/deleteModal-68b8e74283c8070801d2afbaf40831a1.js" ></script>
+
+
+</form>
+
+
+        </div>
+        <!-- End content -->
+    
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Right content here -->
+    <!-- ============================================================== -->
+</div>
+<div class="pvr-loader-bg">
+    <div class="loader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+        </svg>
+    </div>
+</div>
+<!-- Used for loader-->
+<div class="pvloader"></div>
+<script type="text/javascript" src="/reports/assets/app/jquery.core-2c7cdf128b42d849235dea8cadd879b8.js" ></script>
+<script type="text/javascript" src="/reports/assets/app/jquery.app-782d8f87ac279a019b37b18a315654b2.js" ></script>
+
+    
+
+
+
+<script type="text/javascript" src="/reports/assets/store.modern.min-ee86dbde67356086e53dffdd31c6867d.js" ></script>
+<script type="text/javascript" src="/reports/assets/jquery/customise-jquery-idleTimeout-6286fe026bdf78a6c38a29cfd8d979c8.js" ></script> 
+<script type="text/javascript">
+
+    $(document).ready(function() {
+      $(document).idleTimeout({
+      redirectUrl:  "https:\u002f\u002fpvr-perf.rxlogix.com\u002freports/logout",
+      idleTimeLimit: 1800,
+      sessionKeepAliveUrl: "https:\u002f\u002fpvr-perf.rxlogix.com\u002freports/keep-alive",
+      sessionKeepAliveTimer: 60,
+      enableDialog: true,
+      dialogDisplayLimit: 300,
+      activityEvents: 'click keypress',
+      customCallback: function() {
+          var forms = $('form');
+            if(forms.find('.changed-input').length){
+                alert($.i18n._('navigateAwayChangesLostMessage'));
+                clearFormInputsChangeFlag(forms);
+            }
+      }
+      });
+    });
+
+</script>
+
+
+</body>
+</html>
+
+0
+

@@ -1,0 +1,12 @@
+Start auto log messages stack - Iteration 1.
+Action.c(1048): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(1048): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(1062): web_custom_request("xhr") started  	[MsgId: MMSG-26355]
+Action.c(1062): Redirecting "https://pvr-perf.rxlogix.com/reports/stomp/180/vopymnwx/xhr" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(1062): To location "https://pvr-perf.rxlogix.com/reports/login/authfail"  	[MsgId: MMSG-26693]
+Action.c(1062): Redirecting "https://pvr-perf.rxlogix.com/reports/login/authfail" (redirection depth is 1)  	[MsgId: MMSG-26694]
+Action.c(1062): To location "https://pvr-perf.rxlogix.com/reports/login/auth"  	[MsgId: MMSG-26693]
+Action.c(1062): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/auth" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+

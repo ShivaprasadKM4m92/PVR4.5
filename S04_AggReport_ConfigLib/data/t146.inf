@@ -1,0 +1,11 @@
+[t146]
+FileName1=t146_viewScheduler-221e178123a64cdd79df6ccdf5072ff3.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/configuration/viewScheduler-221e178123a64cdd79df6ccdf5072ff3.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_146.xml
+RequestHeaderFile=t146_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t146_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

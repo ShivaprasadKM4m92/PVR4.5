@@ -1,0 +1,28 @@
+Start auto log messages stack - Iteration 13.
+Action.c(737): web_add_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(740): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(740): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(743): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(743): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(746): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(746): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(750): web_url("index_2") started  	[MsgId: MMSG-26355]
+Action.c(750): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/periodicReport/index"  	[MsgId: MERR-26610]
+Action.c(750): Error -26366: "Text=Aggregate Report Configuration Library" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 17.
+Action.c(737): web_add_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(740): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(740): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(743): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(743): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(746): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(746): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(750): web_url("index_2") started  	[MsgId: MMSG-26355]
+Action.c(750): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/periodicReport/index"  	[MsgId: MERR-26610]
+Action.c(750): Error -26366: "Text=Aggregate Report Configuration Library" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+

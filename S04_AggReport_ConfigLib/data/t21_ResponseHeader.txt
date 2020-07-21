@@ -1,0 +1,19 @@
+HTTP/1.1 200 OK
+Content-Security-Policy: script-src 'report-sample' 'nonce-KgKmoGitzArQiM59wMKxdw' 'unsafe-inline' 'strict-dynamic' https: http:;object-src 'none';base-uri 'self';report-uri https://csp.withgoogle.com/csp/clientupdate-aus/1
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Tue, 02 Jun 2020 05:05:31 GMT
+X-Cup-Server-Proof: 304402205277fdb5192dba3c50e2654cd757e5ea8545b0b5c791bc14142f4d1d0bf1fe8d022002577a46f2535d14d6b845997652321bdc79ad6630ea98bdc615ba123882cf39:7b626f968a2f6de98d8ae9c35a800f3d83c802210a8c00f4e91a1df939b911d2
+ETag: W/"304402205277fdb5192dba3c50e2654cd757e5ea8545b0b5c791bc14142f4d1d0bf1fe8d022002577a46f2535d14d6b845997652321bdc79ad6630ea98bdc615ba123882cf39:7b626f968a2f6de98d8ae9c35a800f3d83c802210a8c00f4e91a1df939b911d2"
+Content-Type: application/json; charset=utf-8
+X-Daynum: 4900
+X-Daystart: 79531
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Alt-Svc: h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-T050=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q049=":443"; ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Transfer-Encoding: chunked
+

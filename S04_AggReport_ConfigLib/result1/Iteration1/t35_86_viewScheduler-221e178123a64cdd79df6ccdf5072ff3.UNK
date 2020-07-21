@@ -1,0 +1,2 @@
+//# sourceMappingURL=viewScheduler.js.map
+$(document).ready(function(){$("#relativeDateRangeValueX").hide();$("#schedulerDiv input, #schedulerDiv button").attr("disabled","disabled");$("#schedulerDiv fieldset").addClass("disabled");var a=$("#dateRangeValueRelative").val();void 0!=a&&(-1!=a.toLowerCase().indexOf("x")?$("#relativeDateRangeValueX").show():$("#relativeDateRangeValueX").hide())});

@@ -1,0 +1,9 @@
+[t61]
+SnapshotXmlFile=snapshot_61.xml
+FileName1=t61.png
+URL1=https://pvr-perf.rxlogix.com/reports/assets/datatables/sort_asc-e2380fa7d4f91f83a037bc04558de9b7.png
+Total=1
+RequestHeaderFile=t61_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t61_ResponseHeader.txt
+ContentType=image/png

@@ -1,0 +1,11 @@
+[t119]
+FileName1=t119_fetchEvaluateCaseDateSubmissionForDatasource.json
+URL1=https://pvr-perf.rxlogix.com/reports/configurationRest/fetchEvaluateCaseDateSubmissionForDatasource?dataSourceId=6594
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_119.xml
+RequestHeaderFile=t119_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t119_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

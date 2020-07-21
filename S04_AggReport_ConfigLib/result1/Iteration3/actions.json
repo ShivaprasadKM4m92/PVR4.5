@@ -1,0 +1,144 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP25",
+                "stepName": "Url: auth",
+                "infFile": "t1.inf",
+                "time": 1594710157624
+            },
+            {
+                "stepId": "STEP26",
+                "stepName": "Submit Data: authenticate",
+                "infFile": "t3.inf",
+                "time": 1594710178309
+            },
+            {
+                "stepId": "STEP27",
+                "stepName": "Url: index_2",
+                "infFile": "t11.inf",
+                "time": 1594710180646
+            },
+            {
+                "stepId": "STEP28",
+                "stepName": "Url: index_3",
+                "infFile": "t14.inf",
+                "time": 1594710181994
+            },
+            {
+                "stepId": "STEP29",
+                "stepName": "Url: index_4",
+                "infFile": "t15.inf",
+                "time": 1594710182599
+            },
+            {
+                "stepId": "STEP30",
+                "stepName": "Url: {ReportEditId}",
+                "infFile": "t16.inf",
+                "time": 1594710186572
+            },
+            {
+                "stepId": "STEP31",
+                "stepName": "Submit Data: update",
+                "infFile": "t34.inf",
+                "time": 1594710193428
+            },
+            {
+                "stepId": "STEP32",
+                "stepName": "Url: index_5",
+                "infFile": "t36.inf",
+                "time": 1594710194945
+            },
+            {
+                "stepId": "STEP33",
+                "stepName": "Url: {User_Id}_5",
+                "infFile": "t38.inf",
+                "time": 1594710195937
+            },
+            {
+                "stepId": "STEP34",
+                "stepName": "Url: index_6",
+                "infFile": "t39.inf",
+                "time": 1594710196322
+            },
+            {
+                "stepId": "STEP35",
+                "stepName": "Url: index_7",
+                "infFile": "t40.inf",
+                "time": 1594710197039
+            },
+            {
+                "stepId": "STEP36",
+                "stepName": "Url: logout",
+                "infFile": "t41.inf",
+                "time": 1594710198096
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "S04_T01_OpenApplication",
+                "rawStartTime": 1594710157133,
+                "rawEndTime": 1594710157848,
+                "thinkTime": 0.0,
+                "wastedTime": 0.015197515487670899
+            },
+            {
+                "transactionName": "S04_T02_Login",
+                "rawStartTime": 1594710157852,
+                "rawEndTime": 1594710179740,
+                "thinkTime": 0.0,
+                "wastedTime": 0.05408763885498047
+            },
+            {
+                "transactionName": "S04_T03_NavigateAggregateReport_ConfigLib",
+                "rawStartTime": 1594710179771,
+                "rawEndTime": 1594710182004,
+                "thinkTime": 0.0,
+                "wastedTime": 0.051139116287231448
+            },
+            {
+                "transactionName": "S04_T04_Search",
+                "rawStartTime": 1594710182105,
+                "rawEndTime": 1594710182605,
+                "thinkTime": 0.0,
+                "wastedTime": 0.011828184127807618
+            },
+            {
+                "transactionName": "S04_T05_Edit_ReportName",
+                "rawStartTime": 1594710182644,
+                "rawEndTime": 1594710191057,
+                "thinkTime": 0.0,
+                "wastedTime": 0.11020493507385254
+            },
+            {
+                "transactionName": "S04_T06_ClickUpdate",
+                "rawStartTime": 1594710191096,
+                "rawEndTime": 1594710194059,
+                "thinkTime": 0.0,
+                "wastedTime": 0.04045510292053223
+            },
+            {
+                "transactionName": "S04_T07_NavigateAggregateReport_ConfigLib",
+                "rawStartTime": 1594710194090,
+                "rawEndTime": 1594710196382,
+                "thinkTime": 0.0,
+                "wastedTime": 0.08031964302062988
+            },
+            {
+                "transactionName": "S04_T08_RemoveFilter",
+                "rawStartTime": 1594710196498,
+                "rawEndTime": 1594710197054,
+                "thinkTime": 0.0,
+                "wastedTime": 0.017725467681884767
+            },
+            {
+                "transactionName": "S04_T09_Logout",
+                "rawStartTime": 1594710197085,
+                "rawEndTime": 1594710198105,
+                "thinkTime": 0.0,
+                "wastedTime": 0.019540071487426759
+            }
+        ]
+    }
+]

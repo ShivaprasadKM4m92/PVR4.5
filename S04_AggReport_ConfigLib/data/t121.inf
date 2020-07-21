@@ -1,0 +1,11 @@
+[t121]
+FileName1=t121_30612.json
+URL1=https://pvr-perf.rxlogix.com/reports/email/allEmails/30612
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_121.xml
+RequestHeaderFile=t121_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t121_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
