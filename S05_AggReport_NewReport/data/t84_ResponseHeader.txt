@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Tue, 02 Jun 2020 09:20:25 GMT
+Content-Type: application/javascript;charset=UTF-8
+Content-Length: 595
+Connection: keep-alive
+X-Frame-Options: DENY
+Last-Modified: Mon, 23 Mar 2020 05:56:06 GMT
+ETag: "plugin/dictionary/dictionaryMultiSearch-6eb3fdf8ab4860190935c80f93a691c7.js"
+Vary: Accept-Encoding
+Cache-Control: public, max-age=31536000
+Content-Encoding: gzip
+

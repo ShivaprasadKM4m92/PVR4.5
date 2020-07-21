@@ -1,0 +1,13 @@
+GET /reports/assets/tinymce/skins/lightgray/skin.min.css HTTP/1.1
+Host: pvr-perf.rxlogix.com
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: https://pvr-perf.rxlogix.com/reports/periodicReport/create
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: SESSION=e4fddce6-932c-4e2d-8ce0-1971930cc0d6
+

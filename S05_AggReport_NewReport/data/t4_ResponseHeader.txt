@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Tue, 02 Jun 2020 09:18:49 GMT
+Content-Type: text/css;charset=UTF-8
+Content-Length: 794
+Connection: keep-alive
+X-Frame-Options: DENY
+Last-Modified: Mon, 23 Mar 2020 05:54:08 GMT
+ETag: "login-56e6216b7dfd4b175b930dda2cfcea23.css"
+Vary: Accept-Encoding
+Cache-Control: public, max-age=31536000
+Content-Encoding: gzip
+

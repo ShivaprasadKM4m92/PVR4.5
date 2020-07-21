@@ -1,0 +1,11 @@
+[t61]
+FileName1=t61_websocket.html
+URL1=https://pvr-perf.rxlogix.com/reports/stomp/173/npxjgxf9/websocket
+Total=1
+ContentType=
+SnapshotXmlFile=snapshot_61.xml
+RequestHeaderFile=t61_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t61_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

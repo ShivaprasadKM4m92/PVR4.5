@@ -1,0 +1,11 @@
+HTTP/1.1 200 
+Date: Tue, 07 Jul 2020 10:12:04 GMT
+Content-Type: text/html;charset=UTF-8
+Connection: close
+X-OneAgent-JS-Injection: true
+X-Frame-Options: DENY
+ETag: "plugin/dictionary/column-view-64c0085c608464f4a6f66e33d985ae27.html:dtagent10195200626110504qKVk"
+Last-Modified: Mon, 23 Mar 2020 05:56:09 GMT
+Vary: Accept-Encoding
+Cache-Control: no-cache
+

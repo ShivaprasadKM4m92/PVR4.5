@@ -1,0 +1,11 @@
+[t149]
+FileName1=t149_possibleValues.json
+URL1=https://pvr-perf.rxlogix.com/reports/query/possibleValues?lang=en&field=doseRegimensPackageId&_=1591089625253
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_149.xml
+RequestHeaderFile=t149_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t149_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

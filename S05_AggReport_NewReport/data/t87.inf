@@ -1,0 +1,11 @@
+[t87]
+FileName1=t87_emailAttachmentSplit-1cfd9a05e7b65820432d627f850295f6.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/emailAttachmentSplit-1cfd9a05e7b65820432d627f850295f6.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_87.xml
+RequestHeaderFile=t87_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t87_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

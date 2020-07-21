@@ -1,0 +1,13 @@
+GET /reports/assets/cookiecuttr-a7a609074d7bc97460b6aab9935c3468.css HTTP/1.1
+Host: pvr-perf.rxlogix.com
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: https://pvr-perf.rxlogix.com/reports/login/auth
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: SESSION=91e10ab8-1799-480c-ac45-e82df98ef82d
+

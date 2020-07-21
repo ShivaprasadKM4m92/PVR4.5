@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Tue, 02 Jun 2020 09:19:45 GMT
+Content-Type: application/javascript;charset=UTF-8
+Content-Length: 30175
+Connection: keep-alive
+X-Frame-Options: DENY
+Last-Modified: Mon, 23 Mar 2020 05:55:12 GMT
+ETag: "fuelux/fuelux-58910ec6bd502e7c4aabf85922131616.js"
+Vary: Accept-Encoding
+Cache-Control: public, max-age=31536000
+Content-Encoding: gzip
+

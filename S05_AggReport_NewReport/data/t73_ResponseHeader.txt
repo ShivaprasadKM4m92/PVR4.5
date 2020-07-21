@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Tue, 02 Jun 2020 09:20:24 GMT
+Content-Type: text/css;charset=UTF-8
+Content-Length: 461
+Connection: keep-alive
+X-Frame-Options: DENY
+Last-Modified: Mon, 23 Mar 2020 05:54:08 GMT
+ETag: "expandingTextarea-e6f68bca81423576f208f67bb1a470d2.css"
+Vary: Accept-Encoding
+Cache-Control: public, max-age=31536000
+Content-Encoding: gzip
+

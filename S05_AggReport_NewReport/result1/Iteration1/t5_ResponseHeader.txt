@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Tue, 07 Jul 2020 10:09:57 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: close
+X-OneAgent-JS-Injection: true
+X-Frame-Options: DENY
+ETag: "i18n/dataTables_en-b9b01b8c59208a270975d85c7973f4ec.json:dtagent10195200626110504qKVk"
+Last-Modified: Mon, 23 Mar 2020 05:56:13 GMT
+Vary: Accept-Encoding
+Cache-Control: no-cache
+Content-Length: 787
+

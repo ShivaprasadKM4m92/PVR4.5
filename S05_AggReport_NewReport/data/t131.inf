@@ -1,0 +1,11 @@
+[t131]
+FileName1=t131_customSQLValuesForQuery.json
+URL1=https://pvr-perf.rxlogix.com/reports/query/customSQLValuesForQuery?queryId=29556&_=1591089625238
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_131.xml
+RequestHeaderFile=t131_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t131_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

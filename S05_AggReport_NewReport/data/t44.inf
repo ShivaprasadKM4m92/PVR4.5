@@ -1,0 +1,11 @@
+[t44]
+FileName1=t44.json
+URL1=https://update.googleapis.com/service/update2/json?cup2key=10:780928199&cup2hreq=17a2a21864b6add6fb9e8e890f645abebeddb239f95b11c3f58a01b9b97906b1
+Total=1
+RequestHeaderFile=t44_RequestHeader.txt
+RequestBodyFile=t44_RequestBody.txt
+ResponseHeaderFile=t44_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_44.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

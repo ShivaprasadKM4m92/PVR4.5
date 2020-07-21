@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Tue, 02 Jun 2020 09:20:24 GMT
+Content-Type: application/javascript;charset=UTF-8
+Content-Length: 1191
+Connection: keep-alive
+X-Frame-Options: DENY
+Last-Modified: Mon, 23 Mar 2020 05:55:50 GMT
+ETag: "app/configuration/periodicReport-d7d9353e8fb7cc172ac9a0cf79dc2731.js"
+Vary: Accept-Encoding
+Cache-Control: public, max-age=31536000
+Content-Encoding: gzip
+

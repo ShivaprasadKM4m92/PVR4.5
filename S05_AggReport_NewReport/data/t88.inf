@@ -1,0 +1,11 @@
+[t88]
+FileName1=t88_tinymce.min-8913ae2d8b5e63961b59cb681291410b.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/tinymce/tinymce.min-8913ae2d8b5e63961b59cb681291410b.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_88.xml
+RequestHeaderFile=t88_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t88_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

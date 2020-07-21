@@ -1,0 +1,11 @@
+[t53]
+SnapshotXmlFile=snapshot_53.xml
+FileName1=t53.gif
+URL1=https://pvr-perf.rxlogix.com/reports/assets/rx-loader-dcdae8e77d6f26a0b04e0a7683332773.gif
+Total=1
+RequestHeaderFile=t53_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t53_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1

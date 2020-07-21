@@ -1,0 +1,516 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: auth",
+                "infFile": "t1.inf",
+                "time": 1594116465190
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Submit Data: authenticate",
+                "infFile": "t2.inf",
+                "time": 1594116522780
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Url: index",
+                "infFile": "t4.inf",
+                "time": 1594116587199
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Url: dataTables_en.json",
+                "infFile": "t5.inf",
+                "time": 1594116599273
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Url: latestPeriodicReport",
+                "infFile": "t6.inf",
+                "time": 1594116602754
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Url: {User_Id}",
+                "infFile": "t7.inf",
+                "time": 1594116607672
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Url: create",
+                "infFile": "t8.inf",
+                "time": 1594116630771
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Url: column-view-64c0085c608464f4a6f66e33d985ae27.html",
+                "infFile": "t9.inf",
+                "time": 1594116725654
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Url: column-view-64c0085c608464f4a6f66e33d985ae27.html_2",
+                "infFile": "t10.inf",
+                "time": 1594116766000
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Url: allEmails",
+                "infFile": "t11.inf",
+                "time": 1594116772330
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Url: getNumOperators",
+                "infFile": "t12.inf",
+                "time": 1594116775605
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Url: fetchDateRangeTypesForDatasource",
+                "infFile": "t13.inf",
+                "time": 1594116779187
+            },
+            {
+                "stepId": "STEP13",
+                "stepName": "Url: fetchEvaluateCaseDatesForDatasource",
+                "infFile": "t14.inf",
+                "time": 1594116783201
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Url: fetchEvaluateCaseDateSubmissionForDatasource",
+                "infFile": "t15.inf",
+                "time": 1594116787466
+            },
+            {
+                "stepId": "STEP15",
+                "stepName": "Url: allEmailsForCC",
+                "infFile": "t16.inf",
+                "time": 1594116793026
+            },
+            {
+                "stepId": "STEP16",
+                "stepName": "Url: getDateOperators",
+                "infFile": "t17.inf",
+                "time": 1594116797738
+            },
+            {
+                "stepId": "STEP17",
+                "stepName": "Url: getStringOperators",
+                "infFile": "t18.inf",
+                "time": 1594116803940
+            },
+            {
+                "stepId": "STEP18",
+                "stepName": "Url: getValuelessOperators",
+                "infFile": "t19.inf",
+                "time": 1594116807959
+            },
+            {
+                "stepId": "STEP19",
+                "stepName": "Url: {User_Id}_2",
+                "infFile": "t20.inf",
+                "time": 1594116813698
+            },
+            {
+                "stepId": "STEP20",
+                "stepName": "Url: sharedWithValues",
+                "infFile": "t21.inf",
+                "time": 1594116821719
+            },
+            {
+                "stepId": "STEP21",
+                "stepName": "Url: polymer.html",
+                "infFile": "t22.inf",
+                "time": 1594116826746
+            },
+            {
+                "stepId": "STEP22",
+                "stepName": "Url: polymer-mini.html",
+                "infFile": "t23.inf",
+                "time": 1594116835218
+            },
+            {
+                "stepId": "STEP23",
+                "stepName": "Submit Data: searchViews",
+                "infFile": "t25.inf",
+                "time": 1594116895620
+            },
+            {
+                "stepId": "STEP24",
+                "stepName": "Custom Request: getSelectedItem",
+                "infFile": "t26.inf",
+                "time": 1594116907727
+            },
+            {
+                "stepId": "STEP25",
+                "stepName": "Submit Data: getPreLevelProductParents",
+                "infFile": "t27.inf",
+                "time": 1594116911163
+            },
+            {
+                "stepId": "STEP26",
+                "stepName": "Url: keep-alive",
+                "infFile": "t28.inf",
+                "time": 1594116915503
+            },
+            {
+                "stepId": "STEP27",
+                "stepName": "Submit Data: getPreLevelProductParents_2",
+                "infFile": "t29.inf",
+                "time": 1594116918372
+            },
+            {
+                "stepId": "STEP28",
+                "stepName": "Submit Data: getPreLevelProductParents_3",
+                "infFile": "t30.inf",
+                "time": 1594116921645
+            },
+            {
+                "stepId": "STEP29",
+                "stepName": "Url: getTemplateList",
+                "infFile": "t31.inf",
+                "time": 1594116934732
+            },
+            {
+                "stepId": "STEP30",
+                "stepName": "Url: customSQLValuesForTemplate",
+                "infFile": "t32.inf",
+                "time": 1594116938845
+            },
+            {
+                "stepId": "STEP31",
+                "stepName": "Url: poiInputsForTemplate",
+                "infFile": "t33.inf",
+                "time": 1594116942939
+            },
+            {
+                "stepId": "STEP32",
+                "stepName": "Url: getQueryList",
+                "infFile": "t34.inf",
+                "time": 1594116955847
+            },
+            {
+                "stepId": "STEP33",
+                "stepName": "Url: queryExpressionValuesForQuery",
+                "infFile": "t35.inf",
+                "time": 1594116959528
+            },
+            {
+                "stepId": "STEP34",
+                "stepName": "Url: customSQLValuesForQuery",
+                "infFile": "t36.inf",
+                "time": 1594116963428
+            },
+            {
+                "stepId": "STEP35",
+                "stepName": "Url: reportFieldsForQueryValue",
+                "infFile": "t37.inf",
+                "time": 1594116968546
+            },
+            {
+                "stepId": "STEP36",
+                "stepName": "Url: queryExpressionValuesForQuerySet",
+                "infFile": "t38.inf",
+                "time": 1594116974267
+            },
+            {
+                "stepId": "STEP37",
+                "stepName": "Url: reportFieldsForQueryValue_2",
+                "infFile": "t39.inf",
+                "time": 1594116981028
+            },
+            {
+                "stepId": "STEP38",
+                "stepName": "Url: getTemplateList_2",
+                "infFile": "t40.inf",
+                "time": 1594116993589
+            },
+            {
+                "stepId": "STEP39",
+                "stepName": "Url: customSQLValuesForTemplate_2",
+                "infFile": "t41.inf",
+                "time": 1594117001314
+            },
+            {
+                "stepId": "STEP40",
+                "stepName": "Url: poiInputsForTemplate_2",
+                "infFile": "t42.inf",
+                "time": 1594117004801
+            },
+            {
+                "stepId": "STEP41",
+                "stepName": "Url: getQueryList_2",
+                "infFile": "t43.inf",
+                "time": 1594117017628
+            },
+            {
+                "stepId": "STEP42",
+                "stepName": "Url: queryExpressionValuesForQuery_2",
+                "infFile": "t44.inf",
+                "time": 1594117024238
+            },
+            {
+                "stepId": "STEP43",
+                "stepName": "Url: customSQLValuesForQuery_2",
+                "infFile": "t45.inf",
+                "time": 1594117027529
+            },
+            {
+                "stepId": "STEP44",
+                "stepName": "Url: queryExpressionValuesForQuerySet_2",
+                "infFile": "t46.inf",
+                "time": 1594117031620
+            },
+            {
+                "stepId": "STEP45",
+                "stepName": "Url: reportFieldsForQueryValue_3",
+                "infFile": "t47.inf",
+                "time": 1594117036331
+            },
+            {
+                "stepId": "STEP46",
+                "stepName": "Url: reportFieldsForQueryValue_4",
+                "infFile": "t48.inf",
+                "time": 1594117040848
+            },
+            {
+                "stepId": "STEP47",
+                "stepName": "Url: possibleValues",
+                "infFile": "t49.inf",
+                "time": 1594117044308
+            },
+            {
+                "stepId": "STEP48",
+                "stepName": "Url: possibleValues_2",
+                "infFile": "t50.inf",
+                "time": 1594117050261
+            },
+            {
+                "stepId": "STEP49",
+                "stepName": "Url: possibleValues_3",
+                "infFile": "t51.inf",
+                "time": 1594117056669
+            },
+            {
+                "stepId": "STEP50",
+                "stepName": "Url: possibleValues_4",
+                "infFile": "t52.inf",
+                "time": 1594117059483
+            },
+            {
+                "stepId": "STEP51",
+                "stepName": "Url: getTemplateList_3",
+                "infFile": "t53.inf",
+                "time": 1594117072237
+            },
+            {
+                "stepId": "STEP52",
+                "stepName": "Url: customSQLValuesForTemplate_3",
+                "infFile": "t54.inf",
+                "time": 1594117075044
+            },
+            {
+                "stepId": "STEP53",
+                "stepName": "Url: poiInputsForTemplate_3",
+                "infFile": "t55.inf",
+                "time": 1594117081244
+            },
+            {
+                "stepId": "STEP54",
+                "stepName": "Url: getQueryList_3",
+                "infFile": "t56.inf",
+                "time": 1594117094436
+            },
+            {
+                "stepId": "STEP55",
+                "stepName": "Url: queryExpressionValuesForQuery_3",
+                "infFile": "t57.inf",
+                "time": 1594117097162
+            },
+            {
+                "stepId": "STEP56",
+                "stepName": "Url: customSQLValuesForQuery_3",
+                "infFile": "t58.inf",
+                "time": 1594117101056
+            },
+            {
+                "stepId": "STEP57",
+                "stepName": "Url: queryExpressionValuesForQuerySet_3",
+                "infFile": "t59.inf",
+                "time": 1594117103613
+            },
+            {
+                "stepId": "STEP58",
+                "stepName": "Url: reportFieldsForQueryValue_5",
+                "infFile": "t60.inf",
+                "time": 1594117108025
+            },
+            {
+                "stepId": "STEP59",
+                "stepName": "Url: possibleValues_5",
+                "infFile": "t61.inf",
+                "time": 1594117111907
+            },
+            {
+                "stepId": "STEP60",
+                "stepName": "Url: possibleValues_6",
+                "infFile": "t62.inf",
+                "time": 1594117119692
+            },
+            {
+                "stepId": "STEP61",
+                "stepName": "Url: getReportingDestinations",
+                "infFile": "t63.inf",
+                "time": 1594117131970
+            },
+            {
+                "stepId": "STEP62",
+                "stepName": "Url: getReportingDestinations_2",
+                "infFile": "t64.inf",
+                "time": 1594117136891
+            },
+            {
+                "stepId": "STEP63",
+                "stepName": "Url: keep-alive_4",
+                "infFile": "t65.inf",
+                "time": 1594117140117
+            },
+            {
+                "stepId": "STEP64",
+                "stepName": "Submit Data: run",
+                "infFile": "t66.inf",
+                "time": 1594117161013
+            },
+            {
+                "stepId": "STEP65",
+                "stepName": "Url: {User_Id}_3",
+                "infFile": "t67.inf",
+                "time": 1594117193834
+            },
+            {
+                "stepId": "STEP66",
+                "stepName": "Url: executionStatus",
+                "infFile": "t68.inf",
+                "time": 1594117197798
+            },
+            {
+                "stepId": "STEP67",
+                "stepName": "Url: logout",
+                "infFile": "t69.inf",
+                "time": 1594117226199
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "S05_T01_OpenApplication",
+                "rawStartTime": 1594116460529,
+                "rawEndTime": 1594116495857,
+                "thinkTime": 0.0,
+                "wastedTime": 0.34067296981811526
+            },
+            {
+                "transactionName": "S05_T02_Login",
+                "rawStartTime": 1594116504869,
+                "rawEndTime": 1594116616485,
+                "thinkTime": 0.0,
+                "wastedTime": 0.32079577445983889
+            },
+            {
+                "transactionName": "S05_T03_NavigateAggregateReport_NewReport",
+                "rawStartTime": 1594116625493,
+                "rawEndTime": 1594116873629,
+                "thinkTime": 0.0,
+                "wastedTime": 0.6235799789428711
+            },
+            {
+                "transactionName": "S05_T04_ClickProdLookUp",
+                "rawStartTime": 1594116882640,
+                "rawEndTime": 1594116882644,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0
+            },
+            {
+                "transactionName": "S05_T05_SearchProduct",
+                "rawStartTime": 1594116891656,
+                "rawEndTime": 1594116895627,
+                "thinkTime": 0.0,
+                "wastedTime": 0.010970830917358399
+            },
+            {
+                "transactionName": "S05_T06_SelectProduct",
+                "rawStartTime": 1594116904637,
+                "rawEndTime": 1594116921650,
+                "thinkTime": 0.0,
+                "wastedTime": 0.07722258567810059
+            },
+            {
+                "transactionName": "S05_T07_AddSection1_ChooseReportTemplate",
+                "rawStartTime": 1594116930662,
+                "rawEndTime": 1594116942945,
+                "thinkTime": 0.0,
+                "wastedTime": 0.04389500617980957
+            },
+            {
+                "transactionName": "S05_T08_AddSection1_ChooseQuery",
+                "rawStartTime": 1594116951958,
+                "rawEndTime": 1594116981031,
+                "thinkTime": 0.0,
+                "wastedTime": 0.09148406982421875
+            },
+            {
+                "transactionName": "S05_T09_AddSection2_ChooseReportTemplate",
+                "rawStartTime": 1594116990044,
+                "rawEndTime": 1594117004806,
+                "thinkTime": 0.0,
+                "wastedTime": 0.05670499801635742
+            },
+            {
+                "transactionName": "S05_T10_AddSection2_ChooseQuery",
+                "rawStartTime": 1594117013820,
+                "rawEndTime": 1594117059486,
+                "thinkTime": 0.0,
+                "wastedTime": 0.16489410400390626
+            },
+            {
+                "transactionName": "S05_T11_AddSection3_ChooseReportTemplate",
+                "rawStartTime": 1594117068512,
+                "rawEndTime": 1594117081249,
+                "thinkTime": 0.0,
+                "wastedTime": 0.053841352462768558
+            },
+            {
+                "transactionName": "S05_T12_AddSection3_ChooseQuery",
+                "rawStartTime": 1594117090260,
+                "rawEndTime": 1594117119696,
+                "thinkTime": 0.0,
+                "wastedTime": 0.12372589111328125
+            },
+            {
+                "transactionName": "S05_T13_Select_ReportDestinations",
+                "rawStartTime": 1594117128708,
+                "rawEndTime": 1594117140121,
+                "thinkTime": 0.0,
+                "wastedTime": 0.04492974281311035
+            },
+            {
+                "transactionName": "S05_T14_SaveRun",
+                "rawStartTime": 1594117149139,
+                "rawEndTime": 1594117197804,
+                "thinkTime": 0.0,
+                "wastedTime": 0.07466340065002442
+            },
+            {
+                "transactionName": "S05_T15_Logout",
+                "rawStartTime": 1594117206829,
+                "rawEndTime": 1594117226205,
+                "thinkTime": 0.0,
+                "wastedTime": 0.020894527435302736
+            }
+        ]
+    }
+]

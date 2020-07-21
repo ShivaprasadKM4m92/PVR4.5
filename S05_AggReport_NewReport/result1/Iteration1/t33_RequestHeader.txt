@@ -1,0 +1,13 @@
+GET /reports/template/poiInputsForTemplate?templateId=24615&_=1591089625235 HTTP/1.1
+Referer: https://pvr-perf.rxlogix.com/reports/periodicReport/create
+Accept-Encoding: gzip, deflate, br
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36
+Sec-Fetch-Mode: cors
+Accept-Language: en-US,en;q=0.9
+Sec-Fetch-Dest: empty
+Accept: application/json, text/javascript, */*; q=0.01
+X-Requested-With: XMLHttpRequest
+Host: pvr-perf.rxlogix.com
+Cookie: SESSION=60fcd6e3-1ea9-4456-a7d5-1b448752c98a; dtCookie=v_4_srv_3_sn_71FDCB78A9BED73787E8C669E5A6BD16_perc_100000_ol_0_mul_1
+

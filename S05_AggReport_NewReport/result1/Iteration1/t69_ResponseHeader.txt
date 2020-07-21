@@ -1,0 +1,14 @@
+HTTP/1.1 200 
+Date: Tue, 07 Jul 2020 10:20:24 GMT
+Content-Type: text/html;charset=UTF-8
+Connection: close
+X-OneAgent-JS-Injection: true
+X-Frame-Options: DENY
+X-Application-Context: application:production:9090
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+X-XSS-Protection: 1
+X-Content-Type-Options: nosniff
+Set-Cookie: SESSION=0afe7358-3909-43eb-a314-33e5792905e5; Path=/reports/; Secure; HttpOnly
+Content-Language: en-US
+

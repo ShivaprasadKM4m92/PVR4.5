@@ -1,0 +1,15 @@
+HTTP/1.1 200 
+Date: Tue, 07 Jul 2020 10:07:43 GMT
+Content-Type: text/html;charset=UTF-8
+Connection: close
+X-OneAgent-JS-Injection: true
+Set-Cookie: dtCookie=v_4_srv_3_sn_71FDCB78A9BED73787E8C669E5A6BD16_perc_100000_ol_0_mul_1; Path=/; Domain=.rxlogix.com
+X-Frame-Options: DENY
+X-Application-Context: application:production:9090
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+X-XSS-Protection: 1
+X-Content-Type-Options: nosniff
+Set-Cookie: SESSION=a3b225cb-7484-4f8e-b83d-544a6e0c7736; Path=/reports/; Secure; HttpOnly
+Content-Language: en-US
+
