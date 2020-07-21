@@ -1,0 +1,11 @@
+[t235]
+FileName1=t235_fetchDateRangeTypesForDatasource.json
+URL1=https://pvr-perf.rxlogix.com/reports/configurationRest/fetchDateRangeTypesForDatasource?dataSourceId=6594
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_216.xml
+RequestHeaderFile=t235_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t235_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

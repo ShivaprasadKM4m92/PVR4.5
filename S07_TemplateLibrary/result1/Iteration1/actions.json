@@ -1,0 +1,589 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: auth",
+                "infFile": "t2.inf",
+                "time": 1594713317745
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Submit Data: authenticate",
+                "infFile": "t5.inf",
+                "time": 1594713324635
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Url: index_2",
+                "infFile": "t13.inf",
+                "time": 1594713337934
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Url: templates",
+                "infFile": "t18.inf",
+                "time": 1594713339576
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Url: templates_2",
+                "infFile": "t19.inf",
+                "time": 1594713340189
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Url: {TempId}",
+                "infFile": "t20.inf",
+                "time": 1594713341069
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Url: getTemplateSetCLL",
+                "infFile": "t38.inf",
+                "time": 1594713344989
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Submit Data: update",
+                "infFile": "t39.inf",
+                "time": 1594713347159
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Url: {TempId}_2",
+                "infFile": "t57.inf",
+                "time": 1594713349302
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Url: getTemplateNameDescription_30",
+                "infFile": "t58.inf",
+                "time": 1594713350418
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Url: getTemplateNameDescription_31",
+                "infFile": "t59.inf",
+                "time": 1594713350851
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Url: getTemplateNameDescription_32",
+                "infFile": "t60.inf",
+                "time": 1594713351338
+            },
+            {
+                "stepId": "STEP13",
+                "stepName": "Url: getTemplateNameDescription_33",
+                "infFile": "t61.inf",
+                "time": 1594713351880
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Url: getTemplateNameDescription_34",
+                "infFile": "t62.inf",
+                "time": 1594713352273
+            },
+            {
+                "stepId": "STEP15",
+                "stepName": "Url: getTemplateNameDescription_35",
+                "infFile": "t63.inf",
+                "time": 1594713352631
+            },
+            {
+                "stepId": "STEP16",
+                "stepName": "Url: getTemplateNameDescription_36",
+                "infFile": "t64.inf",
+                "time": 1594713353093
+            },
+            {
+                "stepId": "STEP17",
+                "stepName": "Url: getTemplateNameDescription_37",
+                "infFile": "t65.inf",
+                "time": 1594713353509
+            },
+            {
+                "stepId": "STEP18",
+                "stepName": "Url: getTemplateNameDescription_38",
+                "infFile": "t66.inf",
+                "time": 1594713353951
+            },
+            {
+                "stepId": "STEP19",
+                "stepName": "Url: getTemplateNameDescription_39",
+                "infFile": "t67.inf",
+                "time": 1594713354309
+            },
+            {
+                "stepId": "STEP20",
+                "stepName": "Url: getTemplateNameDescription_40",
+                "infFile": "t68.inf",
+                "time": 1594713354750
+            },
+            {
+                "stepId": "STEP21",
+                "stepName": "Url: getTemplateNameDescription_41",
+                "infFile": "t69.inf",
+                "time": 1594713355139
+            },
+            {
+                "stepId": "STEP22",
+                "stepName": "Url: getTemplateNameDescription_42",
+                "infFile": "t70.inf",
+                "time": 1594713355564
+            },
+            {
+                "stepId": "STEP23",
+                "stepName": "Url: getTemplateNameDescription_43",
+                "infFile": "t71.inf",
+                "time": 1594713355952
+            },
+            {
+                "stepId": "STEP24",
+                "stepName": "Url: getTemplateNameDescription_44",
+                "infFile": "t72.inf",
+                "time": 1594713356298
+            },
+            {
+                "stepId": "STEP25",
+                "stepName": "Url: info_5",
+                "infFile": "t73.inf",
+                "time": 1594713356731
+            },
+            {
+                "stepId": "STEP26",
+                "stepName": "Url: sharedWithValues_2",
+                "infFile": "t74.inf",
+                "time": 1594713357155
+            },
+            {
+                "stepId": "STEP27",
+                "stepName": "Url: {User_Id}_5",
+                "infFile": "t75.inf",
+                "time": 1594713357571
+            },
+            {
+                "stepId": "STEP28",
+                "stepName": "Submit Data: update_2",
+                "infFile": "t76.inf",
+                "time": 1594713359582
+            },
+            {
+                "stepId": "STEP29",
+                "stepName": "Url: getTemplateNameDescription_45",
+                "infFile": "t77.inf",
+                "time": 1594713361081
+            },
+            {
+                "stepId": "STEP30",
+                "stepName": "Url: getTemplateNameDescription_46",
+                "infFile": "t78.inf",
+                "time": 1594713361503
+            },
+            {
+                "stepId": "STEP31",
+                "stepName": "Url: getTemplateNameDescription_47",
+                "infFile": "t79.inf",
+                "time": 1594713361892
+            },
+            {
+                "stepId": "STEP32",
+                "stepName": "Url: getTemplateNameDescription_48",
+                "infFile": "t80.inf",
+                "time": 1594713362260
+            },
+            {
+                "stepId": "STEP33",
+                "stepName": "Url: getTemplateNameDescription_49",
+                "infFile": "t81.inf",
+                "time": 1594713362723
+            },
+            {
+                "stepId": "STEP34",
+                "stepName": "Url: getTemplateNameDescription_50",
+                "infFile": "t82.inf",
+                "time": 1594713363159
+            },
+            {
+                "stepId": "STEP35",
+                "stepName": "Url: getTemplateNameDescription_51",
+                "infFile": "t83.inf",
+                "time": 1594713363528
+            },
+            {
+                "stepId": "STEP36",
+                "stepName": "Url: getTemplateNameDescription_52",
+                "infFile": "t84.inf",
+                "time": 1594713363951
+            },
+            {
+                "stepId": "STEP37",
+                "stepName": "Url: getTemplateNameDescription_53",
+                "infFile": "t85.inf",
+                "time": 1594713364382
+            },
+            {
+                "stepId": "STEP38",
+                "stepName": "Url: getTemplateNameDescription_54",
+                "infFile": "t86.inf",
+                "time": 1594713364735
+            },
+            {
+                "stepId": "STEP39",
+                "stepName": "Url: getTemplateNameDescription_55",
+                "infFile": "t87.inf",
+                "time": 1594713365289
+            },
+            {
+                "stepId": "STEP40",
+                "stepName": "Url: getTemplateNameDescription_56",
+                "infFile": "t88.inf",
+                "time": 1594713365653
+            },
+            {
+                "stepId": "STEP41",
+                "stepName": "Url: getTemplateNameDescription_57",
+                "infFile": "t89.inf",
+                "time": 1594713366203
+            },
+            {
+                "stepId": "STEP42",
+                "stepName": "Url: getTemplateNameDescription_58",
+                "infFile": "t90.inf",
+                "time": 1594713366640
+            },
+            {
+                "stepId": "STEP43",
+                "stepName": "Url: {User_Id}_6",
+                "infFile": "t91.inf",
+                "time": 1594713367226
+            },
+            {
+                "stepId": "STEP44",
+                "stepName": "Url: info_6",
+                "infFile": "t92.inf",
+                "time": 1594713367841
+            },
+            {
+                "stepId": "STEP45",
+                "stepName": "Url: create",
+                "infFile": "t93.inf",
+                "time": 1594713371320
+            },
+            {
+                "stepId": "STEP46",
+                "stepName": "Url: column-view-64c0085c608464f4a6f66e33d985ae27.html_2",
+                "infFile": "t94.inf",
+                "time": 1594713379294
+            },
+            {
+                "stepId": "STEP47",
+                "stepName": "Url: getTemplateNameDescription_59",
+                "infFile": "t95.inf",
+                "time": 1594713379697
+            },
+            {
+                "stepId": "STEP48",
+                "stepName": "Url: allEmails",
+                "infFile": "t96.inf",
+                "time": 1594713380130
+            },
+            {
+                "stepId": "STEP49",
+                "stepName": "Url: allEmailsForCC",
+                "infFile": "t97.inf",
+                "time": 1594713380507
+            },
+            {
+                "stepId": "STEP50",
+                "stepName": "Url: fetchEvaluateCaseDatesForDatasource",
+                "infFile": "t98.inf",
+                "time": 1594713380945
+            },
+            {
+                "stepId": "STEP51",
+                "stepName": "Url: fetchEvaluateCaseDateSubmissionForDatasource",
+                "infFile": "t99.inf",
+                "time": 1594713381341
+            },
+            {
+                "stepId": "STEP52",
+                "stepName": "Url: fetchDateRangeTypesForDatasource",
+                "infFile": "t100.inf",
+                "time": 1594713381746
+            },
+            {
+                "stepId": "STEP53",
+                "stepName": "Url: getNumOperators",
+                "infFile": "t101.inf",
+                "time": 1594713382201
+            },
+            {
+                "stepId": "STEP54",
+                "stepName": "Url: getDateOperators",
+                "infFile": "t102.inf",
+                "time": 1594713382622
+            },
+            {
+                "stepId": "STEP55",
+                "stepName": "Url: getStringOperators",
+                "infFile": "t103.inf",
+                "time": 1594713383004
+            },
+            {
+                "stepId": "STEP56",
+                "stepName": "Url: getValuelessOperators",
+                "infFile": "t104.inf",
+                "time": 1594713383489
+            },
+            {
+                "stepId": "STEP57",
+                "stepName": "Url: {User_Id}_7",
+                "infFile": "t105.inf",
+                "time": 1594713384034
+            },
+            {
+                "stepId": "STEP58",
+                "stepName": "Url: info_7",
+                "infFile": "t106.inf",
+                "time": 1594713384656
+            },
+            {
+                "stepId": "STEP59",
+                "stepName": "Url: polymer.html",
+                "infFile": "t107.inf",
+                "time": 1594713385065
+            },
+            {
+                "stepId": "STEP60",
+                "stepName": "Url: sharedWithValues_3",
+                "infFile": "t108.inf",
+                "time": 1594713385880
+            },
+            {
+                "stepId": "STEP61",
+                "stepName": "Url: polymer-mini.html",
+                "infFile": "t109.inf",
+                "time": 1594713386985
+            },
+            {
+                "stepId": "STEP62",
+                "stepName": "Url: polymer-micro.html",
+                "infFile": "t110.inf",
+                "time": 1594713387356
+            },
+            {
+                "stepId": "STEP63",
+                "stepName": "Submit Data: searchViews",
+                "infFile": "t111.inf",
+                "time": 1594713389353
+            },
+            {
+                "stepId": "STEP64",
+                "stepName": "Custom Request: getSelectedItem",
+                "infFile": "t112.inf",
+                "time": 1594713389977
+            },
+            {
+                "stepId": "STEP65",
+                "stepName": "Submit Data: getPreLevelProductParents",
+                "infFile": "t113.inf",
+                "time": 1594713390570
+            },
+            {
+                "stepId": "STEP66",
+                "stepName": "Submit Data: getPreLevelProductParents_2",
+                "infFile": "t114.inf",
+                "time": 1594713391318
+            },
+            {
+                "stepId": "STEP67",
+                "stepName": "Submit Data: run",
+                "infFile": "t115.inf",
+                "time": 1594713392486
+            },
+            {
+                "stepId": "STEP68",
+                "stepName": "Url: {User_Id}_8",
+                "infFile": "t116.inf",
+                "time": 1594713395479
+            },
+            {
+                "stepId": "STEP69",
+                "stepName": "Url: executionStatus",
+                "infFile": "t117.inf",
+                "time": 1594713395906
+            },
+            {
+                "stepId": "STEP70",
+                "stepName": "Url: info_8",
+                "infFile": "t118.inf",
+                "time": 1594713396275
+            },
+            {
+                "stepId": "STEP71",
+                "stepName": "Url: index_3",
+                "infFile": "t119.inf",
+                "time": 1594713396924
+            },
+            {
+                "stepId": "STEP72",
+                "stepName": "Url: lookup_2",
+                "infFile": "t120.inf",
+                "time": 1594713398142
+            },
+            {
+                "stepId": "STEP73",
+                "stepName": "Url: tag_2",
+                "infFile": "t121.inf",
+                "time": 1594713398559
+            },
+            {
+                "stepId": "STEP74",
+                "stepName": "Url: {User_Id}_9",
+                "infFile": "t122.inf",
+                "time": 1594713399774
+            },
+            {
+                "stepId": "STEP75",
+                "stepName": "Url: info_9",
+                "infFile": "t123.inf",
+                "time": 1594713400199
+            },
+            {
+                "stepId": "STEP76",
+                "stepName": "Url: templates_3",
+                "infFile": "t124.inf",
+                "time": 1594713400858
+            },
+            {
+                "stepId": "STEP77",
+                "stepName": "Url: templates_4",
+                "infFile": "t125.inf",
+                "time": 1594713401667
+            },
+            {
+                "stepId": "STEP78",
+                "stepName": "Url: logout",
+                "infFile": "t126.inf",
+                "time": 1594713403265
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "S07_T01_OpenApplication",
+                "rawStartTime": 1594713314812,
+                "rawEndTime": 1594713321744,
+                "thinkTime": 0.0,
+                "wastedTime": 0.26912546157836916
+            },
+            {
+                "transactionName": "S07_T02_Login",
+                "rawStartTime": 1594713321845,
+                "rawEndTime": 1594713337136,
+                "thinkTime": 0.0,
+                "wastedTime": 0.4582178592681885
+            },
+            {
+                "transactionName": "S07_T03_NavigateTemplates_TemplateLibrary",
+                "rawStartTime": 1594713337177,
+                "rawEndTime": 1594713339582,
+                "thinkTime": 0.0,
+                "wastedTime": 0.08263969421386719
+            },
+            {
+                "transactionName": "S07_T04_SearchTemplate",
+                "rawStartTime": 1594713339618,
+                "rawEndTime": 1594713340201,
+                "thinkTime": 0.0,
+                "wastedTime": 0.02161431312561035
+            },
+            {
+                "transactionName": "S07_T05_EditTemplate",
+                "rawStartTime": 1594713340234,
+                "rawEndTime": 1594713344267,
+                "thinkTime": 0.0,
+                "wastedTime": 0.12773942947387696
+            },
+            {
+                "transactionName": "S07_T06_Add_CaseLineListingTemplate_Tag_And_Update",
+                "rawStartTime": 1594713344299,
+                "rawEndTime": 1594713348430,
+                "thinkTime": 0.0,
+                "wastedTime": 0.10877799987792969
+            },
+            {
+                "transactionName": "S07_T07_EditTemplate",
+                "rawStartTime": 1594713348478,
+                "rawEndTime": 1594713357579,
+                "thinkTime": 0.0,
+                "wastedTime": 0.3007025718688965
+            },
+            {
+                "transactionName": "S07_T08_Remove_CaseLineListingTemplate_And_ClickUpdate",
+                "rawStartTime": 1594713357619,
+                "rawEndTime": 1594713367923,
+                "thinkTime": 0.0,
+                "wastedTime": 0.3226046562194824
+            },
+            {
+                "transactionName": "S07_T09_ClickRun",
+                "rawStartTime": 1594713367956,
+                "rawEndTime": 1594713388598,
+                "thinkTime": 0.0,
+                "wastedTime": 0.6096968650817871
+            },
+            {
+                "transactionName": "S07_T10_SearchProduct",
+                "rawStartTime": 1594713388632,
+                "rawEndTime": 1594713389367,
+                "thinkTime": 0.0,
+                "wastedTime": 0.019763946533203126
+            },
+            {
+                "transactionName": "S07_T11_AddProduct",
+                "rawStartTime": 1594713389416,
+                "rawEndTime": 1594713391332,
+                "thinkTime": 0.0,
+                "wastedTime": 0.04539084434509277
+            },
+            {
+                "transactionName": "S07_T12_Click_Close",
+                "rawStartTime": 1594713391379,
+                "rawEndTime": 1594713391402,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0
+            },
+            {
+                "transactionName": "S07_T13_EnterReportName_Click_Save&Run",
+                "rawStartTime": 1594713391452,
+                "rawEndTime": 1594713396281,
+                "thinkTime": 0.0,
+                "wastedTime": 0.11114645004272461
+            },
+            {
+                "transactionName": "S07_T14_NavigateTemplates_TemplateLibrary",
+                "rawStartTime": 1594713396319,
+                "rawEndTime": 1594713400869,
+                "thinkTime": 0.0,
+                "wastedTime": 0.11945199966430664
+            },
+            {
+                "transactionName": "S07_T15_RemoveFilter",
+                "rawStartTime": 1594713401000,
+                "rawEndTime": 1594713401682,
+                "thinkTime": 0.0,
+                "wastedTime": 0.014612197875976563
+            },
+            {
+                "transactionName": "S07_T16_Logout",
+                "rawStartTime": 1594713401716,
+                "rawEndTime": 1594713403273,
+                "thinkTime": 0.0,
+                "wastedTime": 0.011507272720336914
+            }
+        ]
+    }
+]

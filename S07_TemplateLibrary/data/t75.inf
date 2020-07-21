@@ -1,0 +1,11 @@
+[t75]
+FileName1=t75_jquery.shorten-748253da78c6257aced45caa5931b43b.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/shorten/jquery.shorten-748253da78c6257aced45caa5931b43b.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_65.xml
+RequestHeaderFile=t75_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t75_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

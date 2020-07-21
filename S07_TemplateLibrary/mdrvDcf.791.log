@@ -1,0 +1,1224 @@
+Start auto log messages stack - Iteration 1.
+Action.c(2480): web_url("getTemplateNameDescription_43") was successful, 160 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2489): web_url("getTemplateNameDescription_44") started  	[MsgId: MMSG-26355]
+Action.c(2489): web_url("getTemplateNameDescription_44") was successful, 157 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2498): web_remove_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(2498): Previous automatically added web header for "X-Requested-With" removed  	[MsgId: MMSG-26587]
+Action.c(2498): web_remove/revert_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(2500): web_url("info_5") started  	[MsgId: MMSG-26355]
+Action.c(2500): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/stomp/info" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(807): Registering web_url("Material-Design-Iconic-Font-a2a1ba89e7f9d29f7d5aee76e8b9f7ab.woff") was successful  	[MsgId: MMSG-26390]
+Action.c(838): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(345): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/rxapplication-eebebbeb632a82e8608209da3ab42ef2.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(507): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fuelux/fuelux-58910ec6bd502e7c4aabf85922131616.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(539): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/gridstack/gridstack.jQueryUI.min-5bd5204d23705e69adeb23742f04ff8c.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(691): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/stomp/info" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(587): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/jquery.app-782d8f87ac279a019b37b18a315654b2.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(555): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/gridstack/gridstack.min-157675a5f94f1a18234a494030c5d8f0.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(715): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/i18n/dataTables_en.json" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+Action.c(668): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/86414?_=1589965692480" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(807): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/Material-Design-Iconic-Font-a2a1ba89e7f9d29f7d5aee76e8b9f7ab.woff?v=1.0.1" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(563): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/pushNotification-3d08817200dceb0a405d9f7aefa3192f.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(595): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/store.modern.min-ee86dbde67356086e53dffdd31c6867d.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(467): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fullcalendar/fullcalendar-ab21481ecaaf856ac398df2626c214f0.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(729): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/periodicReportConfigurationRest/latestPeriodicReport?length=4&start=0" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(499): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/highcharts/highcharts-01ce2a5c16b4e040b95b02d8cf3ea23e.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(483): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fullcalendar/fullcalendar-lang-all-e4e9be403fd4dc092b72c368c27e5d47.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(579): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/jquery.core-2c7cdf128b42d849235dea8cadd879b8.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(703): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/actionItemRest/index?length=5&start=0&sort=dueDate&direction=asc" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+Action.c(680): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportResultRest/latestAdhocReport?length=4&start=0" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(2682): web_url("getTemplateNameDescription_49") started  	[MsgId: MMSG-26355]
+Action.c(2682): web_url("getTemplateNameDescription_49") was successful, 154 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2691): web_url("getTemplateNameDescription_50") started  	[MsgId: MMSG-26355]
+Action.c(2691): web_url("getTemplateNameDescription_50") was successful, 156 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2700): web_url("getTemplateNameDescription_51") started  	[MsgId: MMSG-26355]
+Action.c(2700): web_url("getTemplateNameDescription_51") was successful, 163 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2709): web_url("getTemplateNameDescription_52") started  	[MsgId: MMSG-26355]
+Action.c(2709): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24192" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(188): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/jquery/jquery.cookie-1.4.1.min-62bfa1d0d94f4791957d86b90ba720db.js" failed   [issued at Action.c(244)]  	[MsgId: MWAR-27760]
+Action.c(174): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/cookiecuttr-a7a609074d7bc97460b6aab9935c3468.css" failed   [issued at Action.c(244)]  	[MsgId: MWAR-27760]
+Action.c(196): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/jquery/customise-jquery.cookiecuttr-7d5013f65bb830d28e9c0f882402df22.js" failed   [issued at Action.c(244)]  	[MsgId: MWAR-27760]
+Action.c(111): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/application-3d100486bb60d4ee3003d4ee9f8d893e.css" failed   [issued at Action.c(244)]  	[MsgId: MWAR-27760]
+Action.c(235): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/auth" failed   [issued at Action.c(244)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 3.
+Action.c(32): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(35): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(35): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(38): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(38): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(42): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
+Action.c(42): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
+Action.c(52): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(52): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/auth" failed  	[MsgId: MERR-27760]
+Action.c(52): Error -35048: No match found for the requested parameter "CsrfTokenId_1". Check whether the tag with specific attributes exists in the response data  	[MsgId: MERR-35048]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(861): web_add_auto_header("Accept-Encoding") was successful  	[MsgId: MMSG-26392]
+Action.c(864): web_add_auto_header("Accept-Language") started  	[MsgId: MMSG-26355]
+Action.c(864): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(867): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(867): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(870): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(870): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(873): web_url("index_2") started  	[MsgId: MMSG-26355]
+Action.c(873): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/template/index" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(2567): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(2570): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(2570): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(2573): web_submit_data("update_2") started  	[MsgId: MMSG-26355]
+Action.c(2573): Warning -26490: File name in a multipart submit is missing or empty. Using an empty file  	[MsgId: MWAR-26490]
+Action.c(2573): Redirecting "https://pvr-perf.rxlogix.com/reports/template/update?_csrf=b3fda2db-2a66-4465-8d93-5f4afe5f6c20" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(2573): To location "https://pvr-perf.rxlogix.com/reports/template/view/93039"  	[MsgId: MMSG-26693]
+Action.c(2573): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/template/view/93039" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(1953): web_remove/revert_auto_header("Origin") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(1955): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(1955): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(1958): web_add_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(1958): web_add_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(1962): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(1962): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(1970): web_url("getTemplateSetCLL") started  	[MsgId: MMSG-26355]
+Action.c(1970): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateSetCLL?term=&page=1&max=30&oldSelectedValue=&_=1589965794014" failed  	[MsgId: MERR-27760]
+Action.c(1970): Error -26377: No match found for the requested parameter "CLL_15". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1970): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(196): Registering web_url("customise-jquery.cookiecuttr-7d5013f65bb830d28e9c0f882402df22.js") was successful  	[MsgId: MMSG-26390]
+Action.c(207): web_url("OpenSans-Regular-55835483c304eaa8477fea2c36abba17.woff2") started  	[MsgId: MMSG-26355]
+Action.c(207): Registering web_url("OpenSans-Regular-55835483c304eaa8477fea2c36abba17.woff2") was successful  	[MsgId: MMSG-26390]
+Action.c(235): web_url("auth_2") started  	[MsgId: MMSG-26355]
+Action.c(235): Registering web_url("auth_2") was successful  	[MsgId: MMSG-26390]
+Action.c(244): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(75): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/login-56e6216b7dfd4b175b930dda2cfcea23.css" failed   [issued at Action.c(244)]  	[MsgId: MWAR-27760]
+Action.c(235): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/auth" failed   [issued at Action.c(244)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+Action.c(807): web_url("Material-Design-Iconic-Font-a2a1ba89e7f9d29f7d5aee76e8b9f7ab.woff") started  	[MsgId: MMSG-26355]
+Action.c(807): Registering web_url("Material-Design-Iconic-Font-a2a1ba89e7f9d29f7d5aee76e8b9f7ab.woff") was successful  	[MsgId: MMSG-26390]
+Action.c(838): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(345): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/rxapplication-eebebbeb632a82e8608209da3ab42ef2.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(595): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/store.modern.min-ee86dbde67356086e53dffdd31c6867d.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(680): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportResultRest/latestAdhocReport?length=4&start=0" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+Action.c(691): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/stomp/info" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+Action.c(787): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fontawesome-webfont-af7ae505a9eed503f8b8e6982036873e.woff2?v=4.7.0" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(715): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/i18n/dataTables_en.json" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+Action.c(499): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/highcharts/highcharts-01ce2a5c16b4e040b95b02d8cf3ea23e.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(703): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/actionItemRest/index?length=5&start=0&sort=dueDate&direction=asc" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+Action.c(729): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/periodicReportConfigurationRest/latestPeriodicReport?length=4&start=0" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+Action.c(467): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fullcalendar/fullcalendar-ab21481ecaaf856ac398df2626c214f0.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(539): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/gridstack/gridstack.jQueryUI.min-5bd5204d23705e69adeb23742f04ff8c.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(515): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/highcharts/modules/no-data-to-display-93457bf691aefc406c1da97a1f8d7e2d.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(571): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/deleteModal-68b8e74283c8070801d2afbaf40831a1.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(668): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/86359?_=1589965692480" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(32): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(35): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(35): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(38): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(38): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(42): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
+Action.c(42): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
+Action.c(52): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(52): Error -27792: Failed to connect to server "pvr-perf.rxlogix.com:443": [10060] Connection timed out  	[MsgId: MERR-27792]
+Action.c(52): Error -35048: No match found for the requested parameter "CsrfTokenId_1". Check whether the tag with specific attributes exists in the response data  	[MsgId: MERR-35048]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 3.
+Action.c(2567): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(2570): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(2570): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(2573): web_submit_data("update_2") started  	[MsgId: MMSG-26355]
+Action.c(2573): Warning -26490: File name in a multipart submit is missing or empty. Using an empty file  	[MsgId: MWAR-26490]
+Action.c(2573): Redirecting "https://pvr-perf.rxlogix.com/reports/template/update?_csrf=3637f89c-fc54-486d-951b-570a98404d68" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(2573): To location "https://pvr-perf.rxlogix.com/reports/template/view/93039"  	[MsgId: MMSG-26693]
+Action.c(2573): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/template/view/93039" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(289): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(292): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(292): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(296): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(296): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(306): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(306): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(316): web_submit_data("authenticate") started  	[MsgId: MMSG-26355]
+Action.c(316): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/authenticate" failed  	[MsgId: MERR-27760]
+Action.c(316): Error -35061: No match found for the requested parameter "CsrfTokenId_2". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-35061]
+Action.c(316): Error -26377: No match found for the requested parameter "User_Id". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(316): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 3.
+Action.c(2357): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(2357): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(2360): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(2360): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(2363): web_url("getTemplateNameDescription_30") started  	[MsgId: MMSG-26355]
+Action.c(2363): web_url("getTemplateNameDescription_30") was successful, 156 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2372): web_url("getTemplateNameDescription_31") started  	[MsgId: MMSG-26355]
+Action.c(2372): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24026" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+Action.c(32): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(35): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(35): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(38): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(38): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(42): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
+Action.c(42): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
+Action.c(52): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(52): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/auth" failed  	[MsgId: MERR-27760]
+Action.c(52): Error -35048: No match found for the requested parameter "CsrfTokenId_1". Check whether the tag with specific attributes exists in the response data  	[MsgId: MERR-35048]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(196): Resource "https://pvr-perf.rxlogix.com/reports/assets/jquery/customise-jquery.cookiecuttr-7d5013f65bb830d28e9c0f882402df22.js" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(207): web_url("OpenSans-Regular-55835483c304eaa8477fea2c36abba17.woff2") started  	[MsgId: MMSG-26355]
+Action.c(207): Resource "https://pvr-perf.rxlogix.com/reports/assets/OpenSans-Regular-55835483c304eaa8477fea2c36abba17.woff2?v=1.1.0" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(235): web_url("auth_2") started  	[MsgId: MMSG-26355]
+Action.c(235): Registering web_url("auth_2") was successful  	[MsgId: MMSG-26390]
+Action.c(244): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(235): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/auth" failed   [issued at Action.c(244)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(807): Registering web_url("Material-Design-Iconic-Font-a2a1ba89e7f9d29f7d5aee76e8b9f7ab.woff") was successful  	[MsgId: MMSG-26390]
+Action.c(838): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(345): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/rxapplication-eebebbeb632a82e8608209da3ab42ef2.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(603): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/jquery/customise-jquery-idleTimeout-6286fe026bdf78a6c38a29cfd8d979c8.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(555): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/gridstack/gridstack.min-157675a5f94f1a18234a494030c5d8f0.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(715): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/i18n/dataTables_en.json" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(467): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fullcalendar/fullcalendar-ab21481ecaaf856ac398df2626c214f0.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(334): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/theme_gradient_blue-8a7bc35778c66c2a34b346cddd101ad7.css" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(499): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/highcharts/highcharts-01ce2a5c16b4e040b95b02d8cf3ea23e.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(523): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/highcharts/highcharts-3d-b0c0c823b44f85cb61361491f4353576.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(668): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/86579?_=1589965692480" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+Action.c(691): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/stomp/info" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(483): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fullcalendar/fullcalendar-lang-all-e4e9be403fd4dc092b72c368c27e5d47.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(587): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/jquery.app-782d8f87ac279a019b37b18a315654b2.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(703): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/actionItemRest/index?length=5&start=0&sort=dueDate&direction=asc" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(563): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/pushNotification-3d08817200dceb0a405d9f7aefa3192f.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(595): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/store.modern.min-ee86dbde67356086e53dffdd31c6867d.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(648): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fullcalendar.print-5e9985f0185898b586ec4820f63bb446.css" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(729): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/periodicReportConfigurationRest/latestPeriodicReport?length=4&start=0" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(807): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/Material-Design-Iconic-Font-a2a1ba89e7f9d29f7d5aee76e8b9f7ab.woff?v=1.0.1" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(579): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/jquery.core-2c7cdf128b42d849235dea8cadd879b8.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(547): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/highcharts/plugins/grouped-categories-8ddf90b557e5da14225afefcaa8bf9f6.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(680): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportResultRest/latestAdhocReport?length=4&start=0" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 3.
+Action.c(235): web_url("auth_2") started  	[MsgId: MMSG-26355]
+Action.c(235): Registering web_url("auth_2") was successful  	[MsgId: MMSG-26390]
+Action.c(244): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(188): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/jquery/jquery.cookie-1.4.1.min-62bfa1d0d94f4791957d86b90ba720db.js" failed   [issued at Action.c(244)]  	[MsgId: MWAR-27760]
+Action.c(160): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/application-f8ff3189b5e73f6aa63ba16652634041.js" failed   [issued at Action.c(244)]  	[MsgId: MWAR-27760]
+Action.c(207): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/OpenSans-Regular-55835483c304eaa8477fea2c36abba17.woff2?v=1.1.0" failed   [issued at Action.c(244)]  	[MsgId: MWAR-27760]
+Action.c(235): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/auth" failed   [issued at Action.c(244)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(306): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(306): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(316): web_submit_data("authenticate") started  	[MsgId: MMSG-26355]
+Action.c(316): Redirecting "https://pvr-perf.rxlogix.com/reports/login/authenticate" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(316): To location "https://pvr-perf.rxlogix.com/reports/"  	[MsgId: MMSG-26693]
+Action.c(316): Redirecting "https://pvr-perf.rxlogix.com/reports/" (redirection depth is 1)  	[MsgId: MMSG-26694]
+Action.c(316): To location "https://pvr-perf.rxlogix.com/reports/dashboard/index"  	[MsgId: MMSG-26693]
+Action.c(316): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/dashboard/index" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(861): web_add_auto_header("Accept-Encoding") was successful  	[MsgId: MMSG-26392]
+Action.c(864): web_add_auto_header("Accept-Language") started  	[MsgId: MMSG-26355]
+Action.c(864): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(867): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(867): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(870): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(870): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(873): web_url("index_2") started  	[MsgId: MMSG-26355]
+Action.c(873): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/template/index" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 6.
+Action.c(861): web_add_auto_header("Accept-Encoding") was successful  	[MsgId: MMSG-26392]
+Action.c(864): web_add_auto_header("Accept-Language") started  	[MsgId: MMSG-26355]
+Action.c(864): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(867): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(867): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(870): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(870): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(873): web_url("index_2") started  	[MsgId: MMSG-26355]
+Action.c(873): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/template/index" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 3.
+Action.c(2381): web_url("getTemplateNameDescription_32") started  	[MsgId: MMSG-26355]
+Action.c(2381): web_url("getTemplateNameDescription_32") was successful, 164 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2390): web_url("getTemplateNameDescription_33") started  	[MsgId: MMSG-26355]
+Action.c(2390): web_url("getTemplateNameDescription_33") was successful, 160 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2399): web_url("getTemplateNameDescription_34") started  	[MsgId: MMSG-26355]
+Action.c(2399): web_url("getTemplateNameDescription_34") was successful, 154 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2408): web_url("getTemplateNameDescription_35") started  	[MsgId: MMSG-26355]
+Action.c(2408): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24113" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+Action.c(3227): web_url("allEmailsForCC") started  	[MsgId: MMSG-26355]
+Action.c(3227): web_url("allEmailsForCC") was successful, 179 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(3236): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(3236): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(3239): web_url("fetchEvaluateCaseDatesForDatasource") started  	[MsgId: MMSG-26355]
+Action.c(3239): web_url("fetchEvaluateCaseDatesForDatasource") was successful, 159 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(3248): web_url("fetchEvaluateCaseDateSubmissionForDatasource") started  	[MsgId: MMSG-26355]
+Action.c(3248): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/configurationRest/fetchEvaluateCaseDateSubmissionForDatasource?dataSourceId=6594" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(2426): web_url("getTemplateNameDescription_37") started  	[MsgId: MMSG-26355]
+Action.c(2426): web_url("getTemplateNameDescription_37") was successful, 163 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2435): web_url("getTemplateNameDescription_38") started  	[MsgId: MMSG-26355]
+Action.c(2435): web_url("getTemplateNameDescription_38") was successful, 156 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2444): web_url("getTemplateNameDescription_39") started  	[MsgId: MMSG-26355]
+Action.c(2444): web_url("getTemplateNameDescription_39") was successful, 154 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2453): web_url("getTemplateNameDescription_40") started  	[MsgId: MMSG-26355]
+Action.c(2453): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24166" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(32): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(35): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(35): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(38): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(38): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(42): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
+Action.c(42): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
+Action.c(52): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(52): Error -27792: Failed to connect to server "pvr-perf.rxlogix.com:443": [10060] Connection timed out  	[MsgId: MERR-27792]
+Action.c(52): Error -35048: No match found for the requested parameter "CsrfTokenId_1". Check whether the tag with specific attributes exists in the response data  	[MsgId: MERR-35048]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 1.
+Action.c(2363): web_url("getTemplateNameDescription_30") started  	[MsgId: MMSG-26355]
+Action.c(2363): web_url("getTemplateNameDescription_30") was successful, 156 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2372): web_url("getTemplateNameDescription_31") started  	[MsgId: MMSG-26355]
+Action.c(2372): web_url("getTemplateNameDescription_31") was successful, 154 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2381): web_url("getTemplateNameDescription_32") started  	[MsgId: MMSG-26355]
+Action.c(2381): web_url("getTemplateNameDescription_32") was successful, 164 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2390): web_url("getTemplateNameDescription_33") started  	[MsgId: MMSG-26355]
+Action.c(2390): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24192" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+Action.c(2399): web_url("getTemplateNameDescription_34") started  	[MsgId: MMSG-26355]
+Action.c(2399): web_url("getTemplateNameDescription_34") was successful, 154 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2408): web_url("getTemplateNameDescription_35") started  	[MsgId: MMSG-26355]
+Action.c(2408): web_url("getTemplateNameDescription_35") was successful, 156 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2417): web_url("getTemplateNameDescription_36") started  	[MsgId: MMSG-26355]
+Action.c(2417): web_url("getTemplateNameDescription_36") was successful, 159 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2426): web_url("getTemplateNameDescription_37") started  	[MsgId: MMSG-26355]
+Action.c(2426): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24224" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(2363): web_url("getTemplateNameDescription_30") started  	[MsgId: MMSG-26355]
+Action.c(2363): web_url("getTemplateNameDescription_30") was successful, 156 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2372): web_url("getTemplateNameDescription_31") started  	[MsgId: MMSG-26355]
+Action.c(2372): web_url("getTemplateNameDescription_31") was successful, 154 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2381): web_url("getTemplateNameDescription_32") started  	[MsgId: MMSG-26355]
+Action.c(2381): web_url("getTemplateNameDescription_32") was successful, 164 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2390): web_url("getTemplateNameDescription_33") started  	[MsgId: MMSG-26355]
+Action.c(2390): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24192" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+Action.c(292): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(296): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(296): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(306): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(306): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(316): web_submit_data("authenticate") started  	[MsgId: MMSG-26355]
+Action.c(316): Redirecting "https://pvr-perf.rxlogix.com/reports/login/authenticate" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(316): To location "https://pvr-perf.rxlogix.com/reports/"  	[MsgId: MMSG-26693]
+Action.c(316): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/" failed  	[MsgId: MERR-27760]
+Action.c(316): Error -35061: No match found for the requested parameter "CsrfTokenId_2". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-35061]
+Action.c(316): Error -26377: No match found for the requested parameter "User_Id". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(316): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 229 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 3.
+Action.c(2634): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(2637): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(2637): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(2640): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(2640): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(2643): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(2643): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(2646): web_url("getTemplateNameDescription_45") started  	[MsgId: MMSG-26355]
+Action.c(2646): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24026" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 2.
+Action.c(2381): web_url("getTemplateNameDescription_32") started  	[MsgId: MMSG-26355]
+Action.c(2381): web_url("getTemplateNameDescription_32") was successful, 164 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2390): web_url("getTemplateNameDescription_33") started  	[MsgId: MMSG-26355]
+Action.c(2390): web_url("getTemplateNameDescription_33") was successful, 160 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2399): web_url("getTemplateNameDescription_34") started  	[MsgId: MMSG-26355]
+Action.c(2399): web_url("getTemplateNameDescription_34") was successful, 154 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2408): web_url("getTemplateNameDescription_35") started  	[MsgId: MMSG-26355]
+Action.c(2408): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24113" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 6.
+Action.c(2357): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(2357): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(2360): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(2360): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(2363): web_url("getTemplateNameDescription_30") started  	[MsgId: MMSG-26355]
+Action.c(2363): web_url("getTemplateNameDescription_30") was successful, 156 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2372): web_url("getTemplateNameDescription_31") started  	[MsgId: MMSG-26355]
+Action.c(2372): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24026" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 7.
+Action.c(2360): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(2360): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(2363): web_url("getTemplateNameDescription_30") started  	[MsgId: MMSG-26355]
+Action.c(2363): web_url("getTemplateNameDescription_30") was successful, 156 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2372): web_url("getTemplateNameDescription_31") started  	[MsgId: MMSG-26355]
+Action.c(2372): web_url("getTemplateNameDescription_31") was successful, 154 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2381): web_url("getTemplateNameDescription_32") started  	[MsgId: MMSG-26355]
+Action.c(2381): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=23998" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(2500): web_url("info_5") was successful, 101 body bytes, 372 header bytes  	[MsgId: MMSG-26386]
+Action.c(2509): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(2509): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(2512): web_url("sharedWithValues_2") started  	[MsgId: MMSG-26355]
+Action.c(2512): web_url("sharedWithValues_2") was successful, 79 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2521): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(2521): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(2524): web_url("{User_Id}_5") started  	[MsgId: MMSG-26355]
+Action.c(2524): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/86524?_=1589965896039" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 3.
+Action.c(1347): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(1347): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(1356): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(1356): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(1365): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(1365): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(1374): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(1374): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(1382): web_url("{TempId}") started  	[MsgId: MMSG-26355]
+Action.c(1382): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/template/edit/93130" failed  	[MsgId: MERR-27760]
+Action.c(1382): Error -26377: No match found for the requested parameter "VersionId". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id1". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id2". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id3". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id4". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id5". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id6". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id7". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id8". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id9". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id10". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id11". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id12". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id13". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id14". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 8.
+Action.c(32): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(35): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(35): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(38): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(38): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(42): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
+Action.c(42): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
+Action.c(52): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(52): Error -27792: Failed to connect to server "pvr-perf.rxlogix.com:443": [10060] Connection timed out  	[MsgId: MERR-27792]
+Action.c(52): Error -35048: No match found for the requested parameter "CsrfTokenId_1". Check whether the tag with specific attributes exists in the response data  	[MsgId: MERR-35048]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 6.
+Action.c(2354): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(2354): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(2357): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(2357): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(2360): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(2360): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(2363): web_url("getTemplateNameDescription_30") started  	[MsgId: MMSG-26355]
+Action.c(2363): ssl_handle_status encounter error : SSL_ERROR_SYSCALL, error id : 0  	[MsgId: MMSG-26000]
+Action.c(2363): Error -27776: [GENERAL_MSG_CAT_SSL_ERROR]connect to host "pvr-perf.rxlogix.com" failed  	[MsgId: MERR-27776]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(787): web_url("fontawesome-webfont-af7ae505a9eed503f8b8e6982036873e.woff2") started  	[MsgId: MMSG-26355]
+Action.c(787): Registering web_url("fontawesome-webfont-af7ae505a9eed503f8b8e6982036873e.woff2") was successful  	[MsgId: MMSG-26390]
+Action.c(807): web_url("Material-Design-Iconic-Font-a2a1ba89e7f9d29f7d5aee76e8b9f7ab.woff") started  	[MsgId: MMSG-26355]
+Action.c(807): Registering web_url("Material-Design-Iconic-Font-a2a1ba89e7f9d29f7d5aee76e8b9f7ab.woff") was successful  	[MsgId: MMSG-26390]
+Action.c(838): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(345): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/rxapplication-eebebbeb632a82e8608209da3ab42ef2.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(680): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportResultRest/latestAdhocReport?length=4&start=0" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(467): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fullcalendar/fullcalendar-ab21481ecaaf856ac398df2626c214f0.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(499): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/highcharts/highcharts-01ce2a5c16b4e040b95b02d8cf3ea23e.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(729): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/periodicReportConfigurationRest/latestPeriodicReport?length=4&start=0" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+Action.c(703): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/actionItemRest/index?length=5&start=0&sort=dueDate&direction=asc" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(807): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/Material-Design-Iconic-Font-a2a1ba89e7f9d29f7d5aee76e8b9f7ab.woff?v=1.0.1" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(334): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/theme_gradient_blue-8a7bc35778c66c2a34b346cddd101ad7.css" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(555): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/gridstack/gridstack.min-157675a5f94f1a18234a494030c5d8f0.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(483): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fullcalendar/fullcalendar-lang-all-e4e9be403fd4dc092b72c368c27e5d47.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(668): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/86579?_=1589965692480" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(787): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fontawesome-webfont-af7ae505a9eed503f8b8e6982036873e.woff2?v=4.7.0" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(715): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/i18n/dataTables_en.json" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 7.
+Action.c(1835): Registering web_url("getTemplateNameDescription_14") was successful  	[MsgId: MMSG-26390]
+Action.c(1847): web_url("{User_Id}_3") started  	[MsgId: MMSG-26355]
+Action.c(1847): Registering web_url("{User_Id}_3") was successful  	[MsgId: MMSG-26390]
+Action.c(1859): web_url("sharedWithValues") started  	[MsgId: MMSG-26355]
+Action.c(1859): Registering web_url("sharedWithValues") was successful  	[MsgId: MMSG-26390]
+Action.c(1870): web_url("info_3") started  	[MsgId: MMSG-26355]
+Action.c(1870): Registering web_url("info_3") was successful  	[MsgId: MMSG-26390]
+Action.c(1879): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(1718): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=23934" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 7.
+Action.c(1699): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/i18n/en.json" failed   [issued at Action.c(1879)]  	[MsgId: MWAR-27760]
+Action.c(1847): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/86414?_=1589965794013" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+Action.c(1835): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24248" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+Action.c(1870): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/stomp/info" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+Action.c(1859): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/userRest/sharedWithValues?ids=User_86414" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+Action.c(1808): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=23785" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+Action.c(1799): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24224" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+Action.c(1826): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24166" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+Action.c(1817): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=23757" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 6.
+Action.c(196): Resource "https://pvr-perf.rxlogix.com/reports/assets/jquery/customise-jquery.cookiecuttr-7d5013f65bb830d28e9c0f882402df22.js" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(207): web_url("OpenSans-Regular-55835483c304eaa8477fea2c36abba17.woff2") started  	[MsgId: MMSG-26355]
+Action.c(207): Resource "https://pvr-perf.rxlogix.com/reports/assets/OpenSans-Regular-55835483c304eaa8477fea2c36abba17.woff2?v=1.1.0" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(235): web_url("auth_2") started  	[MsgId: MMSG-26355]
+Action.c(235): Registering web_url("auth_2") was successful  	[MsgId: MMSG-26390]
+Action.c(244): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(235): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/auth" failed   [issued at Action.c(244)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+Action.c(2381): web_url("getTemplateNameDescription_32") started  	[MsgId: MMSG-26355]
+Action.c(2381): web_url("getTemplateNameDescription_32") was successful, 164 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2390): web_url("getTemplateNameDescription_33") started  	[MsgId: MMSG-26355]
+Action.c(2390): web_url("getTemplateNameDescription_33") was successful, 160 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2399): web_url("getTemplateNameDescription_34") started  	[MsgId: MMSG-26355]
+Action.c(2399): web_url("getTemplateNameDescription_34") was successful, 154 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2408): web_url("getTemplateNameDescription_35") started  	[MsgId: MMSG-26355]
+Action.c(2408): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24113" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 3.
+Action.c(2357): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(2357): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(2360): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(2360): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(2363): web_url("getTemplateNameDescription_30") started  	[MsgId: MMSG-26355]
+Action.c(2363): web_url("getTemplateNameDescription_30") was successful, 156 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2372): web_url("getTemplateNameDescription_31") started  	[MsgId: MMSG-26355]
+Action.c(2372): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24026" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(32): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(35): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(35): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(38): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(38): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(42): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
+Action.c(42): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
+Action.c(52): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(52): Error -27792: Failed to connect to server "pvr-perf.rxlogix.com:443": [10060] Connection timed out  	[MsgId: MERR-27792]
+Action.c(52): Error -35048: No match found for the requested parameter "CsrfTokenId_1". Check whether the tag with specific attributes exists in the response data  	[MsgId: MERR-35048]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+Action.c(1953): web_remove/revert_auto_header("Origin") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(1955): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(1955): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(1958): web_add_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(1958): web_add_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(1962): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(1962): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(1970): web_url("getTemplateSetCLL") started  	[MsgId: MMSG-26355]
+Action.c(1970): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateSetCLL?term=&page=1&max=30&oldSelectedValue=&_=1589965794014" failed  	[MsgId: MERR-27760]
+Action.c(1970): Error -26377: No match found for the requested parameter "CLL_15". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1970): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 7.
+Action.c(1835): Registering web_url("getTemplateNameDescription_14") was successful  	[MsgId: MMSG-26390]
+Action.c(1847): web_url("{User_Id}_3") started  	[MsgId: MMSG-26355]
+Action.c(1847): Registering web_url("{User_Id}_3") was successful  	[MsgId: MMSG-26390]
+Action.c(1859): web_url("sharedWithValues") started  	[MsgId: MMSG-26355]
+Action.c(1859): Registering web_url("sharedWithValues") was successful  	[MsgId: MMSG-26390]
+Action.c(1870): web_url("info_3") started  	[MsgId: MMSG-26355]
+Action.c(1870): Registering web_url("info_3") was successful  	[MsgId: MMSG-26390]
+Action.c(1879): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(1718): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=23934" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 7.
+Action.c(1699): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/i18n/en.json" failed   [issued at Action.c(1879)]  	[MsgId: MWAR-27760]
+Action.c(1847): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/86469?_=1589965794013" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+Action.c(1835): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24248" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+Action.c(1870): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/stomp/info" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+Action.c(1859): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/userRest/sharedWithValues?ids=User_86469" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+Action.c(1808): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=23785" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+Action.c(1799): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24224" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+Action.c(1826): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24166" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+Action.c(1817): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=23757" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+Action.c(1781): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24113" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+Action.c(1790): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24139" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+Action.c(1763): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24083" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+Action.c(1772): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=23690" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+Action.c(1745): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24055" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+Action.c(1754): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24192" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+Action.c(1727): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=23998" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+Action.c(1736): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24026" failed   [issued at Action.c(1879)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 4.
+Action.c(2200): Registering web_url("getTemplateNameDescription_28") was successful  	[MsgId: MMSG-26390]
+Action.c(2212): web_url("{User_Id}_4") started  	[MsgId: MMSG-26355]
+Action.c(2212): Registering web_url("{User_Id}_4") was successful  	[MsgId: MMSG-26390]
+Action.c(2226): web_url("info_4") started  	[MsgId: MMSG-26355]
+Action.c(2226): Registering web_url("info_4") was successful  	[MsgId: MMSG-26390]
+Action.c(2238): web_url("getTemplateNameDescription_29") started  	[MsgId: MMSG-26355]
+Action.c(2238): Registering web_url("getTemplateNameDescription_29") was successful  	[MsgId: MMSG-26390]
+Action.c(2271): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(2083): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=23934"   [issued at Action.c(2271)]  	[MsgId: MERR-26610]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 6.
+Action.c(196): Resource "https://pvr-perf.rxlogix.com/reports/assets/jquery/customise-jquery.cookiecuttr-7d5013f65bb830d28e9c0f882402df22.js" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(207): web_url("OpenSans-Regular-55835483c304eaa8477fea2c36abba17.woff2") started  	[MsgId: MMSG-26355]
+Action.c(207): Resource "https://pvr-perf.rxlogix.com/reports/assets/OpenSans-Regular-55835483c304eaa8477fea2c36abba17.woff2?v=1.1.0" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(235): web_url("auth_2") started  	[MsgId: MMSG-26355]
+Action.c(235): Registering web_url("auth_2") was successful  	[MsgId: MMSG-26390]
+Action.c(244): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(235): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/auth" failed   [issued at Action.c(244)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 9.
+Action.c(467): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fullcalendar/fullcalendar-ab21481ecaaf856ac398df2626c214f0.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(807): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/Material-Design-Iconic-Font-a2a1ba89e7f9d29f7d5aee76e8b9f7ab.woff?v=1.0.1" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(483): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fullcalendar/fullcalendar-lang-all-e4e9be403fd4dc092b72c368c27e5d47.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(648): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fullcalendar.print-5e9985f0185898b586ec4820f63bb446.css" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(680): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportResultRest/latestAdhocReport?length=4&start=0" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 9.
+Action.c(563): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/pushNotification-3d08817200dceb0a405d9f7aefa3192f.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(579): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/jquery.core-2c7cdf128b42d849235dea8cadd879b8.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(729): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/periodicReportConfigurationRest/latestPeriodicReport?length=4&start=0" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+Action.c(703): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/actionItemRest/index?length=5&start=0&sort=dueDate&direction=asc" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 9.
+Action.c(499): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/highcharts/highcharts-01ce2a5c16b4e040b95b02d8cf3ea23e.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(787): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/fontawesome-webfont-af7ae505a9eed503f8b8e6982036873e.woff2?v=4.7.0" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(603): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/jquery/customise-jquery-idleTimeout-6286fe026bdf78a6c38a29cfd8d979c8.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(587): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/jquery.app-782d8f87ac279a019b37b18a315654b2.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(715): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/i18n/dataTables_en.json" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 9.
+Action.c(555): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/gridstack/gridstack.min-157675a5f94f1a18234a494030c5d8f0.js" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(691): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/stomp/info" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 9.
+Action.c(334): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/theme_gradient_blue-8a7bc35778c66c2a34b346cddd101ad7.css" failed   [issued at Action.c(838)]  	[MsgId: MWAR-27760]
+Action.c(668): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/86359?_=1589965692480" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 8.
+Action.c(1090): web_url("glyphicons-halflings-regular-448c34a56d699c29117adc64c43affeb.woff2") started  	[MsgId: MMSG-26355]
+Action.c(1090): Resource "https://pvr-perf.rxlogix.com/reports/assets/glyphicons-halflings-regular-448c34a56d699c29117adc64c43affeb.woff2" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(1103): web_url("info_2") started  	[MsgId: MMSG-26355]
+Action.c(1103): Registering web_url("info_2") was successful  	[MsgId: MMSG-26390]
+Action.c(1120): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(1025): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/i18n/dataTables_en.json" failed   [issued at Action.c(1120)]  	[MsgId: MWAR-27760]
+Action.c(1103): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/stomp/info" failed   [issued at Action.c(1120)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 8.
+Action.c(1003): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/i18n/en.json" failed   [issued at Action.c(1120)]  	[MsgId: MWAR-27760]
+Action.c(1071): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/hbs-templates/filter_panel.hbs" failed   [issued at Action.c(1120)]  	[MsgId: MWAR-27760]
+Action.c(1081): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/86414?_=1589965752675" failed   [issued at Action.c(1120)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 8.
+Action.c(1064): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/hbs-templates/datepicker.hbs" failed   [issued at Action.c(1120)]  	[MsgId: MWAR-27760]
+Action.c(1053): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/tag" failed   [issued at Action.c(1120)]  	[MsgId: MERR-27760]
+Action.c(1044): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/lookup?name=category" failed   [issued at Action.c(1120)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 7.
+Action.c(1970): web_url("getTemplateSetCLL") was successful, 907 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(1997): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1997): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(2001): web_submit_data("update") started  	[MsgId: MMSG-26355]
+Action.c(2001): Warning -26490: File name in a multipart submit is missing or empty. Using an empty file  	[MsgId: MWAR-26490]
+Action.c(2001): Redirecting "https://pvr-perf.rxlogix.com/reports/template/update?_csrf=aa8816df-405f-40b3-abbe-d9e7c4c4c449" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(2001): To location "https://pvr-perf.rxlogix.com/reports/template/view/93075"  	[MsgId: MMSG-26693]
+Action.c(2001): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/template/view/93075" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(1962): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(1962): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(1970): web_url("getTemplateSetCLL") started  	[MsgId: MMSG-26355]
+Action.c(1970): web_url("getTemplateSetCLL") was successful, 907 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(1997): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1997): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(2001): web_submit_data("update") started  	[MsgId: MMSG-26355]
+Action.c(2001): Warning -26490: File name in a multipart submit is missing or empty. Using an empty file  	[MsgId: MWAR-26490]
+Action.c(2001): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/template/update?_csrf=c3888a20-98c5-4f3d-bd64-e8f3ddcbf027" failed  	[MsgId: MERR-27760]
+Action.c(2001): Error -26366: "Text=Template Perftest7_CaseFormTemplate updated" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(2001): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 8.
+Action.c(2480): web_url("getTemplateNameDescription_43") was successful, 160 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2489): web_url("getTemplateNameDescription_44") started  	[MsgId: MMSG-26355]
+Action.c(2489): web_url("getTemplateNameDescription_44") was successful, 157 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2498): web_remove_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(2498): Previous automatically added web header for "X-Requested-With" removed  	[MsgId: MMSG-26587]
+Action.c(2498): web_remove/revert_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(2500): web_url("info_5") started  	[MsgId: MMSG-26355]
+Action.c(2500): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/stomp/info" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 6.
+Action.c(289): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(292): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(292): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(296): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(296): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(306): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(306): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(316): web_submit_data("authenticate") started  	[MsgId: MMSG-26355]
+Action.c(316): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/authenticate" failed  	[MsgId: MERR-27760]
+Action.c(316): Error -35061: No match found for the requested parameter "CsrfTokenId_2". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-35061]
+Action.c(316): Error -26377: No match found for the requested parameter "User_Id". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(316): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 5.
+Action.c(2444): web_url("getTemplateNameDescription_39") started  	[MsgId: MMSG-26355]
+Action.c(2444): web_url("getTemplateNameDescription_39") was successful, 154 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2453): web_url("getTemplateNameDescription_40") started  	[MsgId: MMSG-26355]
+Action.c(2453): web_url("getTemplateNameDescription_40") was successful, 155 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2462): web_url("getTemplateNameDescription_41") started  	[MsgId: MMSG-26355]
+Action.c(2462): web_url("getTemplateNameDescription_41") was successful, 159 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2471): web_url("getTemplateNameDescription_42") started  	[MsgId: MMSG-26355]
+Action.c(2471): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=23757" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 7.
+Action.c(2498): web_remove_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(2498): Previous automatically added web header for "X-Requested-With" removed  	[MsgId: MMSG-26587]
+Action.c(2498): web_remove/revert_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(2500): web_url("info_5") started  	[MsgId: MMSG-26355]
+Action.c(2500): web_url("info_5") was successful, 97 body bytes, 372 header bytes  	[MsgId: MMSG-26386]
+Action.c(2509): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(2509): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(2512): web_url("sharedWithValues_2") started  	[MsgId: MMSG-26355]
+Action.c(2512): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/userRest/sharedWithValues?ids=User_86579" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 10.
+Action.c(2360): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(2360): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(2363): web_url("getTemplateNameDescription_30") started  	[MsgId: MMSG-26355]
+Action.c(2363): web_url("getTemplateNameDescription_30") was successful, 156 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2372): web_url("getTemplateNameDescription_31") started  	[MsgId: MMSG-26355]
+Action.c(2372): web_url("getTemplateNameDescription_31") was successful, 154 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2381): web_url("getTemplateNameDescription_32") started  	[MsgId: MMSG-26355]
+Action.c(2381): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=23998" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 9.
+Action.c(32): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(35): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(35): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(38): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(38): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(42): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
+Action.c(42): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
+Action.c(52): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(52): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/auth" failed  	[MsgId: MERR-27760]
+Action.c(52): Error -35048: No match found for the requested parameter "CsrfTokenId_1". Check whether the tag with specific attributes exists in the response data  	[MsgId: MERR-35048]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 6.
+Action.c(289): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(292): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(292): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(296): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(296): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(306): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(306): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(316): web_submit_data("authenticate") started  	[MsgId: MMSG-26355]
+Action.c(316): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/authenticate" failed  	[MsgId: MERR-27760]
+Action.c(316): Error -35061: No match found for the requested parameter "CsrfTokenId_2". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-35061]
+Action.c(316): Error -26377: No match found for the requested parameter "User_Id". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(316): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 8.
+Action.c(2643): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(2643): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(2646): web_url("getTemplateNameDescription_45") started  	[MsgId: MMSG-26355]
+Action.c(2646): web_url("getTemplateNameDescription_45") was successful, 154 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2655): web_url("getTemplateNameDescription_46") started  	[MsgId: MMSG-26355]
+Action.c(2655): web_url("getTemplateNameDescription_46") was successful, 164 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2664): web_url("getTemplateNameDescription_47") started  	[MsgId: MMSG-26355]
+Action.c(2664): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=23934" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 10.
+Action.c(787): web_url("fontawesome-webfont-af7ae505a9eed503f8b8e6982036873e.woff2") started  	[MsgId: MMSG-26355]
+Action.c(787): Resource "https://pvr-perf.rxlogix.com/reports/assets/fontawesome-webfont-af7ae505a9eed503f8b8e6982036873e.woff2?v=4.7.0" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(807): web_url("Material-Design-Iconic-Font-a2a1ba89e7f9d29f7d5aee76e8b9f7ab.woff") started  	[MsgId: MMSG-26355]
+Action.c(807): Resource "https://pvr-perf.rxlogix.com/reports/assets/Material-Design-Iconic-Font-a2a1ba89e7f9d29f7d5aee76e8b9f7ab.woff?v=1.0.1" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(838): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(668): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/86414?_=1589965692480" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+Action.c(433): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/i18n/en.json" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+Action.c(680): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportResultRest/latestAdhocReport?length=4&start=0" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+Action.c(729): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/periodicReportConfigurationRest/latestPeriodicReport?length=4&start=0" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+Action.c(715): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/i18n/dataTables_en.json" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+Action.c(703): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/actionItemRest/index?length=5&start=0&sort=dueDate&direction=asc" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+Action.c(691): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/stomp/info" failed   [issued at Action.c(838)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 9.
+Action.c(2357): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(2357): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(2360): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(2360): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(2363): web_url("getTemplateNameDescription_30") started  	[MsgId: MMSG-26355]
+Action.c(2363): web_url("getTemplateNameDescription_30") was successful, 156 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2372): web_url("getTemplateNameDescription_31") started  	[MsgId: MMSG-26355]
+Action.c(2372): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24026" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 11.
+Action.c(3620): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(3623): web_add_header("Cache-Control") started  	[MsgId: MMSG-26355]
+Action.c(3623): web_add_header("Cache-Control") was successful  	[MsgId: MMSG-26392]
+Action.c(3626): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(3626): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(3629): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(3629): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(3632): web_submit_data("run") started  	[MsgId: MMSG-26355]
+Action.c(3632): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/configuration/run" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 7.
+Action.c(861): web_add_auto_header("Accept-Encoding") was successful  	[MsgId: MMSG-26392]
+Action.c(864): web_add_auto_header("Accept-Language") started  	[MsgId: MMSG-26355]
+Action.c(864): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(867): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(867): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(870): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(870): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(873): web_url("index_2") started  	[MsgId: MMSG-26355]
+Action.c(873): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/template/index" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 10.
+Action.c(289): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(292): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(292): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(296): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(296): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(306): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(306): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(316): web_submit_data("authenticate") started  	[MsgId: MMSG-26355]
+Action.c(316): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/login/authenticate" failed  	[MsgId: MERR-27760]
+Action.c(316): Error -35061: No match found for the requested parameter "CsrfTokenId_2". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-35061]
+Action.c(316): Error -26377: No match found for the requested parameter "User_Id". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(316): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 12.
+Action.c(35): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(35): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(38): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(38): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(42): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
+Action.c(42): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
+Action.c(52): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(52): ssl_handle_status encounter error : SSL_ERROR_SYSCALL, error id : 0  	[MsgId: MMSG-26000]
+Action.c(52): Error -27776: [GENERAL_MSG_CAT_SSL_ERROR]connect to host "pvr-perf.rxlogix.com" failed  	[MsgId: MERR-27776]
+Action.c(52): Error -35048: No match found for the requested parameter "CsrfTokenId_1". Check whether the tag with specific attributes exists in the response data  	[MsgId: MERR-35048]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 9.
+Action.c(1090): web_url("glyphicons-halflings-regular-448c34a56d699c29117adc64c43affeb.woff2") started  	[MsgId: MMSG-26355]
+Action.c(1090): Resource "https://pvr-perf.rxlogix.com/reports/assets/glyphicons-halflings-regular-448c34a56d699c29117adc64c43affeb.woff2" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(1103): web_url("info_2") started  	[MsgId: MMSG-26355]
+Action.c(1103): Registering web_url("info_2") was successful  	[MsgId: MMSG-26390]
+Action.c(1120): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(1025): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/i18n/dataTables_en.json" failed   [issued at Action.c(1120)]  	[MsgId: MWAR-27760]
+Action.c(1103): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/stomp/info" failed   [issued at Action.c(1120)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 9.
+Action.c(1003): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/i18n/en.json" failed   [issued at Action.c(1120)]  	[MsgId: MWAR-27760]
+Action.c(1071): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/hbs-templates/filter_panel.hbs" failed   [issued at Action.c(1120)]  	[MsgId: MWAR-27760]
+Action.c(1081): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/86579?_=1589965752675" failed   [issued at Action.c(1120)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 9.
+Action.c(1064): Warning -27760: Request "https://pvr-perf.rxlogix.com/reports/assets/app/hbs-templates/datepicker.hbs" failed   [issued at Action.c(1120)]  	[MsgId: MWAR-27760]
+Action.c(1053): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/tag" failed   [issued at Action.c(1120)]  	[MsgId: MERR-27760]
+Action.c(1044): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/lookup?name=category" failed   [issued at Action.c(1120)]  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 8.
+Action.c(3192): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(3192): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(3195): web_url("column-view-64c0085c608464f4a6f66e33d985ae27.html_2") started  	[MsgId: MMSG-26355]
+Action.c(3195): web_url("column-view-64c0085c608464f4a6f66e33d985ae27.html_2") was successful, 1985 body bytes, 383 header bytes  	[MsgId: MMSG-26386]
+Action.c(3203): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(3203): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(3206): web_url("getTemplateNameDescription_59") started  	[MsgId: MMSG-26355]
+Action.c(3206): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=93112" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 7.
+Action.c(2700): web_url("getTemplateNameDescription_51") started  	[MsgId: MMSG-26355]
+Action.c(2700): web_url("getTemplateNameDescription_51") was successful, 163 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2709): web_url("getTemplateNameDescription_52") started  	[MsgId: MMSG-26355]
+Action.c(2709): web_url("getTemplateNameDescription_52") was successful, 160 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2718): web_url("getTemplateNameDescription_53") started  	[MsgId: MMSG-26355]
+Action.c(2718): web_url("getTemplateNameDescription_53") was successful, 156 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2727): web_url("getTemplateNameDescription_54") started  	[MsgId: MMSG-26355]
+Action.c(2727): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=24139" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 10.
+Action.c(1347): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(1347): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(1356): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(1356): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(1365): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(1365): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(1374): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(1374): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(1382): web_url("{TempId}") started  	[MsgId: MMSG-26355]
+Action.c(1382): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/template/edit/93075" failed  	[MsgId: MERR-27760]
+Action.c(1382): Error -26377: No match found for the requested parameter "VersionId". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id1". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id2". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id3". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id4". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id5". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id6". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id7". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id8". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id9". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id10". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id11". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id12". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id13". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26377: No match found for the requested parameter "CCL_Id14". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1382): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 11.
+Action.c(32): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(35): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(35): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(38): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(38): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(42): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
+Action.c(42): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
+Action.c(52): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(52): Error -27794: Could not resolve address of host pvr-perf.rxlogix.com  	[MsgId: MERR-27794]
+Action.c(52): Error -35048: No match found for the requested parameter "CsrfTokenId_1". Check whether the tag with specific attributes exists in the response data  	[MsgId: MERR-35048]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 11.
+Action.c(2360): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(2360): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(2363): web_url("getTemplateNameDescription_30") started  	[MsgId: MMSG-26355]
+Action.c(2363): web_url("getTemplateNameDescription_30") was successful, 156 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2372): web_url("getTemplateNameDescription_31") started  	[MsgId: MMSG-26355]
+Action.c(2372): web_url("getTemplateNameDescription_31") was successful, 154 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2381): web_url("getTemplateNameDescription_32") started  	[MsgId: MMSG-26355]
+Action.c(2381): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=23998" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 12.
+Action.c(32): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(35): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(35): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(38): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(38): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(42): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
+Action.c(42): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
+Action.c(52): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(52): Error -27794: Could not resolve address of host pvr-perf.rxlogix.com  	[MsgId: MERR-27794]
+Action.c(52): Error -35048: No match found for the requested parameter "CsrfTokenId_1". Check whether the tag with specific attributes exists in the response data  	[MsgId: MERR-35048]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 8.
+Action.c(1194): web_add_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(1197): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(1197): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(1200): web_add_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(1200): web_add_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(1204): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(1204): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(1212): web_url("templates_2") started  	[MsgId: MMSG-26355]
+Action.c(1212): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/api/templates?draw=2&columns%5B0%5D%5Bdata%5D=isFavorite&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=true&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=type&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=false&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=category&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=name&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=description&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=qualityChecked&columns%5B5%5D%5Bname%5D=&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=true&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=checkUsage&columns%5B6%5D%5Bname%5D=&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=false&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=owner.fullName&columns%5B7%5D%5Bname%5D=&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=dateCreated&columns%5B8%5D%5Bname%5D=&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=lastUpdated&columns%5B9%5D%5Bname%5D=&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B10%5D%5Bdata%5D=lastExecuted&columns%5B10%5D%5Bname%5D=&columns%5B10%5D%5Bsearchable%5D=true&columns%5B10%5D%5Borderable%5D=true&columns%5B10%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B10%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B11%5D%5Bdata%5D=tags&columns%5B11%5D%5Bname%5D=&columns%5B11%5D%5Bsearchable%5D=true&columns%5B11%5D%5Borderable%5D=false&columns%5B11%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B11%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B12%5D%5Bdata%5D=&columns%5B12%5D%5Bname%5D=&columns%5B12%5D%5Bsearchable%5D=true&columns%5B12%5D%5Borderable%5D=false&columns%5B12%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B12%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=desc&start=0&length=50&search%5Bvalue%5D=Perftest7_CaseFormTemplate&search%5Bregex%5D=false&searchString=Perftest7_CaseFormTemplate&tableFilter=%7B%7D&advancedFilter=false&sharedwith=&direction=desc&sort=isFavorite&_=1589965752677" failed  	[MsgId: MERR-27760]
+Action.c(1212): Error -26377: No match found for the requested parameter "TempId". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1212): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 11.
+Action.c(1194): web_add_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(1197): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(1197): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(1200): web_add_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(1200): web_add_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(1204): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(1204): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(1212): web_url("templates_2") started  	[MsgId: MMSG-26355]
+Action.c(1212): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/api/templates?draw=2&columns%5B0%5D%5Bdata%5D=isFavorite&columns%5B0%5D%5Bname%5D=&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=true&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=type&columns%5B1%5D%5Bname%5D=&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=false&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=category&columns%5B2%5D%5Bname%5D=&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=name&columns%5B3%5D%5Bname%5D=&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=description&columns%5B4%5D%5Bname%5D=&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=qualityChecked&columns%5B5%5D%5Bname%5D=&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=true&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=checkUsage&columns%5B6%5D%5Bname%5D=&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=false&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=owner.fullName&columns%5B7%5D%5Bname%5D=&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=dateCreated&columns%5B8%5D%5Bname%5D=&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=lastUpdated&columns%5B9%5D%5Bname%5D=&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B10%5D%5Bdata%5D=lastExecuted&columns%5B10%5D%5Bname%5D=&columns%5B10%5D%5Bsearchable%5D=true&columns%5B10%5D%5Borderable%5D=true&columns%5B10%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B10%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B11%5D%5Bdata%5D=tags&columns%5B11%5D%5Bname%5D=&columns%5B11%5D%5Bsearchable%5D=true&columns%5B11%5D%5Borderable%5D=false&columns%5B11%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B11%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B12%5D%5Bdata%5D=&columns%5B12%5D%5Bname%5D=&columns%5B12%5D%5Bsearchable%5D=true&columns%5B12%5D%5Borderable%5D=false&columns%5B12%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B12%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=0&order%5B0%5D%5Bdir%5D=desc&start=0&length=50&search%5Bvalue%5D=Perftest3_CaseFormTemplate&search%5Bregex%5D=false&searchString=Perftest3_CaseFormTemplate&tableFilter=%7B%7D&advancedFilter=false&sharedwith=&direction=desc&sort=isFavorite&_=1589965752677" failed  	[MsgId: MERR-27760]
+Action.c(1212): Error -26377: No match found for the requested parameter "TempId". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(1212): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 10.
+Action.c(32): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(35): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(35): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(38): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(38): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(42): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
+Start auto log messages stack - Iteration 13.
+Action.c(42): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
+Action.c(32): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(52): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(35): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(52): Error -27792: Failed to connect to server "pvr-perf.rxlogix.com:443": [10060] Connection timed out  	[MsgId: MERR-27792]
+Action.c(35): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(38): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(38): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(42): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
+Action.c(42): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
+Action.c(52): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(52): Error -27792: Failed to connect to server "pvr-perf.rxlogix.com:443": [10060] Connection timed out  	[MsgId: MERR-27792]
+Action.c(52): Error -35048: No match found for the requested parameter "CsrfTokenId_1". Check whether the tag with specific attributes exists in the response data  	[MsgId: MERR-35048]
+Action.c(52): Error -35048: No match found for the requested parameter "CsrfTokenId_1". Check whether the tag with specific attributes exists in the response data  	[MsgId: MERR-35048]
+End auto log messages stack.
+
+
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 8.
+Action.c(2480): web_url("getTemplateNameDescription_43") was successful, 160 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2489): web_url("getTemplateNameDescription_44") started  	[MsgId: MMSG-26355]
+Action.c(2489): web_url("getTemplateNameDescription_44") was successful, 157 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2498): web_remove_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(2498): Previous automatically added web header for "X-Requested-With" removed  	[MsgId: MMSG-26587]
+Action.c(2498): web_remove/revert_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(2500): web_url("info_5") started  	[MsgId: MMSG-26355]
+Action.c(2500): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/stomp/info" failed  	[MsgId: MERR-27760]
+Start auto log messages stack - Iteration 9.
+Action.c(2727): web_url("getTemplateNameDescription_54") started  	[MsgId: MMSG-26355]
+Action.c(2727): web_url("getTemplateNameDescription_54") was successful, 159 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2736): web_url("getTemplateNameDescription_55") started  	[MsgId: MMSG-26355]
+End auto log messages stack.
+
+
+Action.c(2736): web_url("getTemplateNameDescription_55") was successful, 159 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2745): web_url("getTemplateNameDescription_56") started  	[MsgId: MMSG-26355]
+Action.c(2745): web_url("getTemplateNameDescription_56") was successful, 155 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(2754): web_url("getTemplateNameDescription_57") started  	[MsgId: MMSG-26355]
+Action.c(2754): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/reportTemplateRest/getTemplateNameDescription?id=23757" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+

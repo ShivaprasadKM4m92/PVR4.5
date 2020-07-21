@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Project\PVR\Scripts\Updated\S07_TemplateLibrary
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\project\pvr\scripts\updated\s07_templatelibrary\\logfile.log
+c:\project\pvr\scripts\updated\s07_templatelibrary\\combined_S07_TemplateLibrary.c
+c:\project\pvr\scripts\updated\s07_templatelibrary\\pre_cci.c

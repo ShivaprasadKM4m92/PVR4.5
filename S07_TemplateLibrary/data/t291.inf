@@ -1,0 +1,11 @@
+[t291]
+FileName1=t291_6542.json
+URL1=https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/6542?_=1589966177791
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_264.xml
+RequestHeaderFile=t291_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t291_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

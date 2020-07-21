@@ -1,0 +1,77 @@
+[General]
+Type=Multi
+DefaultCfg=default.cfg
+ParameterFile=S07_TemplateLibrary.prm
+GlobalParameterFile=
+NewFunctionHeader=1
+RunType=cci
+ActionLogicExt=action_logic
+LastActiveAction=Action
+MajorVersion=2020
+MinorVersion=0
+ActiveTypes=QTWeb
+GenerateTypes=QTWeb
+AdditionalTypes=QTWeb
+DevelopTool=Vugen
+LastModifyVer=2020.0.0.0
+DFERebrandFlag=Done
+ParamLeftBrace={
+ParamRightBrace=}
+ScriptLanguage=C
+LastCodeGenerationVer=2020.0.0.0
+DisableRegenerate=0
+Encoding=UTF8
+Description=
+ScriptLocale=en-IN
+[Actions]
+vuser_init=vuser_init.c
+Action=Action.c
+vuser_end=vuser_end.c
+[RunLogicFiles]
+Default Profile=default.usp
+[VuserProfiles]
+Profiles=Default Profile
+[CfgFiles]
+Default Profile=default.cfg
+[ExtraFiles]
+globals.h=
+[Modified Actions]
+vuser_init=1
+Action=1
+vuser_end=1
+[Recorded Actions]
+vuser_init=1
+Action=1
+vuser_end=1
+[Replayed Actions]
+vuser_init=1
+Action=1
+vuser_end=1
+[Interpreters]
+vuser_init=cci
+Action=cci
+vuser_end=cci
+[TransactionsOrder]
+Order="S07_T01_OpenApplication__*delimiter*__S07_T02_Login__*delimiter*__S07_T03_NavigateTemplates_TemplateLibrary__*delimiter*__S07_T04_SearchTemplate__*delimiter*__S07_T05_EditTemplate__*delimiter*__S07_T06_Add_CaseLineListingTemplate_Tag_And_Update__*delimiter*__S07_T07_EditTemplate__*delimiter*__S07_T08_Remove_CaseLineListingTemplate_And_ClickUpdate__*delimiter*__S07_T09_ClickRun__*delimiter*__S07_T10_SearchProduct__*delimiter*__S07_T11_AddProduct__*delimiter*__S07_T12_Click_Close__*delimiter*__S07_T13_EnterReportName_Click_Save&Run__*delimiter*__S07_T14_NavigateTemplates_TemplateLibrary__*delimiter*__S07_T15_RemoveFilter__*delimiter*__S07_T16_Logout"
+[StateManagement]
+LastReplayStatus=1
+[ActiveReplay]
+LastReplayedRunName=result1
+ActiveRunName=result1
+[Transactions]
+S07_T01_OpenApplication=
+S07_T02_Login=
+S07_T03_NavigateTemplates_TemplateLibrary=
+S07_T04_SearchTemplate=
+S07_T05_EditTemplate=
+S07_T06_Add_CaseLineListingTemplate_Tag_And_Update=
+S07_T07_EditTemplate=
+S07_T08_Remove_CaseLineListingTemplate_And_ClickUpdate=
+S07_T09_ClickRun=
+S07_T10_SearchProduct=
+S07_T11_AddProduct=
+S07_T12_Click_Close=
+S07_T13_EnterReportName_Click_Save&Run=
+S07_T14_NavigateTemplates_TemplateLibrary=
+S07_T15_RemoveFilter=
+S07_T16_Logout=

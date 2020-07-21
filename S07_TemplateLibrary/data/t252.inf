@@ -1,0 +1,11 @@
+[t252]
+FileName1=t252_plugin.min.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/tinymce/plugins/table/plugin.min.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_229.xml
+RequestHeaderFile=t252_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t252_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

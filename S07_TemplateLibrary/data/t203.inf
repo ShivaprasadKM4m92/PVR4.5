@@ -1,0 +1,11 @@
+[t203]
+FileName1=t203.html
+URL1=https://pvr-perf.rxlogix.com/reports/configuration/create?selectedTemplate=30908
+Total=1
+RequestHeaderFile=t203_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t203_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_187.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,11 @@
+[t240]
+FileName1=t240_6542.json
+URL1=https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/6542?_=1589965999059
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_221.xml
+RequestHeaderFile=t240_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t240_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

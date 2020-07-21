@@ -1,0 +1,6 @@
+GET /update-delta/hfnkpimlhhgieaddgfemjhofmfblmnib/5883/5882/a836e3c46d095e5a9cae3283b22afa7edcf58c574c1f738542dfb9a38dc1538f.crxd HTTP/1.1
+Host: storage.googleapis.com
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept-Encoding: gzip, deflate
+

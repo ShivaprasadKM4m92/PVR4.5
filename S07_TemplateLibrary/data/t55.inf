@@ -1,0 +1,11 @@
+[t55]
+FileName1=t55_6542.json
+URL1=https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/6542?_=1589965692480
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_51.xml
+RequestHeaderFile=t55_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t55_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

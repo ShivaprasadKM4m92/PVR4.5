@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Wed, 20 May 2020 09:09:12 GMT
+Content-Type: application/javascript;charset=UTF-8
+Content-Length: 2359
+Connection: keep-alive
+X-Frame-Options: DENY
+Last-Modified: Mon, 23 Mar 2020 05:55:54 GMT
+ETag: "app/utils/pvr-filter-util-f694134bedd0ac0ffc46cd24998d5f54.js"
+Vary: Accept-Encoding
+Cache-Control: public, max-age=31536000
+Content-Encoding: gzip
+

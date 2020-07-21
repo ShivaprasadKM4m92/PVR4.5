@@ -1,0 +1,11 @@
+[t87]
+FileName1=t87_info.json
+URL1=https://pvr-perf.rxlogix.com/reports/stomp/info
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_77.xml
+RequestHeaderFile=t87_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t87_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,11 @@
+[t247]
+FileName1=t247_polymer-micro.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/polymer-micro.html
+Total=1
+ContentType=text/html
+SnapshotXmlFile=snapshot_227.xml
+RequestHeaderFile=t247_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t247_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

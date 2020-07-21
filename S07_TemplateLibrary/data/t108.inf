@@ -1,0 +1,11 @@
+[t108]
+FileName1=t108_expandingTextarea-04fa51fd39d03f48f1fbbac3953c97b8.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/expandingTextarea-04fa51fd39d03f48f1fbbac3953c97b8.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_97.xml
+RequestHeaderFile=t108_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t108_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

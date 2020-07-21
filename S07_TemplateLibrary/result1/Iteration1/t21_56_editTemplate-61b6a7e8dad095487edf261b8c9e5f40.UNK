@@ -1,0 +1,3 @@
+//# sourceMappingURL=editTemplate.js.map
+$(document).ready(function(){function b(){$("#useFixedTemplate").is(":checked")?$(".fixedTemplateButton").show():$(".fixedTemplateButton").hide()}$("#browseFixedTemplate").on("click",function(a){$("#fixedTemplateFile").click()});$("#fixedTemplateFile").on("change",function(a){0<a.target.files.length?(a=a.target.files[0].name,$("#fixedTemplateName").val(a)):$("#fixedTemplateName").val(null)});$("#deleteFixedTemplate").on("click",function(a){$("#fixedTemplateFile").val(null);$("#fixedTemplateFile").trigger("change")});
+$("#useFixedTemplate").change(function(){b()});b()});

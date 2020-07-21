@@ -1,0 +1,11 @@
+[t215]
+FileName1=t215_copyPasteValues-ce01bd4ac74470f921a5bf1d8f9b8c0d.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/configuration/copyPasteValues-ce01bd4ac74470f921a5bf1d8f9b8c0d.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_197.xml
+RequestHeaderFile=t215_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t215_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

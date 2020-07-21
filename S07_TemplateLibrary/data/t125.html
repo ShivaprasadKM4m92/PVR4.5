@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>
+    
+        PV Reports - View Template
+    
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="/reports/assets/favicon-2ba00fd40faca3ac3c2e810a7412bceb.ico" type="image/x-icon">
+<link rel="stylesheet" href="/reports/assets/application-3d100486bb60d4ee3003d4ee9f8d893e.css"/>
+
+<link rel="stylesheet" href="/reports/assets/theme_gradient_blue-8a7bc35778c66c2a34b346cddd101ad7.css"/>
+
+<script type="text/javascript" src="/reports/assets/app/rxapplication-eebebbeb632a82e8608209da3ab42ef2.js" ></script>
+
+<script>
+    userLocale = "en";
+    moment.locale(userLocale);
+    userTimeZone = "UTC";
+    if (userLocale == JAPANESE_LOCALE) {
+        DEFAULT_DATE_DISPLAY_FORMAT = "YYYY/MM/DD";
+        DEFAULT_DATE_TIME_DISPLAY_FORMAT = "YYYY/MM/DD hh:mm A";
+    }
+</script>
+
+    <script>
+    var APP_PATH='/reports';
+    var APP_ASSETS_PATH='/reports/assets/';
+    $.ajax({
+        url: APP_ASSETS_PATH+'i18n/' + userLocale + '.json',
+        dataType: 'json',
+        async: false,
+        success: function(data) {
+            $.i18n.load(data);
+        }
+    });
+
+        var resizefunc = [];
+
+    </script>
+    
+    <meta name="layout" content="main"/>
+    
+    <script type="text/javascript">
+
+        var templateType = "Template Set";
+        var cllTemplateSearchUrl = "\u002freports\u002freportTemplateRest\u002fgetTemplateSetCLL";
+        var templateNameUrl = "\u002freports\u002freportTemplateRest\u002fgetTemplateNameDescription";
+    
+</script>
+
+    <script type="text/javascript" src="/reports/assets/fuelux/fuelux-58910ec6bd502e7c4aabf85922131616.js" ></script>
+    <link rel="stylesheet" href="/reports/assets/fuelux-b7cf5c5c681fcdbd63156284516c90e9.css"/>
+    <script type="text/javascript" src="/reports/assets/highcharts/highcharts-01ce2a5c16b4e040b95b02d8cf3ea23e.js" ></script>
+    <script type="text/javascript" src="/reports/assets/highcharts/highcharts-more-31bca387194b423710d019dfa069474a.js" ></script>
+    <script type="text/javascript" src="/reports/assets/highcharts/highcharts-3d-b0c0c823b44f85cb61361491f4353576.js" ></script>
+    <script type="text/javascript" src="/reports/assets/highcharts/modules/solid-gauge-dea4ed491a81514f163d664d2d9b4135.js" ></script>
+    <script type="text/javascript" src="/reports/assets/highcharts/plugins/grouped-categories-8ddf90b557e5da14225afefcaa8bf9f6.js" ></script>
+    <script type="text/javascript" src="/reports/assets/easychart/ec.render.min-f6d1f2204b8afac135ad5f0e158f00e8.js" ></script>
+    <script type="text/javascript" src="/reports/assets/app/template/editTemplate-61b6a7e8dad095487edf261b8c9e5f40.js" ></script>
+    <script type="text/javascript" src="/reports/assets/app/template/editColumns-eb41040416b5d15abf12fa1f75a4dad4.js" ></script>
+    <script type="text/javascript" src="/reports/assets/app/template/editMeasures-bdb9a7a04f8123cadc0579982d0417ab.js" ></script>
+    <script type="text/javascript" src="/reports/assets/app/template/editColumnMeasure-9e39378fc671a73c6529cb92dd722996.js" ></script>
+    <script type="text/javascript" src="/reports/assets/app/template/editTemplateSet-9bd78227726dd0d43f2d662701e10609.js" ></script>
+    <script type="text/javascript" src="/reports/assets/app/template/editChartTemplate-8ffb6a79fc1c7af7bf486a336924c4e4.js" ></script>
+    <link rel="stylesheet" href="/reports/assets/template-8e43d0b89c5a9e5b3eb583f7e626cde1.css"/>
+    <script type="text/javascript" src="/reports/assets/app/expandingTextarea-04fa51fd39d03f48f1fbbac3953c97b8.js" ></script>
+    <link rel="stylesheet" href="/reports/assets/expandingTextarea-e6f68bca81423576f208f67bb1a470d2.css"/>
+    <link rel="stylesheet" href="/reports/assets/select2-treeview-a19d774562c3ce40252e5c9866e9029b.css"/>
+    <script type="text/javascript" src="/reports/assets/select2/select2-treeview-a36da271e6071724e73d966828e9bc72.js" ></script>
+
+    
+    
+    
+
+    
+        <meta name="_csrf" content="ba39333f-d902-4776-97b4-c0c2f5287426"/>
+        <meta name="_csrf_header" content="X-CSRF-TOKEN"/>
+        <meta name="_csrf_parameter" content="_csrf"/>
+    
+
+</head>
+
+<body class="fixed-left">
+
+<!-- Begin page -->
+<div id="wrapper" class="enlarged forced">
+
+    
+    
+    <!-- Top Bar Start -->
+            
+
+
+
+
+<script type="text/javascript" src="/reports/assets/app/pushNotification-3d08817200dceb0a405d9f7aefa3192f.js" ></script>
+<script type="text/javascript">
+
+    function logoutRxSession() {
+      clearFormInputsChangeFlag($(document));
+      $.fn.idleTimeout().logout();
+    }
+    var notificationURL = "\u002freports\u002fnotificationRest\u002fforUser\u002f6542";
+    var notificationChannel ="\u002fnotifications\u002f21232f297a57a5a743894a0e4a801fc3";
+    var notificationWSURL = "\u002freports\u002fstomp";
+    var viewNotificationErrorURL = "\u002freports\u002fexecutionStatus\u002fviewNotificationError";
+    var notificationDeleteURL = "\u002freports\u002fnotificationRest\u002fdeleteNotificationById";
+    var notificationDeleteByUserURL = "\u002freports\u002fnotificationRest\u002fdeleteNotificationsForUserId";
+    var reportRedirectURL = "\u002freports\u002freport\u002fshowFirstSection";
+    
+    var hasAccessOnActionItem = true;
+    
+    
+
+</script>
+
+
+<div class="topbar">
+    <!-- LOGO -->
+    <div class="pull-left">
+        <button class="button-menu-mobile open-left waves-effect">
+            <i class="md md-menu"></i>
+        </button>
+        <span class="clearfix"></span>
+    </div>
+
+    <div class="topbar-left">
+        <div class="pull-left">
+            
+                <a href="/reports/dashboard/index"><img src="/reports/assets/pvr_logo-4233ea6efeb2ddb09d89415071b55478.png" class="pvLogo"/></a>
+            
+        </div>
+    </div>
+    <!-- Navbar -->
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="">
+                <ul class="nav navbar-nav hidden-xs pull-left">
+                    
+                    
+                    
+                    
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right pull-right">
+                    
+                        <li class="hidden-xs m-t-10">
+                            <h5 class="text-white login-user-fullname">Welcome Admin User!</h5>
+                                <small class="text-white last-login-date-time-box"><b>Last Login</b> :  20-May-2020 08:37 AM (GMT +00:00)</small>
+                        </li>
+                        <li id="menuNotification" class="dropdown hidden-xs">
+                                <a href="#" data-target="#" class="dropdown-toggle waves-effect waves-light"
+                                   data-toggle="dropdown" aria-expanded="true">
+                                    <i class="md md-notifications"></i> <span
+                                        id="notificationBadge"  class="badge badge-xs badge-pink"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-lg">
+                                    <li id="notificationHeader" class="text-center notifi-title"></li>
+                                    <li id="notificationRows" class="list-group nicescroll notification-list">
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" id="clearNotifications" class=" text-right" userId="6542">
+                                            <small><b>Clear all</b></small>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="#" data-target="#" class="dropdown-toggle waves-effect waves-light"
+                               data-toggle="dropdown" aria-expanded="true">
+                                <i class="md md-settings"></i></a>
+                            <ul class="dropdown-menu topNavMenu">
+                                    
+                                <li id="help"><a href="/reports/dashboard/index" target="_blank"><i class="md md-help"></i> Help</a></li>
+
+                                
+                                    <li id="executionStatus"><a href="/reports/executionStatus/list"><i class="md md-alarm"></i> Execution Status</a></li>
+                                
+
+                                
+                                    <li class="divider"></li>
+                                    
+                                    <li id="userManagement"><a href="/reports/user/index">User Management</a></li>
+                                    <li id="userManagement"><a href="/reports/userGroup/index">Group Management</a></li>
+                                    <li id="roleManagement"><a href="/reports/role/index">Role Management</a></li>
+                                    
+                                    
+                                        <li id="fieldManagement"><a href="/reports/reportField/index">Field Management</a></li>
+                                        <li id="jsonDownloaded"><a href="/reports/queryTemplateJSON/index">Download JSONs</a> </li>
+                                    
+                                    
+                                        <li id="customField"><a href="/reports/customField/index">Custom Fields</a></li>
+                                    
+                                    
+                                    <li id="userManagement"><a href="/reports/dashboardDictionary/index">Dashboards</a></li>
+                                    
+                                    
+                                    <li id="userManagement"><a href="/reports/fieldProfile/index">Field Profile</a></li>
+                                    <li id="sourceProfileManagement"><a href="/reports/sourceProfile/index">Source Profile</a></li>
+                                    <li id="workflowState"><a href="/reports/workflowState/index">Workflow State</a></li>
+                                    <li id="workflowRule"><a href="/reports/workflowRule/index">Workflow Rule</a></li>
+                                    <li id="reportRequestType"><a href="/reports/reportRequestType/index">Report Request Settings</a></li>
+                                    <li id="taskTemplate"><a href="/reports/taskTemplate/index">Task Template</a></li>
+                                
+                                    <li id="etlScheduler"><a href="/reports/etlSchedule/index">ETL Scheduler</a></li>
+                                    <li id="auditLog"><a href="/reports/auditLog/index">Audit Log</a></li>
+                                    <li id="controlPanel"><a href="/reports/controlPanel/index">Control Panel</a></li>
+                                    <li id="reportFooter"><a href="/reports/reportFooter/index">Footer Configuration</a></li>
+                                    <li id="reportFooter"><a href="/reports/email/index">Email Configuration</a></li>
+                                    <li id="reportFooter"><a href="/reports/emailTemplate/index">Email Template</a></li>
+                                    
+                                    
+                                    <li class="divider"></li>
+                                
+
+                                <li id="menuPreference"><a href="/reports/preference/index"><i class="md md-settings"></i> Preferences</a></li>
+
+                                
+                                    <li class="divider"></li>
+
+                                    
+                                    <li><a href="/reports/monitoring">Monitoring</a></li>
+                                    <li><a href="/reports/quartz">Jobs Monitoring</a></li>
+                                
+
+                                <li class="divider"></li>
+
+                                <li>
+                                    <a href="javascript:void(0);" onclick="logoutRxSession();" type="button"><i class="md md-exit-to-app"></i> Logout</a>
+                            </ul>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Top Bar End -->
+
+    <!-- Left Sidebar Start -->
+    
+    
+
+
+<div class="left side-menu">
+    <div class="sidebar-inner slimscrollleft">
+        <div id="sidebar-menu">
+            <ul>
+                <li class="has_sub"><a href="/reports/dashboard/index" class="waves-effect waves-primary"><i
+                        class="md md-dashboard"></i><span>Dashboard</span><span class="menu-arrow"></span></a>
+                    <ul class="list-unstyled">
+                        
+                        <li><a href="/reports/dashboard/newDashboard"><i class="fa fa-plus"></i>New Dashboard</a></li>
+                    </ul>
+                </li>
+                
+                    <li class="has_sub">
+                        <!-- Adhoc Reports -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-grid-on"></i> <span>Adhoc Reports</span>
+                            <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            
+                                <!-- Load Configurations -->
+                                <li><a href="/reports/configuration/load">Load Configurations</a></li>
+                            
+                            
+                                <!-- New Report -->
+                                <li><a href="/reports/configuration/create">New Report</a></li>
+                            
+                            
+                                <!-- New Report -->
+                                <li><a href="javascript:void(0);"  class="createAdhocFromTemplate">Create From Template</a></li>
+                            
+                            
+                                <!-- Library -->
+                                <li><a href="/reports/configuration/index">Configuration Library</a></li>
+                            
+                            
+                                <!-- Generated Reports -->
+                                <li><a href="/reports/report/index">Generated Reports</a></li>
+                            
+                            
+                                
+                            
+                        </ul>
+                    </li>
+                
+                
+                    <li class="has_sub">
+                        <!-- Periodic Reports -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-call-merge"></i><span>Aggregate Reports</span>
+                            <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            
+                                <!-- New Report -->
+                                <li><a href="/reports/periodicReport/create">New Report</a></li>
+                            
+                            
+                                <!-- New Report -->
+                                <li><a href="javascript:void(0);"  class="createAggregateFromTemplate">Create From Template</a></li>
+                            
+                        <!-- Library -->
+                            <li><a href="/reports/periodicReport/index">Configuration Library</a></li>
+                            <!-- Generated Reports -->
+                            <li><a href="/reports/periodicReport/reports">Generated Reports</a></li>
+                            <!-- View Submission History -->
+                            <li><a href="/reports/reportSubmission/index">View Submission History</a></li>
+                            
+                                <!-- Bulk Scheduling -->
+                                <li><a href="/reports/periodicReport/bulkUpdate">Bulk Update</a></li>
+                            
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="has_sub">
+                        <!-- Case Series -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i class="md md-view-column"></i>
+                            <span>Case Series</span> <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            
+                                <!-- New Case Series -->
+                                <li><a href="/reports/caseSeries/create">New Case Series</a></li>
+                            
+                        <!-- Generated Case Series -->
+                            <li><a href="/reports/caseSeries/index">Configuration Library</a></li>
+                            <!-- Generated Case Series -->
+                            <li><a href="/reports/executedCaseSeries/index">Generated Case Series</a></li>
+                        </ul>
+                    </li>
+                
+                
+                    <!-- Templates -->
+                    <li class="has_sub">
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-now-widgets"></i><span>Templates</span> <span
+                                class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                        <li>
+                            
+                                <!-- Load Templates -->
+                                <li><a href="/reports/template/load">Load Templates</a></li>
+                            
+                        <!-- Template Library -->
+                            <li><a href="/reports/template/index">Template Library</a></li>
+                            
+                                <!-- New Case Line Listing Template -->
+                                <li><a href="/reports/template/create?templateType=CASE_LINE">
+                                    New Case Line Listing Template</a></li>
+                                <!-- New Data Tabulation Template -->
+                                <li><a href="/reports/template/create?templateType=DATA_TAB">
+                                    New Data Tabulation Template</a></li>
+                            
+                            
+                                <!-- New Custom SQL Template -->
+                                <li><a href="/reports/template/create?templateType=CUSTOM_SQL">
+                                    New Custom SQL Template</a></li>
+                                <!-- New Non Case Template -->
+                                <li><a href="/reports/template/create?templateType=NON_CASE">
+                                    New Non Case Template</a></li>
+
+                                
+                            
+                            
+                                <!-- New Template Set -->
+                                <li><a href="/reports/template/create?templateType=TEMPLATE_SET">
+                                    New Template Set</a></li>
+                            
+                        </li>
+                        </ul>
+                    </li>
+                
+                
+                    <!-- Queries -->
+                    <li class="has_sub">
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-filter-list"></i><span>Queries</span> <span
+                                class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                        <li>
+                            
+                                <!-- Load Queries -->
+                                <li><a href="/reports/query/load">Load Queries</a></li>
+                            
+                        <!-- Query Library -->
+                            <li><a href="/reports/query/index">Query Library</a></li>
+                            
+                                <!-- New Query -->
+                                <li><a href="/reports/query/create">New Query</a></li>
+                            
+                        </li>
+                        </ul>
+                    </li>
+                
+                
+                    <li class="has_sub">
+                        <!-- Data Analysis -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i class="md md-trending-up"></i>
+                            <span> Data Analysis </span> <span
+                                class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            <!-- Analysis File Library -->
+                            <li><a href="/reports/dataAnalysis/index">Analysis File Library</a></li>
+                            <!-- New Analysis File -->
+                            <li><a href="/reports/dataAnalysis/create">New Analysis File</a></li>
+                        </ul>
+                    </li>
+                
+                
+                    <li class="has_sub">
+                        <!-- Tasks -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-assignment"></i><span> Tasks </span> <span
+                                class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                        <!-- Report Requests -->
+                            
+                                <li><a href="/reports/reportRequest/index">Report Requests</a></li>
+                            
+                        <!-- Action Items -->
+                            
+                                <li><a href="/reports/actionItem/index">Action Items</a></li>
+                            
+                        </ul>
+                    </li>
+                
+                
+                    
+                        
+                        
+                                
+                                
+                        
+                            
+                            
+                            
+                            
+                            
+                            
+                        
+                    
+                
+                
+                    <!-- PR Calendar -->
+                    <li><a href="/reports/calendar/index" class="waves-effect waves-primary"><i
+                            class="md md-event"></i><span>Calendar</span></a></li>
+
+                
+            </ul>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+    
+</div>
+<div class="modal fade" id="createFromTemplateModal"  data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby=""  aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="rxmain-container"><div class="rxmain-container-inner"><div class="rxmain-container-row rxmain-container-header"><div class="dropdown"><label class="rxmain-container-header-label">Create From Template</label><i class="pull-right md md-close md-lg rxmain-dropdown-settings" data-dismiss="modal"></i></div></div><div class="row rxmain-container-content">
+                <table id="rxTableTemplateConfiguration" class="row-border hover" width="100%">
+                    <thead>
+                    <tr>
+                        <th class="reportNameColumn">Report Name</th>
+                        <th class="reportDescriptionColumn">Description</th>
+                        <th>Date Created</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div></div></div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+    <!-- Left Sidebar End -->
+    
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="content-page">
+        <!-- Start content -->
+        <div id="mainContent" class="content" style="">
+            
+    <div class="rxmain-container"><div class="rxmain-container-inner"><div class="rxmain-container-row rxmain-container-header"><div class="dropdown"><label class="rxmain-container-header-label">View Template</label></div></div><div class="row rxmain-container-content">
+
+        
+
+
+    <div class="alert alert-success alert-dismissible forceLineWrap" role="alert">
+        <button type="button" class="close" data-dismiss="alert">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Close</span>
+        </button>
+        <i class="fa fa-check"></i>
+        
+            Template Perftest1_CaseFormTemplate updated<br/>
+        
+    </div>
+
+
+
+
+
+
+
+
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-xs-3">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label>Template Name</label>
+                            <div class="word-wrapper">Perftest1_CaseFormTemplate</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label>Description</label>
+                            
+                                <div class="word-wrapper">Standard Template for Case Form Report</div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-3">
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <label>Category</label>
+                            
+                                <div>None</div>
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label>Tag</label>
+                            
+                                
+                                    <div>Data entry</div>
+                                
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-3">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label>Share with</label>
+                            
+                                
+                                    
+                                        <div>Admin User</div>
+                                    
+                                
+                                
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label>Quality Checked</label>
+                            <div>
+                                No
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                    <div class="col-xs-3">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label>Fixed Template</label>
+                                
+                                    <div>None</div>
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label>Use Fixed Template</label>
+                                <div>
+                                    No
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    
+<div class="margin20Top row" id="templateSourceProfileDiv">
+            <div class="col-xs-2">
+<h4>Template Set</h4>
+            </div>
+    
+</div>
+
+<div>
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="tab-pane" id="templateSet">
+            
+
+<div class="row">
+    <div class="col-xs-4">
+        <div class="bs-callout bs-callout-info" style="margin: 0px;">
+            <h5>Add Case Line Listing Template:</h5>
+            <div class="text-muted">- Only Case Line Listing Template can be added.</div>
+            <div class="text-muted">- Each template must have Case Number for grouping.</div>
+            <div class="text-muted">- Each template should not have other groupings.</div>
+        </div>
+    </div>
+
+    <div class="col-xs-4" id="templateSetContainer">
+        
+            <div class="row templateSetCLL" id="templateSetCLL_0">
+    <div class="col-xs-11">
+        
+        <input type="text" name="selectCLL_0" value="23934" class="form-control selectCLL" id="selectCLL_0" />
+    </div>
+    
+        <div class="col-xs-1">
+            
+                <a href="/reports/template/view/23934" target="_blank">View</a>
+            
+        </div>
+    
+    <div class="col-xs-1" style="padding-left: 0px;">
+        <i class="fa fa-times add-cursor removeCLL"></i>
+    </div>
+</div>
+        
+            <div class="row templateSetCLL" id="templateSetCLL_1">
+    <div class="col-xs-11">
+        
+        <input type="text" name="selectCLL_1" value="23998" class="form-control selectCLL" id="selectCLL_1" />
+    </div>
+    
+        <div class="col-xs-1">
+            
+                <a href="/reports/template/view/23998" target="_blank">View</a>
+            
+        </div>
+    
+    <div class="col-xs-1" style="padding-left: 0px;">
+        <i class="fa fa-times add-cursor removeCLL"></i>
+    </div>
+</div>
+        
+            <div class="row templateSetCLL" id="templateSetCLL_2">
+    <div class="col-xs-11">
+        
+        <input type="text" name="selectCLL_2" value="24026" class="form-control selectCLL" id="selectCLL_2" />
+    </div>
+    
+        <div class="col-xs-1">
+            
+                <a href="/reports/template/view/24026" target="_blank">View</a>
+            
+        </div>
+    
+    <div class="col-xs-1" style="padding-left: 0px;">
+        <i class="fa fa-times add-cursor removeCLL"></i>
+    </div>
+</div>
+        
+            <div class="row templateSetCLL" id="templateSetCLL_3">
+    <div class="col-xs-11">
+        
+        <input type="text" name="selectCLL_3" value="24055" class="form-control selectCLL" id="selectCLL_3" />
+    </div>
+    
+        <div class="col-xs-1">
+            
+                <a href="/reports/template/view/24055" target="_blank">View</a>
+            
+        </div>
+    
+    <div class="col-xs-1" style="padding-left: 0px;">
+        <i class="fa fa-times add-cursor removeCLL"></i>
+    </div>
+</div>
+        
+            <div class="row templateSetCLL" id="templateSetCLL_4">
+    <div class="col-xs-11">
+        
+        <input type="text" name="selectCLL_4" value="24192" class="form-control selectCLL" id="selectCLL_4" />
+    </div>
+    
+        <div class="col-xs-1">
+            
+                <a href="/reports/template/view/24192" target="_blank">View</a>
+            
+        </div>
+    
+    <div class="col-xs-1" style="padding-left: 0px;">
+        <i class="fa fa-times add-cursor removeCLL"></i>
+    </div>
+</div>
+        
+            <div class="row templateSetCLL" id="templateSetCLL_5">
+    <div class="col-xs-11">
+        
+        <input type="text" name="selectCLL_5" value="24083" class="form-control selectCLL" id="selectCLL_5" />
+    </div>
+    
+        <div class="col-xs-1">
+            
+                <a href="/reports/template/view/24083" target="_blank">View</a>
+            
+        </div>
+    
+    <div class="col-xs-1" style="padding-left: 0px;">
+        <i class="fa fa-times add-cursor removeCLL"></i>
+    </div>
+</div>
+        
+            <div class="row templateSetCLL" id="templateSetCLL_6">
+    <div class="col-xs-11">
+        
+        <input type="text" name="selectCLL_6" value="24224" class="form-control selectCLL" id="selectCLL_6" />
+    </div>
+    
+        <div class="col-xs-1">
+            
+                <a href="/reports/template/view/24224" target="_blank">View</a>
+            
+        </div>
+    
+    <div class="col-xs-1" style="padding-left: 0px;">
+        <i class="fa fa-times add-cursor removeCLL"></i>
+    </div>
+</div>
+        
+            <div class="row templateSetCLL" id="templateSetCLL_7">
+    <div class="col-xs-11">
+        
+        <input type="text" name="selectCLL_7" value="23690" class="form-control selectCLL" id="selectCLL_7" />
+    </div>
+    
+        <div class="col-xs-1">
+            
+                <a href="/reports/template/view/23690" target="_blank">View</a>
+            
+        </div>
+    
+    <div class="col-xs-1" style="padding-left: 0px;">
+        <i class="fa fa-times add-cursor removeCLL"></i>
+    </div>
+</div>
+        
+            <div class="row templateSetCLL" id="templateSetCLL_8">
+    <div class="col-xs-11">
+        
+        <input type="text" name="selectCLL_8" value="24113" class="form-control selectCLL" id="selectCLL_8" />
+    </div>
+    
+        <div class="col-xs-1">
+            
+                <a href="/reports/template/view/24113" target="_blank">View</a>
+            
+        </div>
+    
+    <div class="col-xs-1" style="padding-left: 0px;">
+        <i class="fa fa-times add-cursor removeCLL"></i>
+    </div>
+</div>
+        
+            <div class="row templateSetCLL" id="templateSetCLL_9">
+    <div class="col-xs-11">
+        
+        <input type="text" name="selectCLL_9" value="24139" class="form-control selectCLL" id="selectCLL_9" />
+    </div>
+    
+        <div class="col-xs-1">
+            
+                <a href="/reports/template/view/24139" target="_blank">View</a>
+            
+        </div>
+    
+    <div class="col-xs-1" style="padding-left: 0px;">
+        <i class="fa fa-times add-cursor removeCLL"></i>
+    </div>
+</div>
+        
+            <div class="row templateSetCLL" id="templateSetCLL_10">
+    <div class="col-xs-11">
+        
+        <input type="text" name="selectCLL_10" value="23785" class="form-control selectCLL" id="selectCLL_10" />
+    </div>
+    
+        <div class="col-xs-1">
+            
+                <a href="/reports/template/view/23785" target="_blank">View</a>
+            
+        </div>
+    
+    <div class="col-xs-1" style="padding-left: 0px;">
+        <i class="fa fa-times add-cursor removeCLL"></i>
+    </div>
+</div>
+        
+            <div class="row templateSetCLL" id="templateSetCLL_11">
+    <div class="col-xs-11">
+        
+        <input type="text" name="selectCLL_11" value="24166" class="form-control selectCLL" id="selectCLL_11" />
+    </div>
+    
+        <div class="col-xs-1">
+            
+                <a href="/reports/template/view/24166" target="_blank">View</a>
+            
+        </div>
+    
+    <div class="col-xs-1" style="padding-left: 0px;">
+        <i class="fa fa-times add-cursor removeCLL"></i>
+    </div>
+</div>
+        
+            <div class="row templateSetCLL" id="templateSetCLL_12">
+    <div class="col-xs-11">
+        
+        <input type="text" name="selectCLL_12" value="23757" class="form-control selectCLL" id="selectCLL_12" />
+    </div>
+    
+        <div class="col-xs-1">
+            
+                <a href="/reports/template/view/23757" target="_blank">View</a>
+            
+        </div>
+    
+    <div class="col-xs-1" style="padding-left: 0px;">
+        <i class="fa fa-times add-cursor removeCLL"></i>
+    </div>
+</div>
+        
+            <div class="row templateSetCLL" id="templateSetCLL_13">
+    <div class="col-xs-11">
+        
+        <input type="text" name="selectCLL_13" value="24248" class="form-control selectCLL" id="selectCLL_13" />
+    </div>
+    
+        <div class="col-xs-1">
+            
+                <a href="/reports/template/view/24248" target="_blank">View</a>
+            
+        </div>
+    
+    <div class="col-xs-1" style="padding-left: 0px;">
+        <i class="fa fa-times add-cursor removeCLL"></i>
+    </div>
+</div>
+        
+            <div class="row templateSetCLL" id="templateSetCLL_14">
+    <div class="col-xs-11">
+        
+        <input type="text" name="selectCLL_14" value="23856" class="form-control selectCLL" id="selectCLL_14" />
+    </div>
+    
+        <div class="col-xs-1">
+            
+                <a href="/reports/template/view/23856" target="_blank">View</a>
+            
+        </div>
+    
+    <div class="col-xs-1" style="padding-left: 0px;">
+        <i class="fa fa-times add-cursor removeCLL"></i>
+    </div>
+</div>
+        
+    </div>
+    <div hidden="hidden"><div class="row templateSetCLL" id="templateSetCLL_">
+    <div class="col-xs-11">
+        
+        <input type="text" name="selectCLL_" value="" class="form-control selectCLL" id="selectCLL_" />
+    </div>
+    
+        <div class="col-xs-1">
+            
+                <a href="/reports/template/view" target="_blank">View</a>
+            
+        </div>
+    
+    <div class="col-xs-1" style="padding-left: 0px;">
+        <i class="fa fa-times add-cursor removeCLL"></i>
+    </div>
+</div></div>
+    <input type="hidden" name="templateSetCLLIds" value="" id="templateSetCLLIds" />
+
+    <div class="col-xs-1">
+        <input type="button" class="btn btn-primary" id="addCLL" value="Add" autocomplete="off">
+    </div>
+
+    <div class="col-xs-2">
+        <label class="add-cursor no-bold">
+            <input type="hidden" name="_excludeEmptySections" /><input type="checkbox" name="excludeEmptySections" checked="checked" id="excludeEmptySections"  />
+            Exclude Empty Sections
+        </label>
+    </div>
+
+</div>
+
+        </div>
+    
+
+    
+</div>
+
+
+
+<input type="hidden" name="templateType" value="TEMPLATE_SET" id="templateType" />
+
+                    <input type="hidden" name="templateId" id="templateId" value="30908" />
+                    <input type="hidden" name="editable" id="editable" value="false" />
+                </div>
+            </div>
+
+            
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="pull-right">
+                            <button type="button" class="btn btn-primary viewButtons" onclick="goToUrl('configuration', 'create', {'selectedTemplate': 30908})" id="runBtn">
+                                Run
+                            </button>
+                            <button type="button" class="btn btn-default viewButtons" onclick="goToUrl('template', 'edit', {'id': 30908})" id="editBtn">
+                                Edit
+                            </button>
+                            <button type="button" class="btn btn-default viewButtons" onclick="goToUrl('template', 'copy', {'id': 30908})" id="copyBtn">
+                                Copy
+                            </button>
+                            <button url="#" data-toggle="modal" data-target="#deleteModal" data-instancetype="template"
+                                    data-instanceid="30908" data-instancename="Perftest1_CaseFormTemplate" class="btn btn-default viewButtons">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            <div>
+                <textarea name="templateExport" style="width: 100%; height: 150px; margin-top: 20px" id="templateExport" >{&quot;templateType&quot;:{&quot;enumType&quot;:&quot;com.rxlogix.enums.TemplateTypeEnum&quot;,&quot;name&quot;:&quot;TEMPLATE_SET&quot;},&quot;userTemplates&quot;:[{&quot;reportTemplate&quot;:{&quot;id&quot;:30908},&quot;user&quot;:{&quot;id&quot;:6542}}],&quot;fixedTemplate&quot;:{&quot;id&quot;:25010,&quot;dateCreated&quot;:&quot;2020-05-19T14:04:16Z&quot;,&quot;lastUpdated&quot;:&quot;2020-05-19T14:04:16Z&quot;,&quot;fileType&quot;:&quot;jrxml&quot;,&quot;resourceType&quot;:&quot;com.rxlogix.jasperserver.FileResource&quot;,&quot;name&quot;:&quot;Case Form Template.jrxml&quot;,&quot;label&quot;:&quot;Case Form Template&quot;,&quot;data&quot;:null,&quot;description&quot;:null,&quot;parent&quot;:null},&quot;nameWithDescription&quot;:&quot;Perftest1_CaseFormTemplate (Standard Template for Case Form Report) - Owner: Admin User&quot;,&quot;excludeEmptySections&quot;:true,&quot;description&quot;:&quot;Standard Template for Case Form Report&quot;,&quot;shareWithUsers&quot;:[{&quot;id&quot;:6542,&quot;username&quot;:&quot;admin&quot;,&quot;fullName&quot;:&quot;Admin User&quot;}],&quot;ownerId&quot;:6542,&quot;fixedTemplateId&quot;:25010,&quot;ciomsI&quot;:false,&quot;lastUpdated&quot;:&quot;2020-05-20T09:10:39Z&quot;,&quot;allSelectedFieldsInfo&quot;:[{&quot;id&quot;:23924,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:7734},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Initial Receipt Date&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23923},&quot;argusName&quot;:&quot;cm.RECEIPT_DATE&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23925,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:7728},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23923},&quot;argusName&quot;:&quot;cm.OCCURED_COUNTRY_ID&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23926,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:12237},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Aware Date&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23923},&quot;argusName&quot;:&quot;cm.CASE_RECEIPT_DATE&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23927,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9618},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Report Type&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23923},&quot;argusName&quot;:&quot;cm.REPORT_TYPE_ID&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23928,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:12470},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23923},&quot;argusName&quot;:&quot;cf.PBRER_BUCKET_ID&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23929,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:7543},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Case Serious&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23923},&quot;argusName&quot;:&quot;cf.SERIOUSNESS_FLAG&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23931,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:12233},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23930},&quot;argusName&quot;:&quot;cm.CASE_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23933,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9627},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23932},&quot;argusName&quot;:&quot;cm.VERSION_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23988,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:7844},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Gender&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23987},&quot;argusName&quot;:&quot;cm.PATIENT_GENDER_ID&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23989,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:7854},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Date of Birth&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23987},&quot;argusName&quot;:&quot;vcpai.PATIENT_DOB_TEXT&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23990,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:10712},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Age&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23987},&quot;argusName&quot;:&quot;cm.PAT_AGE_UNIT_GROUP&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23991,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:7856},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Height (cm)&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23987},&quot;argusName&quot;:&quot;vcpai.PATIENT_HEIGHT_CM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23992,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:7860},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Weight (kg)&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23987},&quot;argusName&quot;:&quot;vcpai.PATIENT_WEIGHT_KG&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23993,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9656},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Race&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23987},&quot;argusName&quot;:&quot;cpatl.ETHNICITY_ID&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23995,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:12233},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23994},&quot;argusName&quot;:&quot;cm.CASE_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23997,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9627},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23996},&quot;argusName&quot;:&quot;cm.VERSION_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24017,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:11580},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24016},&quot;argusName&quot;:&quot;csti.PROTOCOL_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24018,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:8715},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Study Title&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24016},&quot;argusName&quot;:&quot;csti.BLIND_NAME&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24019,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:11585},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24016},&quot;argusName&quot;:&quot;csti.STUDY_NUMBER&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24020,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:11422},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Center ID&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24016},&quot;argusName&quot;:&quot;csti.STUDY_CENTER_NAME&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24021,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:11423},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24016},&quot;argusName&quot;:&quot;csti.STUDY_TYPE_ID&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24023,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:12233},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24022},&quot;argusName&quot;:&quot;cm.CASE_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24025,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9627},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24024},&quot;argusName&quot;:&quot;cm.VERSION_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24045,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:7661},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Preferred Term&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24044},&quot;argusName&quot;:&quot;ce.MEDDRA_PT&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24046,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9309},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Reporter Term&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24044},&quot;argusName&quot;:&quot;ce.AE_REPORTED&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24047,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9320},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Start Date&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24044},&quot;argusName&quot;:&quot;ce.ONSET_DATE_TEXT&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24048,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9340},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Stop Date&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24044},&quot;argusName&quot;:&quot;ce.STOP_DATE_TEXT&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24049,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9313},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Seriousness Criteria&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24044},&quot;argusName&quot;:&quot;ce.EVENT_SERIOUSNESS&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24050,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9315},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24044},&quot;argusName&quot;:&quot;ce.AE_OUTCOME_ID&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24052,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:12233},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24051},&quot;argusName&quot;:&quot;cm.CASE_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24054,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9627},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24053},&quot;argusName&quot;:&quot;cm.VERSION_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24185,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9117},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Cause of Death Coded&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24184},&quot;argusName&quot;:&quot;cdc.CAUSE_CODED_TERM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24186,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9267},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Death Date&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24184},&quot;argusName&quot;:&quot;cm.DEATH_DATE_TEXT&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24187,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:12531},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Autopsy&quot;,&quot;customExpression&quot;:&quot;decode(cpi.FLAG_AUTOPSY_DONE, 0, &#39;&#39;,4, &#39;Autopsy Not Done&#39;, 8, &#39;Autopsy Done&#39;, 9, &#39;Autopsy Done, Results Not Available&#39;, 10, &#39;Autopsy Done, Results Available&#39;, 12, &#39;Unknown&#39;)&quot;,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24184},&quot;argusName&quot;:&quot;cpi.FLAG_AUTOPSY_DONE&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24189,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:12233},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24188},&quot;argusName&quot;:&quot;cm.CASE_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24191,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9627},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24190},&quot;argusName&quot;:&quot;cm.VERSION_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24074,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:7758},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24073},&quot;argusName&quot;:&quot;dcpai.PROD_NAME_DRUG_TYPE&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24075,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:11034},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Dose Details&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24073},&quot;argusName&quot;:&quot;dcpai.DOSE_DETAIL_ALL&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24076,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:11107},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Therapy Dates&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24073},&quot;argusName&quot;:&quot;dcpai.START_AND_STOP_DATE&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24077,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:11046},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Lot Number&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24073},&quot;argusName&quot;:&quot;cp.LOT_NO_ALL&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24078,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:10528},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Indication&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24073},&quot;argusName&quot;:&quot;ci.IND_MEDDRA_PT&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24080,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:12233},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24079},&quot;argusName&quot;:&quot;cm.CASE_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24082,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9627},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24081},&quot;argusName&quot;:&quot;cm.VERSION_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24211,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:10684},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Product Name&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24210},&quot;argusName&quot;:&quot;vcpis.GENERIC_NAME_RESOLVED&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24212,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:7661},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Preferred Term&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24210},&quot;argusName&quot;:&quot;ce.MDR_AE_PT&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24213,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9806},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Reported Causality&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24210},&quot;argusName&quot;:&quot;cpac.RPTD_RESULT_ASSESSMENT_ID&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24214,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9795},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Determined Causality&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24210},&quot;argusName&quot;:&quot;cpac.DET_RESULT_ASSESSMENT_ID&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24215,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:7816},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Event Listedness (CORE)&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24210},&quot;argusName&quot;:&quot;dcad.CORE_SHEET_LABELNESS_ID&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24216,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:11613},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24210},&quot;argusName&quot;:&quot;dcad.DS_2_LABELNESS_ID&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24217,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:10299},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24210},&quot;argusName&quot;:&quot;cdi.ACTION_TAKEN_ID&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24218,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:11096},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Rechallenge&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24210},&quot;argusName&quot;:&quot;cpam.FLAG_RECHALLENGE&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24219,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:7505},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Dechallenge&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24210},&quot;argusName&quot;:&quot;cpam.FLAG_DECHALLENGE&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24221,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:12233},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24220},&quot;argusName&quot;:&quot;cm.CASE_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24223,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9627},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24222},&quot;argusName&quot;:&quot;cm.VERSION_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23682,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:12181},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23681},&quot;argusName&quot;:&quot;vcl.JOURNAL_TITLE&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23683,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9449},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Journal(Author)&quot;,&quot;customExpression&quot;:&quot;case when (clrf.ARTICLE_NAME is  null and clraf.AUTHOR_FIRST_NAME is null)&#92;nthen null &#92;nelse&#92;n clrf.ARTICLE_NAME ||&#39; (&#39;||trim(clraf.AUTHOR_FIRST_NAME)||&#39;)&#39;&#92;nend&quot;,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23681},&quot;argusName&quot;:&quot;vcl.JOURNAL_NAME&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23684,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:7711},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Vol(Year)&quot;,&quot;customExpression&quot;:&quot;case when clrf.VOLUME is null and clrf.YEAR is null &#92;nthen  null&#92;nelse&#92;nclrf.VOLUME||&#39; (&#39;||clrf.YEAR||&#39;)&#39;&#92;nend&quot;,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23681},&quot;argusName&quot;:&quot;vcl.JOURNAL_VOL&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23685,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9451},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Page Number&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23681},&quot;argusName&quot;:&quot;vcl.JOURNAL_PGS&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23687,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:12233},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23686},&quot;argusName&quot;:&quot;cm.CASE_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23689,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9627},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23688},&quot;argusName&quot;:&quot;cm.VERSION_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24102,&quot;suppressRepeatingValues&quot;:true,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:11027},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Pregnancy Report Type&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24101},&quot;argusName&quot;:&quot;cptpi.PREGNANCY_REPORT_TYPE&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24103,&quot;suppressRepeatingValues&quot;:true,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:7910},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Date of LMP&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24101},&quot;argusName&quot;:&quot;cptpi.LMP_DATE_TEXT&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24104,&quot;suppressRepeatingValues&quot;:true,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:7905},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Delivery Date&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24101},&quot;argusName&quot;:&quot;cptni.DELIVERY_DATE&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24105,&quot;suppressRepeatingValues&quot;:true,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:7739},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Pregnancy Outcome&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24101},&quot;argusName&quot;:&quot;dci.PREGNANCY_OUTCOME&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24106,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:7906},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:true,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Fetal Outcome&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24101},&quot;argusName&quot;:&quot;cptni.NEO_OUTCOME_ID&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24107,&quot;suppressRepeatingValues&quot;:true,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:11737},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Weeks of exposure&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24101},&quot;argusName&quot;:&quot;cptpi.GESTATION_EXPOSURE_PERIOD&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24108,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:8713},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Trimester of Exposure&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24101},&quot;argusName&quot;:&quot;cptpr.EXP_TRIMESTER&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24110,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:12233},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24109},&quot;argusName&quot;:&quot;cm.CASE_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24112,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9627},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24111},&quot;argusName&quot;:&quot;cm.VERSION_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24133,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:{&quot;enumType&quot;:&quot;com.rxlogix.enums.SortEnum&quot;,&quot;name&quot;:&quot;ASCENDING&quot;},&quot;reportField&quot;:{&quot;id&quot;:11002},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24132},&quot;argusName&quot;:&quot;cpthc.CONDITION_TYPE_ID&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24134,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:7675},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24132},&quot;argusName&quot;:&quot;cpthc.CONDITION_CODED&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24136,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:12233},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24135},&quot;argusName&quot;:&quot;cm.CASE_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24138,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9627},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24137},&quot;argusName&quot;:&quot;cm.VERSION_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23776,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9418},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Test Name&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23775},&quot;argusName&quot;:&quot;cli.LAB_TEST_NAME&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23777,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:{&quot;enumType&quot;:&quot;com.rxlogix.enums.SortEnum&quot;,&quot;name&quot;:&quot;ASCENDING&quot;},&quot;reportField&quot;:{&quot;id&quot;:9433},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:1,&quot;renameValue&quot;:&quot;Test Date&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23775},&quot;argusName&quot;:&quot;cli.LAB_TEST_DATE&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23778,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:11600},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Test Result&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23775},&quot;argusName&quot;:&quot;cli.LAB_RESULTS&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23779,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:7700},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Normal High&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23775},&quot;argusName&quot;:&quot;cli.NORMAL_HIGH&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23780,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9422},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Normal Low&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23775},&quot;argusName&quot;:&quot;cli.NORMAL_LOW&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23782,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:12233},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23781},&quot;argusName&quot;:&quot;cm.CASE_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23784,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9627},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23783},&quot;argusName&quot;:&quot;cm.VERSION_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24158,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:11251},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;HCP?&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24157},&quot;argusName&quot;:&quot;cr.HEALTHCARE_PROFESSIONAL_FLAG&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24159,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:11370},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24157},&quot;argusName&quot;:&quot;cr.REPORTER_TYPE_ID&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24160,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:11369},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Primary?&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24157},&quot;argusName&quot;:&quot;cr.PRIMARY_FLAG&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24161,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:11247},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Country&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24157},&quot;argusName&quot;:&quot;cr.CR_COUNTRY_ID&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24163,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:12233},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24162},&quot;argusName&quot;:&quot;cm.CASE_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24165,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9627},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24164},&quot;argusName&quot;:&quot;cm.VERSION_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23752,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:7747},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23751},&quot;argusName&quot;:&quot;cc.NARRATIVE&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23754,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:12233},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23753},&quot;argusName&quot;:&quot;cm.CASE_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23756,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9627},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23755},&quot;argusName&quot;:&quot;cm.VERSION_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24243,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9058},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Company Causality Comment&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24242},&quot;argusName&quot;:&quot;cc.COMMENT_TEXT&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24245,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:12233},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24244},&quot;argusName&quot;:&quot;cm.CASE_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:24247,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9627},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:24246},&quot;argusName&quot;:&quot;cm.VERSION_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23843,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:7728},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23842},&quot;argusName&quot;:&quot;cm.OCCURED_COUNTRY_ID&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23844,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9618},&quot;stackId&quot;:2,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Report Type&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23842},&quot;argusName&quot;:&quot;cm.REPORT_TYPE_ID&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23845,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:12470},&quot;stackId&quot;:2,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23842},&quot;argusName&quot;:&quot;cf.PBRER_BUCKET_ID&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23846,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9059},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23842},&quot;argusName&quot;:&quot;ccda.ALL_FUP_DATES&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23847,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:7734},&quot;stackId&quot;:1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;Initial Receipt Date&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23842},&quot;argusName&quot;:&quot;cm.RECEIPT_DATE&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23848,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9624},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23842},&quot;argusName&quot;:&quot;ccpa.SUSP_PROD_2_ALL&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23849,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:12471},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:&quot;PT with Outcome&quot;,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23842},&quot;argusName&quot;:&quot;ccaa.AE_PT_LIST&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23851,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:{&quot;enumType&quot;:&quot;com.rxlogix.enums.SortEnum&quot;,&quot;name&quot;:&quot;ASCENDING&quot;},&quot;reportField&quot;:{&quot;id&quot;:12233},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23850},&quot;argusName&quot;:&quot;cm.CASE_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23853,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:7747},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23852},&quot;argusName&quot;:&quot;cc.NARRATIVE&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false},{&quot;id&quot;:23855,&quot;suppressRepeatingValues&quot;:false,&quot;suppressLabel&quot;:false,&quot;sort&quot;:null,&quot;reportField&quot;:{&quot;id&quot;:9627},&quot;stackId&quot;:-1,&quot;columnWidth&quot;:0,&quot;customField&quot;:null,&quot;redactedValue&quot;:false,&quot;commaSeparatedValue&quot;:false,&quot;sortLevel&quot;:-1,&quot;renameValue&quot;:null,&quot;customExpression&quot;:null,&quot;newLegendValue&quot;:null,&quot;setId&quot;:0,&quot;reportFieldInfoList&quot;:{&quot;id&quot;:23854},&quot;argusName&quot;:&quot;cm.VERSION_NUM&quot;,&quot;advancedSorting&quot;:null,&quot;datasheet&quot;:null,&quot;blindedValue&quot;:false}],&quot;hasBlanks&quot;:false,&quot;dateCreated&quot;:&quot;2020-05-20T07:34:21Z&quot;,&quot;isDeleted&quot;:false,&quot;ciomsITemplate&quot;:false,&quot;instanceIdentifierForAuditLog&quot;:&quot;Perftest1_CaseFormTemplate&quot;,&quot;sectionsName&quot;:&quot;Perftest1_CaseFormTemplate (Standard Template for Case Form Report)&quot;,&quot;templateFooter&quot;:null,&quot;shareWithGroups&quot;:[],&quot;modifiedBy&quot;:&quot;admin&quot;,&quot;templateUserStates&quot;:[],&quot;reassessListedness&quot;:null,&quot;owner&quot;:{&quot;id&quot;:6542,&quot;username&quot;:&quot;admin&quot;,&quot;fullName&quot;:&quot;Admin User&quot;},&quot;editable&quot;:true,&quot;reassessForProduct&quot;:false,&quot;fieldsToValidate&quot;:[&quot;excludeEmptySections&quot;,&quot;cllTemplates&quot;,&quot;hasMany&quot;,&quot;mapping&quot;,&quot;constraints&quot;,&quot;namedQueries&quot;,&quot;log&quot;,&quot;instanceControllersDomainBindingApi&quot;,&quot;instanceConvertersApi&quot;,&quot;transients&quot;,&quot;org_grails_datastore_mapping_dirty_checking_DirtyCheckable__$changedProperties&quot;,&quot;org_grails_datastore_gorm_GormValidateable__skipValidate&quot;,&quot;org_grails_datastore_gorm_GormValidateable__errors&quot;,&quot;$defaultDatabindingWhiteList&quot;],&quot;cllTemplates&quot;:[{&quot;id&quot;:23934,&quot;category&quot;:&quot; &quot;,&quot;name&quot;:&quot;General Case Information&quot;,&quot;description&quot;:&quot;General Case Information section of the Case Form Template.&quot;,&quot;dateCreated&quot;:&quot;05/19/2020 14:04:12&quot;,&quot;lastUpdated&quot;:&quot;05/19/2020 14:04:12&quot;,&quot;lastExecuted&quot;:null,&quot;tags&quot;:null,&quot;owner&quot;:{&quot;id&quot;:6542,&quot;username&quot;:&quot;admin&quot;,&quot;fullName&quot;:&quot;Admin User&quot;},&quot;createdBy&quot;:&quot;admin&quot;,&quot;isDeleted&quot;:false,&quot;checkUsage&quot;:0,&quot;qualityChecked&quot;:true,&quot;type&quot;:&quot;Case Line Listing&quot;,&quot;useFixedTemplate&quot;:false},{&quot;id&quot;:23998,&quot;category&quot;:&quot; &quot;,&quot;name&quot;:&quot;Patient Demographic Information&quot;,&quot;description&quot;:&quot;Patient Demographic Information section of the Case Form Template.&quot;,&quot;dateCreated&quot;:&quot;05/19/2020 14:04:12&quot;,&quot;lastUpdated&quot;:&quot;05/19/2020 14:04:12&quot;,&quot;lastExecuted&quot;:null,&quot;tags&quot;:null,&quot;owner&quot;:{&quot;id&quot;:6542,&quot;username&quot;:&quot;admin&quot;,&quot;fullName&quot;:&quot;Admin User&quot;},&quot;createdBy&quot;:&quot;admin&quot;,&quot;isDeleted&quot;:false,&quot;checkUsage&quot;:0,&quot;qualityChecked&quot;:true,&quot;type&quot;:&quot;Case Line Listing&quot;,&quot;useFixedTemplate&quot;:false},{&quot;id&quot;:24026,&quot;category&quot;:&quot; &quot;,&quot;name&quot;:&quot;Study Information&quot;,&quot;description&quot;:&quot;Study Information Section of the Case Form Template.&quot;,&quot;dateCreated&quot;:&quot;05/19/2020 14:04:12&quot;,&quot;lastUpdated&quot;:&quot;05/19/2020 14:04:12&quot;,&quot;lastExecuted&quot;:null,&quot;tags&quot;:null,&quot;owner&quot;:{&quot;id&quot;:6542,&quot;username&quot;:&quot;admin&quot;,&quot;fullName&quot;:&quot;Admin User&quot;},&quot;createdBy&quot;:&quot;admin&quot;,&quot;isDeleted&quot;:false,&quot;checkUsage&quot;:0,&quot;qualityChecked&quot;:true,&quot;type&quot;:&quot;Case Line Listing&quot;,&quot;useFixedTemplate&quot;:false},{&quot;id&quot;:24055,&quot;category&quot;:&quot; &quot;,&quot;name&quot;:&quot;Event Information&quot;,&quot;description&quot;:&quot;Event Information section of the Case Form Template.&quot;,&quot;dateCreated&quot;:&quot;05/19/2020 14:04:12&quot;,&quot;lastUpdated&quot;:&quot;05/19/2020 14:04:12&quot;,&quot;lastExecuted&quot;:null,&quot;tags&quot;:null,&quot;owner&quot;:{&quot;id&quot;:6542,&quot;username&quot;:&quot;admin&quot;,&quot;fullName&quot;:&quot;Admin User&quot;},&quot;createdBy&quot;:&quot;admin&quot;,&quot;isDeleted&quot;:false,&quot;checkUsage&quot;:0,&quot;qualityChecked&quot;:true,&quot;type&quot;:&quot;Case Line Listing&quot;,&quot;useFixedTemplate&quot;:false},{&quot;id&quot;:24192,&quot;category&quot;:&quot; &quot;,&quot;name&quot;:&quot;Cause of Death Information&quot;,&quot;description&quot;:&quot;Cause of Death Information section of the Case Form Template.&quot;,&quot;dateCreated&quot;:&quot;05/19/2020 14:04:13&quot;,&quot;lastUpdated&quot;:&quot;05/19/2020 14:04:13&quot;,&quot;lastExecuted&quot;:null,&quot;tags&quot;:null,&quot;owner&quot;:{&quot;id&quot;:6542,&quot;username&quot;:&quot;admin&quot;,&quot;fullName&quot;:&quot;Admin User&quot;},&quot;createdBy&quot;:&quot;admin&quot;,&quot;isDeleted&quot;:false,&quot;checkUsage&quot;:0,&quot;qualityChecked&quot;:true,&quot;type&quot;:&quot;Case Line Listing&quot;,&quot;useFixedTemplate&quot;:false},{&quot;id&quot;:24083,&quot;category&quot;:&quot; &quot;,&quot;name&quot;:&quot;Product Information&quot;,&quot;description&quot;:&quot;Product Information section of the Case Form Template.&quot;,&quot;dateCreated&quot;:&quot;05/19/2020 14:04:13&quot;,&quot;lastUpdated&quot;:&quot;05/19/2020 14:04:13&quot;,&quot;lastExecuted&quot;:null,&quot;tags&quot;:null,&quot;owner&quot;:{&quot;id&quot;:6542,&quot;username&quot;:&quot;admin&quot;,&quot;fullName&quot;:&quot;Admin User&quot;},&quot;createdBy&quot;:&quot;admin&quot;,&quot;isDeleted&quot;:false,&quot;checkUsage&quot;:0,&quot;qualityChecked&quot;:true,&quot;type&quot;:&quot;Case Line Listing&quot;,&quot;useFixedTemplate&quot;:false},{&quot;id&quot;:24224,&quot;category&quot;:&quot; &quot;,&quot;name&quot;:&quot;Product-Event Information&quot;,&quot;description&quot;:&quot;Product-Event Information information section of the Case Form Template.&quot;,&quot;dateCreated&quot;:&quot;05/19/2020 14:04:13&quot;,&quot;lastUpdated&quot;:&quot;05/19/2020 14:04:13&quot;,&quot;lastExecuted&quot;:null,&quot;tags&quot;:null,&quot;owner&quot;:{&quot;id&quot;:6542,&quot;username&quot;:&quot;admin&quot;,&quot;fullName&quot;:&quot;Admin User&quot;},&quot;createdBy&quot;:&quot;admin&quot;,&quot;isDeleted&quot;:false,&quot;checkUsage&quot;:0,&quot;qualityChecked&quot;:true,&quot;type&quot;:&quot;Case Line Listing&quot;,&quot;useFixedTemplate&quot;:false},{&quot;id&quot;:23690,&quot;category&quot;:&quot; &quot;,&quot;name&quot;:&quot;Literature Information&quot;,&quot;description&quot;:&quot;Literature Information section of the Case Form Template.&quot;,&quot;dateCreated&quot;:&quot;05/19/2020 14:04:12&quot;,&quot;lastUpdated&quot;:&quot;05/19/2020 14:04:12&quot;,&quot;lastExecuted&quot;:null,&quot;tags&quot;:null,&quot;owner&quot;:{&quot;id&quot;:6542,&quot;username&quot;:&quot;admin&quot;,&quot;fullName&quot;:&quot;Admin User&quot;},&quot;createdBy&quot;:&quot;admin&quot;,&quot;isDeleted&quot;:false,&quot;checkUsage&quot;:0,&quot;qualityChecked&quot;:true,&quot;type&quot;:&quot;Case Line Listing&quot;,&quot;useFixedTemplate&quot;:false},{&quot;id&quot;:24113,&quot;category&quot;:&quot; &quot;,&quot;name&quot;:&quot;Pregnancy Information&quot;,&quot;description&quot;:&quot;Pregnancy Information section of the Case Form Template.&quot;,&quot;dateCreated&quot;:&quot;05/19/2020 14:04:13&quot;,&quot;lastUpdated&quot;:&quot;05/19/2020 14:04:13&quot;,&quot;lastExecuted&quot;:null,&quot;tags&quot;:null,&quot;owner&quot;:{&quot;id&quot;:6542,&quot;username&quot;:&quot;admin&quot;,&quot;fullName&quot;:&quot;Admin User&quot;},&quot;createdBy&quot;:&quot;admin&quot;,&quot;isDeleted&quot;:false,&quot;checkUsage&quot;:0,&quot;qualityChecked&quot;:true,&quot;type&quot;:&quot;Case Line Listing&quot;,&quot;useFixedTemplate&quot;:false},{&quot;id&quot;:24139,&quot;category&quot;:&quot; &quot;,&quot;name&quot;:&quot;Patient Medical Condition&quot;,&quot;description&quot;:&quot;Patient Medical Condition section of the Case Form Template.&quot;,&quot;dateCreated&quot;:&quot;05/19/2020 14:04:13&quot;,&quot;lastUpdated&quot;:&quot;05/19/2020 14:04:13&quot;,&quot;lastExecuted&quot;:null,&quot;tags&quot;:null,&quot;owner&quot;:{&quot;id&quot;:6542,&quot;username&quot;:&quot;admin&quot;,&quot;fullName&quot;:&quot;Admin User&quot;},&quot;createdBy&quot;:&quot;admin&quot;,&quot;isDeleted&quot;:false,&quot;checkUsage&quot;:0,&quot;qualityChecked&quot;:true,&quot;type&quot;:&quot;Case Line Listing&quot;,&quot;useFixedTemplate&quot;:false},{&quot;id&quot;:23785,&quot;category&quot;:&quot; &quot;,&quot;name&quot;:&quot;Patient Lab Test Results&quot;,&quot;description&quot;:&quot;Patient Lab Test Results section of the Case Form Template.&quot;,&quot;dateCreated&quot;:&quot;05/19/2020 14:04:12&quot;,&quot;lastUpdated&quot;:&quot;05/19/2020 14:04:12&quot;,&quot;lastExecuted&quot;:null,&quot;tags&quot;:null,&quot;owner&quot;:{&quot;id&quot;:6542,&quot;username&quot;:&quot;admin&quot;,&quot;fullName&quot;:&quot;Admin User&quot;},&quot;createdBy&quot;:&quot;admin&quot;,&quot;isDeleted&quot;:false,&quot;checkUsage&quot;:0,&quot;qualityChecked&quot;:true,&quot;type&quot;:&quot;Case Line Listing&quot;,&quot;useFixedTemplate&quot;:false},{&quot;id&quot;:24166,&quot;category&quot;:&quot; &quot;,&quot;name&quot;:&quot;Reporter Information&quot;,&quot;description&quot;:&quot;Reporter Information section of the Case Form Template.&quot;,&quot;dateCreated&quot;:&quot;05/19/2020 14:04:13&quot;,&quot;lastUpdated&quot;:&quot;05/19/2020 14:04:13&quot;,&quot;lastExecuted&quot;:null,&quot;tags&quot;:null,&quot;owner&quot;:{&quot;id&quot;:6542,&quot;username&quot;:&quot;admin&quot;,&quot;fullName&quot;:&quot;Admin User&quot;},&quot;createdBy&quot;:&quot;admin&quot;,&quot;isDeleted&quot;:false,&quot;checkUsage&quot;:0,&quot;qualityChecked&quot;:true,&quot;type&quot;:&quot;Case Line Listing&quot;,&quot;useFixedTemplate&quot;:false},{&quot;id&quot;:23757,&quot;category&quot;:&quot; &quot;,&quot;name&quot;:&quot;Narrative Information&quot;,&quot;description&quot;:&quot;Narrative Information section of the Case Form Template.&quot;,&quot;dateCreated&quot;:&quot;05/19/2020 14:04:12&quot;,&quot;lastUpdated&quot;:&quot;05/19/2020 14:04:12&quot;,&quot;lastExecuted&quot;:null,&quot;tags&quot;:null,&quot;owner&quot;:{&quot;id&quot;:6542,&quot;username&quot;:&quot;admin&quot;,&quot;fullName&quot;:&quot;Admin User&quot;},&quot;createdBy&quot;:&quot;admin&quot;,&quot;isDeleted&quot;:false,&quot;checkUsage&quot;:0,&quot;qualityChecked&quot;:true,&quot;type&quot;:&quot;Case Line Listing&quot;,&quot;useFixedTemplate&quot;:false},{&quot;id&quot;:24248,&quot;category&quot;:&quot; &quot;,&quot;name&quot;:&quot;Company Causality Comment&quot;,&quot;description&quot;:&quot;Company Causality Comment section of the Case Form Template.&quot;,&quot;dateCreated&quot;:&quot;05/19/2020 14:04:13&quot;,&quot;lastUpdated&quot;:&quot;05/19/2020 14:04:13&quot;,&quot;lastExecuted&quot;:null,&quot;tags&quot;:null,&quot;owner&quot;:{&quot;id&quot;:6542,&quot;username&quot;:&quot;admin&quot;,&quot;fullName&quot;:&quot;Admin User&quot;},&quot;createdBy&quot;:&quot;admin&quot;,&quot;isDeleted&quot;:false,&quot;checkUsage&quot;:0,&quot;qualityChecked&quot;:true,&quot;type&quot;:&quot;Case Line Listing&quot;,&quot;useFixedTemplate&quot;:false},{&quot;id&quot;:23856,&quot;category&quot;:&quot; &quot;,&quot;name&quot;:&quot;Case Narrative Listing&quot;,&quot;description&quot;:&quot;Standard template for case narrative analysis&quot;,&quot;dateCreated&quot;:&quot;05/19/2020 14:04:12&quot;,&quot;lastUpdated&quot;:&quot;05/19/2020 14:04:12&quot;,&quot;lastExecuted&quot;:null,&quot;tags&quot;:null,&quot;owner&quot;:{&quot;id&quot;:6542,&quot;username&quot;:&quot;admin&quot;,&quot;fullName&quot;:&quot;Admin User&quot;},&quot;createdBy&quot;:&quot;admin&quot;,&quot;isDeleted&quot;:false,&quot;checkUsage&quot;:0,&quot;qualityChecked&quot;:true,&quot;type&quot;:&quot;Case Line Listing&quot;,&quot;useFixedTemplate&quot;:false}],&quot;useFixedTemplate&quot;:false,&quot;showTemplateFooter&quot;:false,&quot;autoTimeStampOff&quot;:false,&quot;tags&quot;:[{&quot;id&quot;:6554,&quot;name&quot;:&quot;Data entry&quot;}],&quot;qualityChecked&quot;:false,&quot;userGroupTemplates&quot;:[],&quot;factoryDefault&quot;:false,&quot;createdBy&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Perftest1_CaseFormTemplate&quot;,&quot;showChartSheet&quot;:false,&quot;originalTemplateId&quot;:0,&quot;category&quot;:null,&quot;lastExecuted&quot;:&quot;2020-05-20T08:57:20Z&quot;,&quot;POIInputsKeys&quot;:[],&quot;categoryId&quot;:null}</textarea>
+            </div>
+            
+        </div>
+        <div class="horizontalRuleFull"></div>
+<div class="greyText">
+  <div>
+    <small class="text-muted">
+      <span id="dateCreated-label" class="property-label">
+        Date Created:
+      </span>
+      <span class="property-value" aria-labelledby="dateCreated-label">
+          
+20-May-2020 07:34:21 AM
+      </span>
+
+      <span id="createdBy-label" class="property-label" style="margin-left: 20px;">
+       Created By:
+      </span>
+      <span class="property-value" aria-labelledby="dateCreated-label">
+        admin
+      </span>
+
+      <span id="lastUpdated-label" class="property-label" style="margin-left: 50px;">
+       Modified Date:
+      </span>
+      <span class="property-value" aria-labelledby="lastUpdated-label">
+          
+20-May-2020 09:10:39 AM
+      </span>
+
+      <span id="modifiedBy-label" class="property-label" style="margin-left: 20px;">
+        Modified By:
+      </span>
+      <span class="property-value" aria-labelledby="dateCreated-label">
+          admin
+      </span>
+    </small>
+  </div>
+</div>
+    </div></div></div>
+<form action="/reports/template/index" method="post" ><input type="hidden" name="_method" value="DELETE" id="_method" />
+    <!-- Modal -->
+
+
+
+
+<div class="modal fade" id="deleteModal"  data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel"
+     aria-hidden="true" style="z-index: 9999;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="deleteModalLabel"></h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="alert alert-danger alert-dismissible forceLineWrap" role="alert" id="deleteDlgErrorDiv" style="display: none">
+                    <button type="button" class="close" data-dismiss="alert">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <i class="fa fa-check"></i> Justification can''t be blank.
+                </div>
+                <div id="nameToDelete"></div>
+                <p></p>
+                <div class="description" style="font-weight:bold;"></div>
+                <div class="extramessage"></div>
+
+                <div id="deleteForAllAllowed" class="checkbox checkbox-primary"  style="display: none">
+                    <input type="hidden" name="_deleteForAll" /><input type="checkbox" name="deleteForAll" id="deleteForAll"  />
+                    <label for="deleteForAll" class="add-margin-bottom" style="margin-bottom: 5px;">
+                        Delete For All Users
+                    </label>
+                </div>
+
+                <label style="margin-top: 25px">Justification:</label>
+                <textarea placeholder="Enter the justification" class="form-control" name="deleteJustification" id="deleteJustification" ></textarea>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button id="deleteButton" class="btn btn-danger">
+                    <span class="glyphicon glyphicon-trash icon-white"></span>
+                    Delete Record
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script type="text/javascript" src="/reports/assets/app/deleteModal-68b8e74283c8070801d2afbaf40831a1.js" ></script>
+
+
+</form>
+
+
+        </div>
+        <!-- End content -->
+    
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Right content here -->
+    <!-- ============================================================== -->
+</div>
+<div class="pvr-loader-bg">
+    <div class="loader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+        </svg>
+    </div>
+</div>
+<!-- Used for loader-->
+<div class="pvloader"></div>
+<script type="text/javascript" src="/reports/assets/app/jquery.core-2c7cdf128b42d849235dea8cadd879b8.js" ></script>
+<script type="text/javascript" src="/reports/assets/app/jquery.app-782d8f87ac279a019b37b18a315654b2.js" ></script>
+
+    
+
+
+
+<script type="text/javascript" src="/reports/assets/store.modern.min-ee86dbde67356086e53dffdd31c6867d.js" ></script>
+<script type="text/javascript" src="/reports/assets/jquery/customise-jquery-idleTimeout-6286fe026bdf78a6c38a29cfd8d979c8.js" ></script> 
+<script type="text/javascript">
+
+    $(document).ready(function() {
+      $(document).idleTimeout({
+      redirectUrl:  "https:\u002f\u002fpvr-perf.rxlogix.com\u002freports/logout",
+      idleTimeLimit: 1800,
+      sessionKeepAliveUrl: "https:\u002f\u002fpvr-perf.rxlogix.com\u002freports/keep-alive",
+      sessionKeepAliveTimer: 60,
+      enableDialog: true,
+      dialogDisplayLimit: 300,
+      activityEvents: 'click keypress',
+      customCallback: function() {
+          var forms = $('form');
+            if(forms.find('.changed-input').length){
+                alert($.i18n._('navigateAwayChangesLostMessage'));
+                clearFormInputsChangeFlag(forms);
+            }
+      }
+      });
+    });
+
+</script>
+
+
+</body>
+</html>

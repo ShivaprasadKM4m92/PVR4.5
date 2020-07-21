@@ -1,0 +1,11 @@
+[t109]
+FileName1=t109_editChartTemplate-8ffb6a79fc1c7af7bf486a336924c4e4.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/template/editChartTemplate-8ffb6a79fc1c7af7bf486a336924c4e4.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_98.xml
+RequestHeaderFile=t109_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t109_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

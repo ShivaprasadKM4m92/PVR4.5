@@ -1,0 +1,11 @@
+[t292]
+FileName1=t292_info.json
+URL1=https://pvr-perf.rxlogix.com/reports/stomp/info
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_265.xml
+RequestHeaderFile=t292_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t292_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,11 @@
+[t79]
+FileName1=t79_template-4449dd937496140ccf5c770e8e904088.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/template/template-4449dd937496140ccf5c770e8e904088.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_69.xml
+RequestHeaderFile=t79_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t79_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

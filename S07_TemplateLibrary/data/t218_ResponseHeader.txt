@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Wed, 20 May 2020 09:13:26 GMT
+Content-Type: text/css;charset=UTF-8
+Content-Length: 933
+Connection: keep-alive
+X-Frame-Options: DENY
+Last-Modified: Mon, 23 Mar 2020 05:56:10 GMT
+ETag: "plugin/dictionary/dictionaries-a56723bc475dc0f60ed4e82cb965de2a.css"
+Vary: Accept-Encoding
+Cache-Control: public, max-age=31536000
+Content-Encoding: gzip
+
