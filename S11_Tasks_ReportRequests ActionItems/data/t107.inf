@@ -1,0 +1,11 @@
+[t107]
+FileName1=t107.json
+URL1=https://pvr-perf.rxlogix.com/reports/productDictionary/getSelectedItem?productId=102333&dataSource=pva&dictionaryLevel=3&currentLang=en
+Total=1
+RequestHeaderFile=t107_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t107_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_107.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,2636 @@
+3ead
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>
+    
+        PV Reports - Create Report Request
+    
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="/reports/assets/favicon-2ba00fd40faca3ac3c2e810a7412bceb.ico" type="image/x-icon">
+<link rel="stylesheet" href="/reports/assets/application-3d100486bb60d4ee3003d4ee9f8d893e.css"/>
+
+<link rel="stylesheet" href="/reports/assets/theme_gradient_blue-8a7bc35778c66c2a34b346cddd101ad7.css"/>
+
+<script type="text/javascript" src="/reports/assets/app/rxapplication-eebebbeb632a82e8608209da3ab42ef2.js" ></script>
+
+<script>
+    userLocale = "en";
+    moment.locale(userLocale);
+    userTimeZone = "UTC";
+    if (userLocale == JAPANESE_LOCALE) {
+        DEFAULT_DATE_DISPLAY_FORMAT = "YYYY/MM/DD";
+        DEFAULT_DATE_TIME_DISPLAY_FORMAT = "YYYY/MM/DD hh:mm A";
+    }
+</script>
+
+    <script>
+    var APP_PATH='/reports';
+    var APP_ASSETS_PATH='/reports/assets/';
+    $.ajax({
+        url: APP_ASSETS_PATH+'i18n/' + userLocale + '.json',
+        dataType: 'json',
+        async: false,
+        success: function(data) {
+            $.i18n.load(data);
+        }
+    });
+
+        var resizefunc = [];
+
+    </script>
+    
+    <script type="text/javascript" src="/reports/assets/fuelux/fuelux-58910ec6bd502e7c4aabf85922131616.js" ></script>
+    <link rel="stylesheet" href="/reports/assets/fuelux-b7cf5c5c681fcdbd63156284516c90e9.css"/>
+
+    <script type="text/javascript">
+
+        var findTaskUrl = "\u002freports\u002freportRequest\u002ffindTasks";
+        var saveUrl = "\u002freports\u002freportRequest\u002fsave?_csrf=4b74f14a-80ae-4ef9-b190-c3207058106f"
+        var reportRequestDropdownURL = "\u002freports\u002freportRequestRest\u002freportRequestDropdownList"
+    
+</script>
+
+
+    <meta name="layout" content="main">
+
+    <script type="text/javascript" src="/reports/assets/app/reportRequest-2026eec358b8902be03accb04631490c.js" ></script>
+    <script type="text/javascript" src="/reports/assets/app/utils/pvr-common-util-8ff14af8a3772d2fcd9a8439fcb156fc.js" ></script>
+
+    <script type="text/javascript" src="/reports/assets/app/configuration/configurationCommon-1c4332f2cce7a50d32a9bb863277106f.js" ></script>
+    <script type="text/javascript" src="/reports/assets/app/configuration/dateRange-114c7d1894185a1583d21cb5f436038a.js" ></script>
+    <script type="text/javascript" src="/reports/assets/app/disableAutocomplete-4b64c67585270722b33b13c06f9e5327.js" ></script>
+    <script type="text/javascript" src="/reports/assets/app/configuration/copyPasteValues-ce01bd4ac74470f921a5bf1d8f9b8c0d.js" ></script>
+    <link rel="stylesheet" href="/reports/assets/configuration-11b5b002dec2c8f1f643a1db6b80c6db.css"/>
+    <link rel="stylesheet" href="/reports/assets/copyPasteModal-e538fdadfa9bb40beefda62316b6268f.css"/>
+    <link rel="stylesheet" href="/reports/assets/expandingTextarea-e6f68bca81423576f208f67bb1a470d2.css"/>
+
+    <script type="text/javascript" src="/reports/assets/app/reportRequestActionItems-51cd2863bf12b9922bbc81212e10b5ab.js" ></script>
+    <script type="text/javascript" src="/reports/assets/app/actionItem/actionItemModal-3aad9e3af0797db4c41b1627e23b464d.js" ></script>
+
+    
+    
+
+    <script>
+
+        var viewActionItemUrl = "/reports/actionItem/view"
+
+    </script>
+
+    
+    
+    
+
+    
+        <meta name="_csrf" content="4b74f14a-80ae-4ef9-b190-c3207058106f"/>
+        <meta name="_csrf_header" content="X-CSRF-TOKEN"/>
+        <meta name="_csrf_parameter" content="_csrf"/>
+    
+
+</head>
+
+<body class="fixed-left">
+
+<!-- Begin page -->
+<div id="wrapper" class="enlarged forced">
+
+    
+    
+    <!-- Top Bar Start -->
+            
+
+
+
+
+<script type="text/javascript" src="/reports/assets/app/pushNotification-3d08817200dceb0a405d9f7aefa3192f.js" ></script>
+<script type="text/javascript">
+
+    function logoutRxSession() {
+      clearFormInputsChangeFlag($(document));
+      $.fn.idleTimeout().logout();
+    }
+    var notificationURL = "\u002freports\u002fnotificationRest\u002fforUser\u002f32180";
+    var notificationChannel ="\u002fnotifications\u002f18f7cf0d3e680317039ac89dac51d12d";
+    var notificationWSURL = "\u002freports\u002fstomp";
+    var viewNotificationErrorURL = "\u002freports\u002fexecutionStatus\u002fviewNotificationError";
+    var notificationDeleteURL = "\u002freports\u002fnotificationRest\u002fdeleteNotificationById";
+    var notificationDeleteByUserURL = "\u002freports\u002fnotificationRest\u002fdeleteNotificationsForUserId";
+    var reportRedirectURL = "\u002freports\u002freport\u002fshowFirstSection";
+    
+    var hasAccessOnActionItem = true;
+    
+    
+
+</script>
+
+
+<div class="topbar">
+    <!-- LOGO -->
+    <div class="pull-left">
+        <button class="button-menu-mobile open-left waves-effect">
+            <i class="md md-menu"></i>
+        </button>
+        <span class="clearfix"></span>
+    </div>
+
+    <div class="topbar-left">
+        <div class="pull-left">
+            
+                <a href="/reports/dashboard/index"><img src="/reports/assets/pvr_logo-4233ea6efeb2ddb09d89415071b55478.png" class="pvLogo"/></a>
+            
+        </div>
+    </div>
+    <!-- Navbar -->
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="">
+                <ul class="nav navbar-nav hidden-xs pull-left">
+                    
+                    
+                    
+                    
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right pull-right">
+                    
+                        <li class="hidden-xs m-t-10">
+                            <h5 class="text-white login-user-fullname">Welcome Shiva.Prasad!</h5>
+                                <small class="text-white last-login-date-time-box"><b>Last Login</b> :  03-Jun-2020 05:16 AM (GMT +00:00)</small>
+                        </li>
+                        <li id="menuNotification" class="dropdown hidden-xs">
+                                <a href="#" data-target="#" class="dropdown-toggle waves-effect waves-light"
+                                   data-toggle="dropdown" aria-expanded="true">
+                                    <i class="md md-notifications"></i> <span
+                                        id="notificationBadge"  class="badge badge-xs badge-pink"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-lg">
+                                    <li id="notificationHeader" class="text-center notifi-title"></li>
+                                    <li id="notificationRows" class="list-group nicescroll notification-list">
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" id="clearNotifications" class=" text-right" userId="32180">
+                                            <small><b>Clear all</b></small>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="#" data-target="#" class="dropdown-toggle waves-effect waves-light"
+                               data-toggle="dropdown" aria-expanded="true">
+                                <i class="md md-settings"></i></a>
+                            <ul class="dropdown-menu topNavMenu">
+                                    
+                                <li id="help"><a href="/reports/dashboard/index" target="_blank"><i class="md md-help"></i> Help</a></li>
+
+                                
+                                    <li id="executionStatus"><a href="/reports/executionStatus/list"><i class="md md-alarm"></i> Execution Status</a></li>
+                                
+
+                                
+                                    <li class="divider"></li>
+                                    
+                                    <li id="userManagement"><a href="/reports/user/index">User Management</a></li>
+                                    <li id="userManagement"><a href="/reports/userGroup/index">Group Management</a></li>
+                                    <li id="roleManagement"><a href="/reports/role/index">Role Management</a></li>
+                                    
+                                    
+                                        <li id="fieldManagement"><a href="/reports/reportField/index">Field Management</a></li>
+                                        <li id="jsonDownloaded"><a href="/reports/queryTemplateJSON/index">Download JSONs</a> </li>
+                                    
+                                    
+                                        <li id="customField"><a href="/reports/customField/index">Custom Fields</a></li>
+                                    
+                                    
+                                    <li id="userManagement"><a href="/reports/dashboardDictionary/index">Dashboards</a></li>
+                                    
+                                    
+                                    <li id="userManagement"><a href="/reports/fieldProfile/index">Field Profile</a></li>
+                                    <li id="sourceProfileManagement"><a href="/reports/sourceProfile/index">Source Profile</a></li>
+                                    <li id="workflowState"><a href="/reports/workflowState/index">Workflow State</a></li>
+                                    <li id="workflowRule"><a href="/reports/workflowRule/index">Workflow Rule</a></li>
+                                    <li id="reportRequestType"><a href="/reports/reportRequestType/index">Report Request Settings</a></li>
+                                    <li id="taskTemplate"><a href="/reports/taskTemplate/index">Task Template</a></li>
+                                
+                                    <li id="etlScheduler"><a href="/reports/etlSchedule/index">ETL Scheduler</a></li>
+                                    <li id="auditLog"><a href="/reports/auditLog/index">Audit Log</a></li>
+                                    <li id="controlPanel"><a href="/reports/controlPanel/index">Control Panel</a></li>
+                                    <li id="reportFooter"><a href="/reports/reportFooter/index">Footer Configuration</a></li>
+                                    <li id="reportFooter"><a href="/reports/email/index">Email Configuration</a></li>
+                                    <li id="reportFooter"><a href="/reports/emailTemplate/index">Email Template</a></li>
+                                    
+                                    
+                                    <li class="divider"></li>
+                                
+
+                                <li id="menuPreference"><a href="/reports/preference/index"><i class="md md-settings"></i> Preferences</a></li>
+
+                                
+                                    <li class="divider"></li>
+
+                                    
+                                    <li><a href="/reports/monitoring">Monitoring</a></li>
+                                    <li><a href="/reports/quartz">Jobs Monitoring</a></li>
+                                
+
+                                <li class="divider"></li>
+
+                                <li>
+                                    <a href="javascript:void(0);" onclick="logoutRxSession();" type="button"><i class="md md-exit-to-app"></i> Logout</a>
+                            </ul>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Top Bar End -->
+
+    <!-- Left Sidebar Start -->
+    
+    
+
+
+<div class="left side-menu">
+    <div class="sidebar-inner slimscrollleft">
+        <div id="sidebar-menu">
+            <ul>
+                <li class="has_sub"><a href="/reports/dashboard/index" class="waves-effect waves-primary"><i
+                        class="md md-dashboard"></i><span>Dashboard</span><span class="menu-arrow"></span></a>
+                    <ul class="list-unstyled">
+                        
+                        <li><a href="/reports/dashboard/newDashboard"><i class="fa fa-plus"></i>New Dashboard</a></li>
+                    </ul>
+                </li>
+                
+                    <li class="has_sub">
+                        <!-- Adhoc Reports -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-grid-on"></i> <span>Adhoc Reports</span>
+                            <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            
+                                <!-- Load Configurations -->
+                                <li><a href="/reports/configuration/load">Load Configurations</a></li>
+                            
+                            
+                                <!-- New Report -->
+                                <li><a href="/reports/configuration/create">New Report</a></li>
+                            
+                            
+                                <!-- New Report -->
+                                <li><a href="javascript:void(0);"  class="createAdhocFromTemplate">Create From Template</a></li>
+                            
+                            
+                                <!-- Library -->
+                                <li><a href="/reports/configuration/index">Configuration Library</a></li>
+                            
+                            
+                                <!-- Generated Reports -->
+                                <li><a href="/reports/report/index">Generated Reports</a></li>
+                            
+                            
+                                
+                            
+                        </ul>
+                    </li>
+                
+                
+                    <li class="has_sub">
+                        <!-- Periodic Reports -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-call-merge"></i><span>Aggregate Reports</span>
+                            <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            
+                                <!-- New Report -->
+                                <li><a href="/reports/periodicReport/create">New Report</a></li>
+                            
+                            
+                                <!-- New Report -->
+                                <li><a href="javascript:void(0);"  class="createAggregateFromTemplate">Create From Template</a></li>
+                            
+                        <!-- Library -->
+                            <li><a href="/reports/periodicReport/index">Configuration Library</a></li>
+                            <!-- Generated Reports -->
+                            <li><a href="/reports/periodicReport/reports">Generated Reports</a></li>
+                            <!-- View Submission History -->
+                            <li><a href="/reports/reportSubmission/index">View Submission History</a></li>
+                            
+                                <!-- Bulk Scheduling -->
+                                <li><a href="/reports/periodicReport/bulkUpdate">Bulk Update</a></li>
+                            
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="has_sub">
+                        <!-- Case Series -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i class="md md-view-column"></i>
+                        
+3ff0
+    <span>Case Series</span> <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            
+                                <!-- New Case Series -->
+                                <li><a href="/reports/caseSeries/create">New Case Series</a></li>
+                            
+                        <!-- Generated Case Series -->
+                            <li><a href="/reports/caseSeries/index">Configuration Library</a></li>
+                            <!-- Generated Case Series -->
+                            <li><a href="/reports/executedCaseSeries/index">Generated Case Series</a></li>
+                        </ul>
+                    </li>
+                
+                
+                    <!-- Templates -->
+                    <li class="has_sub">
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-now-widgets"></i><span>Templates</span> <span
+                                class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                        <li>
+                            
+                                <!-- Load Templates -->
+                                <li><a href="/reports/template/load">Load Templates</a></li>
+                            
+                        <!-- Template Library -->
+                            <li><a href="/reports/template/index">Template Library</a></li>
+                            
+                                <!-- New Case Line Listing Template -->
+                                <li><a href="/reports/template/create?templateType=CASE_LINE">
+                                    New Case Line Listing Template</a></li>
+                                <!-- New Data Tabulation Template -->
+                                <li><a href="/reports/template/create?templateType=DATA_TAB">
+                                    New Data Tabulation Template</a></li>
+                            
+                            
+                                <!-- New Custom SQL Template -->
+                                <li><a href="/reports/template/create?templateType=CUSTOM_SQL">
+                                    New Custom SQL Template</a></li>
+                                <!-- New Non Case Template -->
+                                <li><a href="/reports/template/create?templateType=NON_CASE">
+                                    New Non Case Template</a></li>
+
+                                
+                            
+                            
+                                <!-- New Template Set -->
+                                <li><a href="/reports/template/create?templateType=TEMPLATE_SET">
+                                    New Template Set</a></li>
+                            
+                        </li>
+                        </ul>
+                    </li>
+                
+                
+                    <!-- Queries -->
+                    <li class="has_sub">
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-filter-list"></i><span>Queries</span> <span
+                                class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                        <li>
+                            
+                                <!-- Load Queries -->
+                                <li><a href="/reports/query/load">Load Queries</a></li>
+                            
+                        <!-- Query Library -->
+                            <li><a href="/reports/query/index">Query Library</a></li>
+                            
+                                <!-- New Query -->
+                                <li><a href="/reports/query/create">New Query</a></li>
+                            
+                        </li>
+                        </ul>
+                    </li>
+                
+                
+                    <li class="has_sub">
+                        <!-- Data Analysis -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i class="md md-trending-up"></i>
+                            <span> Data Analysis </span> <span
+                                class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            <!-- Analysis File Library -->
+                            <li><a href="/reports/dataAnalysis/index">Analysis File Library</a></li>
+                            <!-- New Analysis File -->
+                            <li><a href="/reports/dataAnalysis/create">New Analysis File</a></li>
+                        </ul>
+                    </li>
+                
+                
+                    <li class="has_sub">
+                        <!-- Tasks -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-assignment"></i><span> Tasks </span> <span
+                                class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                        <!-- Report Requests -->
+                            
+                                <li><a href="/reports/reportRequest/index">Report Requests</a></li>
+                            
+                        <!-- Action Items -->
+                            
+                                <li><a href="/reports/actionItem/index">Action Items</a></li>
+                            
+                        </ul>
+                    </li>
+                
+                
+                    
+                        
+                        
+                                
+                                
+                        
+                            
+                            
+                            
+                            
+                            
+                            
+                        
+                    
+                
+                
+                    <!-- PR Calendar -->
+                    <li><a href="/reports/calendar/index" class="waves-effect waves-primary"><i
+                            class="md md-event"></i><span>Calendar</span></a></li>
+
+                
+            </ul>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+    
+</div>
+<div class="modal fade" id="createFromTemplateModal"  data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby=""  aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="rxmain-container"><div class="rxmain-container-inner"><div class="rxmain-container-row rxmain-container-header"><div class="dropdown"><label class="rxmain-container-header-label">Create From Template</label><i class="pull-right md md-close md-lg rxmain-dropdown-settings" data-dismiss="modal"></i></div></div><div class="row rxmain-container-content">
+                <table id="rxTableTemplateConfiguration" class="row-border hover" width="100%">
+                    <thead>
+                    <tr>
+                        <th class="reportNameColumn">Report Name</th>
+                        <th class="reportDescriptionColumn">Description</th>
+                        <th>Date Created</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div></div></div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+    <!-- Left Sidebar End -->
+    
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="content-page">
+        <!-- Start content -->
+        <div id="mainContent" class="content" style="">
+            
+
+<div class="rxmain-container">
+                            <div class="rxmain-container-row rxmain-container-header">
+                                <label class="rxmain-container-header-label">PV Reports - Report Request</label></div></div>
+
+
+
+
+
+
+
+
+
+
+
+<form action="/reports/reportRequest/index" method="post" enctype="multipart/form-data" name="configurationForm" class="form-horizontal" autocomplete="off" onsubmit="return onFormSubmit()" id="configurationForm" >
+
+    
+
+
+    <input type="hidden" name="id" value="" id="id" />
+
+
+
+
+
+
+<div class="rxmain-container rxmain-container-top">
+
+        
+<div class="rxmain-container ">
+    <div class="rxmain-container-inner">
+        <div class="rxmain-container-row rxmain-container-header">
+            <label class="rxmain-container-header-label">
+                Selection Criteria
+            </label>
+        </div>
+
+        <div class="rxmain-container-content">
+
+            
+            
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="row">
+
+            <div class="col-md-7">
+                <div class="row p-t-0">
+                    <div class="col-md-4">
+                        <label class="labelBold add-margin-bottom">
+                            Product Selection
+                        </label>
+
+                        <div class="wrapper">
+                            <div id="showProductSelection" class="showDictionarySelection reportRequest"></div>
+
+                            <div class="iconSearch  reportRequest">
+                                <div id="productSearchIconLoading" class="loading"><img src="/reports/assets/select2-spinner-7b9776076d5fceef4993b55c9383dedd.gif" height="16" width="16"/></div>
+                                <i id="productSearchIcon" class="fa fa-search" data-toggle="modal" data-target="#productModal" style="display: none"></i>
+                            </div>
+                        </div>
+                        <input type="hidden" name="productSelection" value="" id="productSelection" />
+                        <div class="checkbox checkbox-primary checkbox-inline">
+                            <input type="hidden" name="_suspectProduct" /><input type="checkbox" name="suspectProduct" class="reportRequest" id="suspectProduct"  />
+                            <label for="suspectProduct" class="add-margin-bottom">
+                                Limit to Suspect Product
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="labelBold add-margin-bottom ">
+                            Study Selection
+                        </label>
+
+                        <div class="wrapper">
+                            <div id="showStudySelection" class="showDictionarySelection reportRequest"></div>
+
+                            <div class="iconSearch reportRequest">
+                                <i class="fa fa-search" data-toggle="modal" data-target="#studyModal"></i>
+                            </div>
+                        </div>
+                        <input type="hidden" name="studySelection" value="" id="studySelection" />
+
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <label>Event Selection</label>
+
+                        <div class="wrapper">
+                            <div id="showEventSelection" class="showDictionarySelection reportRequest"></div>
+
+                            <div class="iconSearch">
+                                <i class="fa fa-search reportRequest" id="searchEvents" data-toggle="modal" data-target="#eventModal"></i>
+                            </div>
+                        </div>
+                        <input type="text" name="eventSelection" value="" hidden="hidden" id="eventSelection" />
+                        <div class="checkbox checkbox-primary checkbox-inline">
+                            <input type="hidden" name="_limitPrimaryPath" /><input type="checkbox" name="limitPrimaryPath" id="limitPrimaryPath"  />
+                            <label for="limitPrimaryPath" class="add-margin-bottom">
+                                Limit to Primary Path
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+
+            </div>
+            
+            <div class="col-md-3">
+                <label>Date Range Type</label>
+            <span class="glyphicon glyphicon-question-sign modal-link" style="cursor:pointer" data-toggle="modal"
+                  data-target="#dateRangeTypeHelp"></span>
+            <select name="dateRangeType.id" id="dateRangeType" class="form-control reportRequest" >
+<option value="1" >Case Receipt Date</option>
+<option value="3" >Safety Receipt Date</option>
+<option value="4" >Case Creation Date</option>
+<option value="2" >Case Locked Date</option>
+<option value="5" >Submission Date</option>
+</select>
+
+
+                
+                <div style="margin-top: 10px;">
+                    <label>Evaluate Case Data as of</label>
+                    <div id="evaluateDateAsDiv">
+                        <select name="evaluateDateAsNonSubmission" class="form-control evaluateDateAs reportRequest" id="evaluateDateAsNonSubmission" >
+<option value="LATEST_VERSION" selected="selected" >Latest Version</option>
+<option value="ALL_VERSIONS" >All Versions</option>
+<option value="VERSION_PER_REPORTING_PERIOD" >End Of Reporting Period</option>
+<option value="VERSION_ASOF" >Version As Of</option>
+</select>
+
+                    </div>
+                    <div id="evaluateDateAsSubmissionDateDiv">
+                        <select name="evaluateDateAsSubmissionDate" class="form-control evaluateDateAs" id="evaluateDateAsSubmissionDate" >
+<option value="LATEST_VERSION" selected="selected" >Latest Version</option>
+<option value="ALL_VERSIONS" >All Versions</option>
+<option value="VERSION_PER_REPORTING_PERIOD" >End Of Reporting Period</option>
+<option value="VERSION_ASOF_GENERATION_DATE" >Version As Of Generation Date</option>
+</select>
+
+                    </div>
+                    <input name="evaluateDateAs" id="evaluateDateAs" type="text" hidden="hidden" value="LATEST_VERSION"/>
+                
+                <div style="margin-top: 10px">
+                    <div class="fuelux ">
+                       <div>
+
+                           <div class="datepicker" id="asOfVersionDatePicker">
+                            <div class="input-group">
+                                <input type="text" name="asOfVersionDate" value="" placeholder="Select Version" class="form-control fuelux reportRequest" id="asOfVersionDate" />
+
+                                <div class="input-group-btn">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        <span class="glyphicon glyphicon-calendar"></span>
+        <span class="sr-only">Toggle Calendar</span>
+    </button>
+
+    <div class="dropdown-menu dropdown-menu-right datepicker-calendar-wrapper" role="menu">
+        <div class="datepicker-calendar">
+            <div class="datepicker-calendar-header">
+                <button type="button" class="prev"><span class="glyphicon glyphicon-chevron-left"></span><span
+                        class="sr-only">Previous Month</span></button>
+                <button type="button" class="next"><span class="glyphicon glyphicon-chevron-right"></span><span
+                        class="sr-only">Next Month</span></button>
+                <button type="button" class="title">
+                    <span class="month">
+                        <span data-month="0">January</span>
+                        <span data-month="1">February</span>
+                        <span data-month="2">March</span>
+                        <span data-month="3">April</span>
+                        <span data-month="4">May</span>
+                        <span data-month="5">June</span>
+                        <span data-month="6">July</span>
+                        <span data-month="7">August</span>
+                        <span data-month="8">September</span>
+                        <span data-month="9">October</span>
+                        <span data-month="10">November</span>
+                        <span data-month="11">December</span>
+  
+3ff0
+                  </span> <span class="year"></span>
+                </button>
+            </div>
+            <table class="datepicker-calendar-days">
+                <thead>
+                <tr>
+                    <th>Su</th>
+                    <th>Mo</th>
+                    <th>Tu</th>
+                    <th>We</th>
+                    <th>Th</th>
+                    <th>Fr</th>
+                    <th>Sa</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <div class="datepicker-calendar-footer">
+                <button type="button" class="datepicker-today">Today</button>
+            </div>
+        </div>
+
+        <div class="datepicker-wheels" aria-hidden="true">
+            <div class="datepicker-wheels-month">
+                <h2 class="header">Month</h2>
+                <ul>
+                    <li data-month="0"><button type="button">Jan</button></li>
+                    <li data-month="1"><button type="button">Feb</button></li>
+                    <li data-month="2"><button type="button">Mar</button></li>
+                    <li data-month="3"><button type="button">Apr</button></li>
+                    <li data-month="4"><button type="button">May</button></li>
+                    <li data-month="5"><button type="button">Jun</button></li>
+                    <li data-month="6"><button type="button">Jul</button></li>
+                    <li data-month="7"><button type="button">Aug</button></li>
+                    <li data-month="8"><button type="button">Sep</button></li>
+                    <li data-month="9"><button type="button">Oct</button></li>
+                    <li data-month="10"><button type="button">Nov</button></li>
+                    <li data-month="11"><button type="button">Dec</button></li>
+                </ul>
+            </div>
+
+            <div class="datepicker-wheels-year">
+                <h2 class="header">Year</h2>
+                <ul></ul>
+            </div>
+
+            <div class="datepicker-wheels-footer clearfix">
+                <button type="button" class="btn datepicker-wheels-back"><span
+                        class="glyphicon glyphicon-arrow-left"></span><span class="sr-only">Return to Calendar</span>
+                </button>
+                <button type="button" class="btn datepicker-wheels-select">Select <span
+                        class="sr-only">Month and Year</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+
+            
+            <div class="col-md-2">
+
+                <label>Inclusion Options</label>
+
+                <div class="checkbox checkbox-primary">
+                    <input type="hidden" name="_excludeFollowUp" /><input type="checkbox" name="excludeFollowUp" id="excludeFollowUp" class="reportRequest"  />
+                    <label for="excludeFollowUp">
+                        Exclude Follow-Up
+                    </label>
+                </div>
+
+                <div id="lockedVersionOnly" class="checkbox checkbox-primary">
+                    <input type="hidden" name="_includeLockedVersion" /><input type="checkbox" name="includeLockedVersion" checked="checked" id="includeLockedVersion" class="reportRequest"  />
+                    <label for="includeLockedVersion">
+                        Include Locked Versions Only
+                    </label>
+                </div>
+
+                <div class="checkbox checkbox-primary">
+                    <input type="hidden" name="_includeAllStudyDrugsCases" /><input type="checkbox" name="includeAllStudyDrugsCases" id="includeAllStudyDrugsCases"  />
+                    <label for="includeAllStudyDrugsCases">
+                        Include All Study Drugs Cases
+                    </label>
+                </div>
+
+                <div class="checkbox checkbox-primary">
+                    <input type="hidden" name="_excludeNonValidCases" /><input type="checkbox" name="excludeNonValidCases" checked="checked" id="excludeNonValidCases" class="reportRequest"  />
+                    <label for="excludeNonValidCases">
+                        Exclude Non-Valid Cases
+                    </label>
+                </div>
+
+               <div class="checkbox checkbox-primary checkbox-inline">
+                <input type="hidden" name="_includeMedicallyConfirmedCases" /><input type="checkbox" name="includeMedicallyConfirmedCases" id="includeMedicallyConfirmedCases"  />
+                <label for="includeMedicallyConfirmedCases" class="add-margin-bottom">
+                    Include Medically Confirmed Cases Only
+                </label>
+            </div>
+
+            </div>
+        </div>
+
+        
+
+    </div>
+</div>
+
+
+<link rel="import" href="/reports/assets/plugin/dictionary/column-view-64c0085c608464f4a6f66e33d985ae27.html"/>
+<link rel="stylesheet" href="/reports/assets/plugin/dictionary/dictionaries-a56723bc475dc0f60ed4e82cb965de2a.css"/>
+<script type="text/javascript" src="/reports/assets/plugin/dictionary/dictionaries-28bdb28ccc79e1b54cfb9c2a829ce561.js" ></script>
+<script type="text/javascript">
+
+        var getSmqDropdownListUrl = "\u002freports\u002feventDictionary\u002fgetSmqDropdownList";
+        var options = { spinnerPath:"\u002freports\u002fassets\u002fselect2-spinner-7b9776076d5fceef4993b55c9383dedd.gif" };
+        options.study = {
+            levelNames: "Project Number\u002cStudy Number\u002cCenter",
+            dicColumnCount: 2,
+            selectUrl: "\u002freports\u002fstudyDictionary\u002fgetSelectedStudy",
+            preLevelParentsUrl: "\u002freports\u002fstudyDictionary\u002fgetPreLevelStudyParents",
+            searchUrl: "\u002freports\u002fstudyDictionary\u002fsearchStudies"
+        };
+
+         options.event = {
+            levelNames: "SOC\u002cHLGT\u002cHLT\u002cPT\u002cLLT\u002cSynonyms\u002cSMQ Broad\u002cSMQ Narrow",
+            dicColumnCount: 6,
+            selectUrl: "\u002freports\u002feventDictionary\u002fgetSelectedEvent",
+            preLevelParentsUrl: "\u002freports\u002feventDictionary\u002fgetPreLevelEventParents",
+            searchUrl: "\u002freports\u002feventDictionary\u002fsearchEvents"
+        };
+
+        options.product = {
+            levelNames: "Ingredient\u002cFamily\u002cProduct Name\u002cTrade Name",
+            dicColumnCount: 4,
+            selectUrl: "\u002freports\u002fproductDictionary\u002fgetSelectedItem",
+            preLevelParentsUrl: "\u002freports\u002fproductDictionary\u002fgetPreLevelProductParents",
+            searchUrl: "\u002freports\u002fproductDictionary\u002fsearchViews"
+        };
+        intializeDictionaries(options);
+
+</script>
+
+
+<div class="modal fade" id="eventModal" data-backdrop="static" tabindex="-1" role="dialog"
+     aria-labelledby="eventDictionaryLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="eventDictionaryLabel">Event Dictionary</h4>
+            </div>
+
+            <div class="modal-body">
+                
+<div class="row">
+    <div class="col-xs-1 padding-md-bottom">
+        SMQ
+    </div>
+    <div class="col-xs-11 padding-md-bottom">
+        
+        <input id="eventSmqSelect" class="eventSmq form-control" style="width: 100%"/>
+    
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-5 padding-md-bottom">
+        <div class="checkbox checkbox-primary">
+            <input type="hidden" name="_event_exactSearch" /><input type="checkbox" name="event_exactSearch" id="event_exactSearch"  />
+            <label for="event_exactSearch">
+                Exact Search
+            </label>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-2">
+        <label>SOC<i tabindex="0"
+                class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"
+                data-target="#copyAndPasteDicModal"></i></label>
+        <input level="1" class="searchEvents form-control" type="text">
+
+    </div>
+    <div class="col-xs-2">
+        <label>HLGT<i tabindex="0"
+                class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"
+                data-target="#copyAndPasteDicModal"></i></label>
+        <input level="2" class="searchEvents form-control" type="text">
+
+    </div>
+    <div class="col-xs-2">
+        <label>HLT<i tabindex="0"
+                class="fa fa-pencil-square-o copy-n-paste modal-link hidden" data-toggle="modal"
+                data-target="#copyAndPasteDicModal"></i></label>
+        <input level="3" class="searchEvents form-control" type="text">
+
+    </div>
+    <div class="col-xs-2">
+        <label>PT<i tabindex="0"
+                class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"
+                data-target="#copyAndPasteDicModal"></i></label>
+        <input level="4" class="searchEvents form-control" type="text">
+
+    </div>
+    <div class="col-xs-2">
+        <label>LLT<i tabindex="0"
+                class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"
+                data-target="#copyAndPasteDicModal"></i></label>
+        <input level="5" class="searchEvents form-control" type="text">
+
+    </div>
+    <div class="col-xs-2">
+        <label>Synonyms<i tabindex="0"
+                class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"
+                data-target="#copyAndPasteDicModal"></i></label>
+        <input level="6" class="searchEvents form-control" type="text">
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        
+        <column-view style="height: 200px;" id="columnView" ondata="source" path="0" dictionary_type="event" columns_name="SOC,HLGT,HLT,PT,LLT,Synonyms" ></column-view>
+    </div>
+</div>
+
+
+<div class="row selectedEventDictionaryValue">
+    <div class="col-xs-1">
+        <label>Selected:</label>
+    </div>
+    <div class="col-xs-10">
+        <div class="row">
+            <div class="col-xs-1">
+                <label>SOC</label>
+            </div>
+            <div class="col-xs-11 eventDictionaryValue level1 ulSOC"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">
+                <label>HLGT</label>
+            </div>
+            <div class="col-xs-11 eventDictionaryValue level2 ulHLGT"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">
+                <label>HLT</label>
+            </div>
+            <div class="col-xs-11 eventDictionaryValue level3 ulHLT"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">
+                <label>PT</label>
+            </div>
+            <div class="col-xs-11 eventDictionaryValue level4 ulPT"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">
+                <label>LLT</label>
+            </div>
+            <div class="col-xs-11 eventDictionaryValue level5 ulLLT"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">
+                <label>Synonyms</label>
+            </div>
+            <div class="col-xs-11 eventDictionaryValue level6 ulSynonyms"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-2">
+                <div style="width: 100px">
+                <label>SMQ Broad</label>
+                </div>
+            </div>
+            <div class="col-xs-10 eventDictionaryValue level7 ulSmqb"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-2">
+                <div style="width: 100px">
+                <label>SMQ Narrow</label>
+                </div>
+            </div>
+            <div class="col-xs-10 eventDictionaryValue level8 ulSmqn"></div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        
+    </div>
+</div>
+
+<style>
+.eventDictionaryColWidth {
+    width: calc(100%/6);
+}
+</style>
+            </div>
+
+            <div class="modal-footer">
+                <div class="errorMessage" hidden="hidden">Cannot add to different levels.</div>
+
+                <div class="loading" style="display:none"><img src="/reports/assets/select2-spinner-7b9776076d5fceef4993b55c9383dedd.gif" height="16" width="16"/></div>
+                
+                <button type="button" class="btn btn-default clearEventValues" accesskey="*">Clear</button>
+                <button type="button" class="btn btn-primary addEventValues" accesskey="%">Add</button>
+                <button type="button" class="btn btn-primary addAllEventValues" accesskey="^">Add All</button>
+                <button type="button" class="btn btn-default addAllEvents" data-dismiss="modal" accesskey="&">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="productModal" data-backdrop="static" tabindex="-1" role="dialog"
+     aria-labelledby="productDictionaryLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="productDictionaryLabel">Product Dictionary</h4>
+            </div>
+
+            <div class="modal-body">
+                
+
+<div class="">
+    
+</div>
+
+<div class="row">
+    <div class="col-xs-5 padding-md-bottom">
+        <div class="checkbox checkbox-primary">
+            <input type="hidden" name="_product_exactSearch" /><input type="checkbox" name="product_exactSearch" id="product_exactSearch"  />
+            <label for="product_exactSearch">
+                Exact Search
+            </label>
+        </div>
+    </div>
+</div>
+
+<div class="m-b-15 scroll-hidden">
+
+    
+
+        <div class="prodDictFilterColCalc padding-md-bottom">
+            <label>Ingredient<i tabindex="0"
+                    class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"
+                    data-target="#copyAndPasteDicModal"></i></label>
+            <input level="1"
+                   class="searchProducts form-control "
+                   type="text">
+        </div>
+    
+
+        <div class="prodDictFilterColCalc padding-md-bottom">
+            <label>Family<i tabindex="0"
+                    class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"
+                    data-target="#copyAndPasteDicModal"></i></label>
+            <input level="2"
+                   class="searchProducts form-control "
+                   type="text">
+        </div>
+    
+
+        <div class="prodDictFilterColCalc padding-md-bottom">
+            <label>Product Name<i tabindex="0"
+                    class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"
+                    data-target="#copyAndPasteDicModal"></i></label>
+            <input level="3"
+                   class="searchProducts form-control productColumn"
+                   type="text">
+        </div>
+    
+
+        <div class="prodDictFilterColCalc padding-md-bottom">
+            <label>Trade Name<i tabindex="0"
+                    class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"
+                    data-target="#copyAndPasteDicModal"></i></label>
+            <input level="4"
+                   class="searchProducts form-control "
+                   type="text">
+        </div>
+    
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <column-view id="columnView1" class="" ondata="source" path="0" dic="product"
+                     dictionary_type="product" columns_name="Ingredient,Family,Product Generic Name,Trade Name"></column-view>
+    </div>
+</div>
+
+
+<div class="row selectedProductDictionaryValue">
+    <div class="col-xs-1">
+        <label>Selected:</label>
+    </div>
+
+    <div class="col-xs-10">
+        
+            <div class="row">
+                <div class="col-xs-3">
+                    <label>Ingredient</label>
+                </div>
+
+7fe0
+
+                <div class="col-xs-9 productDictionaryValue level1"></div>
+            </div>
+        
+            <div class="row">
+                <div class="col-xs-3">
+                    <label>Family</label>
+                </div>
+
+                <div class="col-xs-9 productDictionaryValue level2"></div>
+            </div>
+        
+            <div class="row">
+                <div class="col-xs-3">
+                    <label>Product Name</label>
+                </div>
+
+                <div class="col-xs-9 productDictionaryValue level3"></div>
+            </div>
+        
+            <div class="row">
+                <div class="col-xs-3">
+                    <label>Trade Name</label>
+                </div>
+
+                <div class="col-xs-9 productDictionaryValue level4"></div>
+            </div>
+        
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        
+    </div>
+</div>
+<script type="text/javascript" src="/reports/assets/plugin/dictionary/productDictionary-eeaadfef73b9e8aa3d5bbccd020fbe0e.js" ></script>
+<style>
+ .prodDictFilterColCalc ,.productDictionaryColWidthCalc {
+    width: calc(100% /4);
+}
+ .prodDictSearchColCalc {
+     width: calc(100% /0);
+ }
+</style>
+            </div>
+
+            <div class="modal-footer">
+                <div class="loading" style="display:none"><img src="/reports/assets/select2-spinner-7b9776076d5fceef4993b55c9383dedd.gif" height="16" width="16"/></div>
+                
+                <button type="button" class="btn btn-default clearProductValues" accesskey="$">Clear</button>
+                <button type="button" class="btn btn-primary addProductValues" accesskey="!">Add</button>
+                <button type="button" class="btn btn-primary addAllProductValues" accesskey="@">Add All</button>
+                <button type="button" class="btn btn-default addAllProducts" data-dismiss="modal" accesskey="#">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="studyModal" data-backdrop="static" tabindex="-1" role="dialog"
+     aria-labelledby="studyDictionaryLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="studyDictionaryLabel">Study Dictionary</h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="row">
+    <div class="col-xs-5 padding-md-bottom">
+        <div class="checkbox checkbox-primary">
+            <input type="hidden" name="_study_exactSearch" /><input type="checkbox" name="study_exactSearch" id="study_exactSearch"  />
+            <label for="study_exactSearch">
+                Exact Search
+            </label>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-6">
+        
+<script type="text/javascript" src="/reports/assets/plugin/dictionary/studyDrugs-9650caca7b2eaad47de57af7bbefe066.js" ></script>
+<script>
+    $(document).ready(function () {
+        var productsListUrl = "/reports/studyDictionary/getProductsList";
+        showStudyDrugsWidget(productsListUrl);
+        bindImpCheckboxEvent();
+    });
+</script>
+
+<div class="row">
+    <div class="col-xs-10">
+        <label>Study Drug</label>
+        <input level="3" ref_level="2" class="searchStudies form-control" type="hidden" id="studyDrugsInput"/>
+
+        <div>
+            
+                <input name="studyDrugs" id="studyDrugs" value="" class="searchStudies form-control"/>
+            
+        </div>
+    </div>
+
+    <div class="col-xs-2">
+        <label>&nbsp;</label>
+
+        <div class="checkbox checkbox-primary">
+            <input type="hidden" name="_study_imp" /><input type="checkbox" name="study_imp" id="study_imp"  />
+            <label for="study_imp">
+                IMP
+            </label>
+        </div>
+    </div>
+</div>
+    </div>
+
+    <div class="col-xs-6">
+        
+<script type="text/javascript" src="/reports/assets/plugin/dictionary/studyCompounds-d1264ac301b89c2be214faf502830ceb.js" ></script>
+
+<label>Clinical Reference Number</label>
+<input level="4" ref_level="2" class="searchStudies form-control" type="hidden" id="studyCompoundsInput"/>
+
+<div>
+    
+        <input name="studyCompounds" id="studyCompounds" value="" class="searchStudies form-control"/>
+    
+</div>
+
+<script>
+    $(document).ready(function () {
+        var compoundsListUrl = "/reports/studyDictionary/getCompoundsList";
+        showStudyCompoundsWidget(compoundsListUrl);
+    });
+</script>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-6">
+        <label>Project Number<i tabindex="0"
+                class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"
+                data-target="#copyAndPasteDicModal"></i></label>
+        <input level="1" class="searchStudies form-control" type="text">
+
+    </div>
+
+    <div class="col-xs-6">
+        <label>Study Number<i tabindex="0"
+                class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"
+                data-target="#copyAndPasteDicModal"></i></label>
+        <input level="2" class="searchStudies form-control" type="text">
+
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <column-view style="height: 200px;" id="columnView1" ondata="source" path="0"
+                     dictionary_type="study" columns_name="ProtocolNumber,StudyNumber"></column-view>
+    </div>
+</div>
+
+
+<div class="row selectedStudyDictionaryValue">
+    <div class="col-xs-1">
+        <label>Selected:</label>
+    </div>
+
+    <div class="col-xs-10">
+        <div class="row">
+            <div class="col-xs-3">
+                <label>Project Number</label>
+            </div>
+
+            <div class="col-xs-9 studyDictionaryValue level1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3">
+                <label>Study Number</label>
+            </div>
+
+            <div class="col-xs-9 studyDictionaryValue level2"></div>
+        </div>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        
+    </div>
+</div>
+
+<style>
+.studyDictionaryColWidth {
+    width: calc(100% /2);
+}
+</style>
+            </div>
+
+            <div class="modal-footer">
+                <div class="loading" style="display:none"><img src="/reports/assets/select2-spinner-7b9776076d5fceef4993b55c9383dedd.gif" height="16" width="16"/></div>
+                
+                <button type="button" class="btn btn-default clearStudyValues" accesskey="+">Clear</button>
+                <button type="button" class="btn btn-primary addStudyValues" accesskey="(">Add</button>
+                <button type="button" class="btn btn-primary addAllStudyValues" accesskey=")">Add All</button>
+                <button type="button" class="btn btn-default addAllStudies" data-dismiss="modal" accesskey="_">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade copyAndPasteModal" id="copyAndPasteDicModal" data-backdrop="static" role="dialog" aria-labelledby="Copy/Paste Dialog" tabindex="-1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" onclick='closeAllCopyPasteModals();' aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Paste Values:</h4>
+            </div>
+            <div class="modal-body container-fluid">
+                <div class="row">
+                    <label>Delimiters:</label>
+                </div>
+                <div class="row" id="delimiter-options">
+                    <div class="icon-col" title="No delimiters">
+                        <label class="no-bold add-cursor">
+                            <input type="radio" name="delimiter" value="none" checked="checked"/>
+                            None
+                        </label>
+                    </div>
+                    <div class="icon-col" title="comma">
+                        <label class="no-bold add-cursor">
+                            <input type="radio" name="delimiter" value=","/>
+                            Comma
+                        </label>
+                    </div>
+                    <div class="icon-col" title="semi-column">
+                        <label class="no-bold add-cursor">
+                            <input type="radio" name="delimiter" value=";"/>
+                            Semi-Colon
+                        </label>
+                    </div>
+                    <div class="icon-col" title="space">
+                        <label class="no-bold add-cursor">
+                            <input type="radio" name="delimiter" value=" "/>
+                            Space
+                        </label>
+                    </div>
+                    <div class="icon-col" title="new-line">
+                        <label class="no-bold add-cursor">
+                            <input type="radio" name="delimiter" value="\n"/>
+                            New-Line
+                        </label>
+                    </div>
+                    <div class="icon-col" title="Others">
+                        <label class="no-bold add-cursor">
+                            <input type="radio" name="delimiter" value="others"/>
+                            Others
+                        </label>
+                    </div>
+                    <div class="icon-col">
+                        <input type="text" class="c_n_p_other_delimiter" >
+                    </div>
+                </div>
+                <div class="row content-row">
+                    <textarea class="copyPasteContent"></textarea>
+                </div>
+                <div class="row">
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default cancel" onclick='closeAllCopyPasteModals();'>Cancel</button>
+                <button type="button" class="btn btn-success confirm-paste-dic-values"
+                        onclick='closeAllCopyPasteModals();'>Confirm</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/reports/assets/plugin/dictionary/dictionaryMultiSearch-6eb3fdf8ab4860190935c80f93a691c7.js" ></script>
+
+<!-- Modal for queryLevelHelp -->
+<div class="modal fade dateRangeTypeHelp" id="dateRangeTypeHelp" tabindex="-1" role="dialog" aria-labelledby="Date Range Type Help">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <span><b>Date Range Type Help</b></span>
+            </div>
+            <div class="modal-body container-fluid">
+                
+                <div><span><b>Case Receipt Date</b></span>: Follow-up Date for the latest significant Follow-up if present else Initial Receipt Date.</div><br>
+                
+                <div><span><b>Case Locked Date</b></span>: Date when case is completed or archived.</div><br>
+                
+                <div><span><b>Safety Receipt Date</b></span>: Date when case received into the Safety system.</div><br>
+                
+                <div><span><b>Case Creation Date</b></span>: Case Creation Date for significant follow-up if present else for the initial case</div><br>
+                
+                <div><span><b>Submission Date</b></span>: Date when report is submitted to a partner or an agency.</div><br>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default cancel" data-dismiss="modal">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+        <div class="rxmain-container-inner">
+
+            <div class="rxmain-container-row rxmain-container-header">
+                <label class="rxmain-container-header-label click" onclick="">
+                    Basic Information
+                </label>
+            </div>
+
+            <div class="rxmain-container-content rxmain-container-show">
+
+                <div class="row">
+
+                    
+                    <div class="col-xs-3">
+                        <div class="">
+                            <label>Request Summary<span class="required-indicator">*</span></label>
+                            <input type="text" name="reportName" placeholder="Input name"
+                                   class="form-control reportRequest"
+                                   value=""/>
+                        </div>
+
+                        <div>&nbsp;</div>
+                    </div>
+
+                    
+                    <div class="col-xs-3">
+                        <div class="">
+                            <label>Request Type<span class="required-indicator">*</span></label>
+                            <select name="reportRequestType.id" class="form-control reportRequest select2-box" id="reportRequestType.id" >
+<option value="7" >Adhoc Report</option>
+<option value="8" >Data Analysis</option>
+<option value="11" >Data Analysis</option>
+<option value="3" >DSUR</option>
+<option value="10" >Health Authority Request</option>
+<option value="9" >Inspection Request</option>
+<option value="5" >JDSUR</option>
+<option value="4" >JPSR</option>
+<option value="6" >NUPR</option>
+<option value="2" >PBRER</option>
+<option value="12" >Query</option>
+<option value="13" >Template</option>
+</select>
+                        </div>
+                        <div>&nbsp;</div>
+                    </div>
+
+                    
+                    <div class="col-xs-3">
+                        <div class="">
+                            <label>Priority<span class="required-indicator">*</span></label>
+                            <select name="priority.id" class="form-control reportRequest select2-box" id="priority.id" >
+<option value=""></option>
+<option value="1" >High</option>
+<option value="2" >Medium</option>
+<option value="3" >Low</option>
+</select>
+                        </div>
+
+                        <div>&nbsp;</div>
+                    </div>
+
+                    
+                    <div class="col-xs-3">
+                        <div>
+                            <label>Status</label>
+                            <input class="form-control" disabled value="New">
+
+                        </div>
+
+                        <div>&nbsp;</div>
+                    </div>
+
+                </div>
+
+                
+                <div class="row">
+
+                    <div class="col-xs-3">
+                        <label>Due Date<span class="required-indicator">*</span></label>
+                        <div class="fuelux ">
+                            <div>
+                                <div class="datepicker pastDateNotAllowed toolbarInline" id="dueDateDiv">
+                                    <div class="input-group">
+                                        <input type="text" id="dueDate" placeholder="Select Due Date" class="form-control fuelux date reportRequest" name="dueDate" value="" />
+                                        <div class="input-group-btn">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        <span class="glyphicon glyphicon-calendar"></span>
+        <span class="sr-only">Toggle Calendar</span>
+    </button>
+
+    <div class="dropdown-menu dropdown-menu-right datepicker-calendar-wrapper" role="menu">
+        <div class="datepicker-calendar">
+            <div class="datepicker-calendar-header">
+                <button type="button" class="prev"><span class="glyphicon glyphicon-chevron-left"></span><span
+                        class="sr-only">Previous Month</span></button>
+                <button type="button" class="next"><span class="glyphicon glyphicon-chevron-right"></span><span
+                        class="sr-only">Next Month</span></button>
+                <button type="button" class="title">
+                    <span class="month">
+                        <span data-month="0">January</span>
+                        <span data-month="1">February</span>
+                        <span data-month="2">March</span>
+                        <span data-month="3">April</span>
+                        <span data-month="4">May</span>
+                        <span data-month="5">June</span>
+                        <span data-month="6">July</span>
+                        <span data-month="7">August</span>
+                        <span data-month="8">September</span>
+                        <span data-month="9">October</span>
+                        <span data-month="10">November</span>
+                        <span data-month="11">December</span>
+                    </span> <span class="year"></span>
+                </button>
+            </div>
+            <table class="datepicker-calendar-days">
+                <thead>
+                <tr>
+                    <th>Su</th>
+                    <th>Mo</th>
+                    <th>Tu</th>
+                    <th>We</th>
+                    <th>Th</th>
+                    <th>Fr</th>
+                    <th>Sa</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <div class="datepicker-calendar-footer">
+                <button type="button" class="datepicker-today">Today</button>
+            </div>
+        </div>
+
+        <div class="datepicker-wheels" aria-hidden="true">
+            <div class="datepicker-wheels-month">
+                <h2 class="header">Month</h2>
+                <ul>
+                    <li data-month="0"><button type="button">Jan</button></li>
+                    <li data-month="1"><button type="button">Feb</button></li>
+                    <li data-month="2"><button type="button">Mar</button></li>
+                    <li data-month="3"><button type="button">Apr</button></li>
+                    <li data-month="4"><button type="button">May</button></li>
+                    <li data-month="5"><button type="button">Jun</button></li>
+                    <li data-month="6"><button type="button">Jul</button></li>
+                    <li data-month="7"><button type="button">Aug</button></li>
+                    <li data-month="8"><button type="button">Sep</button></li>
+                    <li data-month="9"><button type="button">Oct</button></li>
+                    <li data-month="10"><button type="button">Nov</button></li>
+                    <li data-month="11"><button type="button">Dec</button></li>
+                </ul>
+            </div>
+
+            <div class="datepicker-wheels-year">
+                <h2 class="header">Year</h2>
+                <ul></ul>
+            </div>
+
+            <div class="datepicker-wheels-footer clearfix">
+                <button type="button" class="btn datepicker-wheels-back"><span
+                        class="glyphicon glyphicon-arrow-left"></span><span class="sr-only">Return to Calendar</span>
+                </button>
+                <button type="button" class="btn datepicker-wheels-select">Select <span
+                        class="sr-only">Month and Year</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-3">
+                        <label>Completion Date</label>
+                        <div class="fuelux">
+                            <div>
+                                <div class="datepicker pastDateNotAllowed toolbarInline" id="completionDateDiv">
+                                    <div class="input-group">
+                                        <input type="text" id="completionDate" placeholder="Select Completion Date" class="form-control fuelux date reportRequest" name="completionDate" value="" />
+                                        <div class="input-group-btn">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        <span class="glyphicon glyphicon-calendar"></span>
+        <span class="sr-only">Toggle Calendar</span>
+    </button>
+
+    <div class="dropdown-menu dropdown-menu-right datepicker-calendar-wrapper" role="menu">
+        <div class="datepicker-calendar">
+            <div class="datepicker-calendar-header">
+                <button type="button" class="prev"><span class="glyphicon glyphicon-chevron-left"></span><span
+                        class="sr-only">Previous Month</span></button>
+                <button type="button" class="next"><span class="glyphicon glyphicon-chevron-right"></span><span
+                        class="sr-only">Next Month</span></button>
+                <button type="button" class="title">
+                    <span class="month">
+                        <span data-month="0">January</span>
+                        <span data-month="1">February</span>
+                        <span data-month="2">March</span>
+                        <span data-month="3">April</span>
+                        <span data-month="4">May</span>
+                        <span data-month="5">June</span>
+                        <span data-month="6">July</span>
+                        <span data-month="7">August</span>
+                        <span data-month="8">September</span>
+                        <span data-month="9">October</span>
+                        <span data-month="10">November</span>
+                        <span data-month="11">December</span>
+                    </span> <span class="year"></span>
+                </button>
+            </div>
+            <table class="datepicker-calendar-days">
+                <thead>
+                <tr>
+                    <th>Su</th>
+                    <th>Mo</th>
+                    <th>Tu</th>
+                    <th>We</th>
+                    <th>Th</th>
+                    <th>Fr</th>
+                    <th>Sa</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <div class="datepicker-calendar-footer">
+                <button type="button" class="datepicker-today">Today</button>
+            </div>
+        </div>
+
+        <div class="datepicker-wheels" aria-hidden="true">
+            <div class="datepicker-wheels-month">
+                <h2 class="header">Month</h2>
+                <ul>
+                    <li data-month="0"><button type="button">Jan</button></li>
+                    <li data-month="1"><button type="button">Feb</button></li>
+                    <li data-month="2"><button type="button">Mar</button></li>
+                    <li data-month="3"><button type="button">Apr</button></li>
+                    <li data-month="4"><button type="button">May</button></li>
+                    <li data-month="5"><button type="button">Jun</button></li>
+                    <li data-month="6"><button type="button">Jul</button></li>
+                    <li data-month="7"><button type="button">Aug</button></li>
+                    <li data-month="8"><button type="button">Sep</button></li>
+                    <li data-month="9"><button type="button">Oct</button></li>
+                    <li data-month="10"><button type="button">Nov</button></li>
+                    <li data-month="11"><button type="button">Dec</button></li>
+                </ul>
+            </div>
+
+            <div class="datepicker-wheels-year">
+                <h2 class="header">Year</h2>
+                <ul></ul>
+            </div>
+
+            <div class="datepicker-wheels-footer clearfix">
+                <button type="button" class="btn datepicker-wheels-back"><span
+                        class="glyphicon glyphicon-arrow-left"></span><span class="sr-only">Return to Calendar</span>
+                </button>
+                <button type="button" class="btn datepicker-wheels-select">Select <span
+                        class="sr-only">Month and Year</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-3">
+                        
+                        
+                        
+                        
+                        <label>Requested By</label>
+                        
+                        <input class="form-control" id="requesters" name="requesters" value="null;null">
+                    </div>
+
+                    <div class="col-xs-3">
+                        <label>Assigned To<span class="required-indicator">*</span></label>
+                        <script>
+                            sharedWithListUrl = "/reports/userRest/sharedWithList";
+                            sharedWithValuesUrl = "/reports/userRest/sharedWithValues";
+                            $(document).ready(function () {
+                                bindShareWith($('#assignedTo'), sharedWithListUrl, sharedWithValuesUrl,"100%",true);
+                                bindShareWith($('#requesters'), sharedWithListUrl, sharedWithValuesUrl,"100%");
+                            });
+                        </script>
+                        
+                        
+                            <input class="form-control" id="assignedTo" name="assignedTo" value="">
+                        
+                        
+                    </div>
+
+                </div>
+
+                
+                <div class="row">
+
+                    <div class="col-xs-6">
+                        <div class="">
+                            <label>Description<span class="required-indicator">*</span></label>
+                            <textarea name="description" maxlength="4000" class="form-control reportRequest" style="height: 110px;" id="description" ></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-3">
+
+                        <label>Start Date</label>
+                        <div class="fuelux">
+                            <div>
+                                <div class="datepicker reportSelectionDate toolbarInline" id="startDateDiv">
+                                    <div class="input-group">
+                                        <input type="text" id="startDate" placeholder="Select Start Date" class="form-control fuelux date reportRequest" name="startDate" value="" />
+                                        <div class="input-group-btn">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        <span class="glyphicon glyphicon-calendar"></span>
+        <span class="sr-only">Toggle Calendar</span>
+    </button>
+
+    <div class="dropdown-menu dropdown-menu-right datepicker-calendar-wrapper" role="menu">
+        <div class="datepicker-calendar">
+            <div class="datepicker-calendar-header">
+                <button type="button" class="prev"><span class="glyphicon glyphicon-chevron-left"></span><span
+                        class="sr-only">Previous Month</span></button>
+                <button type="button" class="next"><span class="glyphicon glyphicon-chevron-right"></span><span
+                        class="sr-only">Next Month</span></button>
+                <button type="button" class="title">
+                    <span class="month">
+                        <span data-month="0">January</span>
+                        <span data-month="1">February</span>
+                        <span data-month="2">March</span>
+                        <span data-month="3">April</span>
+                        <span data-month="4">May</span>
+                        <span data-month="5">June</span>
+                        <span data-month="6">July</span>
+                        <span data-month="7">August</span>
+                        <span data-month="8">September</span>
+                        <span data-month="9">October</span>
+                        <span data-month="10">November</span>
+                        <span data-month="11">December</span>
+                    </span> <span class="year"></span>
+                </button>
+            </div>
+            <table class="datepicker-calendar-days">
+                <thead>
+                <tr>
+                    <th>Su</th>
+                    <th>Mo</th>
+                    <th>Tu</th>
+                    <th>We</th>
+                    <th>Th</th>
+                    <th>Fr</th>
+                    <th>Sa</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <div class="datepicker-calendar-footer">
+                <button type="button" class="datepicker-today">Today</button>
+            </div>
+        </div>
+
+        <div class="datepicker-wheels" aria-hidden="true">
+            <div class="datepicker-wheels-month">
+                <h2 class="header">Month</h2>
+                <ul>
+                    <li data-month="0"><button type="button">Jan</button></li>
+                    <li data-month="1"><button type="button">Feb</button></li>
+                    <li data-month="2"><button type="button">Mar</button></li>
+                    <li data-month="3"><button type="button">Apr</button></li>
+                    <li data-month="4"><button type="button">May</button></li>
+                    <li data-month="5"><button type="button">Jun</button></li>
+                    <li data-month="6"><button type="button">Jul</button></li>
+                    <li data-month="7"><button type="button">Aug</button></li>
+                    <li data-month="8"><button type="button">Sep</button></li>
+                    <li data-month="9"><button type="button">Oct</button></li>
+                    <li data-month="10"><button type="button">Nov</button></li>
+                    <li data-month="11"><button type="button">Dec</button></li>
+                </ul>
+            </div>
+
+            <div class="datepicker-wheels-year">
+                <h2 class="header">Year</h2>
+                <ul></ul>
+            </div>
+
+            <div class="datepicker-wheels-footer clearfix">
+                <button type="button" class="btn datepicker-wheels-back"><span
+                        class="glyphicon glyphicon-arrow-left"></span><span class="sr-only">Return to Calendar</span>
+                </button>
+                <button type="button" class="btn datepicker-wheels-select">Select <span
+                        class="sr-only">Month and Year</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-3">
+
+                        <label>End Date</label>
+                        <div class="fuelux">
+                            <div>
+                                <div class="datepicker reportSelectionDate toolbarInline" id="endDateDiv">
+                                    <div class="input-group">
+
+                                        <input type="text" id="endDate" placeholder="Select End Date" class="form-control fuelux date reportRequest" name="endDate" value="" />
+                                        <div class="input-group-btn">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        <span class="glyphicon glyphicon-calendar"></span>
+        <span class="sr-only">Toggle Calendar</span>
+    </button>
+
+    <div class="dropdown-menu dropdown-menu-right datepicker-calendar-wrapper" role="menu">
+        <div class="datepicker-calendar">
+            <div class="datepicker-calendar-header">
+                <button type="button" class="prev"><span class="glyphicon glyphicon-chevron-left"></span><span
+                        class="sr-only">Previous Month</span></button>
+                <button type="button" class="next"><span class="glyphicon glyphicon-chevron-right"></span><span
+                        class="sr-only">Next Month</span></button>
+                <button type="button" class="title">
+                    <span class="month">
+                        <span data-month="0">January</span>
+                      
+7fe0
+  <span data-month="1">February</span>
+                        <span data-month="2">March</span>
+                        <span data-month="3">April</span>
+                        <span data-month="4">May</span>
+                        <span data-month="5">June</span>
+                        <span data-month="6">July</span>
+                        <span data-month="7">August</span>
+                        <span data-month="8">September</span>
+                        <span data-month="9">October</span>
+                        <span data-month="10">November</span>
+                        <span data-month="11">December</span>
+                    </span> <span class="year"></span>
+                </button>
+            </div>
+            <table class="datepicker-calendar-days">
+                <thead>
+                <tr>
+                    <th>Su</th>
+                    <th>Mo</th>
+                    <th>Tu</th>
+                    <th>We</th>
+                    <th>Th</th>
+                    <th>Fr</th>
+                    <th>Sa</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <div class="datepicker-calendar-footer">
+                <button type="button" class="datepicker-today">Today</button>
+            </div>
+        </div>
+
+        <div class="datepicker-wheels" aria-hidden="true">
+            <div class="datepicker-wheels-month">
+                <h2 class="header">Month</h2>
+                <ul>
+                    <li data-month="0"><button type="button">Jan</button></li>
+                    <li data-month="1"><button type="button">Feb</button></li>
+                    <li data-month="2"><button type="button">Mar</button></li>
+                    <li data-month="3"><button type="button">Apr</button></li>
+                    <li data-month="4"><button type="button">May</button></li>
+                    <li data-month="5"><button type="button">Jun</button></li>
+                    <li data-month="6"><button type="button">Jul</button></li>
+                    <li data-month="7"><button type="button">Aug</button></li>
+                    <li data-month="8"><button type="button">Sep</button></li>
+                    <li data-month="9"><button type="button">Oct</button></li>
+                    <li data-month="10"><button type="button">Nov</button></li>
+                    <li data-month="11"><button type="button">Dec</button></li>
+                </ul>
+            </div>
+
+            <div class="datepicker-wheels-year">
+                <h2 class="header">Year</h2>
+                <ul></ul>
+            </div>
+
+            <div class="datepicker-wheels-footer clearfix">
+                <button type="button" class="btn datepicker-wheels-back"><span
+                        class="glyphicon glyphicon-arrow-left"></span><span class="sr-only">Return to Calendar</span>
+                </button>
+                <button type="button" class="btn datepicker-wheels-select">Select <span
+                        class="sr-only">Month and Year</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+        </div>
+
+        </div>
+
+        <div class="rxmain-container-inner">
+
+            <div class="rxmain-container-row rxmain-container-header">
+                <label class="rxmain-container-header-label click">
+                    Comments
+                </label>
+                <span class="add-comment reportRequest create-action-item" style="float:right;cursor:pointer;color: #428bca">Add Comment</span>
+            </div>
+
+            <div class="rxmain-container-content rxmain-container-show">
+
+
+                <div class="reportCommentDiv associationsDiv">
+                    
+                    
+                        <span class="noCommentSpan noAssociations">There are no comments yet</span>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="rxmain-container-inner">
+
+            <div class="rxmain-container-row rxmain-container-header subTasks">
+                <label class="rxmain-container-header-label click" onclick="">
+                    Action Item
+                </label>
+            
+                <div style="float:right" id="createActionItemObj"><span style="color:#428bca" id="createActionItem" class="actionItemId create-action-item" data-toggle="actionItemModal" data-target="#actionItemModal">
+                    <span>Create Action Item</span>
+                </span></div>
+            
+
+            </div>
+
+            <div class="rxmain-container-content rxmain-container-show">
+
+            <div>
+                <table style="width:100%">
+                    <tr>
+                        <td style="width:10%">
+                            <label style="color:#4d4d4d;font-weight: bold">
+                                   Add from task templates
+                            </label>
+                        </td>
+                        <td style="width:20%">
+                            <select style="width:100%" id="taskTemplate" name="taskTemplate" class="taskTemplate form-control" >
+<option value="">-Select Task Template-</option>
+</select>
+                        </td>
+                        <td style="width:1%"><span>&nbsp;</span></td>
+                        <td>
+                            <button type="button" class="btn btn-default addTaskFromTemplate">Add</button>
+                        </td>
+                        <td>  <span id="noDueDate" class="hide" style="color:red;"></span></td>
+                    </tr>
+                </table>
+            </div>
+            <br/>
+            <br/>
+            <div class="reportActionItemDiv associationsDiv">
+                
+                
+                    <span class="noActionItem noAssociations">There are no action items yet.</span>
+                
+            </div>
+
+            </div>
+    </div>
+
+        <div class="rxmain-container-inner">
+
+            <div class="rxmain-container-row rxmain-container-header">
+                <label class="rxmain-container-header-label click">
+                    Attachments
+                </label>
+            </div>
+
+            <div class="rxmain-container-content rxmain-container-show">
+                
+                
+                <div class="input-group" style="width: 400px;margin-top: 30px;">
+                    <input type="text" class="form-control" id="file_name" readonly>
+                    <label class="input-group-btn">
+                        <span class="btn btn-primary">
+                            Attach
+                            <input type="file" id="file_input" name="file" multiple  style="display: none;">
+                        </span>
+                    </label>
+                </div>
+
+                <input type="hidden" name="attachmentsToDelete" id="attachmentsToDelete" value="">
+            </div>
+        </div>
+
+    
+    <div class="rxmain-container-inner">
+
+        <div class="rxmain-container-row rxmain-container-header">
+            <label class="rxmain-container-header-label click">
+                Linked Report Requests
+            </label>
+        </div>
+
+        <div class="rxmain-container-content rxmain-container-show">
+            <div id="RRlinkList">
+            
+            </div>
+            
+            <br>
+            <input type="button" class="btn btn-primary" data-toggle="modal" data-target="#reportRequestLinkModal" value="Create"/>
+
+            <input type="hidden" name="linksToAdd" id="linksToAdd" value="">
+            <input type="hidden" name="linksToDelete" id="linksToDelete" value="">
+        </div>
+    </div>
+</div>
+
+<div id="loggedInUser" class="hide">Shiva.Prasad</div>
+<input type="hidden" name="mode" value="create" id="mode" />
+<input type="hidden" id="commentSize" name="commentSize" value="" />
+<input type="hidden" id="actionItems" name="actionItems" value="" />
+<input type="hidden" id="currentDate" name="currentDate" value="03-Jun-2020 06:18:01 AM" />
+<input type="hidden" id="dueDateHidden" name="dueDateHidden" value="" />
+<input type="hidden" id="startDateHidden" name="startDateHidden" value="" />
+<input type="hidden" id="endDateHidden" name="endDateHidden" value="" />
+<input type="hidden" id="completionDateHidden" name="completionDateHidden" value="" />
+<input type="hidden" id="asOfVersionDateHidden" name="asOfVersionDateHidden" value="" />
+<div class="modal fade" id="reportRequestLinkModal"  data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="reportRequestLinkModal"
+     aria-hidden="true" style="z-index: 9999;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" >Linking Report Requests</h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="alert alert-danger alert-dismissible forceLineWrap" role="alert" id="deleteDlgErrorDiv" style="display: none">
+                    <button type="button" class="close" data-dismiss="alert">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <i class="fa fa-check"></i> Please fill all required fields
+                </div>
+
+                <input type="hidden" id="RRLinkFrom" name="from.id" value="" >
+
+                <label style="margin-top: 25px">Report Request:</label>
+                <input name="to.id" id="RRLinkTo" class="form-control"/>
+
+                <label style="margin-top: 25px">Link Type:</label>
+                <select name="linkType" class="form-control select2-box" id="linkType" >
+<option value="1" >relates to</option>
+<option value="2" >duplicates</option>
+</select>
+
+                <label style="margin-top: 25px">Description:</label>
+                <textarea id="RRLinkDescription" name="RRLinkDescription" rows="15" cols="40" maxlength="4000" class="form-control" ></textarea>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" id="saveLinkButton" class="btn btn-primary">
+                    Save
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+    <div class="buttonBar" style="text-align: right">
+        <button type="button" class="btn btn-primary update_button"> Save</button>
+        <button type="button" class="btn btn-default" onclick="goToUrl('reportRequest', 'index')"
+                id="cancelButton">Cancel</button>
+    </div>
+</form>
+<div class="modal fade" id="reportCommentModal"  data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <div class="modal-dialog modal-lg">
+
+        <div class="modal-content">
+            <div class="modal-header dropdown">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Report Request Comment</h4>
+
+            </div>
+            <div class="modal-body action-item-modal-body">
+                 <textarea id="reportComment" name="reportComment" class="form-control reportComment" rows="5" maxlength="4000" ></textarea>
+                 <input type="hidden" id="index" name="index" value="" />
+                 <input type="hidden" id="commentId" name="commentId" value="" />
+                 <input type="hidden" id="edited" name="edited" value="" />
+                 <input type="hidden" id="newComment" name="newComment" value="" />
+                 <input type="hidden" id="dateCreated" name="dateCreated" value="" />
+            </div>
+
+            <div class="modal-footer">
+               <div  class="buttons creationButtons">
+                  <input id="creationScreenButton" type="button" class="btn btn-primary save-action-item creationButton" value="Save">
+                  <button id="closeCommentModal" type="button" class="btn btn-default"  data-dismiss="modal">Close</button>
+               </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="modal fade" id="actionItemModal"  data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <div class="modal-dialog modal-lg">
+
+        <div class="modal-content">
+            <div class="modal-header dropdown">
+                <button type="button" class="close close-action-item-model" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Action Item</h4>
+
+            </div>
+            <div class="modal-body action-item-modal-body">
+                <div class="alert alert-danger" style="display:none">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <span id="fieldErrorMessage">Please fill all required fields</span>
+                    <span id="otherErrorMessage" style="display:none">Please fill all required fields</span>
+                </div>
+               <form action="/reports/reportRequest/index/actionItemForm" method="post" name="actionItemForm" id="actionItemForm" >
+                   
+<div>
+
+        <div class="row">
+
+            <div class="col-xs-4">
+                <label>Action Category<span class="required-indicator">*</span></label>
+                <select id="actionCategory" name="actionCategory" class="form-control select2-box needsActionItemRole" >
+<option value="">-Select Category-</option>
+<option value="REPORT_REQUEST" >Report Request</option>
+<option value="REQUEST_MISSING_INFORMATION" >Request Missing Information</option>
+<option value="PROCESS_CASE" >Process Case</option>
+<option value="PERIODIC_REPORT" >Aggregate Report</option>
+<option value="CONFIGURE_REPORT" >Configure Report</option>
+<option value="ADHOC_REPORT" >Adhoc Report</option>
+<option value="REVIEW_REPORT" >Review Report</option>
+</select>
+            </div>
+
+            <div class="col-xs-4">
+                <label>Priority<span class="required-indicator">*</span></label>
+                <select id="priority" name="priority" class="form-control select2-box needsActionItemRole" >
+<option value=""></option>
+<option value="HIGH" >High</option>
+<option value="MEDIUM" >Medium</option>
+<option value="LOW" >Low</option>
+</select>
+            </div>
+
+            <div class="col-xs-4">
+                <script>
+                    sharedWithListUrl = "/reports/userRest/sharedWithList";
+                    sharedWithValuesUrl = "/reports/userRest/sharedWithValues";
+                    $(document).ready(function () {
+                        bindShareWith($('.sharedWithControl'), sharedWithListUrl, sharedWithValuesUrl,"100%",true)
+                    });
+                </script>
+                Assigned To<span class="required-indicator">*</span></label>
+                <input class="sharedWithControl form-control needsActionItemRole" id="assignedTo" name="assignedTo" value="">
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-xs-4">
+                <label>Due Date<span class="required-indicator">*</span></label>
+                <div class="fuelux">
+                    <div>
+                        <div class="datepicker toolbarInline pastDateNotAllowed" id="dueDateDiv">
+                            <div class="input-group">
+                                <input type="text" id="dueDate" placeholder="Select Due Date" class="form-control fuelux needsActionItemRole" name="dueDate" value="" />
+                                <div class="input-group-btn">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        <span class="glyphicon glyphicon-calendar"></span>
+        <span class="sr-only">Toggle Calendar</span>
+    </button>
+
+    <div class="dropdown-menu dropdown-menu-right datepicker-calendar-wrapper" role="menu">
+        <div class="datepicker-calendar">
+            <div class="datepicker-calendar-header">
+                <button type="button" class="prev"><span class="glyphicon glyphicon-chevron-left"></span><span
+                        class="sr-only">Previous Month</span></button>
+                <button type="button" class="next"><span class="glyphicon glyphicon-chevron-right"></span><span
+                        class="sr-only">Next Month</span></button>
+                <button type="button" class="title">
+                    <span class="month">
+                        <span data-month="0">January</span>
+                        <span data-month="1">February</span>
+                        <span data-month="2">March</span>
+                        <span data-month="3">April</span>
+                        <span data-month="4">May</span>
+                        <span data-month="5">June</span>
+                        <span data-month="6">July</span>
+                        <span data-month="7">August</span>
+                        <span data-month="8">September</span>
+                        <span data-month="9">October</span>
+                        <span data-month="10">November</span>
+                        <span data-month="11">December</span>
+                    </span> <span class="year"></span>
+                </button>
+            </div>
+            <table class="datepicker-calendar-days">
+                <thead>
+                <tr>
+                    <th>Su</th>
+                    <th>Mo</th>
+                    <th>Tu</th>
+                    <th>We</th>
+                    <th>Th</th>
+                    <th>Fr</th>
+                    <th>Sa</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <div class="datepicker-calendar-footer">
+                <button type="button" class="datepicker-today">Today</button>
+            </div>
+        </div>
+
+        <div class="datepicker-wheels" aria-hidden="true">
+            <div class="datepicker-wheels-month">
+                <h2 class="header">Month</h2>
+                <ul>
+                    <li data-month="0"><button type="button">Jan</button></li>
+                    <li data-month="1"><button type="button">Feb</button></li>
+                    <li data-month="2"><button type="button">Mar</button></li>
+                    <li data-month="3"><button type="button">Apr</button></li>
+                    <li data-month="4"><button type="button">May</button></li>
+                    <li data-month="5"><button type="button">Jun</button></li>
+                    <li data-month="6"><button type="button">Jul</button></li>
+                    <li data-month="7"><button type="button">Aug</button></li>
+                    <li data-month="8"><button type="button">Sep</button></li>
+                    <li data-month="9"><button type="button">Oct</button></li>
+                    <li data-month="10"><button type="button">Nov</button></li>
+                    <li data-month="11"><button type="button">Dec</button></li>
+                </ul>
+            </div>
+
+            <div class="datepicker-wheels-year">
+                <h2 class="header">Year</h2>
+                <ul></ul>
+            </div>
+
+            <div class="datepicker-wheels-footer clearfix">
+                <button type="button" class="btn datepicker-wheels-back"><span
+                        class="glyphicon glyphicon-arrow-left"></span><span class="sr-only">Return to Calendar</span>
+                </button>
+                <button type="button" class="btn datepicker-wheels-select">Select <span
+                        class="sr-only">Month and Year</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-4">
+                <label>Completion Date</label>
+                <div class="fuelux">
+                    <div>
+                        <div class="datepicker toolbarInline pastDateNotAllowed" id="completionDateDiv">
+                            <div class="input-group">
+                                <input type="text" id="completionDate" placeholder="Select Completion Date" class="form-control fuelux needsActionItemRole" name="completionDate" value="" />
+                                <div class="input-group-btn">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        <span class="glyphicon glyphicon-calendar"></span>
+        <span class="sr-only">Toggle Calendar</span>
+    </button>
+
+    <div class="dropdown-menu dropdown-menu-right datepicker-calendar-wrapper" role="menu">
+        <div class="datepicker-calendar">
+            <div class="datepicker-calendar-header">
+                <button type="button" class="prev"><span class="glyphicon glyphicon-chevron-left"></span><span
+                        class="sr-only">Previous Month</span></button>
+                <button type="button" class="next"><span class="glyphicon glyphicon-chevron-right"></span><span
+                        class="sr-only">Next Month</span></button>
+                <button type="button" class="title">
+                    <span class="month">
+                        <span data-month="0">January</span>
+                        <span data-month="1">February</span>
+                        <span data-month="2">March</span>
+                        <span data-month="3">April</span>
+                        <span data-month="4">May</span>
+                        <span data-month="5">June</span>
+                        <span data-month="6">July</span>
+                        <span data-month="7">August</span>
+                        <span data-month="8">September</span>
+                        <span data-month="9">October</span>
+                        <span data-month="10">November</span>
+                        <span data-month="11">December</span>
+                    </span> <span class="year"></span>
+                </button>
+            </div>
+            <table class="datepicker-calendar-days">
+                <thead>
+                <tr>
+                    <th>Su</th>
+                    <th>Mo</th>
+                    <th>Tu</th>
+                    <th>We</th>
+                    <th>Th</th>
+                    <th>Fr</th>
+                    <th>Sa</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <div class="datepicker-calendar-footer">
+                <button type="button" class="datepicker-today">Today</button>
+            </div>
+        </div>
+
+        <div class="datepicker-wheels" aria-hidden="true">
+            <div class="datepicker-wheels-month">
+                <h2 class="header">Month</h2>
+                <ul>
+                    <li data-month="0"><button type="button">Jan</button></li>
+                    <li data-month="1"><button type="button">Feb</button></li>
+                    <li data-month="2"><button type="button">Mar</button></li>
+                    <li data-month="3"><button type="button">Apr</button></li>
+                    <li data-month="4"><button type="button">May</button></li>
+                    <li data-month="5"><button type="button">Jun</button></li>
+                    <li data-month="6"><button type="button">Jul</button></li>
+                    <li data-month="7"><button type="button">Aug</button></li>
+                    <li data-month="8"><button type="button">Sep</button></li>
+                    <li data-month="9"><button type="button">Oct</button></li>
+                    <li data-month="10"><button type="button">Nov</button></li>
+                    <li data-month="11"><button type="button">Dec</button></li>
+                </ul>
+            </div>
+
+            <div class="datepicker-wheels-year">
+                <h2 class="header">Year</h2>
+                <ul></ul>
+            </div>
+
+            <div class="datepicker-wheels-footer clearfix">
+                <button type="button" class="btn datepicker-wheels-back"><span
+                        class="glyphicon glyphicon-arrow-left"></span><span class="sr-only">Return to Calendar</span>
+                </button>
+                <button type="button" class="btn datepicker-wheels-select">Select <span
+                        class="sr-only">Month and Year</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-4">
+                <label>Status</label>
+                <select name="status" class="form-control select2-box needsActionItemRole" id="status" >
+<option value="OPEN" >Open</option>
+<option value="IN_PROGRESS" >In Progress</option>
+<option value="NEED_CLARIFICATION" >Need Clarification</option>
+<option value="CLOSED" >Closed</option>
+</select>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-xs-12">
+                <label>Description<span class="required-indicator">*</span></label>
+                <textarea id="description" name="description" rows="15" cols="40" maxlength="4000" class="form-control needsActionItemRole" ></textarea>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-xs-4" id="linkDiv" style="display: none">
+                <label>Associated Report</label><br>
+                <a href="" data-base-url="/reports/report/showFirstSection" id="link"></a>
+            </div>
+            <div class="col-xs-4" id="linkConfigDiv" style="display: none">
+                <label>Associated Configuration</label><br>
+                <a href="" data-base-url="/reports/periodicReport/view" id="configLink"></a>
+            </div>
+            <div class="col-xs-4" id="linkRequestDiv" style="display: none">
+                <label>Associated Report Request</label><br>
+                <a href="" data-base-url="/reports/reportRequest/show" id="requestLink"></a>
+            </div>
+            <div class="col-xs-4">
+               <label>Created By</label>
+               <div id="createdBy">Shiva.Prasad</div>
+               <input type="hidden" name="actionItemId" id="actionItemId" value="" />
+               <input type="hidden" name="appType" id="appType" value="" />
+           </div>
+           <div class="col-xs-4">
+               <label>Date Created</label>
+               <div id="dateCreated" class="dateCreated"></div>
+               <input type="hidden" name="dateCreated" value="" id="dateCreated" />
+           </div>
+        </div>
+    <input type="hidden" name="aiVersion" value="" id="aiVersion" />
+</div>
+
+                   <!-- Executed report id field is kept -->
+                   <input type="hidden" name="executedReportId" id="executedReportId" value="" />
+                   <input type="hidden" name="assignedToName" id="assignedToName" value="" />
+                   <input type="hidden" name="caseNumber" id="caseNumber" value="" />
+                   <input type="hidden" name="errorType" id="errorType" value="" />
+                   <input type="hidden" name="dataType" id="dataTypeAi" value="" />
+                   <input type="hidden" name="caseVersion" id="caseVersion" value="" />
+                   <input type="hidden" name="capaId" id="capaId" value="" />
+               </form>
+
+            </div>
+
+            <div class="modal-footer">
+                <div  class="buttons creationButtons">
+                    
+                    <input id="creationScreenButton" type="button" class="btn btn-primary save-action-item creationButton" value="Save" >
+                    <input id="editScreenButton" type="button" class="hide btn btn-primary update-action-item consultationButtons" value="Update">
+                    <input id="viewScreenButton" type="button" class="hide btn btn-primary edit-action-item consultationButtons" value="Edit">
+                    <input id="deleteActionItem" type="button" class="hide btn btn-primary action-item-delete consultationButtons" value="Delete">
+                    
+                        <button type="button" class="btn btn-default close-action-item-model">Close </button>
+
+                </div>
+
+                <!-- Index kept for the purpose if integrating this with other apps and knowing the current index.  -->
+                <input type="hidden" name="index" id="index" value="" />
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="actionItemListModal"  data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+
+        <div class="modal-content">
+            <div class="modal-header dropdown">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Action Item</h4>
+
+            </div>
+            <div class="modal-body action-item-modal-body">
+                <table id="actionItemList" class="row-border hover" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Assigned To</th>
+                            <th>Description</th>
+                            <th>Due Date</th>
+                            <th>Priority</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <div  class="buttons creationButtons">
+                    <button type="button" class="btn btn-default close-action-item-model">Close </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+
+
+
+
+<div class="modal fade" id="warningModal"  data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="warningModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="warningModalLabel">Warning</h4>
+            </div>
+
+            <div class="modal-body">
+                <div id="warningType">Are you sure you want to proceed further?</div>
+
+                <p></p>
+
+                <div class="description" style="font-weight:bold;"></div>
+
+                <div class="extramessage"></div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button id="warningButton" class="btn btn-primary">
+                    Continue
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#warningModal').on('show.bs.modal', function (event) {
+            //Make sure cancel and continue buttons are enabled
+            $(".btn").removeAttr("disabled", "disabled");
+        });
+    });
+</script>
+
+        </div>
+        <!-- End content -->
+    
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Right content here -->
+    <!-- ============================================================== -->
+</div>
+<div class="pvr-loader-bg">
+    <div class="loader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+        </svg>
+    </div>
+</div>
+<!-- Used for loader-->
+<div class="pvloader"></div>
+<script type="text/javascript" src="/reports/assets/app/jquery.core-2c7cdf128b42d849235dea8cadd879b8.js" ></script>
+<script type="text/javascript" src="/reports/assets/app/jquery.app-782d8f87ac279a019b37b18a315654b2.js" ></script>
+
+    
+
+
+
+<script type="text/javascript" src="/reports/assets/store.modern.min-ee86dbde67356086e53dffdd31c6867d.js" ></script>
+<scri
+36a
+pt type="text/javascript" src="/reports/assets/jquery/customise-jquery-idleTimeout-6286fe026bdf78a6c38a29cfd8d979c8.js" ></script> 
+<script type="text/javascript">
+
+    $(document).ready(function() {
+      $(document).idleTimeout({
+      redirectUrl:  "https:\u002f\u002fpvr-perf.rxlogix.com\u002freports/logout",
+      idleTimeLimit: 1800,
+      sessionKeepAliveUrl: "https:\u002f\u002fpvr-perf.rxlogix.com\u002freports/keep-alive",
+      sessionKeepAliveTimer: 60,
+      enableDialog: true,
+      dialogDisplayLimit: 300,
+      activityEvents: 'click keypress',
+      customCallback: function() {
+          var forms = $('form');
+            if(forms.find('.changed-input').length){
+                alert($.i18n._('navigateAwayChangesLostMessage'));
+                clearFormInputsChangeFlag(forms);
+            }
+      }
+      });
+    });
+
+</script>
+
+
+</body>
+</html>
+
+0
+

@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Wed, 03 Jun 2020 06:17:08 GMT
+Content-Type: application/javascript;charset=UTF-8
+Content-Length: 1763
+Connection: keep-alive
+X-Frame-Options: DENY
+Last-Modified: Mon, 23 Mar 2020 05:55:26 GMT
+ETag: "app/workFlow-3b78500b81fd61ce5b59cc202a54e63c.js"
+Vary: Accept-Encoding
+Cache-Control: public, max-age=31536000
+Content-Encoding: gzip
+

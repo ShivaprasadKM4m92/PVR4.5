@@ -1,0 +1,45 @@
+Start auto log messages stack - Iteration 9.
+Action.c(44): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(44): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(47): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(47): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(51): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(51): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(60): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(60): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(64): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(64): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/login/auth"  	[MsgId: MERR-26610]
+Action.c(64): Error -26377: No match found for the requested parameter "CsrfTokenId_1". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 540 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(64): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 20.
+Action.c(44): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(44): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(47): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(47): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(51): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(51): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(60): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(60): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(64): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(64): Error -26609: HTTP Status-Code=503 (Service Unavailable) for "https://pvr-perf.rxlogix.com/reports/login/auth"  	[MsgId: MERR-26609]
+Action.c(64): Error -26377: No match found for the requested parameter "CsrfTokenId_1". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 580 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(64): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 17.
+Action.c(1578): Warning -26590: web_remove/revert_auto_header for "Origin" had no effect  	[MsgId: MWAR-26590]
+Action.c(1578): web_remove/revert_auto_header("Origin") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(1580): web_remove_auto_header("X-CSRF-TOKEN") started  	[MsgId: MMSG-26355]
+Action.c(1580): Previous automatically added web header for "X-CSRF-TOKEN" removed  	[MsgId: MMSG-26587]
+Action.c(1580): web_remove/revert_auto_header("X-CSRF-TOKEN") was successful  	[MsgId: MMSG-26392]
+Action.c(1582): web_add_auto_header("Accept") started  	[MsgId: MMSG-26355]
+Action.c(1582): web_add_auto_header("Accept") was successful  	[MsgId: MMSG-26392]
+Action.c(1585): web_url("keep-alive") started  	[MsgId: MMSG-26355]
+Action.c(1585): Error -26609: HTTP Status-Code=503 (Service Unavailable) for "https://pvr-perf.rxlogix.com/reports/keep-alive?_=1591165084809"  	[MsgId: MERR-26609]
+End auto log messages stack.
+
+

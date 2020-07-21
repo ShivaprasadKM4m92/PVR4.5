@@ -1,0 +1,11 @@
+[t34]
+FileName1=t34_grouped-categories-8ddf90b557e5da14225afefcaa8bf9f6.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/highcharts/plugins/grouped-categories-8ddf90b557e5da14225afefcaa8bf9f6.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_34.xml
+RequestHeaderFile=t34_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t34_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

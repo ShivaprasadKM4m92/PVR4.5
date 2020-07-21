@@ -1,0 +1,73 @@
+Start auto log messages stack - Iteration 1.
+Action.c(1494): web_add_auto_header("X-CSRF-TOKEN") was successful  	[MsgId: MMSG-26392]
+Action.c(1497): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
+Action.c(1497): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
+Action.c(1500): web_submit_data("searchViews") started  	[MsgId: MMSG-26355]
+Action.c(1500): web_submit_data("searchViews") was successful, 103 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(1517): Notify: Transaction "S11_T06_SearchProduct" ended with a "Pass" status (Duration: 30.4204 Wasted Time: 0.0000).
+Action.c(1519): lr_think_time: 15.00 seconds (recorded think time was 3.00 seconds).
+Action.c(1521): Notify: Transaction "S11_T07_SelectProduct" started.
+Action.c(1523): web_custom_request("getSelectedItem") started  	[MsgId: MMSG-26355]
+Action.c(1523): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/productDictionary/getSelectedItem?productId=102333&dataSource=pva&dictionaryLevel=3&currentLang=en" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 7.
+Action.c(1523): web_custom_request("getSelectedItem") started  	[MsgId: MMSG-26355]
+Action.c(1523): web_custom_request("getSelectedItem") was successful, 902 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(1534): web_submit_data("getPreLevelProductParents") started  	[MsgId: MMSG-26355]
+Action.c(1534): web_submit_data("getPreLevelProductParents") was successful, 85 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(1548): web_submit_data("getPreLevelProductParents_2") started  	[MsgId: MMSG-26355]
+Action.c(1548): web_submit_data("getPreLevelProductParents_2") was successful, 80 body bytes, 265 header bytes  	[MsgId: MMSG-26386]
+Action.c(1562): web_submit_data("getPreLevelProductParents_3") started  	[MsgId: MMSG-26355]
+Action.c(1562): Error -27760: Request "https://pvr-perf.rxlogix.com/reports/productDictionary/getPreLevelProductParents" failed  	[MsgId: MERR-27760]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 10.
+Action.c(44): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(44): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(47): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(47): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(51): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(51): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(60): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(60): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(64): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(64): Error -27792: Failed to connect to server "pvr-perf.rxlogix.com:443": [10060] Connection timed out  	[MsgId: MERR-27792]
+Action.c(64): Error -26377: No match found for the requested parameter "CsrfTokenId_1". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(64): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(64): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 9.
+Action.c(1987): Resource "https://pvr-perf.rxlogix.com/reports/assets/i18n/dataTables_en.json" not downloaded (resource downloading not requested)  	[MsgId: MMSG-27299]
+Action.c(2008): web_url("{User_Id}_5") started  	[MsgId: MMSG-26355]
+Action.c(2008): Registering web_url("{User_Id}_5") was successful  	[MsgId: MMSG-26390]
+Action.c(2020): web_url("info_5") started  	[MsgId: MMSG-26355]
+Action.c(2020): Registering web_url("info_5") was successful  	[MsgId: MMSG-26390]
+Action.c(2035): web_url("index_6") started  	[MsgId: MMSG-26355]
+Action.c(2035): Registering web_url("index_6") was successful  	[MsgId: MMSG-26390]
+Action.c(2048): web_concurrent_end started  	[MsgId: MMSG-26355]
+Action.c(2020): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/stomp/info"   [issued at Action.c(2048)]  	[MsgId: MERR-26610]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 10.
+Action.c(44): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(44): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(47): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(47): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(51): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(51): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(60): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(60): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(64): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(64): Error -27792: Failed to connect to server "pvr-perf.rxlogix.com:443": [10060] Connection timed out  	[MsgId: MERR-27792]
+Action.c(64): Error -26377: No match found for the requested parameter "CsrfTokenId_1". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 99999999 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+Action.c(64): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(64): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+End auto log messages stack.
+
+

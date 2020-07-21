@@ -1,0 +1,11 @@
+[t62]
+FileName1=t62_handlebars-v4.0.11-5c362fdd07b93a39b600cea43165302f.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/handlebar/handlebars-v4.0.11-5c362fdd07b93a39b600cea43165302f.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_62.xml
+RequestHeaderFile=t62_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t62_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

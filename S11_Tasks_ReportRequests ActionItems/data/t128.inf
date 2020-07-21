@@ -1,0 +1,11 @@
+[t128]
+FileName1=t128_actionItemList-996b8a0d27e470378453d435f33be4e9.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/actionItem/actionItemList-996b8a0d27e470378453d435f33be4e9.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_128.xml
+RequestHeaderFile=t128_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t128_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

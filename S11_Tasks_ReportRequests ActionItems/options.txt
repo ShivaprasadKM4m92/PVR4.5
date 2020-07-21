@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Project\PVR\Scripts\Updated\S11_Tasks_ReportRequests ActionItems
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\project\pvr\scripts\updated\s11_tasks_reportrequests actionitems\\logfile.log
+c:\project\pvr\scripts\updated\s11_tasks_reportrequests actionitems\\combined_S11_Tasks_ReportRequests ActionItems.c
+c:\project\pvr\scripts\updated\s11_tasks_reportrequests actionitems\\pre_cci.c

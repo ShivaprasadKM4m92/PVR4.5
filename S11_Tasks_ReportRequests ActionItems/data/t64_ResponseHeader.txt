@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Wed, 03 Jun 2020 06:17:43 GMT
+Content-Type: application/javascript;charset=UTF-8
+Content-Length: 1846
+Connection: keep-alive
+X-Frame-Options: DENY
+Last-Modified: Mon, 23 Mar 2020 05:55:50 GMT
+ETag: "app/reportRequestList-c5db866dd82b4020f92a6692ea04ff59.js"
+Vary: Accept-Encoding
+Cache-Control: public, max-age=31536000
+Content-Encoding: gzip
+

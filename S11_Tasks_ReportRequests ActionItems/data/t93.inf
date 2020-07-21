@@ -1,0 +1,11 @@
+[t93]
+FileName1=t93_studyCompounds-d1264ac301b89c2be214faf502830ceb.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/plugin/dictionary/studyCompounds-d1264ac301b89c2be214faf502830ceb.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_93.xml
+RequestHeaderFile=t93_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t93_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

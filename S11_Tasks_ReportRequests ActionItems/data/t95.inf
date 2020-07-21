@@ -1,0 +1,11 @@
+[t95]
+SnapshotXmlFile=snapshot_95.xml
+FileName1=t95.gif
+URL1=https://pvr-perf.rxlogix.com/reports/assets/select2-spinner-7b9776076d5fceef4993b55c9383dedd.gif
+Total=1
+RequestHeaderFile=t95_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t95_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1

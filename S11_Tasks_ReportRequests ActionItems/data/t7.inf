@@ -1,0 +1,11 @@
+[t7]
+FileName1=t7_application-f8ff3189b5e73f6aa63ba16652634041.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/application-f8ff3189b5e73f6aa63ba16652634041.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_7.xml
+RequestHeaderFile=t7_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t7_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Wed, 03 Jun 2020 06:21:06 GMT
+Content-Type: application/javascript;charset=UTF-8
+Content-Length: 133
+Connection: keep-alive
+X-Frame-Options: DENY
+Last-Modified: Mon, 23 Mar 2020 05:55:20 GMT
+ETag: "app/actionItem/actionItem-451aa8013ef94e76c48a99359b3bc593.js"
+Vary: Accept-Encoding
+Cache-Control: public, max-age=31536000
+Content-Encoding: gzip
+

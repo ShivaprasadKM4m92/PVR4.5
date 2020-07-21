@@ -1,0 +1,829 @@
+7e9d
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>
+    
+        PV Reports - Report Request List
+    
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="/reports/assets/favicon-2ba00fd40faca3ac3c2e810a7412bceb.ico" type="image/x-icon">
+<link rel="stylesheet" href="/reports/assets/application-3d100486bb60d4ee3003d4ee9f8d893e.css"/>
+
+<link rel="stylesheet" href="/reports/assets/theme_gradient_blue-8a7bc35778c66c2a34b346cddd101ad7.css"/>
+
+<script type="text/javascript" src="/reports/assets/app/rxapplication-eebebbeb632a82e8608209da3ab42ef2.js" ></script>
+
+<script>
+    userLocale = "en";
+    moment.locale(userLocale);
+    userTimeZone = "UTC";
+    if (userLocale == JAPANESE_LOCALE) {
+        DEFAULT_DATE_DISPLAY_FORMAT = "YYYY/MM/DD";
+        DEFAULT_DATE_TIME_DISPLAY_FORMAT = "YYYY/MM/DD hh:mm A";
+    }
+</script>
+
+    <script>
+    var APP_PATH='/reports';
+    var APP_ASSETS_PATH='/reports/assets/';
+    $.ajax({
+        url: APP_ASSETS_PATH+'i18n/' + userLocale + '.json',
+        dataType: 'json',
+        async: false,
+        success: function(data) {
+            $.i18n.load(data);
+        }
+    });
+
+        var resizefunc = [];
+
+    </script>
+    
+    <script type="text/javascript" src="/reports/assets/fuelux/fuelux-58910ec6bd502e7c4aabf85922131616.js" ></script>
+    <link rel="stylesheet" href="/reports/assets/fuelux-b7cf5c5c681fcdbd63156284516c90e9.css"/>
+    <script type="text/javascript" src="/reports/assets/handlebar/handlebars-v4.0.11-5c362fdd07b93a39b600cea43165302f.js" ></script>
+    <script type="text/javascript" src="/reports/assets/app/utils/pvr-common-util-8ff14af8a3772d2fcd9a8439fcb156fc.js" ></script>
+    <script type="text/javascript" src="/reports/assets/app/utils/pvr-filter-util-f694134bedd0ac0ffc46cd24998d5f54.js" ></script>
+    <script type="text/javascript" src="/reports/assets/app/reportRequestList-c5db866dd82b4020f92a6692ea04ff59.js" ></script>
+    <script type="text/javascript" src="/reports/assets/app/dataTablesActionButtons-dbaa4f19bed1b0ac11118699876720cb.js" ></script>
+    <script type="text/javascript" src="/reports/assets/app/workFlow-3b78500b81fd61ce5b59cc202a54e63c.js" ></script>
+    <link rel="stylesheet" href="/reports/assets/workflowModal-5491f0c21ba11e20273f35eef0ac46f9.css"/>
+    <script type="text/javascript">
+
+        var reportRequestListUrl = "\u002freports\u002freportRequestRest\u002findex";
+        var workflowJustificationUrl="\u002freports\u002fworkflowJustificationRest\u002freportRequest";
+        var workflowJustificationConfirnUrl="\u002freports\u002fworkflowJustificationRest\u002fsaveReportRequest";
+        var sharedWithListUrl = "\u002freports\u002fuserRest\u002fsharedWithFilterList?clazz=com.rxlogix.config.ReportRequest";
+        var sharedWithValuesUrl = "\u002freports\u002fuserRest\u002fsharedWithValues";
+        var actionItemStatusForReportRequestUrl = "\u002freports\u002freportRequest\u002factionItemStatusForReportRequest";
+        var isReportRequest = true;
+        var finalStates = "\u005bClosed\u005d"
+    
+</script>
+
+
+    <meta name="layout" content="main"/>
+    
+    <script>
+        $(document).ready(function () {
+            //Initiate the datatable
+            reportRequest.reportRequestList.init_report_request_table();
+        })
+    </script>
+
+    
+    
+    
+
+    
+        <meta name="_csrf" content="4b74f14a-80ae-4ef9-b190-c3207058106f"/>
+        <meta name="_csrf_header" content="X-CSRF-TOKEN"/>
+        <meta name="_csrf_parameter" content="_csrf"/>
+    
+
+</head>
+
+<body class="fixed-left">
+
+<!-- Begin page -->
+<div id="wrapper" class="enlarged forced">
+
+    
+    
+    <!-- Top Bar Start -->
+            
+
+
+
+
+<script type="text/javascript" src="/reports/assets/app/pushNotification-3d08817200dceb0a405d9f7aefa3192f.js" ></script>
+<script type="text/javascript">
+
+    function logoutRxSession() {
+      clearFormInputsChangeFlag($(document));
+      $.fn.idleTimeout().logout();
+    }
+    var notificationURL = "\u002freports\u002fnotificationRest\u002fforUser\u002f32180";
+    var notificationChannel ="\u002fnotifications\u002f18f7cf0d3e680317039ac89dac51d12d";
+    var notificationWSURL = "\u002freports\u002fstomp";
+    var viewNotificationErrorURL = "\u002freports\u002fexecutionStatus\u002fviewNotificationError";
+    var notificationDeleteURL = "\u002freports\u002fnotificationRest\u002fdeleteNotificationById";
+    var notificationDeleteByUserURL = "\u002freports\u002fnotificationRest\u002fdeleteNotificationsForUserId";
+    var reportRedirectURL = "\u002freports\u002freport\u002fshowFirstSection";
+    
+    var hasAccessOnActionItem = true;
+    
+    
+
+</script>
+
+
+<div class="topbar">
+    <!-- LOGO -->
+    <div class="pull-left">
+        <button class="button-menu-mobile open-left waves-effect">
+            <i class="md md-menu"></i>
+        </button>
+        <span class="clearfix"></span>
+    </div>
+
+    <div class="topbar-left">
+        <div class="pull-left">
+            
+                <a href="/reports/dashboard/index"><img src="/reports/assets/pvr_logo-4233ea6efeb2ddb09d89415071b55478.png" class="pvLogo"/></a>
+            
+        </div>
+    </div>
+    <!-- Navbar -->
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="">
+                <ul class="nav navbar-nav hidden-xs pull-left">
+                    
+                    
+                    
+                    
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right pull-right">
+                    
+                        <li class="hidden-xs m-t-10">
+                            <h5 class="text-white login-user-fullname">Welcome Shiva.Prasad!</h5>
+                                <small class="text-white last-login-date-time-box"><b>Last Login</b> :  03-Jun-2020 05:16 AM (GMT +00:00)</small>
+                        </li>
+                        <li id="menuNotification" class="dropdown hidden-xs">
+                                <a href="#" data-target="#" class="dropdown-toggle waves-effect waves-light"
+                                   data-toggle="dropdown" aria-expanded="true">
+                                    <i class="md md-notifications"></i> <span
+                                        id="notificationBadge"  class="badge badge-xs badge-pink"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-lg">
+                                    <li id="notificationHeader" class="text-center notifi-title"></li>
+                                    <li id="notificationRows" class="list-group nicescroll notification-list">
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" id="clearNotifications" class=" text-right" userId="32180">
+                                            <small><b>Clear all</b></small>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="#" data-target="#" class="dropdown-toggle waves-effect waves-light"
+                               data-toggle="dropdown" aria-expanded="true">
+                                <i class="md md-settings"></i></a>
+                            <ul class="dropdown-menu topNavMenu">
+                                    
+                                <li id="help"><a href="/reports/dashboard/index" target="_blank"><i class="md md-help"></i> Help</a></li>
+
+                                
+                                    <li id="executionStatus"><a href="/reports/executionStatus/list"><i class="md md-alarm"></i> Execution Status</a></li>
+                                
+
+                                
+                                    <li class="divider"></li>
+                                    
+                                    <li id="userManagement"><a href="/reports/user/index">User Management</a></li>
+                                    <li id="userManagement"><a href="/reports/userGroup/index">Group Management</a></li>
+                                    <li id="roleManagement"><a href="/reports/role/index">Role Management</a></li>
+                                    
+                                    
+                                        <li id="fieldManagement"><a href="/reports/reportField/index">Field Management</a></li>
+                                        <li id="jsonDownloaded"><a href="/reports/queryTemplateJSON/index">Download JSONs</a> </li>
+                                    
+                                    
+                                        <li id="customField"><a href="/reports/customField/index">Custom Fields</a></li>
+                                    
+                                    
+                                    <li id="userManagement"><a href="/reports/dashboardDictionary/index">Dashboards</a></li>
+                                    
+                                    
+                                    <li id="userManagement"><a href="/reports/fieldProfile/index">Field Profile</a></li>
+                                    <li id="sourceProfileManagement"><a href="/reports/sourceProfile/index">Source Profile</a></li>
+                                    <li id="workflowState"><a href="/reports/workflowState/index">Workflow State</a></li>
+                                    <li id="workflowRule"><a href="/reports/workflowRule/index">Workflow Rule</a></li>
+                                    <li id="reportRequestType"><a href="/reports/reportRequestType/index">Report Request Settings</a></li>
+                                    <li id="taskTemplate"><a href="/reports/taskTemplate/index">Task Template</a></li>
+                                
+                                    <li id="etlScheduler"><a href="/reports/etlSchedule/index">ETL Scheduler</a></li>
+                                    <li id="auditLog"><a href="/reports/auditLog/index">Audit Log</a></li>
+                                    <li id="controlPanel"><a href="/reports/controlPanel/index">Control Panel</a></li>
+                                    <li id="reportFooter"><a href="/reports/reportFooter/index">Footer Configuration</a></li>
+                                    <li id="reportFooter"><a href="/reports/email/index">Email Configuration</a></li>
+                                    <li id="reportFooter"><a href="/reports/emailTemplate/index">Email Template</a></li>
+                                    
+                                    
+                                    <li class="divider"></li>
+                                
+
+                                <li id="menuPreference"><a href="/reports/preference/index"><i class="md md-settings"></i> Preferences</a></li>
+
+                                
+                                    <li class="divider"></li>
+
+                                    
+                                    <li><a href="/reports/monitoring">Monitoring</a></li>
+                                    <li><a href="/reports/quartz">Jobs Monitoring</a></li>
+                                
+
+                                <li class="divider"></li>
+
+                                <li>
+                                    <a href="javascript:void(0);" onclick="logoutRxSession();" type="button"><i class="md md-exit-to-app"></i> Logout</a>
+                            </ul>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Top Bar End -->
+
+    <!-- Left Sidebar Start -->
+    
+    
+
+
+<div class="left side-menu">
+    <div class="sidebar-inner slimscrollleft">
+        <div id="sidebar-menu">
+            <ul>
+                <li class="has_sub"><a href="/reports/dashboard/index" class="waves-effect waves-primary"><i
+                        class="md md-dashboard"></i><span>Dashboard</span><span class="menu-arrow"></span></a>
+                    <ul class="list-unstyled">
+                        
+                        <li><a href="/reports/dashboard/newDashboard"><i class="fa fa-plus"></i>New Dashboard</a></li>
+                    </ul>
+                </li>
+                
+                    <li class="has_sub">
+                        <!-- Adhoc Reports -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-grid-on"></i> <span>Adhoc Reports</span>
+                            <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            
+                                <!-- Load Configurations -->
+                                <li><a href="/reports/configuration/load">Load Configurations</a></li>
+                            
+                            
+                                <!-- New Report -->
+                                <li><a href="/reports/configuration/create">New Report</a></li>
+                            
+                            
+                                <!-- New Report -->
+                                <li><a href="javascript:void(0);"  class="createAdhocFromTemplate">Create From Template</a></li>
+                            
+                            
+                                <!-- Library -->
+                                <li><a href="/reports/configuration/index">Configuration Library</a></li>
+                            
+                            
+                                <!-- Generated Reports -->
+                                <li><a href="/reports/report/index">Generated Reports</a></li>
+                            
+                            
+                                
+                            
+                        </ul>
+                    </li>
+                
+                
+                    <li class="has_sub">
+                        <!-- Periodic Reports -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-call-merge"></i><span>Aggregate Reports</span>
+                            <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            
+                                <!-- New Report -->
+                                <li><a href="/reports/periodicReport/create">New Report</a></li>
+                            
+                            
+                                <!-- New Report -->
+                                <li><a href="javascript:void(0);"  class="createAggregateFromTemplate">Create From Template</a></li>
+                            
+                        <!-- Library -->
+                            <li><a href="/reports/periodicReport/index">Configuration Library</a></li>
+                            <!-- Generated Reports -->
+                            <li><a href="/reports/periodicReport/reports">Generated Reports</a></li>
+                            <!-- View Submission History -->
+                            <li><a href="/reports/reportSubmission/index">View Submission History</a></li>
+                            
+                                <!-- Bulk Scheduling -->
+                                <li><a href="/reports/periodicReport/bulkUpdate">Bulk Update</a></li>
+                            
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="has_sub">
+                        <!-- Case Series -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i class="md md-view-column"></i>
+                            <span>Case Series</span> <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            
+                                <!-- New Case Series -->
+                                <li><a href="/reports/caseSeries/create">New Case Series</a></li>
+                            
+                        <!-- Generated Case Series -->
+                            <li><a href="/reports/caseSeries/index">Configuration Library</a></li>
+                            <!-- Generated Case Series -->
+                            <li><a href="/reports/executedCaseSeries/index">Generated Case Series</a></li>
+                        </ul>
+                    </li>
+                
+                
+                    <!-- Templates -->
+                    <li class="has_sub">
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-now-widgets"></i><span>Templates</span> <span
+                                class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                        <li>
+                            
+                                <!-- Load Templates -->
+                                <li><a href="/reports/template/load">Load Templates</a></li>
+                            
+                        <!-- Template Library -->
+                            <li><a href="/reports/template/index">Template Library</a></li>
+                            
+                                <!-- New Case Line Listing Template -->
+                                <li><a href="/reports/template/create?templateType=CASE_LINE">
+                                    New Case Line Listing Template</a></li>
+                                <!-- New Data Tabulation Template -->
+                                <li><a href="/reports/template/create?templateType=DATA_TAB">
+                                    New Data Tabulation Template</a></li>
+                            
+                            
+                                <!-- New Custom SQL Template -->
+                                <li><a href="/reports/template/create?templateType=CUSTOM_SQL">
+                                    New Custom SQL Template</a></li>
+                                <!-- New Non Case Template -->
+                                <li><a href="/reports/template/create?templateType=NON_CASE">
+                                    New Non Case Template</a></li>
+
+                                
+                            
+                            
+                                <!-- New Template Set -->
+                                <li><a href="/reports/template/create?templateType=TEMPLATE_SET">
+                                    New Template Set</a></li>
+                            
+                        </li>
+                        </ul>
+                    </li>
+                
+                
+                    <!-- Queries -->
+                    <li class="has_sub">
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-filter-list"></i><span>Queries</span> <span
+                                class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                        <li>
+                            
+                                <!-- Load Queries -->
+                                <li><a href="/reports/query/load">Load Queries</a></li>
+                            
+                        <!-- Query Library -->
+                            <li><a href="/reports/query/index">Query Library</a></li>
+                            
+                                <!-- New Query -->
+                                <li><a href="/reports/query/create">New Query</a></li>
+                            
+                        </li>
+                        </ul>
+                    </li>
+                
+                
+                    <li class="has_sub">
+                        <!-- Data Analysis -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i class="md md-trending-up"></i>
+                            <span> Data Analysis </span> <span
+                                class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            <!-- Analysis File Library -->
+                            <li><a href="/reports/dataAnalysis/index">Analysis File Library</a></li>
+                            <!-- New Analysis File -->
+                            <li><a href="/reports/dataAnalysis/create">New Analysis File</a></li>
+                        </ul>
+                    </li>
+                
+                
+                    <li class="has_sub">
+                        <!-- Tasks -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-assignment"></i><span> Tasks </span> <span
+                                class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                        <!-- Report Requests -->
+                            
+                                <li><a href="/reports/reportRequest/index">Report Requests</a></li>
+                            
+                        <!-- Action Items -->
+                            
+                                <li><a href="/reports/actionItem/index">Action Items</a></li>
+                            
+                        </ul>
+                    </li>
+                
+                
+                    
+                        
+                        
+                                
+                                
+                        
+                            
+                            
+                            
+                            
+                            
+                            
+                        
+                    
+                
+                
+                    <!-- PR Calendar -->
+                    <li><a href="/reports/calendar/index" class="waves-effect waves-primary"><i
+                            class="md md-event"></i><span>Calendar</span></a></li>
+
+                
+            </ul>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+    
+</div>
+<div class="modal fade" id="createFromTemplateModal"  data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby=""  aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="rxmain-container"><div class="rxmain-container-inner"><div class="rxmain-container-row rxmain-container-header"><div class="dropdown"><label class="rxmain-container-header-label">Create From Template</label><i class="pull-right md md-close md-lg rxmain-dropdown-settings" data-dismiss="modal"></i></div></div><div class="row rxmain-container-content">
+                <table id="rxTableTemplateConfiguration" class="row-border hover" width="100%">
+                    <thead>
+                    <tr>
+                        <th class="reportNameColumn">Report Name</th>
+                        <th class="reportDescriptionColumn">Description</th>
+                        <th>Date Created</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div></div></div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+    <!-- Left Sidebar End -->
+    
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="content-page">
+        <!-- Start content -->
+        <div id="mainContent" class="content" style="">
+            
+
+<div class="rxmain-container"><div class="rxmain-container-inner"><div class="rxmain-container-row rxmain-container-header"><div class="dropdown"><label class="rxmain-container-header-label">Report Request List</label><i class="pull-right glyphicon glyphicon-filter lib-filter rxmain-dropdown-settings"></i></div></div><div class="row rxmain-container-content">
+    <div class="body">
+        <div id="report-request-conainter" class="list">
+
+            
+
+
+    <div class="alert alert-success alert-dismissible forceLineWrap" role="alert">
+        <button type="button" class="close" data-dismiss="alert">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Close</span>
+        </button>
+        <i class="fa fa-check"></i>
+        
+            Report Request ReqPt001 created<br/>
+        
+    </div>
+
+
+
+
+
+
+
+
+            
+                <div class="navScaffold">
+                    <button type="button" class="btn btn-primary" onclick="goToUrl('reportRequest', 'create')" id="createButton">
+                        <span class="glyphicon glyphicon-plus icon-white"></span>
+                        Create Report Request
+                    </button>
+                </div>
+            
+            <div>
+                <table id="reportRequestList" class="row-border hover dataTable no-footer">
+                    <thead>
+                    <tr>
+                        <th>Request id</th>
+                        <th>Request Summary</th>
+                        <th>Assigned To</th>
+                        <th>Description</th>
+                        <th>Due Date</th>
+                        <th>Priority</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</div></div></div>
+<form action="/reports/reportRequest/index" method="post" ><input type="hidden" name="_method" value="DELETE" id="_method" />
+    <!-- Modal -->
+
+
+
+
+<div class="modal fade" id="deleteModal"  data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel"
+     aria-hidden="true" style="z-index: 9999;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="deleteModalLabel"></h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="alert alert-danger alert-dismissible forceLineWrap" role="alert" id="deleteDlgErrorDiv" style="display: none">
+                    <button type="button" class="close" data-dismiss="alert">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <i class="fa fa-check"></i> Justification can''t be blank.
+                </div>
+                <div id="nameToDelete"></div>
+                <p></p>
+                <div class="description" style="font-weight:bold;"></div>
+                <div class="extramessage"></div>
+
+                <div id="deleteForAllAllowed" class="checkbox checkbox-primary"  style="display: none">
+                    <input type="hidden" name="_deleteForAll" /><input type="checkbox" name="deleteForAll" id="deleteForAll"  />
+                    <label for="deleteForAll" class="add-margin-bottom" style="margin-bottom: 5px;">
+                        Delete For All Users
+                    </label>
+                </div>
+
+                <label style="margin-top: 25px">Justification:</label>
+                <textarea placeholder="Enter the justification" class="form-control" name="deleteJustification" id="deleteJustification" ></textarea>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button id="deleteButton" class="btn btn-danger">
+                    <span class="glyphicon glyphicon-trash icon-white"></span>
+                    Delete Record
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script type="text/javascript" src="/reports/assets/app/deleteModal-68b8e74283c8070801d2afbaf40831a1.js" ></script>
+
+
+</form>
+
+
+<!-- Modal for Workflow State Justification -->
+<div class="modal fade workflowStatusJustification"  data-backdrop="static" style="margin-left: 5px" id="workflowStatusJustification"
+     tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" onclick='closeJustificationModal();' aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Workflow Status</h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="workflow-state-update">
+                    <div class="alert alert-warning alert-dismissible forceLineWrap" role="alert" style="display: none;">
+                        <button type="button" class="close" data-dismiss="alert">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <i class="fa fa-warning"></i> Warning!
+                        <div id="workflow-warning"></div>
+                    </div>
+                    <div class="alert alert-danger hide">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <span id="workflowErrorMessage"></span>
+                    </div>
+                    <form action="/reports/reportRequest/index/justificationForm" method="post" autocomplete="off" name="justificationForm" id="justificationForm" >
+                        <div>
+                            <label>
+                                State
+                                <span class="required-indicator">*</span>
+                            </label>
+                        </div>
+
+                        <div id="showSel">
+                            <select style="height: 30px;width:250px;" class="form-control" name="toState.id" id="workflowSelect"></select>
+                        </div>
+
+                        <div class="workflow"></div>
+                        <div id="needApprovalDiv" style="display: none">
+                            <label>
+                                Need Approval (reenter login and password)
+                            </label>
+                            <div>
+                                <label>
+                                    Username
+                                    <span class="required-indicator">*</span>
+                                </label>
+                            </div>
+                            <div>
+                                
+                                <input autocomplete="autocomplete_off_xfr4!k1"  name="1591165245341" disabled="true" id="login-input" value="Shiva.Prasad" class="form-control login-input">
+                            </div>
+                            <div>
+                                <label>
+                                    Password
+                                    <span class="required-indicator">*</span>
+                                </label>
+                            </div>
+                            <div id="password-input-div">
+                                <input autocomplete="autocomplete_off_xfr4!k"  name="1591165245342" id="password-input" class="form-control password-input" type="text">
+                            </div>
+                        </div>
+                        <div class="description-wrapper">
+                            <label>Justification
+                            </label>
+                            <textarea rows="5" cols="3" id="description" name="description" maxlength="255" style="height: 110px;" class="form-control " ></textarea>
+                            Max: 255 Characters
+                        </div>
+
+                  
+164a
+      <div class="workflow"></div>
+
+                        <input type="hidden" name="dataLength" id="dataLength">
+                        <input type="hidden" name="fromState.id" id="fromState">
+                        <input type="hidden" name="executedReportConfiguration.id" id="reportId">
+                        <input type="hidden" name="reportRequest.id" id="wfReportRequestId">
+                        <input type="hidden" name="workflowRule.id" id="workflowRuleId">
+                    </form>
+                </div>
+
+                <div class="workflow-state-history">
+                    <div>
+                        <label>History</label>
+                        <table id="workflowJustificationTable" border="1" bordercolor="#D3D3D3">
+                            <th class="workflowTableHead1">From State</th>
+                            <th class="workflowTableHead1">To State</th>
+                            <th class="workflowTableHead1">Date</th>
+                            <th class="workflowhead2">Routed By</th>
+                            <th class="workflowhead2">Justification</th>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" id="saveButton" class="btn btn-success confirm-paste" onclick="confirmJustification('reportRequestList');">
+                    Confirm
+                </button>
+                <button type="button" class="btn btn-default cancel" onclick='closeJustificationModal();'>
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="display: none">
+    <div id="assignedToFilter" class="col-xs-7 " style="text-align: right">
+        <label class="no-bold">Assigned To</label>
+        <input class="assignedToFilterControl form-control"  id="assignedToFilterControl" name="assignedToFilterControl" value="" style="text-align:left;min-width: 100px;">
+        <label class="no-bold">Status</label>
+        <select id="statusFilter" name="configurationTypeEnum" class="form-control" style="text-align:left;min-width: 200px;" >
+<option value=""></option>
+<option value="27" >Closed</option>
+<option value="28" >Complete</option>
+<option value="25" >In Progress</option>
+<option value="26" >Need Clarification</option>
+<option value="14" >New</option>
+<option value="29" >Reopen</option>
+</select>
+    </div>
+</div>
+<!-- Modal -->
+
+
+
+
+<div class="modal fade" id="warningModal"  data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="warningModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="warningModalLabel">Warning</h4>
+            </div>
+
+            <div class="modal-body">
+                <div id="warningType">Are you sure you want to proceed further?</div>
+
+                <p></p>
+
+                <div class="description" style="font-weight:bold;"></div>
+
+                <div class="extramessage"></div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button id="warningButton" class="btn btn-primary">
+                    Continue
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#warningModal').on('show.bs.modal', function (event) {
+            //Make sure cancel and continue buttons are enabled
+            $(".btn").removeAttr("disabled", "disabled");
+        });
+    });
+</script>
+
+        </div>
+        <!-- End content -->
+    
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Right content here -->
+    <!-- ============================================================== -->
+</div>
+<div class="pvr-loader-bg">
+    <div class="loader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+        </svg>
+    </div>
+</div>
+<!-- Used for loader-->
+<div class="pvloader"></div>
+<script type="text/javascript" src="/reports/assets/app/jquery.core-2c7cdf128b42d849235dea8cadd879b8.js" ></script>
+<script type="text/javascript" src="/reports/assets/app/jquery.app-782d8f87ac279a019b37b18a315654b2.js" ></script>
+
+    
+
+
+
+<script type="text/javascript" src="/reports/assets/store.modern.min-ee86dbde67356086e53dffdd31c6867d.js" ></script>
+<script type="text/javascript" src="/reports/assets/jquery/customise-jquery-idleTimeout-6286fe026bdf78a6c38a29cfd8d979c8.js" ></script> 
+<script type="text/javascript">
+
+    $(document).ready(function() {
+      $(document).idleTimeout({
+      redirectUrl:  "https:\u002f\u002fpvr-perf.rxlogix.com\u002freports/logout",
+      idleTimeLimit: 1800,
+      sessionKeepAliveUrl: "https:\u002f\u002fpvr-perf.rxlogix.com\u002freports/keep-alive",
+      sessionKeepAliveTimer: 60,
+      enableDialog: true,
+      dialogDisplayLimit: 300,
+      activityEvents: 'click keypress',
+      customCallback: function() {
+          var forms = $('form');
+            if(forms.find('.changed-input').length){
+                alert($.i18n._('navigateAwayChangesLostMessage'));
+                clearFormInputsChangeFlag(forms);
+            }
+      }
+      });
+    });
+
+</script>
+
+
+</body>
+</html>
+
+0
+

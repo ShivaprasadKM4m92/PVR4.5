@@ -1,0 +1,11 @@
+[t144]
+FileName1=t144.json
+URL1=https://pvr-perf.rxlogix.com/reports/actionItem/save
+Total=1
+RequestHeaderFile=t144_RequestHeader.txt
+RequestBodyFile=t144_RequestBody.txt
+ResponseHeaderFile=t144_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_144.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

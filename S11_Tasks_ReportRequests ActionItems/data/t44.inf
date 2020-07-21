@@ -1,0 +1,11 @@
+[t44]
+SnapshotXmlFile=snapshot_44.xml
+FileName1=t44.gif
+URL1=https://pvr-perf.rxlogix.com/reports/assets/rx-loader-dcdae8e77d6f26a0b04e0a7683332773.gif
+Total=1
+RequestHeaderFile=t44_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t44_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1

@@ -1,0 +1,11 @@
+[t64]
+FileName1=t64_reportRequestList-c5db866dd82b4020f92a6692ea04ff59.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/reportRequestList-c5db866dd82b4020f92a6692ea04ff59.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_64.xml
+RequestHeaderFile=t64_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t64_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

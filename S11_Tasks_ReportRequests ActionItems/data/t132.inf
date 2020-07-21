@@ -1,0 +1,9 @@
+[t132]
+SnapshotXmlFile=snapshot_132.xml
+FileName1=t132.png
+URL1=https://pvr-perf.rxlogix.com/reports/assets/actionItem-1cc75d568e9a8fd4bb3e0bc1b7390db3.png
+Total=1
+RequestHeaderFile=t132_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t132_ResponseHeader.txt
+ContentType=image/png
