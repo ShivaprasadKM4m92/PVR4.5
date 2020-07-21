@@ -1,0 +1,15 @@
+HTTP/2.0 200
+Status: 200
+date: Fri, 17 Jul 2020 08:12:37 GMT
+content-type: text/html;charset=UTF-8
+x-oneagent-js-injection: true
+set-cookie: dtCookie=v_4_srv_2_sn_E974835FD19EFA39A138F15D94A98F6D_perc_100000_ol_0_mul_1; Path=/; Domain=.rxlogix.com
+x-frame-options: DENY
+x-application-context: application:production:9090
+cache-control: no-cache, no-store
+pragma: no-cache
+x-xss-protection: 1
+x-content-type-options: nosniff
+set-cookie: SESSION=12e7a4e9-ff9a-4d7a-820c-6cf80c324480; Path=/reports/; Secure; HttpOnly
+content-language: en-US
+

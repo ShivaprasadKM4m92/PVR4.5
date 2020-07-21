@@ -1,0 +1,11 @@
+[t143]
+FileName1=t143_websocket.html
+URL1=https://pvr-perf.rxlogix.com/reports/stomp/661/6rwxn5vk/websocket
+Total=1
+ContentType=
+SnapshotXmlFile=snapshot_143.xml
+RequestHeaderFile=t143_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t143_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

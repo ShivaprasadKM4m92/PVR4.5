@@ -1,0 +1,11 @@
+[t136]
+FileName1=t136_34594.xlsx
+URL1=https://pvr-perf.rxlogix.com/reports/report/show/34594?outputFormat=XLSX&isInDraftMode=false
+Total=1
+ContentType=application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+SnapshotXmlFile=snapshot_136.xml
+RequestHeaderFile=t136_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t136_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

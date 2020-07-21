@@ -1,0 +1,11 @@
+[t5]
+FileName1=t5_login-56e6216b7dfd4b175b930dda2cfcea23.css
+URL1=https://pvr-perf.rxlogix.com/reports/assets/login-56e6216b7dfd4b175b930dda2cfcea23.css
+Total=1
+ContentType=text/css
+SnapshotXmlFile=snapshot_5.xml
+RequestHeaderFile=t5_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t5_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

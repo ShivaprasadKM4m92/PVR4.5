@@ -1,0 +1,319 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: auth",
+                "infFile": "t1.inf",
+                "time": 1594973559351
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Submit Data: authenticate",
+                "infFile": "t3.inf",
+                "time": 1594973565571
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Url: index_2",
+                "infFile": "t12.inf",
+                "time": 1594973579465
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Url: reports",
+                "infFile": "t19.inf",
+                "time": 1594973583198
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Url: reports_2",
+                "infFile": "t20.inf",
+                "time": 1594973584691
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Url: {Report_Id}",
+                "infFile": "t21.inf",
+                "time": 1594973586114
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Url: {User_Id}_3",
+                "infFile": "t28.inf",
+                "time": 1594973587604
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Url: info_3",
+                "infFile": "t30.inf",
+                "time": 1594973588722
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Url: polymer.html",
+                "infFile": "t31.inf",
+                "time": 1594973589204
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Url: polymer-mini.html",
+                "infFile": "t32.inf",
+                "time": 1594973589945
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Url: polymer-micro.html",
+                "infFile": "t33.inf",
+                "time": 1594973590350
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Url: index_3",
+                "infFile": "t34.inf",
+                "time": 1594973601097
+            },
+            {
+                "stepId": "STEP13",
+                "stepName": "Url: {User_Id}_4",
+                "infFile": "t35.inf",
+                "time": 1594973601785
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Url: reports_3",
+                "infFile": "t36.inf",
+                "time": 1594973602302
+            },
+            {
+                "stepId": "STEP15",
+                "stepName": "Url: info_4",
+                "infFile": "t37.inf",
+                "time": 1594973602678
+            },
+            {
+                "stepId": "STEP16",
+                "stepName": "Url: index_4",
+                "infFile": "t38.inf",
+                "time": 1594973603589
+            },
+            {
+                "stepId": "STEP17",
+                "stepName": "Submit Data: save",
+                "infFile": "t39.inf",
+                "time": 1594973604389
+            },
+            {
+                "stepId": "STEP18",
+                "stepName": "Url: reports_4",
+                "infFile": "t40.inf",
+                "time": 1594973604965
+            },
+            {
+                "stepId": "STEP19",
+                "stepName": "Url: index_5",
+                "infFile": "t41.inf",
+                "time": 1594973605380
+            },
+            {
+                "stepId": "STEP20",
+                "stepName": "Submit Data: save_2",
+                "infFile": "t42.inf",
+                "time": 1594973606273
+            },
+            {
+                "stepId": "STEP21",
+                "stepName": "Url: reports_5",
+                "infFile": "t43.inf",
+                "time": 1594973606781
+            },
+            {
+                "stepId": "STEP22",
+                "stepName": "Url: sharedWithList",
+                "infFile": "t44.inf",
+                "time": 1594973607247
+            },
+            {
+                "stepId": "STEP23",
+                "stepName": "Submit Data: save_3",
+                "infFile": "t45.inf",
+                "time": 1594973608110
+            },
+            {
+                "stepId": "STEP24",
+                "stepName": "Url: index_6",
+                "infFile": "t46.inf",
+                "time": 1594973609436
+            },
+            {
+                "stepId": "STEP25",
+                "stepName": "Url: allEmails_2",
+                "infFile": "t47.inf",
+                "time": 1594973610286
+            },
+            {
+                "stepId": "STEP26",
+                "stepName": "Url: reports_6",
+                "infFile": "t52.inf",
+                "time": 1594973611980
+            },
+            {
+                "stepId": "STEP27",
+                "stepName": "Url: info_5",
+                "infFile": "t53.inf",
+                "time": 1594973612416
+            },
+            {
+                "stepId": "STEP28",
+                "stepName": "Url: archive",
+                "infFile": "t54.inf",
+                "time": 1594973615377
+            },
+            {
+                "stepId": "STEP29",
+                "stepName": "Url: {User_Id}_6",
+                "infFile": "t59.inf",
+                "time": 1594973616594
+            },
+            {
+                "stepId": "STEP30",
+                "stepName": "Url: info_6",
+                "infFile": "t60.inf",
+                "time": 1594973617304
+            },
+            {
+                "stepId": "STEP31",
+                "stepName": "Url: reports_7",
+                "infFile": "t61.inf",
+                "time": 1594973617702
+            },
+            {
+                "stepId": "STEP32",
+                "stepName": "Url: reports_8",
+                "infFile": "t62.inf",
+                "time": 1594973620781
+            },
+            {
+                "stepId": "STEP33",
+                "stepName": "Url: logout",
+                "infFile": "t63.inf",
+                "time": 1594973621836
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "S03_T01_OpenApplication",
+                "rawStartTime": 1594973557112,
+                "rawEndTime": 1594973563233,
+                "thinkTime": 0.0,
+                "wastedTime": 0.21189379692077638
+            },
+            {
+                "transactionName": "S03_T02_Login",
+                "rawStartTime": 1594973563239,
+                "rawEndTime": 1594973577934,
+                "thinkTime": 0.0,
+                "wastedTime": 0.49999475479125979
+            },
+            {
+                "transactionName": "S03_T03_NavigateAdhocReport_GeneratedReports",
+                "rawStartTime": 1594973577938,
+                "rawEndTime": 1594973584146,
+                "thinkTime": 0.0,
+                "wastedTime": 0.16013050079345704
+            },
+            {
+                "transactionName": "S03_T04_SearchReports",
+                "rawStartTime": 1594973584152,
+                "rawEndTime": 1594973584693,
+                "thinkTime": 0.0,
+                "wastedTime": 0.006491899490356445
+            },
+            {
+                "transactionName": "S03_T05_ViewReports",
+                "rawStartTime": 1594973584700,
+                "rawEndTime": 1594973590756,
+                "thinkTime": 0.0,
+                "wastedTime": 0.15411591529846192
+            },
+            {
+                "transactionName": "S03_T06_DownloadPDF",
+                "rawStartTime": 1594973590761,
+                "rawEndTime": 1594973594841,
+                "thinkTime": 0.0,
+                "wastedTime": 0.022114276885986329
+            },
+            {
+                "transactionName": "S03_T07_DownloadExcel",
+                "rawStartTime": 1594973594845,
+                "rawEndTime": 1594973599440,
+                "thinkTime": 0.0,
+                "wastedTime": 0.027879953384399415
+            },
+            {
+                "transactionName": "S03_T08_ClickBack",
+                "rawStartTime": 1594973599444,
+                "rawEndTime": 1594973603066,
+                "thinkTime": 0.0,
+                "wastedTime": 0.05339813232421875
+            },
+            {
+                "transactionName": "S03_T09_Click_New(State)",
+                "rawStartTime": 1594973603071,
+                "rawEndTime": 1594973603591,
+                "thinkTime": 0.0,
+                "wastedTime": 0.012835264205932618
+            },
+            {
+                "transactionName": "S03_T10_Click_Confirm",
+                "rawStartTime": 1594973603597,
+                "rawEndTime": 1594973604968,
+                "thinkTime": 0.0,
+                "wastedTime": 0.017519235610961915
+            },
+            {
+                "transactionName": "S03_T11_Click_UnderReview",
+                "rawStartTime": 1594973604973,
+                "rawEndTime": 1594973605382,
+                "thinkTime": 0.0,
+                "wastedTime": 0.007039785385131836
+            },
+            {
+                "transactionName": "S03_T12_Click_Confirm",
+                "rawStartTime": 1594973605386,
+                "rawEndTime": 1594973606783,
+                "thinkTime": 0.0,
+                "wastedTime": 0.02265453338623047
+            },
+            {
+                "transactionName": "S03_T13_CreationActionItem",
+                "rawStartTime": 1594973607252,
+                "rawEndTime": 1594973613326,
+                "thinkTime": 0.0,
+                "wastedTime": 0.11706948280334473
+            },
+            {
+                "transactionName": "S03_T14_Archive",
+                "rawStartTime": 1594973613329,
+                "rawEndTime": 1594973620235,
+                "thinkTime": 0.0,
+                "wastedTime": 0.08622932434082031
+            },
+            {
+                "transactionName": "S03_T15_ClearFilter",
+                "rawStartTime": 1594973620239,
+                "rawEndTime": 1594973620783,
+                "thinkTime": 0.0,
+                "wastedTime": 0.014285564422607422
+            },
+            {
+                "transactionName": "S03_T16_Logout",
+                "rawStartTime": 1594973620788,
+                "rawEndTime": 1594973621838,
+                "thinkTime": 0.0,
+                "wastedTime": 0.018606901168823243
+            }
+        ]
+    }
+]

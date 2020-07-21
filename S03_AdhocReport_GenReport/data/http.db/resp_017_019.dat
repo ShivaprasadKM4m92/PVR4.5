@@ -1,0 +1,1977 @@
+7e9d
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>
+    
+        PV Reports - Output
+    
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="/reports/assets/favicon-2ba00fd40faca3ac3c2e810a7412bceb.ico" type="image/x-icon">
+<link rel="stylesheet" href="/reports/assets/application-3d100486bb60d4ee3003d4ee9f8d893e.css"/>
+
+<link rel="stylesheet" href="/reports/assets/theme_gradient_blue-8a7bc35778c66c2a34b346cddd101ad7.css"/>
+
+<script type="text/javascript" src="/reports/assets/app/rxapplication-eebebbeb632a82e8608209da3ab42ef2.js" ></script>
+
+<script>
+    userLocale = "en";
+    moment.locale(userLocale);
+    userTimeZone = "UTC";
+    if (userLocale == JAPANESE_LOCALE) {
+        DEFAULT_DATE_DISPLAY_FORMAT = "YYYY/MM/DD";
+        DEFAULT_DATE_TIME_DISPLAY_FORMAT = "YYYY/MM/DD hh:mm A";
+    }
+</script>
+
+    <script>
+    var APP_PATH='/reports';
+    var APP_ASSETS_PATH='/reports/assets/';
+    $.ajax({
+        url: APP_ASSETS_PATH+'i18n/' + userLocale + '.json',
+        dataType: 'json',
+        async: false,
+        success: function(data) {
+            $.i18n.load(data);
+        }
+    });
+
+        var resizefunc = [];
+
+    </script>
+    
+    <meta name="layout" content="main"/>
+    
+    <script type="text/javascript" src="/reports/assets/app/report/caseSeries-2b3162da7d0ee39f0d14d35afd619ae8.js" ></script>
+    <script type="text/javascript" src="/reports/assets/highcharts/highcharts-01ce2a5c16b4e040b95b02d8cf3ea23e.js" ></script>
+    <script type="text/javascript" src="/reports/assets/highcharts/highcharts-more-31bca387194b423710d019dfa069474a.js" ></script>
+    <script type="text/javascript" src="/reports/assets/highcharts/highcharts-3d-b0c0c823b44f85cb61361491f4353576.js" ></script>
+    <script type="text/javascript" src="/reports/assets/highcharts/modules/solid-gauge-dea4ed491a81514f163d664d2d9b4135.js" ></script>
+    <script type="text/javascript" src="/reports/assets/highcharts/plugins/grouped-categories-8ddf90b557e5da14225afefcaa8bf9f6.js" ></script>
+    <script type="text/javascript" src="/reports/assets/fuelux/fuelux-58910ec6bd502e7c4aabf85922131616.js" ></script>
+    <link rel="stylesheet" href="/reports/assets/fuelux-b7cf5c5c681fcdbd63156284516c90e9.css"/>
+    <link rel="stylesheet" href="/reports/assets/configuration-11b5b002dec2c8f1f643a1db6b80c6db.css"/>
+    <link rel="stylesheet" href="/reports/assets/copyPasteModal-e538fdadfa9bb40beefda62316b6268f.css"/>
+    <link rel="stylesheet" href="/reports/assets/expandingTextarea-e6f68bca81423576f208f67bb1a470d2.css"/>
+    <script type="text/javascript" src="/reports/assets/app/addSection-9123c19b5cc5be0ec58f58d57e123c1f.js" ></script>
+    <script type="text/javascript" src="/reports/assets/app/configuration/blankParameters-cef91892ccdf31d55934699882b389d5.js" ></script>
+    <script type="text/javascript" src="/reports/assets/app/configuration/copyPasteValues-ce01bd4ac74470f921a5bf1d8f9b8c0d.js" ></script>
+    <script type="text/javascript" src="/reports/assets/app/expandingTextarea-04fa51fd39d03f48f1fbbac3953c97b8.js" ></script>
+    
+    <script>
+        var templateSearchUrl = "/reports/reportTemplateRest/getTemplateList";
+        var templateNameUrl = "/reports/reportTemplateRest/getTemplateNameDescription";
+        var querySearchUrl = "/reports/queryRest/getQueryList";
+        var queryNameUrl = "/reports/queryRest/getQueryNameDescription";
+        var queryEditUrl = "/reports/query/edit";
+        var selectAutoUrl = "/reports/query/ajaxReportFieldSearch";
+
+        var stringOperatorsUrl = "/reports/query/getStringOperators";
+        var numOperatorsUrl = "/reports/query/getNumOperators";
+        var dateOperatorsUrl = "/reports/query/getDateOperators";
+        var valuelessOperatorsUrl = "/reports/query/getValuelessOperators";
+        var keywordsUrl = "/reports/query/getAllKeywords";
+        var fieldsValueUrl = "/reports/query/getFieldsValue";
+        var possibleValuesUrl = "/reports/query/possibleValues";
+
+        var blankValuesForQueryUrl = "/reports/query/queryExpressionValuesForQuery";
+        var blankValuesForQuerySetUrl = "/reports/query/queryExpressionValuesForQuerySet";
+        var customSQLValuesForQueryUrl = "/reports/query/customSQLValuesForQuery";
+        var customSQLValuesForTemplateUrl = "/reports/template/customSQLValuesForTemplate";
+        var poiInputsForTemplateUrl = "/reports/template/poiInputsForTemplate";
+        var configurationPOIInputsParamsUrl = "/reports/configurationRest/getConfigurationPOIInputsParams/34591";
+        var addNewSectionUrl = "/reports/configuration/saveSection";
+        var cioms1Id = "24359";
+        var addDmsConfiguration = "/reports/report/addDmsConfiguration?showSections=true";
+        var dmsFoldersUrl="/reports/periodicReport/getDmsFolders";
+        var LABELS = {
+            labelShowAdavncedOptions: "Add Header, Title and Footer",
+            labelHideAdavncedOptions: "Hide Header, Title and Footer"
+        };
+    </script>
+    <style>
+        html {
+            overflow-y : hidden;
+        }
+    </style>
+    <script>
+        $(window).resize(function () {
+            document.getElementById("reportDiv").style.maxHeight = screen.height - 270 + "px";
+        })
+    </script>
+
+    
+    
+    
+
+    
+        <meta name="_csrf" content="58c3770a-7df3-43ab-bca5-4ff678cff015"/>
+        <meta name="_csrf_header" content="X-CSRF-TOKEN"/>
+        <meta name="_csrf_parameter" content="_csrf"/>
+    
+
+</head>
+
+<body class="fixed-left">
+
+<!-- Begin page -->
+<div id="wrapper" class="enlarged forced">
+
+    
+    
+    <!-- Top Bar Start -->
+            
+
+
+
+
+<script type="text/javascript" src="/reports/assets/app/pushNotification-3d08817200dceb0a405d9f7aefa3192f.js" ></script>
+<script type="text/javascript">
+
+    function logoutRxSession() {
+      clearFormInputsChangeFlag($(document));
+      $.fn.idleTimeout().logout();
+    }
+    var notificationURL = "\u002freports\u002fnotificationRest\u002fforUser\u002f32180";
+    var notificationChannel ="\u002fnotifications\u002f18f7cf0d3e680317039ac89dac51d12d";
+    var notificationWSURL = "\u002freports\u002fstomp";
+    var viewNotificationErrorURL = "\u002freports\u002fexecutionStatus\u002fviewNotificationError";
+    var notificationDeleteURL = "\u002freports\u002fnotificationRest\u002fdeleteNotificationById";
+    var notificationDeleteByUserURL = "\u002freports\u002fnotificationRest\u002fdeleteNotificationsForUserId";
+    var reportRedirectURL = "\u002freports\u002freport\u002fshowFirstSection";
+    
+    var hasAccessOnActionItem = true;
+    
+    
+
+</script>
+
+
+<div class="topbar">
+    <!-- LOGO -->
+    <div class="pull-left">
+        <button class="button-menu-mobile open-left waves-effect">
+            <i class="md md-menu"></i>
+        </button>
+        <span class="clearfix"></span>
+    </div>
+
+    <div class="topbar-left">
+        <div class="pull-left">
+            
+                <a href="/reports/dashboard/index"><img src="/reports/assets/pvr_logo-4233ea6efeb2ddb09d89415071b55478.png" class="pvLogo"/></a>
+            
+        </div>
+    </div>
+    <!-- Navbar -->
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="">
+                <ul class="nav navbar-nav hidden-xs pull-left">
+                    
+                    
+                    
+                    
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right pull-right">
+                    
+                        <li class="hidden-xs m-t-10">
+                            <h5 class="text-white login-user-fullname">Welcome Shiva.Prasad!</h5>
+                                <small class="text-white last-login-date-time-box"><b>Last Login</b> :  01-Jun-2020 01:19 PM (GMT +00:00)</small>
+                        </li>
+                        <li id="menuNotification" class="dropdown hidden-xs">
+                                <a href="#" data-target="#" class="dropdown-toggle waves-effect waves-light"
+                                   data-toggle="dropdown" aria-expanded="true">
+                                    <i class="md md-notifications"></i> <span
+                                        id="notificationBadge"  class="badge badge-xs badge-pink"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-lg">
+                                    <li id="notificationHeader" class="text-center notifi-title"></li>
+                                    <li id="notificationRows" class="list-group nicescroll notification-list">
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" id="clearNotifications" class=" text-right" userId="32180">
+                                            <small><b>Clear all</b></small>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="#" data-target="#" class="dropdown-toggle waves-effect waves-light"
+                               data-toggle="dropdown" aria-expanded="true">
+                                <i class="md md-settings"></i></a>
+                            <ul class="dropdown-menu topNavMenu">
+                                    
+                                <li id="help"><a href="/reports/dashboard/index" target="_blank"><i class="md md-help"></i> Help</a></li>
+
+                                
+                                    <li id="executionStatus"><a href="/reports/executionStatus/list"><i class="md md-alarm"></i> Execution Status</a></li>
+                                
+
+                                
+                                    <li class="divider"></li>
+                                    
+                                    <li id="userManagement"><a href="/reports/user/index">User Management</a></li>
+                                    <li id="userManagement"><a href="/reports/userGroup/index">Group Management</a></li>
+                                    <li id="roleManagement"><a href="/reports/role/index">Role Management</a></li>
+                                    
+                                    
+                                        <li id="fieldManagement"><a href="/reports/reportField/index">Field Management</a></li>
+                                        <li id="jsonDownloaded"><a href="/reports/queryTemplateJSON/index">Download JSONs</a> </li>
+                                    
+                                    
+                                        <li id="customField"><a href="/reports/customField/index">Custom Fields</a></li>
+                                    
+                                    
+                                    <li id="userManagement"><a href="/reports/dashboardDictionary/index">Dashboards</a></li>
+                                    
+                                    
+                                    <li id="userManagement"><a href="/reports/fieldProfile/index">Field Profile</a></li>
+                                    <li id="sourceProfileManagement"><a href="/reports/sourceProfile/index">Source Profile</a></li>
+                                    <li id="workflowState"><a href="/reports/workflowState/index">Workflow State</a></li>
+                                    <li id="workflowRule"><a href="/reports/workflowRule/index">Workflow Rule</a></li>
+                                    <li id="reportRequestType"><a href="/reports/reportRequestType/index">Report Request Settings</a></li>
+                                    <li id="taskTemplate"><a href="/reports/taskTemplate/index">Task Template</a></li>
+                                
+                                    <li id="etlScheduler"><a href="/reports/etlSchedule/index">ETL Scheduler</a></li>
+                                    <li id="auditLog"><a href="/reports/auditLog/index">Audit Log</a></li>
+                                    <li id="controlPanel"><a href="/reports/controlPanel/index">Control Panel</a></li>
+                                    <li id="reportFooter"><a href="/reports/reportFooter/index">Footer Configuration</a></li>
+                                    <li id="reportFooter"><a href="/reports/email/index">Email Configuration</a></li>
+                                    <li id="reportFooter"><a href="/reports/emailTemplate/index">Email Template</a></li>
+                                    
+                                    
+                                    <li class="divider"></li>
+                                
+
+                                <li id="menuPreference"><a href="/reports/preference/index"><i class="md md-settings"></i> Preferences</a></li>
+
+                                
+                                    <li class="divider"></li>
+
+                                    
+                                    <li><a href="/reports/monitoring">Monitoring</a></li>
+                                    <li><a href="/reports/quartz">Jobs Monitoring</a></li>
+                                
+
+                                <li class="divider"></li>
+
+                                <li>
+                                    <a href="javascript:void(0);" onclick="logoutRxSession();" type="button"><i class="md md-exit-to-app"></i> Logout</a>
+                            </ul>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Top Bar End -->
+
+    <!-- Left Sidebar Start -->
+    
+    
+
+
+<div class="left side-menu">
+    <div class="sidebar-inner slimscrollleft">
+        <div id="sidebar-menu">
+            <ul>
+                <li class="has_sub"><a href="/reports/dashboard/index" class="waves-effect waves-primary"><i
+                        class="md md-dashboard"></i><span>Dashboard</span><span class="menu-arrow"></span></a>
+                    <ul class="list-unstyled">
+                        
+                        <li><a href="/reports/dashboard/newDashboard"><i class="fa fa-plus"></i>New Dashboard</a></li>
+                    </ul>
+                </li>
+                
+                    <li class="has_sub">
+                        <!-- Adhoc Reports -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-grid-on"></i> <span>Adhoc Reports</span>
+                            <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            
+                                <!-- Load Configurations -->
+                                <li><a href="/reports/configuration/load">Load Configurations</a></li>
+                            
+                            
+                                <!-- New Report -->
+                                <li><a href="/reports/configuration/create">New Report</a></li>
+                            
+                            
+                                <!-- New Report -->
+                                <li><a href="javascript:void(0);"  class="createAdhocFromTemplate">Create From Template</a></li>
+                            
+                            
+                                <!-- Library -->
+                                <li><a href="/reports/configuration/index">Configuration Library</a></li>
+                            
+                            
+                                <!-- Generated Reports -->
+                                <li><a href="/reports/report/index">Generated Reports</a></li>
+                            
+                            
+                                
+                            
+                        </ul>
+                    </li>
+                
+                
+                    <li class="has_sub">
+                        <!-- Periodic Reports -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-call-merge"></i><span>Aggregate Reports</span>
+                            <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            
+                                <!-- New Report -->
+                                <li><a href="/reports/periodicReport/create">New Report</a></li>
+                            
+                            
+                                <!-- New Report -->
+                                <li><a href="javascript:void(0);"  class="createAggregateFromTemplate">Create From Template</a></li>
+                            
+                        <!-- Library -->
+                            <li><a href="/reports/periodicReport/index">Configuration Library</a></li>
+                            <!-- Generated Reports -->
+                            <li><a href="/reports/periodicReport/reports">Generated Reports</a></li>
+                            <!-- View Submission History -->
+                            <li><a href="/reports/reportSubmission/index">View Submission History</a></li>
+                            
+                                <!-- Bulk Scheduling -->
+                                <li><a href="/reports/periodicReport/bulkUpdate">Bulk Update</a></li>
+                            
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="has_sub">
+                        <!-- Case Series -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i class="md md-view-column"></i>
+                            <span>Case Series</span> <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            
+                                <!-- New Case Series -->
+                                <li><a href="/reports/caseSeries/create">New Case Series</a></li>
+                            
+                        <!-- Generated Case Series -->
+                            <li><a href="/reports/caseSeries/index">Configuration Library</a></li>
+                            <!-- Generated Case Series -->
+                            <li><a href="/reports/executedCaseSeries/index">Generated Case Series</a></li>
+                        </ul>
+                    </li>
+                
+                
+                    <!-- Templates -->
+                    <li class="has_sub">
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-now-widgets"></i><span>Templates</span> <span
+                                class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                        <li>
+                            
+                                <!-- Load Templates -->
+                                <li><a href="/reports/template/load">Load Templates</a></li>
+                            
+                        <!-- Template Library -->
+                            <li><a href="/reports/template/index">Template Library</a></li>
+                            
+                                <!-- New Case Line Listing Template -->
+                                <li><a href="/reports/template/create?templateType=CASE_LINE">
+                                    New Case Line Listing Template</a></li>
+                                <!-- New Data Tabulation Template -->
+                                <li><a href="/reports/template/create?templateType=DATA_TAB">
+                                    New Data Tabulation Template</a></li>
+                            
+                            
+                                <!-- New Custom SQL Template -->
+                                <li><a href="/reports/template/create?templateType=CUSTOM_SQL">
+                                    New Custom SQL Template</a></li>
+                                <!-- New Non Case Template -->
+                                <li><a href="/reports/template/create?templateType=NON_CASE">
+                                    New Non Case Template</a></li>
+
+                                
+                            
+                            
+                                <!-- New Template Set -->
+                                <li><a href="/reports/template/create?templateType=TEMPLATE_SET">
+                                    New Template Set</a></li>
+                            
+                        </li>
+                        </ul>
+                    </li>
+                
+                
+                    <!-- Queries -->
+                    <li class="has_sub">
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-filter-list"></i><span>Queries</span> <span
+                                class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                        <li>
+                            
+                                <!-- Load Queries -->
+                                <li><a href="/reports/query/load">Load Queries</a></li>
+                            
+                        <!-- Query Library -->
+                            <li><a href="/reports/query/index">Query Library</a></li>
+                            
+                                <!-- New Query -->
+                                <li><a href="/reports/query/create">New Query</a></li>
+                            
+                        </li>
+                        </ul>
+                    </li>
+                
+                
+                    <li class="has_sub">
+                        <!-- Data Analysis -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i class="md md-trending-up"></i>
+                            <span> Data Analysis </span> <span
+                                class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            <!-- Analysis File Library -->
+                            <li><a href="/reports/dataAnalysis/index">Analysis File Library</a></li>
+                            <!-- New Analysis File -->
+                            <li><a href="/reports/dataAnalysis/create">New Analysis File</a></li>
+                        </ul>
+                    </li>
+                
+                
+                    <li class="has_sub">
+                        <!-- Tasks -->
+                        <a href="javascript:void(0);" class="waves-effect waves-primary"><i
+                                class="md md-assignment"></i><span> Tasks </span> <span
+                                class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                        <!-- Report Requests -->
+                            
+                                <li><a href="/reports/reportRequest/index">Report Requests</a></li>
+                            
+                        <!-- Action Items -->
+                            
+                                <li><a href="/reports/actionItem/index">Action Items</a></li>
+                            
+                        </ul>
+                    </li>
+                
+                
+                    
+                        
+                        
+                                
+                                
+                        
+                            
+                            
+                            
+                            
+                            
+                            
+                        
+                    
+                
+                
+                    <!-- PR Calendar -->
+                    <li><a href="/reports/calendar/index" class="waves-effect waves-primary"><i
+                            class="md md-event"></i><span>Calendar</span></a></li>
+
+                
+            </ul>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+    
+</div>
+<div class="modal fade" id="createFromTemplateModal"  data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby=""  aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="rxmain-container"><div class="rxmain-container-inner"><div class="rxmain-container-row rxmain-container-header"><div class="dropdown"><label class="rxmain-container-header-label">Create From Template</label><i class="pull-right md md-close md-lg rxmain-dropdown-settings" data-dismiss="modal"></i></div></div><div class="row rxmain-container-content">
+                <table id="rxTableTemplateConfiguration" class="row-border hover" width="100%">
+                    <thead>
+                    <tr>
+                        <th class="reportNameColumn">Report Name</th>
+                        <th class="reportDescriptionColumn">Description</th>
+                        <th>Date Created</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div></div></div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+    <!-- Left Sidebar End -->
+    
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="content-page">
+        <!-- Start content -->
+        <div id="mainContent" class="content" style="">
+            
+
+
+<div class="rxmain-container"><div class="rxmain-container-inner"><div class="rxmain-container-row rxmain-container-header"><div class="dropdown"><label class="rxmain-container-header-label">Report: Report01_003</label>
+
+
+<i id="saveButton" class="pull-right md md-file-download md-lg rxmain-dropdown-settings"
+   data-toggle="modal" data-target="#saveAsModal" data-action="viewMultiTemplateReport"
+   data-id="34591"
+   data-tooltip="tooltip" data-placement="bottom" title="Save Report As..."></i>
+<a href="#" class="pull-right  rxmain-dropdown-settings commentModalTrigger"
+   data-owner-id="34591" data-comment-type="EXECUTED_CONFIGURATION"
+   data-toggle="modal" data-target="#commentModal">
+    <span class="annotationPopover"><i class='fa fa-comment-o '  
+                    data-content='' 
+                    style='font-size: 16px;margin-top:2px;padding-left: 5px '
+                    data-placement=left
+                    title='Report Annotation'
+                     ></i></span>
+                
+</a>
+
+
+    
+        <span class="addSectionLink pull-right ">
+            <a data-url="/reports/configuration/addSection/34591"
+               href="#" data-toggle="modal" data-target="#addSectionModal">
+                <i id="addButton"
+                   class="pull-right md md-add md-lg rxmain-dropdown-settings"
+                   data-tooltip="tooltip"
+                   data-placement="bottom"
+                   title="Add Section"></i>
+            </a>
+        </span>
+    
+
+
+<form action="/reports/report/index" method="post" >
+    <input type="hidden" name="executedConfigId" value="" id="executedConfigId" />
+    
+<div class="modal fade" id="sendToDmsModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Upload To Document Management System</h4>
+            </div>
+            <div class="modal-body">
+
+                
+                    <div class="radio radio-inline">
+                        <input type="radio" id="formatPDF" checked name="dmsConfiguration.format" value="PDF"/>
+                        <label for="formatPDF">
+                            PDF
+                        </label>
+                    </div>
+                
+                    <div class="radio radio-inline">
+                        <input type="radio" id="formatXLSX"  name="dmsConfiguration.format" value="XLSX"/>
+                        <label for="formatXLSX">
+                            Excel
+                        </label>
+                    </div>
+                
+                    <div class="radio radio-inline">
+                        <input type="radio" id="formatDOCX"  name="dmsConfiguration.format" value="DOCX"/>
+                        <label for="formatDOCX">
+                            Word
+                        </label>
+                    </div>
+                
+                    <div class="radio radio-inline">
+                        <input type="radio" id="formatPPTX"  name="dmsConfiguration.format" value="PPTX"/>
+                        <label for="formatPPTX">
+                            PowerPoint
+                        </label>
+                    </div>
+                
+                <span class="glyphicon glyphicon-edit showDmsConfigurationDlg" style="cursor: pointer;font-size: 25px;margin-left: 190px;"></span>
+                <div id="formatError" hidden="hidden">
+                    <div class="row">
+                        <div class="col-xs-12" style="color: #ff0000">
+                            Select at least one attachment format!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <input type="submit" name="_action_sendToDms" value="Send" class="btn btn-primary" />
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="dmsConfigContainer">
+</div>
+</form>
+
+</div></div><div class="row rxmain-container-content">
+
+    
+
+
+
+
+
+
+
+
+
+    
+        <div class="btn-group">
+            <a href="/reports/report/criteria/34591?isInDraftMode=false" class="btn btn-default waves-effect waves-light">
+                <i class="md md-description icon-white"></i>
+                Report Criteria
+            </a>
+        </div>
+        
+        <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle waves-effect waves-light"
+                    data-toggle="dropdown" aria-expanded="false">
+                <i class="md md-list icon-white"></i>
+                
+                    <span>Section: 
+                        Report01_003: AE By SOC</span>
+                
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                
+                
+                    <li><a href="/reports/report/viewMultiTemplateReport/34591?isInDraftMode=false">Entire Report</a></li>
+                
+                
+                    <li><a href="/reports/report/show/34594?isInDraftMode=false">
+                        Report01_003: AE By SOC
+                    </a></li>
+                
+                    <li><a href="/reports/report/show/34601?isInDraftMode=false">
+                        Report01_003: Active User &amp; Group Details
+                    </a></li>
+                
+                    <li><a href="/reports/report/show/34608?isInDraftMode=false">
+                        Report01_003: Active user logins in last month
+                    </a></li>
+                
+            </ul>
+        </div>
+        <div class="btn-group">
+            
+            
+            <a href="/reports/report/show/34594?outputFormat=PDF&amp;isInDraftMode=false&amp;paperReport=false" class="btn btn-default waves-effect waves-light
+                    " data-tooltip="tooltip" data-placement="bottom" title="Save as PDF">
+                <img src="/reports/assets/pdf-icon-3c9c040ef894e4eca3ddb6a0946f4b67.png" class="pdf-icon" height="16" width="16"/>
+            </a>
+            <a href="/reports/report/show/34594?outputFormat=XLSX&amp;isInDraftMode=false" c
+7fe8
+lass="btn btn-default waves-effect waves-light
+                    " data-tooltip="tooltip" data-placement="bottom" title="Save as Excel">
+                <img src="/reports/assets/excel-a40ce78cdd86cac8004163bf736802da.gif" class="excel-icon" height="16" width="16"/>
+            </a>
+            <a href="/reports/report/show/34594?outputFormat=DOCX&amp;isInDraftMode=false" class="btn btn-default waves-effect waves-light
+                    " data-tooltip="tooltip" data-placement="bottom" title="Save as Word">
+                <img src="/reports/assets/word-icon-d5dad3111daf01520f03d97072fa0247.png" class="word-icon" height="16" width="16"/>
+            </a>
+            <a href="/reports/report/show/34594?outputFormat=PPTX&amp;isInDraftMode=false" class="btn btn-default waves-effect waves-light
+                    " data-tooltip="tooltip" data-placement="bottom" title="Save as PowerPoint">
+                <img src="/reports/assets/powerpoint-icon-a8fb8a56a2d6cff05e3e101d025fd3eb.png" class="powerpoint-icon" height="16" width="16"/>
+            </a>
+            <a href="#" class="btn btn-default waves-effect waves-light" data-toggle="modal" data-target="#saveAsModal" data-action="show" data-tooltip="tooltip" data-placement="bottom" title="Save As...">
+                <span class="md md-file-download icon-white"></span>
+            </a>
+            
+
+    <!-- Modal -->
+    <div class="modal fade" id="saveAsModal" tabindex="-1" role="dialog" aria-labelledby="saveAsModalLabel"
+         aria-hidden="true">
+
+        <form action="/reports/report/advancedOptionsExport" method="post" >
+
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="saveAsModalLabel">Save As</h4>
+                </div>
+
+                <div class="modal-body" style="padding-left: 40px; padding-right: 40px">
+
+                    <input type="hidden" name="isInDraftMode" value="false" id="isInDraftMode" />
+                    <input type="hidden" name="actionToExecute" value="show" id="actionToExecute" />
+                    <input type="hidden" name="id" value="34594" id="id" />
+
+                    
+                    <input type="hidden" name="advancedOptions" value="1" id="advancedOptions" />
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="dialogBox">File Format</label>
+
+                            <div class="form-group">
+                                <div class="radio radio-primary">
+                                    <input type="radio" name="outputFormat" checked="checked" value="PDF" id="PDF"  />
+                                    <label for="PDF">
+                                        Save as PDF
+                                    </label>
+                                </div>
+                                <div class="radio radio-primary">
+                                    <input type="radio" name="outputFormat" value="XLSX" id="XLSX"  />
+                                    <label for="XLSX">
+                                        Save as Microsoft Excel
+                                    </label>
+                                </div>
+                                <div class="radio radio-primary">
+                                    <input type="radio" name="outputFormat" value="DOCX" id="DOCX"  />
+                                    <label for="DOCX">
+                                        Save as Microsoft Word
+                                    </label>
+                                </div>
+                                <div class="radio radio-primary">
+                                    <input type="radio" name="outputFormat" value="PPTX" id="PPTX"  />
+                                    <label for="PPTX">
+                                        Save as Microsoft PowerPoint
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="dialogBox">Page Orientation (PDF and Word)</label>
+
+                            <div class="form-group">
+                                <div class="radio radio-primary">
+                                    <input type="radio" name="pageOrientation" value="PORTRAIT" id="PORTRAIT"  />
+                                    <label for="PORTRAIT">
+                                        Portrait
+                                    </label>
+                                </div>
+
+                                <div class="radio radio-primary">
+                                    <input type="radio" name="pageOrientation" checked="checked" value="LANDSCAPE" id="LANDSCAPE"  />
+                                    <label for="LANDSCAPE">
+                                        Landscape
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="horizontalRuleFull"></div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="dialogBox">Options</label>
+
+                            <div class="form-group">
+                                <div class="checkbox checkbox-primary">
+                                    <input type="hidden" name="_showPageNumbering" /><input type="checkbox" name="showPageNumbering" checked="checked" id="showPageNumbering"  />
+                                    <label for="showPageNumbering">
+                                        Show Page Numbering
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="checkbox checkbox-primary">
+                                    <input type="hidden" name="_showCompanyLogo" /><input type="checkbox" name="showCompanyLogo" checked="checked" id="showCompanyLogo"  />
+                                    <label for="showCompanyLogo">
+                                        Show Company Logo
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="dialogBox"></label>
+                            <div class="form-group">
+                                <div class="checkbox checkbox-primary">
+                                    <input type="hidden" name="_excludeCriteriaSheet" /><input type="checkbox" name="excludeCriteriaSheet" id="excludeCriteriaSheet"  />
+                                    <label for="excludeCriteriaSheet">
+                                        Exclude Criteria Sheet
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="checkbox checkbox-primary">
+                                    <input type="hidden" name="_excludeAppendix" /><input type="checkbox" name="excludeAppendix" id="excludeAppendix"  />
+                                    <label for="excludeAppendix">
+                                        Exclude Appendix
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="checkbox checkbox-primary">
+                                    <input type="hidden" name="_excludeComments" /><input type="checkbox" name="excludeComments" id="excludeComments"  />
+                                    <label for="excludeComments">
+                                        Exclude Annotations
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="checkbox checkbox-primary">
+                                    <input type="hidden" name="_excludeLegend" /><input type="checkbox" name="excludeLegend" id="excludeLegend"  />
+                                    <label for="excludeLegend">
+                                        Exclude Legend
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="dialogBox">Paper Size (PDF and Word)</label>
+
+                            <div class="form-group">
+                                <select name="paperSize" class="form-control" id="paperSize" >
+<option value="LETTER" >Letter</option>
+<option value="A4" >A4</option>
+<option value="LEGAL" >Legal</option>
+<option value="_11X17" >11x17</option>
+</select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="dialogBox">Sensitivity Label</label>
+
+                            <div class="form-group">
+                                <select name="sensitivityLabel" class="form-control" id="sensitivityLabel" >
+<option value="CONFIDENTIAL" >Confidential</option>
+<option value="PROPRIETARY" >Proprietary</option>
+<option value="PUBLIC" >Public</option>
+<option value="SENSITIVE" >Sensitive</option>
+<option value="NONE" >None</option>
+</select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="sectionSelect" style="display: none">
+                        <div class="col-md-12">
+                            <label class="dialogBox">Report Sections</label>
+
+                            <div class="form-group">
+                                <select id="sectionsToExport" name="sectionsToExport" class="form-control" multiple>
+                                    
+                                        
+                                        
+                                            <option selected value="34593">
+                                                Report01_003: AE By SOC
+                                            </option>
+                                        
+                                            <option selected value="34600">
+                                                Report01_003: Active User &amp; Group Details
+                                            </option>
+                                        
+                                            <option selected value="34607">
+                                                Report01_003: Active user logins in last month
+                                            </option>
+                                        
+                                    
+                                </select>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="submit" id="saveAsButton" class="btn btn-primary">
+                        <span class="glyphicon glyphicon-ok icon-white"></span>
+                        Save
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+        </form>
+    </div><!-- /.modal -->
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#saveAsButton').click(function () {
+            $('#saveAsModal').modal('hide');
+        });
+
+        $("#sectionsToExport").select2({
+            formatSelection: function (label) {
+                return '<span title="' + encodeToHTML(label.text) + '">' +  encodeToHTML(label.text) + '</span>';
+            }
+        });
+
+        $("#saveAsModal").on("show.bs.modal", function (e) {
+            $('#saveAsModal').find('form')[0].reset();
+            $("#sectionsToExport").trigger("change");
+            var action = $(e.relatedTarget).data('action');
+            if (action) {
+                $("input[name='actionToExecute']").val(action);
+            }
+            if ($("input[name='actionToExecute']").val() === "viewMultiTemplateReport") {
+                $("#sectionsToExport").prop("disabled", false);
+                $("#sectionSelect").show();
+            } else {
+                $("#sectionsToExport").prop("disabled", true);
+                $("#sectionSelect").hide();
+            }
+            var id = $(e.relatedTarget).data('id');
+            if (id) {
+                $("input[name='id']").val(id);
+            }
+        });
+    });
+</script>
+
+        </div>
+
+        <div class="btn-group">
+            <a href="#" class="btn btn-default commentModalTrigger" data-owner-id="34594" data-comment-type="REPORT_RESULT"
+               data-toggle="modal" data-target="#commentModal">
+                <span class="annotationPopover"><i class='fa fa-comment-o '  
+                    data-content='' 
+                    
+                    data-placement=right
+                    title='Section Annotation'
+                     ></i></span>
+                
+            </a>
+            
+<div id="commentModal" class="modal fade"  data-backdrop="static" role="dialog" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <input type="hidden" name="EXECUTED_CONFIGURATION" value="Annotate Report" id="EXECUTED_CONFIGURATION" />
+                <input type="hidden" name="REPORT_RESULT" value="Annotate Section" id="REPORT_RESULT" />
+                <h5 class="modal-title" id="commentsTitle"></h5>
+            </div>
+
+            <div class="modal-body">
+                <div id="commentsList">
+                    
+                </div>
+
+                <div class="add-comment-component">
+                    <form name="annotationForm" action="#">
+                        <input type="hidden" name="ownerId" value="" id="ownerId" />
+                        <input type="hidden" name="commentType" value="" id="commentType" />
+                        <div class="form-group">
+                            <label for="comment.textData">Comment</label>
+                            <textarea name="comment.textData" class="form-control" rows="5" maxlength="4000" id="comment.textData" ></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div>
+                <div class="modal-footer">
+                    <div class="btn-add-comment" onclick="showCommentForm();">
+                        <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-comment"></span> Comment
+                        </a>
+                    </div>
+
+                    <div class="add-comment-component">
+                        <button type="button" class="btn btn-primary saveComment">Add</button>
+                        <button type="button" class="btn btn-default hideCommentForm">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" name="appContext" value="/reports" id="appContext" />
+</div>
+<script type="text/javascript" src="/reports/assets/app/comment-b85750cd7841837e8523d04d9fda7ad1.js" ></script>
+
+
+            
+            <div id="clipBoardModel" class="modal fade"  data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Copy Cases</h4>
+            </div>
+
+            <div class="modal-body">
+                <textarea class="form-control" id="message-text"></textarea>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+        
+        <div id="reportDiv" style="min-height: 140px; max-height: 460px;"></div>
+    
+    
+<div class="modal fade" id="addSectionModal"  data-backdrop="static" tabindex="-1" role="dialog"
+     aria-labelledby="addSectionModalLabel" aria-hidden="true">
+
+    <div class="vertical-alignment-helper">
+        <!-- Modal Dialog starts -->
+        <div class="modal-dialog modal-lg vertical-align-center">
+
+            <div class="modal-content">
+
+            </div><!-- modal-content ends-->
+        </div><!-- modal-dialog ends-->
+    </div>
+
+    <div style="display: none">
+        <div id="customSQLValueContainer" class="customSQLValueContainer row queryBlankContainer">
+    <div class="errorMessageOperator">Enter Valid Number</div>
+
+    <div class="col-xs-2 sqlKeyContainer">
+        <p class="inputSQLKey"></p>
+    </div>
+
+    <div class="col-xs-5 expressionsNoPad">
+        <input type="text" name="inputSQLValue" class="form-control inputSQLValue" placeholder="Value" value="" id="inputSQLValue" />
+    </div>
+
+    <div class="col-xs-1" hidden="hidden">
+        <input class="qevValue" value="" />
+        <input name="inputSQLKey" class="qevKey" value="" />
+    </div>
+</div>
+        <div id="poiInputValueContainer" class="poiInputValueContainer row queryBlankContainer">
+    <div class="errorMessageOperator">Enter Valid Number</div>
+
+    <div class="col-xs-2 poiKeyContainer">
+        <p class="inputPOIKeyText"></p>
+        <input type="hidden" name="inputPOIKEY" class="inputPOIKey" value="" id="inputPOIKEY" />
+    </div>
+
+    <div class="col-xs-5 expressionsNoPad">
+        <input type="text" name="inputPOIValue" class="form-control inputPOIValue" placeholder="Value" value="" id="inputPOIValue" />
+    </div>
+
+    <div class="col-xs-1" hidden="hidden">
+        <input class="poiValue" value="" />
+        <input name="poiKey" class="poiKey" value="" />
+    </div>
+</div>
+        <script>
+    var reportFieldsForQueryUrl = "/reports/queryRest/reportFieldsForQueryValue";
+</script>
+<div id="toAddContainerQEV" class="toAddContainerQEV row queryBlankContainer">
+    
+    
+    <div class="col-xs-4 col-md-offset-7 errorMessageOperator" style="padding-left: 15px">
+        Enter Valid Number
+    </div>
+
+    <div class="col-xs-4 expressionsNoPadFirst" style="position: relative;padding-left: 40px">
+        <i data-toggle="popover" id="selectPopover" data-trigger="hover"  data-container="body" data-content="No description" class="fa fa-info-circle" style="font-size: 22px;cursor: pointer;padding-right: 10px;position: absolute;z-index: 1;top: 5px;left: 15px;"></i>
+        <select name="selectField" readonly="true" class="form-control expressionField">
+        </select>
+    </div>
+
+    <div class="col-xs-3 expressionsOperator">
+        <select name="selectOperator" id="selectOperator" class="form-control expressionOp" readonly="readonly" >
+<option value="">Select Operator</option>
+</select>
+    </div>
+
+    <div class="col-xs-3 expressionsNoPad">
+        <input type="text" name="selectValue" class="form-control expressionValueText" placeholder="Value" value="" id="selectValue" />
+    </div>
+
+    <div class="col-xs-3 expressionsNoPad">
+        <select name="selectSelect" class="form-control expressionValueSelect" multiple="true" id="selectSelect" >
+<option value="">Select Value</option>
+</select>
+    </div>
+
+    <div class="col-xs-3 expressionsNoPad">
+        <input type="hidden" name="selectSelectAuto"
+               class="form-control expressionValueSelectAuto">
+    </div>
+
+    <div class="col-xs-3 fuelux expressionsNoPad">
+        <div class="datepicker expressionValueDate">
+            <div class="input-group">
+                <input class="form-control expressionValueDateInput" name="selectDate"
+                       type="text"/>
+
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle"
+                            data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                        <span class="sr-only">Toggle Calendar</span>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-right datepicker-calendar-wrapper"
+                         role="menu">
+                        <div class="datepicker-calendar">
+                            <div class="datepicker-calendar-header">
+                                <button type="button" class="prev"><span
+                                        class="glyphicon glyphicon-chevron-left"></span><span
+                                        class="sr-only">Previous Month</span></button>
+                                <button type="button" class="next"><span
+                                        class="glyphicon glyphicon-chevron-right"></span><span
+                                        class="sr-only">Next Month</span></button>
+                                <button type="button" class="title">
+                                    <span class="month">
+                                        <span data-month="0">January</span>
+                                        <span data-month="1">February</span>
+                                        <span data-month="2">March</span>
+                                        <span data-month="3">April</span>
+                                        <span data-month="4">May</span>
+                                        <span data-month="5">June</span>
+                                        <span data-month="6">July</span>
+                                        <span data-month="7">August</span>
+                                        <span data-month="8">September</span>
+                                        <span data-month="9">October</span>
+                                        <span data-month="10">November</span>
+                                        <span data-month="11">December</span>
+                                    </span> <span class="year"></span>
+                                </button>
+                            </div>
+                            <table class="datepicker-calendar-days">
+                                <thead>
+                                <tr>
+                                    <th>Su</th>
+                                    <th>Mo</th>
+                                    <th>Tu</th>
+                                    <th>We</th>
+                                    <th>Th</th>
+                                    <th>Fr</th>
+                                    <th>Sa</th>
+                                </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+
+                            <div class="datepicker-calendar-footer">
+                                <button type="button" class="datepicker-today">Today</button>
+                            </div>
+                        </div>
+
+                        <div class="datepicker-wheels" aria-hidden="true">
+                            <div class="datepicker-wheels-month">
+                                <h2 class="header">Month</h2>
+                                <ul>
+                                    <li data-month="0"><button type="button">Jan</button></li>
+                                    <li data-month="1"><button type="button">Feb</button></li>
+                                    <li data-month="2"><button type="button">Mar</button></li>
+                                    <li data-month="3"><button type="button">Apr</button></li>
+                                    <li data-month="4"><button type="button">May</button></li>
+                                    <li data-month="5"><button type="button">Jun</button></li>
+                                    <li data-month="6"><button type="button">Jul</button></li>
+                                    <li data-month="7"><button type="button">Aug</button></li>
+                                    <li data-month="8"><button type="button">Sep</button></li>
+                                    <li data-month="9"><button type="button">Oct</button></li>
+                                    <li data-month="10"><button type="button">Nov</button></li>
+                                    <li data-month="11"><button type="button">Dec</button></li>
+                                </ul>
+                            </div>
+
+                            <div class="datepicker-wheels-year">
+                                <h2 class="header">Year</h2>
+                                <ul></ul>
+                            </div>
+
+                            <div class="datepicker-wheels-footer clearfix">
+                                <button type="button" class="btn datepicker-wheels-back"><span
+                                        class="glyphicon glyphicon-arrow-left"></span><span
+                                        class="sr-only">Return to Calendar</span></button>
+                                <button type="button"
+                                        class="btn datepicker-wheels-select">Select <span
+                                        class="sr-only">Month and Year</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-2 expressionsNoPad">
+        <div>
+            <div class="col-md-2">
+                <i class="fa fa-search" style="display: none;" data-toggle="modal" data-target="#eventModal"></i>
+            </div>
+            <div class="col-md-8">
+                <i class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal" data-target="#copyAndPasteModal"></i>
+            </div>
+        </div>
+    </div>
+    
+<!-- Modal for copy and paste -->
+<div class="modal fade copyAndPasteModal" id="copyAndPasteModal"  data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="Copy/Paste Dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" onclick='closeAllCopyPasteModals();' aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Paste/Import Values:</h4>
+            </div>
+            <div class="modal-body container-fluid copy-paste-modal-height-fix">
+                <div class="row">
+                    <label>Delimiters:</label>
+                </div>
+                <div class="row" id="delimiter-options">
+                    <div class="icon-col" title="No delimiters">
+                        <label class="no-bold add-cursor">
+                            <input type="radio" name="delimiter" value="none" checked="checked"/>
+                            None
+                        </label>
+                    </div>
+                    <div class="icon-col" title="comma">
+                        <label class="no-bold add-cursor">
+                            <input type="radio" name="delimiter" value=","/>
+                            Comma
+                        </label>
+                    </div>
+                    <div class="icon-col" title="semi-column">
+                        <label class="no-bold add-cursor">
+                            <input type="radio" name="delimiter" value=";"/>
+                            Semi-Colon
+                        </label>
+                    </div>
+                    <div class="icon-col" title="space">
+                        <label class="no-bold add-cursor">
+                            <input type="radio" name="delimiter" value=" "/>
+                            Space
+                        </label>
+                    </div>
+                    <div class="icon-col" title="new-line">
+                        <label class="no-bold add-cursor">
+                            <input type="radio" name="delimiter" value="\n"/>
+                            New-Line
+                        </label>
+                    </div>
+                    <div class="icon-col" title="Others">
+                        <label class="no-bold add-cursor">
+                            <input type="radio" name="delimiter" value="others"/>
+                            Others
+                        </label>
+                    </div>
+                    <div class="icon-col">
+                        <input type="text" class="c_n_p_other_delimiter" >
+                    </div>
+                </div>
+                <div class="row content-row">
+                    <textarea class="copyPasteContent"></textarea>
+                </div>
+                <div class="row" style="text-align: right; width: 100%">
+                    <button type="button" class="btn btn-default validate-copy-paste" >Validate Values</button>
+                    <hr>
+                </div>
+
+                <div class="row">
+                    <span>Import values from a file</span>
+                </div>
+
+                <div id="importValueSection">
+                    <div class="row">
+                        <div class="input-group col-xs-10">
+                            <input type="text" class="form-control" readonly>
+                            <label class="input-group-btn">
+                                <span class="btn btn-primary">
+                                    Choose File&hellip; <input type="file" id="file_input"
+                                                               accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
+                                                               style="display: none;">
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div id="fileFormatError" hidden="hidden">
+                        <div class="row">
+                            <div class="col-xs-12" style="color: #ff0000">
+                                Invalid file selected, valid files are of "xls, xlsx" types!
+                            </div>
+                        </div>
+                    </div>
+                    <div id="noDataInExcel" hidden="hidden" style="color: #ff0000"></div>
+
+                    <div class="row">
+                        <div class="col-xs-11 bs-callout bs-callout-info">
+                            <h5>Note</h5>
+
+                            <div>Import values from a file:</div>
+
+                            <div>-    Values will only be imported from the first worksheet of excel file</div>
+
+                            <div>-    Values will be imported from first column of excel file</div>
+
+                            <div>-    Each value must be in a separate row of the excel file</div>
+
+                            <div>-    First cell of excel file is the field label</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default cancel" onclick='closeAllCopyPasteModals();'>Cancel</button>
+                <button type="button" class="btn btn-success confirm-paste"
+                        onclick='closeAllCopyPasteModals();'>Confirm</button>
+                <button type="button" class="btn btn-success import-values" style="display: none">Import</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="importValuesTemplateContainer">
+</div>
+
+    <div style="display: none; width: 0" hidden="hidden">
+        <input class="qevReportField" value="" />
+        <input class="qevOperator" value="" />
+        <input class="qevValue" va
+550a
+lue="" />
+        <input class="qevKey" value="" />
+        <input class="qevSpecialKeyValue" value="" />
+        <input class="isFromCopyPaste" value="" />
+    </div>
+</div>
+    </div>
+</div><!-- modal -->
+    
+<link rel="import" href="/reports/assets/plugin/dictionary/column-view-64c0085c608464f4a6f66e33d985ae27.html"/>
+<link rel="stylesheet" href="/reports/assets/plugin/dictionary/dictionaries-a56723bc475dc0f60ed4e82cb965de2a.css"/>
+<script type="text/javascript" src="/reports/assets/plugin/dictionary/dictionaries-28bdb28ccc79e1b54cfb9c2a829ce561.js" ></script>
+<script type="text/javascript">
+
+        var getSmqDropdownListUrl = "\u002freports\u002feventDictionary\u002fgetSmqDropdownList";
+        var options = { spinnerPath:"\u002freports\u002fassets\u002fselect2-spinner-7b9776076d5fceef4993b55c9383dedd.gif" };
+        options.study = {
+            levelNames: "Project Number\u002cStudy Number\u002cCenter",
+            dicColumnCount: 2,
+            selectUrl: "\u002freports\u002fstudyDictionary\u002fgetSelectedStudy",
+            preLevelParentsUrl: "\u002freports\u002fstudyDictionary\u002fgetPreLevelStudyParents",
+            searchUrl: "\u002freports\u002fstudyDictionary\u002fsearchStudies"
+        };
+
+         options.event = {
+            levelNames: "SOC\u002cHLGT\u002cHLT\u002cPT\u002cLLT\u002cSynonyms\u002cSMQ Broad\u002cSMQ Narrow",
+            dicColumnCount: 6,
+            selectUrl: "\u002freports\u002feventDictionary\u002fgetSelectedEvent",
+            preLevelParentsUrl: "\u002freports\u002feventDictionary\u002fgetPreLevelEventParents",
+            searchUrl: "\u002freports\u002feventDictionary\u002fsearchEvents"
+        };
+
+        options.product = {
+            levelNames: "Ingredient\u002cFamily\u002cProduct Name\u002cTrade Name",
+            dicColumnCount: 4,
+            selectUrl: "\u002freports\u002fproductDictionary\u002fgetSelectedItem",
+            preLevelParentsUrl: "\u002freports\u002fproductDictionary\u002fgetPreLevelProductParents",
+            searchUrl: "\u002freports\u002fproductDictionary\u002fsearchViews"
+        };
+        intializeDictionaries(options);
+
+</script>
+
+
+<div class="modal fade" id="eventModal" data-backdrop="static" tabindex="-1" role="dialog"
+     aria-labelledby="eventDictionaryLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="eventDictionaryLabel">Event Dictionary</h4>
+            </div>
+
+            <div class="modal-body">
+                
+<div class="row">
+    <div class="col-xs-1 padding-md-bottom">
+        SMQ
+    </div>
+    <div class="col-xs-11 padding-md-bottom">
+        
+        <input id="eventSmqSelect" class="eventSmq form-control" style="width: 100%"/>
+    
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-5 padding-md-bottom">
+        <div class="checkbox checkbox-primary">
+            <input type="hidden" name="_event_exactSearch" /><input type="checkbox" name="event_exactSearch" id="event_exactSearch"  />
+            <label for="event_exactSearch">
+                Exact Search
+            </label>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-2">
+        <label>SOC<i tabindex="0"
+                class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"
+                data-target="#copyAndPasteDicModal"></i></label>
+        <input level="1" class="searchEvents form-control" type="text">
+
+    </div>
+    <div class="col-xs-2">
+        <label>HLGT<i tabindex="0"
+                class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"
+                data-target="#copyAndPasteDicModal"></i></label>
+        <input level="2" class="searchEvents form-control" type="text">
+
+    </div>
+    <div class="col-xs-2">
+        <label>HLT<i tabindex="0"
+                class="fa fa-pencil-square-o copy-n-paste modal-link hidden" data-toggle="modal"
+                data-target="#copyAndPasteDicModal"></i></label>
+        <input level="3" class="searchEvents form-control" type="text">
+
+    </div>
+    <div class="col-xs-2">
+        <label>PT<i tabindex="0"
+                class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"
+                data-target="#copyAndPasteDicModal"></i></label>
+        <input level="4" class="searchEvents form-control" type="text">
+
+    </div>
+    <div class="col-xs-2">
+        <label>LLT<i tabindex="0"
+                class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"
+                data-target="#copyAndPasteDicModal"></i></label>
+        <input level="5" class="searchEvents form-control" type="text">
+
+    </div>
+    <div class="col-xs-2">
+        <label>Synonyms<i tabindex="0"
+                class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"
+                data-target="#copyAndPasteDicModal"></i></label>
+        <input level="6" class="searchEvents form-control" type="text">
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        
+        <column-view style="height: 200px;" id="columnView" ondata="source" path="0" dictionary_type="event" columns_name="SOC,HLGT,HLT,PT,LLT,Synonyms" ></column-view>
+    </div>
+</div>
+
+
+<div class="row selectedEventDictionaryValue">
+    <div class="col-xs-1">
+        <label>Selected:</label>
+    </div>
+    <div class="col-xs-10">
+        <div class="row">
+            <div class="col-xs-1">
+                <label>SOC</label>
+            </div>
+            <div class="col-xs-11 eventDictionaryValue level1 ulSOC"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">
+                <label>HLGT</label>
+            </div>
+            <div class="col-xs-11 eventDictionaryValue level2 ulHLGT"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">
+                <label>HLT</label>
+            </div>
+            <div class="col-xs-11 eventDictionaryValue level3 ulHLT"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">
+                <label>PT</label>
+            </div>
+            <div class="col-xs-11 eventDictionaryValue level4 ulPT"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">
+                <label>LLT</label>
+            </div>
+            <div class="col-xs-11 eventDictionaryValue level5 ulLLT"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">
+                <label>Synonyms</label>
+            </div>
+            <div class="col-xs-11 eventDictionaryValue level6 ulSynonyms"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-2">
+                <div style="width: 100px">
+                <label>SMQ Broad</label>
+                </div>
+            </div>
+            <div class="col-xs-10 eventDictionaryValue level7 ulSmqb"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-2">
+                <div style="width: 100px">
+                <label>SMQ Narrow</label>
+                </div>
+            </div>
+            <div class="col-xs-10 eventDictionaryValue level8 ulSmqn"></div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        
+    </div>
+</div>
+
+<style>
+.eventDictionaryColWidth {
+    width: calc(100%/6);
+}
+</style>
+            </div>
+
+            <div class="modal-footer">
+                <div class="errorMessage" hidden="hidden">Cannot add to different levels.</div>
+
+                <div class="loading" style="display:none"><img src="/reports/assets/select2-spinner-7b9776076d5fceef4993b55c9383dedd.gif" height="16" width="16"/></div>
+                
+                <button type="button" class="btn btn-default clearEventValues" accesskey="*">Clear</button>
+                <button type="button" class="btn btn-primary addEventValues" accesskey="%">Add</button>
+                <button type="button" class="btn btn-primary addAllEventValues" accesskey="^">Add All</button>
+                <button type="button" class="btn btn-default addAllEvents" data-dismiss="modal" accesskey="&">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="productModal" data-backdrop="static" tabindex="-1" role="dialog"
+     aria-labelledby="productDictionaryLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="productDictionaryLabel">Product Dictionary</h4>
+            </div>
+
+            <div class="modal-body">
+                
+
+<div class="">
+    
+</div>
+
+<div class="row">
+    <div class="col-xs-5 padding-md-bottom">
+        <div class="checkbox checkbox-primary">
+            <input type="hidden" name="_product_exactSearch" /><input type="checkbox" name="product_exactSearch" id="product_exactSearch"  />
+            <label for="product_exactSearch">
+                Exact Search
+            </label>
+        </div>
+    </div>
+</div>
+
+<div class="m-b-15 scroll-hidden">
+
+    
+
+        <div class="prodDictFilterColCalc padding-md-bottom">
+            <label>Ingredient<i tabindex="0"
+                    class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"
+                    data-target="#copyAndPasteDicModal"></i></label>
+            <input level="1"
+                   class="searchProducts form-control "
+                   type="text">
+        </div>
+    
+
+        <div class="prodDictFilterColCalc padding-md-bottom">
+            <label>Family<i tabindex="0"
+                    class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"
+                    data-target="#copyAndPasteDicModal"></i></label>
+            <input level="2"
+                   class="searchProducts form-control "
+                   type="text">
+        </div>
+    
+
+        <div class="prodDictFilterColCalc padding-md-bottom">
+            <label>Product Name<i tabindex="0"
+                    class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"
+                    data-target="#copyAndPasteDicModal"></i></label>
+            <input level="3"
+                   class="searchProducts form-control productColumn"
+                   type="text">
+        </div>
+    
+
+        <div class="prodDictFilterColCalc padding-md-bottom">
+            <label>Trade Name<i tabindex="0"
+                    class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"
+                    data-target="#copyAndPasteDicModal"></i></label>
+            <input level="4"
+                   class="searchProducts form-control "
+                   type="text">
+        </div>
+    
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <column-view id="columnView1" class="" ondata="source" path="0" dic="product"
+                     dictionary_type="product" columns_name="Ingredient,Family,Product Generic Name,Trade Name"></column-view>
+    </div>
+</div>
+
+
+<div class="row selectedProductDictionaryValue">
+    <div class="col-xs-1">
+        <label>Selected:</label>
+    </div>
+
+    <div class="col-xs-10">
+        
+            <div class="row">
+                <div class="col-xs-3">
+                    <label>Ingredient</label>
+                </div>
+
+                <div class="col-xs-9 productDictionaryValue level1"></div>
+            </div>
+        
+            <div class="row">
+                <div class="col-xs-3">
+                    <label>Family</label>
+                </div>
+
+                <div class="col-xs-9 productDictionaryValue level2"></div>
+            </div>
+        
+            <div class="row">
+                <div class="col-xs-3">
+                    <label>Product Name</label>
+                </div>
+
+                <div class="col-xs-9 productDictionaryValue level3"></div>
+            </div>
+        
+            <div class="row">
+                <div class="col-xs-3">
+                    <label>Trade Name</label>
+                </div>
+
+                <div class="col-xs-9 productDictionaryValue level4"></div>
+            </div>
+        
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        
+    </div>
+</div>
+<script type="text/javascript" src="/reports/assets/plugin/dictionary/productDictionary-eeaadfef73b9e8aa3d5bbccd020fbe0e.js" ></script>
+<style>
+ .prodDictFilterColCalc ,.productDictionaryColWidthCalc {
+    width: calc(100% /4);
+}
+ .prodDictSearchColCalc {
+     width: calc(100% /0);
+ }
+</style>
+            </div>
+
+            <div class="modal-footer">
+                <div class="loading" style="display:none"><img src="/reports/assets/select2-spinner-7b9776076d5fceef4993b55c9383dedd.gif" height="16" width="16"/></div>
+                
+                <button type="button" class="btn btn-default clearProductValues" accesskey="$">Clear</button>
+                <button type="button" class="btn btn-primary addProductValues" accesskey="!">Add</button>
+                <button type="button" class="btn btn-primary addAllProductValues" accesskey="@">Add All</button>
+                <button type="button" class="btn btn-default addAllProducts" data-dismiss="modal" accesskey="#">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="studyModal" data-backdrop="static" tabindex="-1" role="dialog"
+     aria-labelledby="studyDictionaryLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="studyDictionaryLabel">Study Dictionary</h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="row">
+    <div class="col-xs-5 padding-md-bottom">
+        <div class="checkbox checkbox-primary">
+            <input type="hidden" name="_study_exactSearch" /><input type="checkbox" name="study_exactSearch" id="study_exactSearch"  />
+            <label for="study_exactSearch">
+                Exact Search
+            </label>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-6">
+        
+<script type="text/javascript" src="/reports/assets/plugin/dictionary/studyDrugs-9650caca7b2eaad47de57af7bbefe066.js" ></script>
+<script>
+    $(document).ready(function () {
+        var productsListUrl = "/reports/studyDictionary/getProductsList";
+        showStudyDrugsWidget(productsListUrl);
+        bindImpCheckboxEvent();
+    });
+</script>
+
+<div class="row">
+    <div class="col-xs-10">
+        <label>Study Drug</label>
+        <input level="3" ref_level="2" class="searchStudies form-control" type="hidden" id="studyDrugsInput"/>
+
+        <div>
+            
+                <input name="studyDrugs" id="studyDrugs" value="" class="searchStudies form-control"/>
+            
+        </div>
+    </div>
+
+    <div class="col-xs-2">
+        <label>&nbsp;</label>
+
+        <div class="checkbox checkbox-primary">
+            <input type="hidden" name="_study_imp" /><input type="checkbox" name="study_imp" id="study_imp"  />
+            <label for="study_imp">
+                IMP
+            </label>
+        </div>
+    </div>
+</div>
+    </div>
+
+    <div class="col-xs-6">
+        
+<script type="text/javascript" src="/reports/assets/plugin/dictionary/studyCompounds-d1264ac301b89c2be214faf502830ceb.js" ></script>
+
+<label>Clinical Reference Number</label>
+<input level="4" ref_level="2" class="searchStudies form-control" type="hidden" id="studyCompoundsInput"/>
+
+<div>
+    
+        <input name="studyCompounds" id="studyCompounds" value="" class="searchStudies form-control"/>
+    
+</div>
+
+<script>
+    $(document).ready(function () {
+        var compoundsListUrl = "/reports/studyDictionary/getCompoundsList";
+        showStudyCompoundsWidget(compoundsListUrl);
+    });
+</script>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-6">
+        <label>Project Number<i tabindex="0"
+                class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"
+                data-target="#copyAndPasteDicModal"></i></label>
+        <input level="1" class="searchStudies form-control" type="text">
+
+    </div>
+
+    <div class="col-xs-6">
+        <label>Study Number<i tabindex="0"
+                class="fa fa-pencil-square-o copy-n-paste modal-link" data-toggle="modal"
+                data-target="#copyAndPasteDicModal"></i></label>
+        <input level="2" class="searchStudies form-control" type="text">
+
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <column-view style="height: 200px;" id="columnView1" ondata="source" path="0"
+                     dictionary_type="study" columns_name="ProtocolNumber,StudyNumber"></column-view>
+    </div>
+</div>
+
+
+<div class="row selectedStudyDictionaryValue">
+    <div class="col-xs-1">
+        <label>Selected:</label>
+    </div>
+
+    <div class="col-xs-10">
+        <div class="row">
+            <div class="col-xs-3">
+                <label>Project Number</label>
+            </div>
+
+            <div class="col-xs-9 studyDictionaryValue level1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3">
+                <label>Study Number</label>
+            </div>
+
+            <div class="col-xs-9 studyDictionaryValue level2"></div>
+        </div>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        
+    </div>
+</div>
+
+<style>
+.studyDictionaryColWidth {
+    width: calc(100% /2);
+}
+</style>
+            </div>
+
+            <div class="modal-footer">
+                <div class="loading" style="display:none"><img src="/reports/assets/select2-spinner-7b9776076d5fceef4993b55c9383dedd.gif" height="16" width="16"/></div>
+                
+                <button type="button" class="btn btn-default clearStudyValues" accesskey="+">Clear</button>
+                <button type="button" class="btn btn-primary addStudyValues" accesskey="(">Add</button>
+                <button type="button" class="btn btn-primary addAllStudyValues" accesskey=")">Add All</button>
+                <button type="button" class="btn btn-default addAllStudies" data-dismiss="modal" accesskey="_">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+
+    
+
+    
+
+</div></div></div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var filename = 'R34594_en';
+        var id = '34594';
+        $("#reportDiv").load("/reports/report/getReportAsHTMLString", {
+            filename: filename,
+            id: id,
+            isInDraftMode:false
+        }, function () {
+            $(".jrPage tr").css("height", "");
+            $(".column-title").attr("title", function () {
+                return $("#" + this.id + "Legend").val();
+            });
+            setGridHeight();
+        });
+    });
+    $(window).resize(function () {
+        setGridHeight();
+    });
+
+    function setGridHeight() {
+        var screenHeight = parseInt($(window).height());
+        var gridHeight = screenHeight - 230;
+        $("#reportDiv").css({"max-height": gridHeight + "px"});
+        $("html").addClass("overflow-y-hidden");
+        $("html body").addClass("overflow-y-hidden");
+    }
+</script>
+<script type="text/javascript" src="/reports/assets/plugin/dictionary/dictionaryMultiSearch-6eb3fdf8ab4860190935c80f93a691c7.js" ></script>
+
+        </div>
+        <!-- End content -->
+    
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Right content here -->
+    <!-- ============================================================== -->
+</div>
+<div class="pvr-loader-bg">
+    <div class="loader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+        </svg>
+    </div>
+</div>
+<!-- Used for loader-->
+<div class="pvloader"></div>
+<script type="text/javascript" src="/reports/assets/app/jquery.core-2c7cdf128b42d849235dea8cadd879b8.js" ></script>
+<script type="text/javascript" src="/reports/assets/app/jquery.app-782d8f87ac279a019b37b18a315654b2.js" ></script>
+
+    
+
+
+
+<script type="text/javascript" src="/reports/assets/store.modern.min-ee86dbde67356086e53dffdd31c6867d.js" ></script>
+<script type="text/javascript" src="/reports/assets/jquery/customise-jquery-idleTimeout-6286fe026bdf78a6c38a29cfd8d979c8.js" ></script> 
+<script type="text/javascript">
+
+    $(document).ready(function() {
+      $(document).idleTimeout({
+      redirectUrl:  "https:\u002f\u002fpvr-perf.rxlogix.com\u002freports/logout",
+      idleTimeLimit: 1800,
+      sessionKeepAliveUrl: "https:\u002f\u002fpvr-perf.rxlogix.com\u002freports/keep-alive",
+      sessionKeepAliveTimer: 60,
+      enableDialog: true,
+      dialogDisplayLimit: 300,
+      activityEvents: 'click keypress',
+      customCallback: function() {
+          var forms = $('form');
+            if(forms.find('.changed-input').length){
+                alert($.i18n._('navigateAwayChangesLostMessage'));
+                clearFormInputsChangeFlag(forms);
+            }
+      }
+      });
+    });
+
+</script>
+
+
+</body>
+</html>
+
+0
+

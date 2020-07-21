@@ -1,0 +1,10 @@
+HTTP/1.1 200 
+Date: Mon, 01 Jun 2020 13:28:41 GMT
+Content-Type: application/pdf;charset=UTF-8
+Content-Length: 215684
+Connection: keep-alive
+Accept-Ranges: bytes
+ETag: Report01_003.PDF
+Content-Disposition: attachment;filename="Report01_003.PDF"
+Content-Range: bytes 0-215683/215684
+

@@ -1,0 +1,11 @@
+[t107]
+FileName1=t107_addSection-9123c19b5cc5be0ec58f58d57e123c1f.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/addSection-9123c19b5cc5be0ec58f58d57e123c1f.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_107.xml
+RequestHeaderFile=t107_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t107_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

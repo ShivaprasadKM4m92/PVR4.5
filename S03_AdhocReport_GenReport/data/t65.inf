@@ -1,0 +1,11 @@
+[t65]
+FileName1=t65_commonGeneratedReportsActions-92cd7ea27c1fa611ab72257ef28bd4a1.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/commonGeneratedReportsActions-92cd7ea27c1fa611ab72257ef28bd4a1.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_65.xml
+RequestHeaderFile=t65_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t65_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,10 @@
+HTTP/1.1 200 
+Date: Mon, 01 Jun 2020 13:29:04 GMT
+Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8
+Content-Length: 15328
+Connection: keep-alive
+Accept-Ranges: bytes
+ETag: Report01_003.XLSX
+Content-Disposition: attachment;filename="Report01_003.XLSX"
+Content-Range: bytes 0-15327/15328
+

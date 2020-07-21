@@ -1,0 +1,14 @@
+HTTP/2.0 200
+Status: 200
+date: Fri, 17 Jul 2020 08:13:39 GMT
+content-type: text/html;charset=UTF-8
+x-oneagent-js-injection: true
+x-frame-options: DENY
+x-application-context: application:production:9090
+cache-control: no-cache, no-store
+pragma: no-cache
+x-xss-protection: 1
+x-content-type-options: nosniff
+set-cookie: SESSION=c7ade493-9801-4150-9f45-e549d13b0be2; Path=/reports/; Secure; HttpOnly
+content-language: en-US
+

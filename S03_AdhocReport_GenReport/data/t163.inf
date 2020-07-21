@@ -1,0 +1,11 @@
+[t163]
+FileName1=t163_allEmailsForCC.json
+URL1=https://pvr-perf.rxlogix.com/reports/email/allEmailsForCC?emails=
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_163.xml
+RequestHeaderFile=t163_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t163_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
