@@ -1,0 +1,46 @@
+Start auto log messages stack - Iteration 12.
+Action.c(35): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(35): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(38): web_add_auto_header("User-Agent") started  	[MsgId: MMSG-26355]
+Action.c(38): web_add_auto_header("User-Agent") was successful  	[MsgId: MMSG-26392]
+Action.c(42): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
+Action.c(42): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
+Action.c(52): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(52): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(56): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(56): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/login/auth"  	[MsgId: MERR-26610]
+Action.c(56): Error -35048: No match found for the requested parameter "Csrf_TokenId". Check whether the tag with specific attributes exists in the response data  	[MsgId: MERR-35048]
+Action.c(56): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 16.
+Action.c(35): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(35): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(38): web_add_auto_header("User-Agent") started  	[MsgId: MMSG-26355]
+Action.c(38): web_add_auto_header("User-Agent") was successful  	[MsgId: MMSG-26392]
+Action.c(42): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
+Action.c(42): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
+Action.c(52): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(52): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(56): web_url("auth") started  	[MsgId: MMSG-26355]
+Action.c(56): Error -26610: HTTP Status-Code=502 (Bad Gateway) for "https://pvr-perf.rxlogix.com/reports/login/auth"  	[MsgId: MERR-26610]
+Action.c(56): Error -35048: No match found for the requested parameter "Csrf_TokenId". Check whether the tag with specific attributes exists in the response data  	[MsgId: MERR-35048]
+Action.c(56): Error -26366: "Text=Login" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+
+Start auto log messages stack - Iteration 20.
+Action.c(1802): web_add_header("Cache-Control") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(1805): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(1805): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(1808): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(1808): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(1811): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(1811): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(1815): web_submit_data("run") started  	[MsgId: MMSG-26355]
+Action.c(1815): Error -26609: HTTP Status-Code=503 (Service Unavailable) for "https://pvr-perf.rxlogix.com/reports/configuration/run"  	[MsgId: MERR-26609]
+Action.c(1815): Error -26366: "Text=Your report has been scheduled and will be delivered" not found for web_reg_find  	[MsgId: MERR-26366]
+End auto log messages stack.
+
+

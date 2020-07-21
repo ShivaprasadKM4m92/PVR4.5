@@ -1,0 +1,11 @@
+[t121]
+FileName1=t121_32180.json
+URL1=https://pvr-perf.rxlogix.com/reports/notificationRest/forUser/32180?_=1590989625236
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_121.xml
+RequestHeaderFile=t121_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t121_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

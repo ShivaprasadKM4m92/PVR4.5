@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Mon, 01 Jun 2020 05:33:46 GMT
+Content-Type: application/javascript;charset=UTF-8
+Content-Length: 526
+Connection: keep-alive
+X-Frame-Options: DENY
+Last-Modified: Mon, 23 Mar 2020 05:54:42 GMT
+ETag: "tinymce/plugins/code/plugin.min-05b914fba3517b9744bebc5f8aba4918.js"
+Vary: Accept-Encoding
+Cache-Control: no-cache
+Content-Encoding: gzip
+

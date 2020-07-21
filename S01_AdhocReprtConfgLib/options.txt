@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Project\PVR\Scripts\Updated\S01_AdhocReprtConfgLib
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\project\pvr\scripts\updated\s01_adhocreprtconfglib\\logfile.log
+c:\project\pvr\scripts\updated\s01_adhocreprtconfglib\\combined_S01_AdhocReprtConfgLib.c
+c:\project\pvr\scripts\updated\s01_adhocreprtconfglib\\pre_cci.c

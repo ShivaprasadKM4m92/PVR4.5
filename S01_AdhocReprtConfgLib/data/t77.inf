@@ -1,0 +1,9 @@
+[t77]
+SnapshotXmlFile=snapshot_77.xml
+FileName1=t77.png
+URL1=https://pvr-perf.rxlogix.com/reports/assets/select2-2ca61b76e22053571dd8611e5aac4900.png
+Total=1
+RequestHeaderFile=t77_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t77_ResponseHeader.txt
+ContentType=image/png

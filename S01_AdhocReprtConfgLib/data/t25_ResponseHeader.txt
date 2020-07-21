@@ -1,0 +1,12 @@
+HTTP/1.1 200 
+Date: Mon, 01 Jun 2020 05:32:20 GMT
+Content-Type: text/css;charset=UTF-8
+Content-Length: 12208
+Connection: keep-alive
+X-Frame-Options: DENY
+Last-Modified: Mon, 23 Mar 2020 05:54:06 GMT
+ETag: "fuelux-b7cf5c5c681fcdbd63156284516c90e9.css"
+Vary: Accept-Encoding
+Cache-Control: public, max-age=31536000
+Content-Encoding: gzip
+

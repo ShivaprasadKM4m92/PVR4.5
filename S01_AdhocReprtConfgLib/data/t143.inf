@@ -1,0 +1,11 @@
+[t143]
+FileName1=t143_executionStatus-abc243051811af7ce55db349117755f2.html
+URL1=https://pvr-perf.rxlogix.com/reports/assets/app/configuration/executionStatus-abc243051811af7ce55db349117755f2.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_143.xml
+RequestHeaderFile=t143_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t143_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
